@@ -23,21 +23,21 @@
   role: tutor
   home: true
 
-- name: First Name Last Name
+- name: Milad Botros
   github: https://kdd.isti.cnr.it/people/student-1
   role: student
-- name: First Name Last Name
+- name: Nicola Lorenzo Grassini
   github: https://kdd.isti.cnr.it/people/student-2
   role: student
-- name: First Name Last Name
+- name: Lorenzo Loru
   github: https://kdd.isti.cnr.it/people/student-3
   role: student
-- name: First Name Last Name
+- name: Leslly Saurelle Tebonchoue
   github: https://kdd.isti.cnr.it/people/student-4
   role: student
-- name: First Name Last Name
+- name: Camilla Rizzi
   github: https://kdd.isti.cnr.it/people/student-5
   role: student
-- name: First Name Last Name
+- name: Giulio Corsi
   github: https://kdd.isti.cnr.it/people/student-6
   role: student
