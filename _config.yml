@@ -54,8 +54,8 @@ navbar:
 #        url: /local-development.html
 #      - title: Local development
 #        url: /local-development-eng.html
-#    - title: Guida
-#      url: /guide.html
+    - title: Introduzione
+      url: /introduzione.html
     - title: Metodologia
       url: /methodology.html
     - title: Risultati
