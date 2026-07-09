@@ -34,9 +34,8 @@ github_repo:
 
 markdown: kramdown
 
-baseurl: "/master-projects-template-2026"
-#baseurl: ""
-url: "https://danielefadda.github.io" # il dominio principale del sito senza barra finale (in questo caso il tuo username.github.io)
+url: "https://kinolag.github.io"
+baseurl: "/g4-2026-website"
 
 #################################
 #    Configurazione navigazione #
