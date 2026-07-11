@@ -1,12 +1,43 @@
 ---
 layout: default
-title: "Cluster 2: Enduring Domestic Epics"
+title: "Cluster: Serie TV italiane"
 vega: true
 header_type: hero
 header_img: assets/images/header.svg
-header_title: "Cluster 2: Enduring Domestic Epics"
-subtitle: "Le serie italiane a lunga esposizione e i loro territori"
+header_title: "Analisi di Cluster: Serie TV italiane"
+subtitle: "Le serie televisive a lunga esposizione e i loro territori"
 ---
+
+<style>
+  /* 1. Forza il contenitore ad allargarsi per tutto lo schermo (Viewport Width) */
+  .full-width-chart {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 0 5vw; /* Lascia un piccolo margine ai lati dello schermo */
+    box-sizing: border-box;
+  }
+
+  /* 2. Impedisce ai temi Jekyll di "stirare" verticalmente il grafico */
+  .full-width-chart vegachart,
+  .full-width-chart .vega-embed {
+    width: 100% !important;
+    display: block !important;
+  }
+  
+  .full-width-chart canvas, 
+  .full-width-chart svg {
+    width: 100% !important;
+    height: auto !important; /* RISOLVE L'EFFETTO STIRATO VERTICALE */
+    max-height: 700px; /* Evita che su schermi giganti diventi troppo alto */
+    object-fit: contain !important;
+  }
+</style>
 
 ## Panoramica
 
@@ -243,19 +274,54 @@ ma temi centrali quanto il boom economico stesso.
 
 ## Sezione 3 — Racconto dal basso
 
-<!-- Risponde alla domanda 3: viaggiano per la serie, o la "visitano" da casa? -->
-
 Cosa emerge dalle **rilevazioni online** e dalle comunità di utenti: l'attenzione
-digitale al luogo e alla produzione.
+digitale rivolta al luogo e alla produzione.
+
+*Gli utenti viaggiano per la serie, o la "visitano" da casa?*
+
+La nostra ricerca fin dall'inizio si è chiesta se, accanto ai segnali fisici, si potessero trovare segnali di un "turismo virtuale" descrivibili in generale come **"attenzione digitale"**, immaginando quindi utenti alla ricerca di informazioni in rete prima di visitare una determinata località filmica, o magari senza una reale intenzione di visitarla direttamente.
+
+Questo concetto risulta utile in quanto accomuna tanto indicatori più affermati come Google trends e Wikipedia, quanto rilevazioni su media e comunità diversi come Reddit e YouTube.
+
+In particolare abbiamo assemblato - mediante pipeline parallele e sequenze strutturate di query - dataset testuali contenenti post Reddit e commenti YouTube relativi alle località filmiche delle produzioni esaminate.
+
+L'analisi testuale dei documenti così raccolti, pur non portando a risultati generalizzabili, ha comunque offerto elementi interessanti sulle serie TV che, grazie a un processo di diffusione mediatica prolungato nel tempo, sembrano generare un seguito attivo che lascia tracce visibili anche in rete.
+
+Vediamo alcuni esempi di questa fenomeno.
 
 **Fonti:** Google Trends, Wikipedia, Reddit, YouTube.
 
-<!-- IN PROGRESS -->
+<!-- GRAFICO: Google Trends / pageview Wikipedia -->
+<!-- <div class="full-width-chart">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/name.vl.json"></vegachart>
+</div> -->
+
+<!-- GRAFICO: attenzione Reddit + YouTube -->
+
+### YouTube
+
+Tasso di commenti contenenti un riferimento:
+nei _video su produzione e location_.
+
+<div class="full-width-chart">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/recap_reference_rate_run1_cluster02.vl.json"></vegachart>
+</div>
+
+Tasso di commenti contenenti un riferimento:
+nei _video su sola location_.
+
+<div class="full-width-chart">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/recap_reference_rate_run2_cluster02.vl.json"></vegachart>
+</div>
+
+<!-- <div class="full-width-chart">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/gubbio.vl.json"></vegachart>
+</div> -->
+<!-- <div class="full-width-chart">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/spoleto.vl.json"></vegachart>
+</div> -->
 
 *Sezione in lavorazione.*
-
-<!-- GRAFICO: Google Trends / pageview Wikipedia -->
-<!-- GRAFICO: attenzione Reddit + YouTube -->
 
 ---
 
