@@ -52,7 +52,7 @@ temporaneo, ma un **radicamento strutturale** costruito nel tempo.
 *Il fenomeno esiste, è misurabile? Vediamo i primi numeri.*
 
 Le evidenze **ISTAT** validate (CIS > 0,7, RGR ≥ 0,15) mostrano segnali
-misurabili in **tre delle quattro location** del cluster, con intensità molto
+misurabili per **due delle quattro produzioni** del cluster, con intensità molto
 diverse tra loro.
 
 ### Scicli — *Il giovane Montalbano*
@@ -142,12 +142,6 @@ otto stagioni:
     </p>
   </div>
 </div>
-
-### 1b — Il fenomeno delle guide
-
-<!-- IN PROGRESS: esperienze GetYourGuide per località -->
-
-*Sezione in lavorazione.*
 
 ---
 
