@@ -1,0 +1,148 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Riferimenti alla produzione nei commenti YouTube",
+    "subtitle": "Video cercati per sola località — Cluster 2",
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 260,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "data": {
+    "values": [
+      {
+        "produzione": "Elisa di Rivombrosa",
+        "rate": 0.1351,
+        "n_ref": 5,
+        "n_comments": 37,
+        "affidabile": "campione insufficiente"
+      },
+      {
+        "produzione": "Il giovane Montalbano",
+        "rate": 0.0164,
+        "n_ref": 16,
+        "n_comments": 976,
+        "affidabile": "sì"
+      },
+      {
+        "produzione": "Don Matteo",
+        "rate": 0.0041,
+        "n_ref": 5,
+        "n_comments": 1226,
+        "affidabile": "sì"
+      },
+      {
+        "produzione": "Un passo dal cielo",
+        "rate": 0.0009,
+        "n_ref": 1,
+        "n_comments": 1121,
+        "affidabile": "sì"
+      }
+    ]
+  },
+  "encoding": {
+    "y": {
+      "field": "produzione",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x",
+      "axis": {
+        "labelFontSize": 13,
+        "labelLimit": 220
+      }
+    },
+    "x": {
+      "field": "rate",
+      "type": "quantitative",
+      "title": "tasso di menzione della produzione",
+      "axis": {
+        "format": ".0%",
+        "labelFontSize": 12,
+        "titleFontSize": 12
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "height": 26
+      },
+      "encoding": {
+        "color": {
+          "field": "affidabile",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "sì",
+              "campione insufficiente"
+            ],
+            "range": [
+              "#2b6cb0",
+              "#b8bcc2"
+            ]
+          },
+          "legend": {
+            "title": null,
+            "orient": "bottom",
+            "labelFontSize": 12
+          }
+        },
+        "tooltip": [
+          {
+            "field": "produzione",
+            "type": "nominal",
+            "title": "produzione"
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "format": ".2%",
+            "title": "tasso di menzione"
+          },
+          {
+            "field": "n_ref",
+            "type": "quantitative",
+            "title": "commenti con riferimento"
+          },
+          {
+            "field": "n_comments",
+            "type": "quantitative",
+            "title": "commenti totali"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 12,
+        "color": "#333"
+      },
+      "encoding": {
+        "text": {
+          "field": "rate",
+          "type": "quantitative",
+          "format": ".1%"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "grid": true,
+      "gridColor": "#eeeeee"
+    }
+  }
+}
