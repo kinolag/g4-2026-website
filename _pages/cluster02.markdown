@@ -306,6 +306,20 @@ Vediamo alcuni esempi di questo fenomeno.
 
 <!-- GRAFICO: attenzione Reddit + YouTube -->
 
+### Reddit
+
+Commenti per tipologia di turismo dopo l'uscita - Gubbio
+
+<div class="full-width-chart">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/grafico_gubbio_commenti_tipologia_turismo_dopo_uscita_film.json"></vegachart>
+</div>
+
+Commenti per tipologia di turismo dopo l'uscita - Spoleto
+
+<div class="full-width-chart">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/grafico_spoleto_commenti_tipologia_turismo_dopo_uscita_film.json"></vegachart>
+</div>
+
 ### YouTube
 
 Tasso di commenti contenenti un riferimento:
