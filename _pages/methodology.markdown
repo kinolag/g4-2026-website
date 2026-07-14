@@ -8,27 +8,167 @@ header_title: "Metodologia di Analisi"
 subtitle: "Dalla selezione dei casi di studio ai sette filoni di analisi"
 ---
 
-## 1. Criteri di Selezione dei Casi di Studio
+<style>
+  /* ---- Criteri di selezione: card con icona ---- */
+  .criteria-grid { margin: 2rem 0 1rem; }
+  .criteria-card {
+    height: 100%;
+    border: 1px solid #e6e8eb;
+    border-left: 4px solid #2b6cb0;
+    border-radius: 6px;
+    padding: 1.1rem 1.2rem;
+    background: #fff;
+    transition: box-shadow .2s ease, transform .2s ease;
+  }
+  .criteria-card:hover {
+    box-shadow: 0 6px 18px rgba(0,0,0,.08);
+    transform: translateY(-2px);
+  }
+  .criteria-card .crit-num {
+    display: inline-block;
+    font-size: .72rem;
+    font-weight: 700;
+    letter-spacing: .08em;
+    color: #2b6cb0;
+    text-transform: uppercase;
+    margin-bottom: .35rem;
+  }
+  .criteria-card h4 {
+    font-size: 1.05rem;
+    margin: 0 0 .5rem;
+    line-height: 1.3;
+  }
+  .criteria-card h4 i { color: #2b6cb0; margin-right: .45rem; width: 1.1em; text-align: center; }
+  .family-card h4 i   { color: #2b6cb0; margin-right: .45rem; }
+  .note-box .note-title i { margin-right: .4rem; }
+  .criteria-card p { font-size: .92rem; margin: 0; color: #444; }
+
+  /* ---- Nota trasversale (COVID) ---- */
+  .note-box {
+    border-left: 4px solid #d69e2e;
+    background: #fffaf0;
+    padding: 1rem 1.2rem;
+    border-radius: 4px;
+    margin: 1.5rem 0 2rem;
+  }
+  .note-box .note-title { font-weight: 700; display: block; margin-bottom: .3rem; }
+
+  /* ---- Badge famiglia dati (fisico / digitale) ---- */
+  .fam-badge {
+    display: inline-block;
+    font-size: .7rem;
+    font-weight: 700;
+    letter-spacing: .04em;
+    text-transform: uppercase;
+    padding: .18rem .5rem;
+    border-radius: 3px;
+    vertical-align: middle;
+    margin-left: .5rem;
+  }
+  .fam-fisico   { background: #e6f4ea; color: #1e6c3a; }
+  .fam-digitale { background: #e8effa; color: #24487e; }
+  .fam-misto    { background: #f3ecfa; color: #5a3a86; }
+
+  /* ---- Due famiglie di fonti ---- */
+  .family-card {
+    height: 100%;
+    border-radius: 6px;
+    padding: 1.2rem 1.3rem;
+    background: #fafbfc;
+    border: 1px solid #e6e8eb;
+  }
+  .family-card h4 { font-size: 1.05rem; margin-top: 0; }
+  .family-card ul { margin: .6rem 0 0; padding-left: 1.1rem; font-size: .92rem; }
+
+  /* ---- Cluster: blocchi cliccabili ---- */
+  .cluster-grid { margin: 2rem 0; }
+  .cluster-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e6e8eb;
+    border-top: 5px solid var(--cl-accent, #2b6cb0);
+    border-radius: 8px;
+    padding: 1.3rem;
+    background: #fff;
+    transition: box-shadow .2s ease, transform .2s ease;
+  }
+  .cluster-card:hover {
+    box-shadow: 0 10px 24px rgba(0,0,0,.10);
+    transform: translateY(-3px);
+  }
+  .cluster-card .cl-kicker {
+    font-size: .72rem; font-weight: 700; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--cl-accent, #2b6cb0);
+  }
+  .cluster-card h4 { font-size: 1.12rem; margin: .35rem 0 .6rem; }
+  .cluster-card p  { font-size: .9rem; color: #444; flex-grow: 1; }
+  .cluster-card .cl-places { font-size: .85rem; color: #666; font-style: italic; }
+  .cluster-card .btn { margin-top: .9rem; align-self: flex-start; }
+
+  .cl-1 { --cl-accent: #c05621; }
+  .cl-2 { --cl-accent: #2b6cb0; }
+  .cl-3 { --cl-accent: #2f855a; }
+
+  .section-rule { border: 0; border-top: 1px solid #e6e8eb; margin: 3rem 0 2rem; }
+</style>
+
+## 1. Criteri di Selezione dei Casi Studio
 
 La storia del cinema e della televisione italiana vanta un numero altissimo di produzioni girate sul territorio nazionale: analizzarle tutte non è l'obiettivo di questo progetto. Per costruire un campione gestibile e significativo abbiamo quindi definito **cinque criteri di selezione**, pensati non solo per isolare il segnale cineturistico dal rumore di fondo del turismo tradizionale, ma anche per garantire che ogni caso di studio fosse effettivamente analizzabile con gli strumenti scelti.
 
 In particolare, poiché la metodologia si basa in gran parte sull'analisi del discorso digitale (media, social, sentiment), sono state escluse a monte le produzioni troppo datate: un caso come *Il Padrino*, girato in Sicilia decenni prima dell'esistenza di internet, sarebbe stato impossibile da studiare con questo approccio, indipendentemente dalla sua rilevanza culturale.
 
-La selezione delle produzioni è stata quindi guidata dai seguenti criteri:
+<div class="row criteria-grid">
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="criteria-card">
+      <span class="crit-num">Criterio 01</span>
+      <h4><i class="fas fa-map-marked-alt" aria-hidden="true"></i>Copertura geografica</h4>
+      <p>Solo comuni del territorio italiano, per garantire uniformità normativa nei dati ISTAT e confrontabilità diretta con le statistiche nazionali.</p>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="criteria-card">
+      <span class="crit-num">Criterio 02</span>
+      <h4><i class="fas fa-users" aria-hidden="true"></i>Dimensione demografica</h4>
+      <p>Popolazione generalmente inferiore a <strong>50.000 abitanti</strong>, perché l'impatto di una singola produzione sia visibile nei dati e non si disperda nel rumore statistico delle grandi città. Fa eccezione <strong>Ragusa</strong> (73.878 ab.), inclusa per la rilevanza del legame con la saga di Montalbano.</p>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="criteria-card">
+      <span class="crit-num">Criterio 03</span>
+      <h4><i class="fas fa-compass" aria-hidden="true"></i>Varietà geografica</h4>
+      <p>Copertura equilibrata tra le tre macro-aree del paese (Nord, Centro, Sud), per costruire un portafoglio di casi studio il più eterogeneo possibile.</p>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="criteria-card">
+      <span class="crit-num">Criterio 04</span>
+      <h4><i class="fas fa-calendar-alt" aria-hidden="true"></i>Finestra temporale</h4>
+      <p>Produzioni collocate tra il <strong>2010 e il 2024</strong>, intervallo che copre la transizione dalla TV generalista allo streaming multicanale, garantendo sia presenza digitale sufficiente sia copertura ISTAT pre e post-uscita. Vanno contestualizzati i casi di lunga serialità come <em>Don Matteo</em> (dal 2000), <em>The Twilight Saga: New Moon</em> (2009), fuori finestra di un solo anno, e la vera eccezione <em>Elisa di Rivombrosa</em> (2003), inclusa per la sua particolare rilevanza culturale.</p>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="criteria-card">
+      <span class="crit-num">Criterio 05</span>
+      <h4><i class="fas fa-film" aria-hidden="true"></i>Varietà di formato e produzione</h4>
+      <p>Il campione include sia film che serie/fiction, sia produzioni internazionali che domestiche, per evitare un quadro parziale legato a un solo tipo di prodotto audiovisivo.</p>
+    </div>
+  </div>
+</div>
 
-*   **Copertura geografica:** solo comuni del territorio italiano, per garantire uniformità normativa nei dati ISTAT e confrontabilità diretta con le statistiche nazionali.
-*   **Dimensione demografica:** popolazione generalmente inferiore a 50.000 abitanti, per garantire che l'impatto di una singola produzione sia visibile nei dati e non si disperda nel rumore statistico tipico delle grandi città. Fa eccezione **Ragusa** (73.878 ab.), inclusa per la rilevanza del legame territoriale con la saga di Montalbano.
-*   **Varietà geografica:** copertura equilibrata tra le tre macro-aree del paese (Nord, Centro, Sud), per costruire un portafoglio di casi studio il più eterogeneo possibile.
-*   **Finestra temporale:** produzioni generalmente collocate tra il **2010 e il 2024**, intervallo che copre la transizione da un modello basato principalmente sulla TV generalista a uno che include lo streaming multicanale, garantendo sia una presenza digitale sufficiente sia una copertura di dati ISTAT adeguata in fase pre e post-uscita. Vanno contestualizzati i casi di lunga serialità come *Don Matteo*, che si colloca in questa finestra nonostante sia iniziato nel 2000; *The Twilight Saga: New Moon* (2009), fuori dalla finestra di un solo anno; e la vera eccezione, *Elisa di Rivombrosa* (2003), inclusa per la sua particolare rilevanza culturale.
-*   **Varietà di formato e produzione:** il campione include sia film che serie/fiction, sia produzioni internazionali che domestiche, per evitare che l'analisi restituisse un quadro parziale legato a un solo tipo di prodotto audiovisivo.
-
-A questi si aggiunge un **accorgimento trasversale** applicato a più filoni dell'analisi: la neutralizzazione dell'effetto **COVID-19**, con l'esclusione o normalizzazione dei periodi di interruzione forzata dei flussi turistici, che avrebbero altrimenti invalidato qualsiasi confronto temporale sulla crescita della domanda.
+<div class="note-box">
+  <span class="note-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Accorgimento trasversale — Effetto COVID-19</span>
+  A questi criteri si aggiunge la neutralizzazione dell'effetto COVID-19, con l'esclusione o normalizzazione dei periodi di interruzione forzata dei flussi turistici, che avrebbero altrimenti invalidato qualsiasi confronto temporale sulla crescita della domanda.
+</div>
 
 ### 1.1 Selezione delle location all'interno di ogni produzione
 
 Un'ulteriore precisazione riguarda non le produzioni in sé, ma le **location** scelte per ognuna di esse. La maggior parte delle produzioni analizzate non è stata girata in un unico luogo, ma ha coinvolto più comuni o addirittura più regioni nel corso delle proprie stagioni e dei periodi di riprese.
 
 Per ogni produzione abbiamo selezionato solo le **location principali** — quelle che ospitano l'ambientazione narrativa portante o una quota sostanziale delle riprese — escludendo deliberatamente comparse marginali o location visibili solo per pochi fotogrammi, prive di un legame narrativo stabile con l'opera.
+
+<hr class="section-rule">
 
 ## 2. Esplorazione dei Dati Strutturati (Tentativi Iniziali)
 
@@ -39,17 +179,43 @@ In una fase preliminare, abbiamo testato l'utilizzo di fonti istituzionali per m
 
 Nella sezione che segue si spiegherà come si è ovviato a questi limiti.
 
+<hr class="section-rule">
+
 ## 3. Le Fonti Adottate e l'Approccio Metodologico Proposto
 
-Il progetto si articola in **sette filoni di analisi**, ciascuno costruito per intercettare una diversa manifestazione del fenomeno cineturistico.
+Il progetto si articola in **sette filoni di analisi**, ciascuno costruito per intercettare una diversa manifestazione del fenomeno cineturistico. Le fonti si dividono in due grandi famiglie:
 
-Le fonti si dividono in due grandi famiglie: da un lato i **dati fisici/territoriali** — indicatori ISTAT e trasformazione del tessuto commerciale locale (OpenStreetMap) — che misurano l'impatto direttamente sul territorio; dall'altro i **dati digitali** — Reddit, stampa, Google Trends/Wikipedia, YouTube, GetYourGuide — che ne osservano il riflesso nel comportamento e nel discorso online.
+<div class="row" style="margin: 1.5rem 0;">
+  <div class="col-md-6 mb-3">
+    <div class="family-card">
+      <h4><i class="fas fa-mountain" aria-hidden="true"></i>Dati fisici / territoriali</h4>
+      <p style="font-size:.92rem; margin:0; color:#444;">Misurano l'impatto direttamente sul territorio.</p>
+      <ul>
+        <li>Indicatori ISTAT comunali (CIS/RGR)</li>
+        <li>Ecosistema commerciale (OpenStreetMap)</li>
+      </ul>
+    </div>
+  </div>
+  <div class="col-md-6 mb-3">
+    <div class="family-card">
+      <h4><i class="fas fa-comments" aria-hidden="true"></i>Dati digitali</h4>
+      <p style="font-size:.92rem; margin:0; color:#444;">Osservano il riflesso nel comportamento e nel discorso online.</p>
+      <ul>
+        <li>Stampa (sentiment e topic modeling)</li>
+        <li>Google Trends e Wikipedia</li>
+        <li>YouTube</li>
+        <li>Reddit</li>
+        <li>GetYourGuide</li>
+      </ul>
+    </div>
+  </div>
+</div>
 
 La distinzione non è sempre netta: le recensioni GetYourGuide, ad esempio, sono dati digitali a tutti gli effetti, ma raccontano un'esperienza **fisica realmente vissuta** sul luogo, non un'opinione formata a distanza come può essere un commento Reddit o YouTube.
 
 Di seguito il dettaglio tecnico di ciascun filone.
 
-### 3.1 — Indicatori ISTAT comunali (CIS/RGR)
+### 3.1 — Indicatori ISTAT comunali (CIS/RGR) <span class="fam-badge fam-fisico">Fisico</span>
 
 Analisi quantitativa su **82 indicatori socioeconomici comunali** (ISTAT/MiC-MiBACT), estesa oltre i semplici arrivi/presenze per superare i limiti descritti in Sezione 2.
 
@@ -61,13 +227,13 @@ Per ogni coppia comune-indicatore viene calcolato un **Cineturismo Impact Score 
 
 Le evidenze con **CIS > 0,7** vengono validate esternamente tramite **Relative Growth Rate (RGR)**, che confronta la crescita del comune con il benchmark della relativa regione, con soglia di accettazione **RGR ≥ 0,15**. Il processo ha prodotto **18 evidenze**.
 
-### 3.2 — Ecosistema commerciale (OpenStreetMap)
+### 3.2 — Ecosistema commerciale (OpenStreetMap) <span class="fam-badge fam-fisico">Fisico</span>
 
 Analisi geospaziale della trasformazione del tessuto commerciale locale: per ogni location è stata tracciata un'**area circolare di 5 km di raggio**, e i punti di interesse (POI) al suo interno sono stati classificati tramite tag OSM in **ecosistema turistico** (ad esempio, le attività di ristorazione e le strutture ricettive/promozionali) *versus* **tessuto commerciale standard** (ad esempio, supermercati, panetterie, ferramenta).
 
 Il confronto tra le due categorie permette di osservare l'eventuale **adattamento strutturale** della zona all'aumento dei flussi turistici.
 
-### 3.3 — Analisi dell'esposizione mediatica (sentiment e topic modeling)
+### 3.3 — Analisi dell'esposizione mediatica (sentiment e topic modeling) <span class="fam-badge fam-digitale">Digitale</span>
 
 Questa fase mira a quantificare la copertura mediatica e a valutare la percezione pubblica dei territori coinvolti, confrontando i periodi antecedenti e successivi all'uscita della produzione.
 
@@ -84,13 +250,13 @@ Parallelamente, un **topic modeling** tematico ha identificato all'interno dei t
 
 Per ogni topic menzionato all'interno di un articolo è stato inoltre calcolato uno specifico punteggio di sentiment (**ABSA**, *Aspect-Based Sentiment Analysis*), sempre su scala da -1 a +1 — un livello di dettaglio che permette di tracciare l'evoluzione temporale della percezione di ogni singolo fenomeno, indipendentemente dal tono generale dell'articolo in cui compare.
 
-### 3.4 — Google Trends e Wikipedia (interesse informativo e comportamento di ricerca)
+### 3.4 — Google Trends e Wikipedia (interesse informativo e comportamento di ricerca) <span class="fam-badge fam-digitale">Digitale</span>
 
 È stata valutata la risonanza del prodotto audiovisivo sul **comportamento di ricerca online** e sull'interesse informativo generale degli utenti, tramite l'utilizzo combinato dei dati di **Google Trends** e delle visualizzazioni delle pagine **Wikipedia**.
 
 Per ogni produzione sono state identificate le pagine Wikipedia relative alle location di riferimento, da cui è stato estratto lo storico delle visite nel tempo. Le serie storiche così costruite sono state **allineate alle date di rilascio** dell'opera, per quantificare sia i picchi di traffico immediati sia l'andamento dell'interesse digitale generato nel tempo.
 
-### 3.5 — YouTube (rilevamento della presenza della produzione nei commenti)
+### 3.5 — YouTube (rilevamento della presenza della produzione nei commenti) <span class="fam-badge fam-digitale">Digitale</span>
 
 L'obiettivo di questo filone è verificare se, e quanto, la presenza di una produzione su YouTube si rifletta effettivamente nei **commenti ai video girati nelle sue location**.
 
@@ -100,7 +266,7 @@ I testi sono stati poi ripuliti — rimozione di URL, emoji e contenuti vuoti, d
 
 È importante specificare che il metodo **confronta due strategie di ricerca tra loro**, ma non dimostra di per sé un nesso causale tra la produzione e l'attenzione generata sul luogo.
 
-### 3.6 — Reddit (analisi del discorso della community)
+### 3.6 — Reddit (analisi del discorso della community) <span class="fam-badge fam-digitale">Digitale</span>
 
 La raccolta dati è stata condotta tramite l'**API PullPush**, con query mirate per produzione e location sui 12 casi studio, concentrandosi su subreddit popolari generici e sui principali subreddit dedicati al turismo e ai consigli di viaggio.
 
@@ -110,7 +276,7 @@ Dopo la pulizia dei dati è iniziata una prima analisi esplorativa dedicata alla
 
 Successivamente si è proseguito con la **classificazione** dei post e dei commenti dell'intero corpus raccolto. Usando il modello `moritz-laurer/mDeBERTa` (*zero-shot classification*) sono state distinte 6 etichette corrispondenti a sei tipologie di turismo. Di queste, l'etichetta "Cineturismo" è stata la meno accurata, per cui i risultati sono stati affinati con **Gemini Flash 2.5**. Inoltre è stato analizzato anche il **tipo di cineturista**, secondo le categorie individuate dagli autori Bolan, Boy e Bell (*scenico*, *emotivo* e *puro*).
 
-### 3.7 — GetYourGuide (analisi di tour ed esperienze)
+### 3.7 — GetYourGuide (analisi di tour ed esperienze) <span class="fam-badge fam-misto">Digitale · esperienza fisica</span>
 
 L'analisi è partita da un dataset relativo ai **tour e alle relative recensioni** disponibili sulla piattaforma. Una prima fase descrittiva ha esaminato le distribuzioni di durata, prezzo e voto medio dei tour, con inclusa una matrice di correlazione tra le variabili.
 
@@ -118,13 +284,41 @@ Sul fronte testuale, descrizioni e recensioni sono state tokenizzate, ripulite d
 
 Il sentiment è stato calcolato in due passaggi: un primo punteggio tramite **Pattern.it** sul testo della recensione, poi combinato in modo ponderato con il **voto numerico normalizzato** — una scelta introdotta per correggere la tendenza del modello linguistico a sottostimare recensioni molto positive ma scritte in tono neutro.
 
+<hr class="section-rule">
+
 ## 4. Dai Dati ai Cluster Narrativi del Sito
 
-I sette filoni descritti confluiscono nel sito attraverso **tre cluster tematici**, ciascuno dedicato a un diverso profilo di produzione:
+I sette filoni descritti confluiscono nel sito attraverso **tre cluster tematici**, ciascuno dedicato a un diverso profilo di produzione.
 
-1.  **Grandi produzioni internazionali** di successo globale, girate in Italia: Crema (*Chiamami col tuo nome*), Volterra/Montepulciano (*Twilight*), Bard, Vèrres, Pont-Saint-Martin (*Avengers*) e Pienza (*I Medici*).
-2.  **Serie italiane di lunga durata**, radicate nel territorio nel corso di anni se non decenni di messa in onda: Braies, San Vito di Cadore, San Candido (*Un passo dal cielo*), Spoleto/Gubbio (*Don Matteo*), Agliè (*Elisa di Rivombrosa*) e Ragusa, Scicli, Santa Croce Camerina (*Il giovane Montalbano*).
-3.  **Produzioni di nicchia** o non riconducibili ai cluster precedenti: Castellabate (*Benvenuti al Sud*), Curon Venosta (*Curon*), Opi e Pescasseroli (*Un mondo a parte*) e Aosta (*Rocco Schiavone*).
+<div class="row cluster-grid">
+  <div class="col-md-4 mb-4">
+    <div class="cluster-card cl-1">
+      <span class="cl-kicker">Cluster 01</span>
+      <h4>Grandi produzioni internazionali</h4>
+      <p>Film di successo globale, girati in Italia: impatto improvviso e alta volatilità.</p>
+      <p class="cl-places">Crema (Chiamami col tuo nome) · Volterra e Montepulciano (Twilight) · Bard, Vèrres, Pont-Saint-Martin (Avengers) · Pienza (I Medici)</p>
+      <a href="{{ site.baseurl }}/cluster01.html" class="btn btn-primary">Vai al Cluster 01</a>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="cluster-card cl-2">
+      <span class="cl-kicker">Cluster 02</span>
+      <h4>Serie italiane di lunga durata</h4>
+      <p>Fiction radicate nel territorio nel corso di anni, se non decenni, di messa in onda.</p>
+      <p class="cl-places">Braies, San Vito di Cadore, San Candido (Un passo dal cielo) · Spoleto e Gubbio (Don Matteo) · Agliè (Elisa di Rivombrosa) · Ragusa, Scicli, Santa Croce Camerina (Il giovane Montalbano)</p>
+      <a href="{{ site.baseurl }}/cluster02.html" class="btn btn-primary">Vai al Cluster 02</a>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="cluster-card cl-3">
+      <span class="cl-kicker">Cluster 03</span>
+      <h4>Produzioni di nicchia</h4>
+      <p>Casi non riconducibili ai cluster precedenti: impatto focalizzato e target specifico.</p>
+      <p class="cl-places">Castellabate (Benvenuti al Sud) · Curon Venosta (Curon) · Opi e Pescasseroli (Un mondo a parte) · Aosta (Rocco Schiavone)</p>
+      <a href="{{ site.baseurl }}/cluster03.html" class="btn btn-primary">Vai al Cluster 03</a>
+    </div>
+  </div>
+</div>
 
 Ogni cluster attinge in proporzioni diverse ai dati fisici e digitali qui descritti, a seconda della **disponibilità** e della **rilevanza** di ciascuna fonte per il caso specifico.
 
