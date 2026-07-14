@@ -117,6 +117,71 @@ subtitle: "Dalla selezione dei casi di studio ai sette filoni di analisi"
   .cl-2 { --cl-accent: #2b6cb0; }
   .cl-3 { --cl-accent: #2f855a; }
 
+  /* ---- Topic monitorati: chip compatti ---- */
+  .topic-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+    gap: .6rem;
+    margin: 1.4rem 0 1.8rem;
+  }
+  .topic-chip {
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    background: #fff;
+    padding: .6rem .8rem;
+    transition: background .15s ease, color .15s ease;
+  }
+  .topic-chip:hover { background: #1a1a1a; }
+  .topic-chip:hover .topic-name,
+  .topic-chip:hover .topic-desc { color: #fff; }
+  .topic-name {
+    display: block;
+    font-weight: 700;
+    font-size: .88rem;
+    letter-spacing: .02em;
+    color: #1a1a1a;
+    line-height: 1.25;
+  }
+  .topic-desc {
+    display: block;
+    font-size: .78rem;
+    color: #666;
+    margin-top: .15rem;
+    line-height: 1.3;
+  }
+
+  /* ---- Componenti del CIS: tre box ---- */
+  .cis-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: .9rem;
+    margin: 1.4rem 0 1.8rem;
+  }
+  .cis-card {
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    background: #fff;
+    padding: 1rem 1.1rem;
+    text-align: center;
+  }
+  .cis-symbol {
+    display: block;
+    font-size: 1.7rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #1a1a1a;
+    margin-bottom: .45rem;
+    font-family: Georgia, "Times New Roman", serif;
+  }
+  .cis-name {
+    display: block;
+    font-weight: 700;
+    font-size: .92rem;
+    color: #1a1a1a;
+    margin-bottom: .3rem;
+  }
+  .cis-desc { display: block; font-size: .82rem; color: #666; line-height: 1.4; }
+
   .section-rule { border: 0; border-top: 1px solid #e6e8eb; margin: 3rem 0 2rem; }
 </style>
 
@@ -228,9 +293,23 @@ Analisi quantitativa su **82 indicatori socioeconomici comunali** (ISTAT/MiC-MiB
 
 Per ogni coppia comune-indicatore viene calcolato un **Cineturismo Impact Score (CIS)**, indice composito endogeno che combina tre componenti calcolate sulla singola serie storica:
 
-*   **Delta:** variazione percentuale tra baseline pre-evento e finestra post-evento.
-*   **Zeta Shift:** scostamento standardizzato in σ rispetto alla media storica.
-*   **Persistenza:** continuità del segnale nella finestra post-evento (scala 0-1).
+<div class="cis-grid">
+  <div class="cis-card">
+    <span class="cis-symbol">&Delta;</span>
+    <span class="cis-name">Delta</span>
+    <span class="cis-desc">Variazione percentuale tra baseline pre-evento e finestra post-evento.</span>
+  </div>
+  <div class="cis-card">
+    <span class="cis-symbol">&sigma;</span>
+    <span class="cis-name">Zeta Shift</span>
+    <span class="cis-desc">Scostamento standardizzato in &sigma; rispetto alla media storica.</span>
+  </div>
+  <div class="cis-card">
+    <span class="cis-symbol">0&ndash;1</span>
+    <span class="cis-name">Persistenza</span>
+    <span class="cis-desc">Continuità del segnale nella finestra post-evento (scala 0-1).</span>
+  </div>
+</div>
 
 Le evidenze con **CIS > 0,7** vengono validate esternamente tramite **Relative Growth Rate (RGR)**, che confronta la crescita del comune con il benchmark della relativa regione, con soglia di accettazione **RGR ≥ 0,15**. Il processo ha prodotto **18 evidenze**.
 
@@ -248,12 +327,32 @@ L'acquisizione dei dati è avvenuta tramite estrazione massiva (*scraping*) di a
 
 Parallelamente, un **topic modeling** tematico ha identificato all'interno dei testi le tematiche più rilevanti, per comprendere quali aspetti dell'impatto territoriale sono stati maggiormente discussi. I topic monitorati sono:
 
-*   **Cine Tourism** — turismo cinematografico
-*   **Urban Change** — cambiamenti del tessuto urbano
-*   **Infrastructure Strain** — sforzo/sovraccarico infrastrutturale
-*   **Economic Boom** — crescita economica
-*   **Overtourism** — sovraffollamento turistico
-*   **Deseasonalization** — destagionalizzazione dei flussi
+<div class="topic-grid">
+  <div class="topic-chip">
+    <span class="topic-name">Cine Tourism</span>
+    <span class="topic-desc">Turismo cinematografico</span>
+  </div>
+  <div class="topic-chip">
+    <span class="topic-name">Urban Change</span>
+    <span class="topic-desc">Cambiamenti del tessuto urbano</span>
+  </div>
+  <div class="topic-chip">
+    <span class="topic-name">Infrastructure Strain</span>
+    <span class="topic-desc">Sovraccarico infrastrutturale</span>
+  </div>
+  <div class="topic-chip">
+    <span class="topic-name">Economic Boom</span>
+    <span class="topic-desc">Crescita economica</span>
+  </div>
+  <div class="topic-chip">
+    <span class="topic-name">Overtourism</span>
+    <span class="topic-desc">Sovraffollamento turistico</span>
+  </div>
+  <div class="topic-chip">
+    <span class="topic-name">Deseasonalization</span>
+    <span class="topic-desc">Destagionalizzazione dei flussi</span>
+  </div>
+</div>
 
 Per ogni topic menzionato all'interno di un articolo è stato inoltre calcolato uno specifico punteggio di sentiment (**ABSA**, *Aspect-Based Sentiment Analysis*), sempre su scala da -1 a +1 — un livello di dettaglio che permette di tracciare l'evoluzione temporale della percezione di ogni singolo fenomeno, indipendentemente dal tono generale dell'articolo in cui compare.
 
