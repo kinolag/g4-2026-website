@@ -53,6 +53,13 @@ subtitle: "Dalla selezione dei casi di studio ai sette filoni di analisi"
   }
   .note-box .note-title { font-weight: 700; display: block; margin-bottom: .3rem; }
 
+  /* variante informativa (piu' neutra del warning) */
+  .note-box.note-info {
+    border-left-color: #2b6cb0;
+    background: #f4f8fc;
+  }
+  .note-box.note-info .note-title { color: #24487e; }
+
   /* ---- Badge famiglia dati (fisico / digitale) ---- */
   .fam-badge {
     display: inline-block;
@@ -320,7 +327,10 @@ I sette filoni descritti confluiscono nel sito attraverso **tre cluster tematici
   </div>
 </div>
 
-Ogni cluster attinge in proporzioni diverse ai dati fisici e digitali qui descritti, a seconda della **disponibilità** e della **rilevanza** di ciascuna fonte per il caso specifico.
+<div class="note-box note-info">
+  <span class="note-title"><i class="fas fa-info-circle" aria-hidden="true"></i>Come leggere i cluster</span>
+  Ogni cluster attinge in proporzioni diverse ai dati fisici e digitali qui descritti, a seconda della <strong>disponibilità</strong> e della <strong>rilevanza</strong> di ciascuna fonte per il caso specifico.
+</div>
 
 <div class="row pt-4">
     <div class="col-md-12 text-center">
