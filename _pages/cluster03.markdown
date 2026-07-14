@@ -94,8 +94,9 @@ Il **CIS** è **100/100**, e l’RGR raggiunge **+20,79%**.
 più che come un picco isolato. La serie Netflix ha introdotto una discontinuità evidente, ma senza sbilanciare gli equilibri locali.
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/clsuter03/curon_istat.json" style="width: 100%; height: 100%; display: block;"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/curon_istat.json"></vegachart>
 </div>
+
 
 ### Aosta — _Rocco Schiavone_
 
@@ -105,7 +106,7 @@ Non ci sono balzi improvvisi, ma una crescita coerente con la serialità e con l
 un’attenzione costante sulla città. È un caso “pulito”, privo di estremi, che riflette bene la natura progressiva dell’impatto.
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/clsuter03/aosta_istat.json" style="width: 100%; height: 100%; display: block;"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/aosta_istat.json"></vegachart>
 </div>
 
 ### Opi e Pescasseroli — _Un mondo a parte_
@@ -121,10 +122,155 @@ statistiche.
 Dall’altro Castellabate e Opi/Pescasseroli, pur centrali nella narrazione del cluster, non superano le soglie ISTAT: l’impatto esiste, 
 ma non è misurabile attraverso gli indicatori selezionati.
 
+### L'ecosistema turistico attorno ai set
+
+Sulle location legate a _Un mondo a parte_ (Opi e Pescasseroli), il numero di **attività a
+vocazione turistica** (ristoranti, alloggi, negozi di souvenir, ecc.) entro un 
+raggio di 5 km mostra una dinamica chiara: dopo l’uscita del film nelle sale nel 2024 si registra 
+un primo incremento netto, seguito da una fase di **stabilizzazione** che dura circa due anni.  
+La curva riprende a salire in modo evidente con la **release del lungometraggio sulle piattaforme di streaming**, che 
+introduce una seconda ondata di attenzione e porta a un ulteriore ampliamento dell’ecosistema turistico locale.
+
+In altre parole, l’effetto non si esaurisce nel momento della distribuzione cinematografica: si **riattiva** quando il film entra 
+nel circuito domestico e raggiunge un pubblico più ampio, suggerendo un impatto che non è solo immediato, ma capace di rinnovarsi nel tempo.
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/castellabate1.json" style="width: 100%; height: 100%; display: block;"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/opi_ecosistema.json" style="width: 100%; height: 100%; display: block;"></vegachart>
 </div>
 
+---
+
+## Sezione 2 — Racconto dall'alto
+
+<!-- Risponde alla domanda 2: i media offrono riscontri e alimentano il fenomeno? -->
+
+_L'eco dei media: come raccontano i media le località del Cluster 3?_
+
+Se nella Sezione 1 abbiamo visto se il fenomeno lascia un segno nei numeri, qui
+vediamo **come i media lo raccontano**. Sono state usate due chiavi di lettura
+complementari: l'**evoluzione del sentiment** nel tempo (quanto se ne parla, con
+che tono) e la **polarizzazione tematica** (di cosa si parla, e se prevale
+l'entusiasmo o la critica).
+
+### Castellabate — _Benvenuti al Sud_
+
+Il racconto mediatico legato al film mostra una **progressione chiara e coerente nel tempo**. Dopo la fase iniziale — tra il 2009 e il 2011, 
+segnata dall’avvio delle riprese e dall’uscita in sala — la narrazione si stabilizza su toni **prevalentemente positivi**, con una polarità media 
+compresa tra **+0,6 e +1,0**.
+Il tema dominante è l’**Economic Boom**, seguito da **Deseasonalization** e **Urban Cange**. **Overtourism** e **Infrastructure Strain** emergono negli anni più recenti, 
+quando il volume di articoli cresce sensibilmente.
+Tra il 2018 e il 2026 si osserva una **densificazione del racconto**: le menzioni si moltiplicano e si diversificano, ma il sentiment resta 
+complessivamente ottimista. Le criticità — legate alla pressione turistica e alle infrastrutture — compaiono in modo episodico e con polarità 
+negativa, ma non alterano il tono generale.
+Il **Cine Tourism** è presente, ma non dominante: si inserisce come tema trasversale, spesso associato alla crescita economica e alla trasformazione 
+urbana.
+
+In sintesi, il grafico racconta un **fenomeno mediatico ampio, maturo e prevalentemente positivo**, dove l’entusiasmo per lo sviluppo territoriale 
+convive con una consapevolezza crescente dei suoi effetti collaterali.
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/castellabate_evoluzione_sentiment.json"></vegachart>
+</div>
+
+### Curon Venosta — _Curon_
+
+Il racconto mediatico legato a Curon mostra una **progressione netta e ben scandita nel tempo**. Dopo la fase iniziale — tra il 2018 e il 2020 — 
+la narrazione si concentra su toni **positivi e curiosi**, con una polarità media compresa tra **+0,5 e +1,0**, in corrispondenza della **release su 
+piattaforme di streaming (giugno 2020)**.
+Il tema dominante è l’**Economic Boom**, seguito da **Cine Tourism** e **Urban Change**, che insieme delineano un quadro di entusiasmo verso la scoperta 
+del territorio e la sua trasformazione in attrattore culturale.
+Negli anni successivi, tra il 2023 e il 2026, il racconto **si amplia e si diversifica**: compaiono le prime menzioni di **Infrastructure Strain** 
+e **Overtourism**, con polarità più negativa, segno di una crescente consapevolezza dei limiti del successo turistico. Tuttavia, il tono generale 
+resta prevalentemente positivo, e le criticità non superano mai il volume dei temi economici e culturali.
+
+In sintesi, il grafico racconta un fenomeno mediatico **vivace e in evoluzione**: l’entusiasmo iniziale per la serie e per il luogo si consolida 
+nel tempo, mentre la narrazione si arricchisce di sfumature più mature, che riconoscono tanto le opportunità quanto le tensioni generate dal 
+turismo cinematografico.
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/curon_evoluzione_sentiment.json"></vegachart>
+</div>
+
+### Opi e Pescasseroli — _Un mondo a parte_
+
+Il racconto mediatico legato a Un mondo a parte — ambientato tra Opi e Pescasseroli — mostra una **narrazione compatta ma ben articolata**, 
+che si sviluppa in due fasi distinte.
+La prima, in corrispondenza della **release cinematografica (marzo 2024)**, è dominata da toni positivi e ottimistici, con polarità media tra 
+**+0,5 e +1,0**: prevalgono i temi di **Economic Boom**, **Deseasonalization** e **Urban Change**, che raccontano il film come occasione di riscoperta 
+territoriale e di valorizzazione economica.
+La seconda fase, dopo la release in streaming (inizio 2026), introduce una narrazione più complessa: compaiono i temi di Infrastructure 
+Strain e Overtourism, con polarità negativa e volumi più consistenti. È il momento in cui il successo turistico diventa anche oggetto di 
+riflessione critica, segno di una maturazione del discorso pubblico.
+
+Nel complesso, il grafico restituisce un racconto **vivace e coerente**, dove l’entusiasmo iniziale per la rinascita del territorio si accompagna, 
+negli anni successivi, a una crescente consapevolezza dei suoi effetti collaterali. Un fenomeno mediatico che evolve da **celebrazione locale a 
+analisi strutturale**, mantenendo sempre un tono prevalentemente positivo.
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/opi_evoluzione_sentiment.json"></vegachart>
+</div>
+
+### Uno sguardo d'insieme
+
+Il confronto disegna **tre profili narrativi ben distinti**.  
+*Benvenuti al Sud* è la produzione che i media raccontano più esplicitamente come **fenomeno di rinascita territoriale**: 
+non solo il successo del film è riconosciuto, ma gli articoli lo celebrano come motore di sviluppo e simbolo identitario per Castellabate.  
+*Curon* rappresenta invece il caso più **polarizzato**: l’entusiasmo iniziale per la serie e per la riscoperta del Lago di Resia 
+convive con un crescente dibattito sulle criticità del turismo, tra sovraffollamento e pressione infrastrutturale.  
+*Un mondo a parte* si colloca in una posizione intermedia: il racconto mediatico è positivo e diffuso, ma evolve nel tempo, 
+passando dalla curiosità per la novità del film alla riflessione più matura sull’impatto turistico e ambientale nelle aree di Opi e Pescasseroli.  
+
+In sintesi, il cluster mostra come il cinema italiano possa generare **narrazioni territoriali di natura diversa** — dalla celebrazione 
+economica alla consapevolezza critica — ma tutte accomunate da un tratto comune: la capacità di trasformare luoghi reali in spazi simbolici 
+dell’immaginario collettivo.
+
+---
+
+## Sezione 3 — Racconto dal basso
+
+Cosa emerge dalle **rilevazioni online** e dalle comunità di utenti: l'attenzione
+digitale rivolta al luogo e alla produzione.
+
+_Gli utenti viaggiano per la serie, o la "visitano" da casa?_
+
+La nostra ricerca fin dall'inizio si è chiesta se, accanto ai segnali fisici, si potessero trovare segnali di 
+un "turismo virtuale" descrivibili in generale come **"attenzione digitale"**, immaginando quindi utenti alla ricerca 
+di informazioni in rete prima di visitare una determinata località filmica, o magari senza una reale intenzione di visitarla direttamente.
+
+Questo concetto risulta utile in quanto accomuna tanto indicatori più affermati come Google Trends e Wikipedia, 
+quanto rilevazioni su media e comunità diversi come Reddit.
+
+In particolare abbiamo assemblato - mediante pipeline parallele e sequenze strutturate di query - 
+dataset testuali contenenti post Reddit e commenti YouTube relativi alle località filmiche delle produzioni esaminate.
+
+L'analisi testuale dei documenti così raccolti, pur non portando a risultati generalizzabili, ha comunque offerto 
+elementi interessanti sulle serie TV che, grazie a un processo di diffusione mediatica prolungato nel tempo, sembrano 
+generare un seguito attivo che lascia tracce visibili anche in rete.
+
+Vediamo alcuni esempi di questo fenomeno.
+
+**Fonti:** Google Trends, Wikipedia, Reddit.
+
+### Google Trends e Wikipedia
+
+Google Trends e Wikipedia confermano che l’interesse non è effimero. **Castellabate** supera gli attori del film in **visibilità**:
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/castellabate_google_trends.json"></vegachart>
+</div>
+
+### Reddit
+
+Post per tipologia di turismo **prima** dell'uscita di _Rocco Schiavone_ - Aosta:
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/aosta_post_reddit_prima.json"></vegachart>
+</div>
+
+Post per tipologia di turismo **dopo** l'uscita di _Rocco Schiavone_ - Aosta:
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/aosta_post_reddit_dopo.json"></vegachart>
+</div>
 
 [Link di ritorno a Risultati](results.html)
