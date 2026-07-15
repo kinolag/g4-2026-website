@@ -1,155 +1,160 @@
 ---
 layout: default
-title: "Cluster: Produzioni Internazionali in Italia"
+title: "Cluster 1: Produzioni Internazionali in Italia"
 vega: true
 header_type: hero
 header_img: assets/images/header.svg
 header_title: "Analisi di Cluster: Produzioni Internazionali"
+subtitle: "L'impatto di blockbuster globali e cult hollywoodiani sui territori italiani"
 ---
 
 <style>
-  /* 1. Forza il contenitore ad allargarsi per tutto lo schermo (Viewport Width) */
-  .full-width-chart {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    padding: 0 5vw; /* Lascia un piccolo margine ai lati dello schermo */
+  /* Contenitore standard, centrato e responsivo */
+  .chart-container {
+    width: 100%;
+    max-width: 1000px; /* limite per evitare grafici troppo grandi */
+    margin: 40px auto; /* centra il grafico */
+    padding: 0 20px; /* margine laterale su mobile */
     box-sizing: border-box;
   }
 
-  /* 2. Impedisce ai temi Jekyll di "stirare" verticalmente il grafico */
-  .full-width-chart vegachart,
-  .full-width-chart .vega-embed {
+  /* Vega charts: impedisce stiramenti */
+  .chart-container vegachart,
+  .chart-container .vega-embed {
     width: 100% !important;
+    height: auto !important;
     display: block !important;
   }
-  
-  .full-width-chart canvas, 
-  .full-width-chart svg {
+
+  .chart-container canvas,
+  .chart-container svg {
     width: 100% !important;
-    height: auto !important; /* RISOLVE L'EFFETTO STIRATO VERTICALE */
-    max-height: 700px; /* Evita che su schermi giganti diventi troppo alto */
+    height: auto !important;
     object-fit: contain !important;
   }
 </style>
 
-## Introduzione e Metodologia
-Il presente report analizza un cluster specifico all'interno del più ampio progetto **CineTourism**. Tale cluster si concentra su produzioni di natura internazionale che hanno scelto il territorio italiano come set cinematografico: *Call Me By Your Name* (Crema), *Avengers: Age of Ultron* (Valle d'Aosta) e *The Twilight Saga: New Moon* (Volterra e Montepulciano).
+## Panoramica
+
+Il cluster raccoglie tre produzioni cinematografiche di risonanza mondiale, ciascuna legata a territori italiani specifici: Crema per **Call Me By Your Name**; Volterra e Montepulciano per **The Twilight Saga: New Moon**; il Forte di Bard e la Valle d'Aosta per **Avengers: Age of Ultron**, a cui si aggiunge il caso anomalo della serie **Curon** (Curon Venosta).
 
 La scelta del nome per questo raggruppamento deriva dalla natura cross-culturale delle opere selezionate: si tratta di produzioni che hanno saputo fondere l'immaginario audiovisivo globale con le radici identitarie, enogastronomiche e storiche dei luoghi, trasformando una visibilità temporanea (il set) in un asset strategico e duraturo per il territorio. L'obiettivo è comprendere come la risonanza internazionale di un film possa ridefinire a lungo termine l'ecosistema turistico ed economico di realtà locali italiane.
 
+<div class="row">
+  <div class="col-md-12 text-center">
+    <img src="{{site.baseurl}}/assets/images/cluster01/cluster_image.jpg"
+         class="img-fluid mx-auto d-block"
+         style="margin: 20px 0;"
+         alt="Sovraffollamento al Lago di Braies">
+  </div>
+</div>
+
 ---
 
-## 1. Il Cambiamento Fisico: Ecosistema, Ricettività ed Esperienza sul Campo
+## Sezione 1 — Il fenomeno
 
-L'impatto di una produzione internazionale si manifesta in primo luogo sul tessuto strutturale e commerciale del territorio ospitante.
+_Il fenomeno esiste, è misurabile? Vediamo i primi numeri._
 
-### A. Iper-Accelerazione Asimmetrica dell'Ecosistema Turistico (OpenStreetMap)
+Le evidenze ISTAT validate (CIS > 0,7, RGR ≥ 0,15) mostrano segnali misurabili in tre delle quattro produzioni del cluster, con intensità molto diverse tra loro. 
+L'impatto si adatta perfettamente alla vocazione del territorio: se a Crema l'effetto innesca un'esplosione di arrivi turistici e di visitatori museali, in Valle d'Aosta l'onda d'urto del blockbuster satura e fa esplodere la micro-ricettività (letti extra-alberghieri). Ancor più singolare è il caso di Curon Venosta, dove il fenomeno mediatico ha coinciso con un impatto misurabile persino sull'incidenza della popolazione straniera residente.
+
+### Forte di Bard e Pont-Saint-Martin — _Avengers: Age of Ultron_
+Esplosione della micro-ricettività: i **Letti extra-alberghieri** registrano variazioni enormi, con un **+233,33% a Bard** e addirittura un **+333,33% a Pont-Saint-Martin**. Gli scarti storici sono molto marcati (+8,19σ e +27,39σ) e le validazioni RGR confermano che lo shock è puramente locale (+228,47% e +457,64%). Anche i letti alberghieri tradizionali a Bard crescono del +30,14%.
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster01/rank_01_ev_032_pont-saint-martin_I67_RICALCOLATO_v3_18.json"></vegachart>
+</div>
+
+### Crema — _Call Me By Your Name_
+Segnale eccezionale su più fronti turistici: gli **Arrivi Non Residenti** crescono del **+20,01%** (RGR +30,36%), ma il dato più impressionante riguarda i **Visitatori dei musei**, che segnano un **+114,41%** post-evento (RGR +47,93%). Anche l'Indice di turisticità globale cresce del +32,76% e le Presenze dei non residenti salgono del +30,84%. Il **CIS** si attesta tra l'89,74 e il 100/100 su tutti questi indicatori.
+
+
+### Curon Venosta — _Curon_
+Segnale pieno e coerente su un indicatore demografico e sociale: l'**Incidenza della popolazione straniera residente** cresce del **+27,71%**, con uno **Zeta Shift di +5,68σ** e **persistenza piena (1/1)**. Il **CIS** è **100/100**, e l’RGR raggiunge **+20,79%**.
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster01/rank_23_ev_018_curon-venosta_I06_RICALCOLATO_v3_18.json"></vegachart>
+</div>
+
+### Volterra e Montepulciano — _The Twilight Saga: New Moon_
+**Nessuna evidenza** ISTAT validata tra gli indicatori selezionati per questa specifica ricerca. Il caso resta centrale nel cluster, ma l’impatto non emerge dai KPI ISTAT utilizzati.
+
+### Uno sguardo d'insieme
+Il quadro che emerge dimostra come i blockbuster globali agiscano da shock asimmetrici: non alzano tutti gli indicatori in modo uniforme, ma colpiscono selettivamente l'infrastruttura più esposta (es. B&B in Valle d'Aosta, musei a Crema) alterando in modo mirato l'equilibrio dei luoghi.
+
+### L'ecosistema turistico attorno ai set (OpenStreetMap)
 Il tratto più evidente che accomuna le tre produzioni è la profonda alterazione del tessuto commerciale locale. Il CineTourism agisce come un catalizzatore urbano asimmetrico, polarizzando lo sviluppo verso i servizi di accoglienza a discapito delle attività tradizionali.
 
 * **Crema (*Call Me By Your Name*):** L'ecosistema turistico ha registrato un'impennata a ridosso dell'uscita del film (da 13 attività a inizio 2017 a 20 nell'aprile 2018), superando nettamente la crescita dei negozi locali standard.
 * **Forte di Bard (*Avengers: Age of Ultron*):** Le location turistiche attive sono esplose, passando da circa 40 unità a fine 2014 a oltre 100 a fine 2015, innescando un trend rialzista ininterrotto che ha superato le 240 unità nel 2026.
 * **Montepulciano (*The Twilight Saga: New Moon*):** L'effetto a lungo termine è drastico, con le attività turistiche che passano da zero nel 2007 a oltre 380 all'inizio del 2026, lasciando i negozi di prossimità fermi a quota 99.
 
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_chiamami_col_tuo_nome_geo_Crema_Area_ecosystem.json"></vegachart>
-</div>
-
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_avengers_age_of_ultron_geo_Forte_di_Bard_Area_ecosystem.json"></vegachart>
-</div>
-
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_the_twilight_saga_new_moon_geo_Montepulciano_Area_ecosystem.json"></vegachart>
-</div>
-
-### B. Adattamento della Capacità Ricettiva (Dati ISTAT)
-Per misurare concretamente la risposta territoriale, i dati ISTAT sulla capacità ricettiva del Forte di Bard rivelano come l'offerta si modifichi per assorbire l'urto dei nuovi flussi. La disponibilità di posti letto — differenziata tra strutture alberghiere classiche e soluzioni extra-alberghiere (come i B&B e le locazioni brevi) — mostra un adattamento immediato a partire dall'inizio delle riprese, evidenziando una progressiva trasformazione dell'economia immobiliare locale a favore dell'ospitalità. 
-In particolare, i letti alberghieri hanno registrato una variazione post-evento del +30,14%, mentre i letti extra-alberghieri hanno subìto un'impennata eccezionale del +233,33%.
-
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/rank_17_ev_035_bard_I66_RICALCOLATO_v3_18.json"></vegachart>
-</div>
-
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/rank_03_ev_036_bard_I67_RICALCOLATO_v3_18.json"></vegachart>
-</div>
-
-### C. L'Offerta Turistica e la Vocazione Internazionale (GetYourGuide)
-L'evoluzione dell'ecosistema urbano trova riscontro nell'offerta di tour strutturati. I dati dimostrano il respiro marcatamente globale di questo cluster: il 90.6% degli utenti che prenota esperienze legate ai set cinematografici in Italia proviene dall'estero. Le rilevazioni confermano che l'offerta culturale, amplificata dalle riprese, risulta la prima motivazione di visita degli stranieri in Italia, mantenendo elevati i volumi complessivi di presenze turistiche.
-
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/provenienza_turisti_gyg.json"></vegachart>
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster01/chart_the_twilight_saga_new_moon_geo_Montepulciano_Area_ecosystem.json"></vegachart>
 </div>
 
 ---
 
-## 2. L'Analisi delle News: Metamorfosi del Brand e Impatto Sociale
+## Sezione 2 — Racconto dall'alto
 
-Oltre all'infrastruttura fisica, il cineturismo altera profondamente il modo in cui il territorio viene raccontato dai media e vissuto dalla comunità locale.
+_L'eco dei media: come raccontano i media le località del Cluster 1?_
 
-### A. La Dicotomia del Sentiment: Boom Economico vs. Pressione Infrastrutturale
-L'analisi tematica della rassegna stampa e dei social locali dimostra che l'iniezione di capitali turistici genera invariabilmente una tensione. Il sentiment associato all'"Economic Boom" registra un andamento fortemente positivo, mentre emerge una persistente polarità negativa legata ai temi dell'"Infrastructure Strain" e dell'"Overtourism", sintomo di comunità che faticano a gestire logisticamente il successo mediatico prolungato nel tempo.
+Oltre all'infrastruttura fisica, il cineturismo altera profondamente il modo in cui il territorio viene raccontato dai media e vissuto dalla comunità locale. Qui vediamo come la stampa e le fonti locali inquadrano il fenomeno attraverso l'evoluzione del sentiment nel tempo e l'impatto tematico (le news).
 
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_the_twilight_saga_new_moon_sentiment_2_evolution.json"></vegachart>
+### Crema — _Call Me By Your Name_
+**Il Modello "Autoriale/Letterario":** L'attribuzione diretta si diluisce nel tempo; il territorio interiorizza il successo, convertendo l'interesse cinematografico originario in un riposizionamento stabile su altre leve turistiche (enogastronomia, turismo lento, cultura).
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster01/chart_chiamami_col_tuo_nome_news_impact.json"></vegachart>
 </div>
 
-### B. L'Attribuzione del Successo: Esplicita vs. Implicita
-Il modo in cui le testate giornalistiche associano il boom turistico all'opera originaria varia radicalmente:
-* **Il Modello "Blockbuster" (Avengers):** Il nome del film continua a essere citato esplicitamente come asset per la promozione turistica negli anni, mantenendo un legame diretto tra l'opera e l'indotto.
-* **Il Modello "Autoriale/Letterario" (CMBYN):** L'attribuzione diretta si diluisce; il territorio interiorizza il successo, emancipandosi dal film per riposizionarsi stabilmente su altre eccellenze (cultura, turismo lento).
+### Forte di Bard e Valle d'Aosta — _Avengers: Age of Ultron_
+**Il Modello "Blockbuster":** Il nome del film continua a essere citato esplicitamente come asset per la promozione turistica negli anni, mantenendo un legame diretto tra l'opera e l'indotto (evidente nei picchi di menzioni turistiche in concomitanza con la stagione estiva).
 
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_chiamami_col_tuo_nome_news_impact.json"></vegachart>
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster01/chart_avengers_age_of_ultron_sentiment_3_heatmap.json"></vegachart>
 </div>
 
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_avengers_age_of_ultron_news_impact.json"></vegachart>
+### Volterra e Montepulciano — _The Twilight Saga: New Moon_
+**La dicotomia del sentiment:** L'analisi tematica trasversale della rassegna stampa dimostra che l'iniezione di capitali turistici genera invariabilmente una tensione tra opportunità e pressione comunitaria, visibile nel tracciamento del sentiment nel lungo periodo.
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster01/chart_the_twilight_saga_new_moon_sentiment_2_evolution.json"></vegachart>
 </div>
+
+### Uno sguardo d'insieme
+Il sentiment associato all'"Economic Boom" registra un andamento fortemente positivo, mentre emerge parallelamente una persistente polarità negativa legata ai temi dell'"Infrastructure Strain" e dell'"Overtourism", sintomo di comunità che faticano a gestire logisticamente il successo mediatico prolungato nel tempo.
 
 ---
 
-## 3. L'Impatto Digitale: Motori di Ricerca e Community
+## Sezione 3 — Racconto dal basso
 
-L'analisi si chiude esaminando l'impronta digitale lasciata da queste produzioni, che si manifesta in cicli di attenzione ben distinti.
+Cosa emerge dalle **rilevazioni online** e dalle comunità di utenti: l'attenzione digitale rivolta al luogo e alla produzione.
 
-### A. Curiosità Geografica e Ricerca (Google Trends vs Wikipedia)
-L'interesse digitale si sviluppa su due binari: la ricerca diretta della destinazione e l'approfondimento enciclopedico.
-1. **Google Trends:** Le ricerche geografiche mostrano picchi netti in concomitanza con le uscite cinematografiche, con un interesse che permane stabilizzato su livelli più elevati rispetto alla baseline pre-produzione.
-2. **Wikipedia:** La ricerca documentale rivela dinamiche di *long-tail* intergenerazionale, con picchi che ritornano ciclicamente a distanza di anni, trainati dalle riprogrammazioni televisive o dallo streaming.
+_Gli utenti viaggiano per il film, o la "visitano" da casa?_
 
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_avengers_age_of_ultron_trends_1_google.json"></vegachart>
+L'analisi si chiude esaminando l'impronta digitale lasciata da queste produzioni per misurare il "turismo virtuale" e la curiosità pre-visita.
+
+### Google Trends e Wikipedia
+L'interesse digitale si sviluppa su due binari: la ricerca diretta della destinazione e l'approfondimento enciclopedico. Le ricerche geografiche mostrano picchi netti in concomitanza con le uscite cinematografiche, con un interesse che permane stabilizzato su livelli più elevati rispetto alla baseline pre-produzione. Dal lato enciclopedico, la ricerca documentale rivela dinamiche di *long-tail* intergenerazionale, con picchi che ritornano ciclicamente a distanza di anni, trainati dalle riprogrammazioni televisive o dallo streaming.
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster01/crema_trends_chart.json"></vegachart>
 </div>
 
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_the_twilight_saga_new_moon_trends_1_google.json"></vegachart>
-</div>
-
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_avengers_age_of_ultron_trends_2_wikipedia.json"></vegachart>
-</div>
-
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/chart_the_twilight_saga_new_moon_trends_2_wikipedia.json"></vegachart>
-</div>
-
-### B. Il Dibattito Organico sulle Community (Reddit)
+### Reddit
 L'analisi delle discussioni sulla piattaforma Reddit permette di osservare la reazione "non filtrata" e gli interessi reali degli utenti a seguito del rilascio di una pellicola.
 
 Prendendo in esame la community e le interazioni relative alla città di Crema dopo l'uscita di *Call Me By Your Name*, i dati estratti (su un campione di 293 commenti) rivelano una transizione fondamentale nell'intento di viaggio del pubblico:
 *   Il **Turismo Culturale** domina in modo netto le conversazioni organiche, rappresentando quasi il 27% (esattamente il 26,96%) dei commenti classificati.
-*   Il **Cineturismo** allo stato puro si attesta come seconda motivazione di discussione, raccogliendo circa l'11,6% dei commenti.
-*   Seguono, con volumi decisamente inferiori, il turismo sportivo e quello balneare/lacuale (attorno al 4%), l'enogastronomico (1,3%) e il turismo montano (1%).
+*   Il **Cineturismo** allo stato puro si attesta come seconda motivazione di discussione, raccogliendo circa l'11,60% dei commenti.
+*   Seguono, con volumi decisamente inferiori, il turismo sportivo e quello balneare/lacuale (attorno al 4,09%), l'enogastronomico (1,36%) e il turismo montano (1,02%).
 
 Questi dati confermano empiricamente l'ipotesi della "Metamorfosi del Brand" descritta nell'analisi delle news: la pellicola internazionale ha funzionato da innesco iniziale per attrarre l'attenzione (Cineturismo), ma la community ha convertito rapidamente questo stimolo in un interesse più profondo e radicato per il patrimonio storico, artistico e architettonico del territorio (Turismo Culturale).
 
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/grafico_crema_commenti_tipologia_turismo_dopo_uscita_film.json"></vegachart>
+**Post per tipologia di turismo dopo l'uscita di *Call Me By Your Name* - Crema:**
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster01/grafico_crema_commenti_tipologia_turismo_dopo_uscita_film.json"></vegachart>
 </div>
+
+[Link di ritorno a Risultati](results.html)
