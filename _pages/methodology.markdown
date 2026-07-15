@@ -61,7 +61,7 @@ subtitle: "Dalla selezione dei casi di studio ai sette filoni di analisi"
     font-weight: 600;
     color: #24487e;
     margin-bottom: .75rem;
-    line-height: 1.3;
+    line-height: 1.5;
   }
   .criteria-recap .recap-list li:last-child { margin-bottom: 0; }
 
@@ -228,35 +228,35 @@ In particolare, poiché la metodologia si basa in gran parte sull'analisi del di
   </div>
   <div class="col-md-6 col-lg-4 mb-4">
     <div class="criteria-card">
-      <span class="crit-num">Criterio 01</span>
+      <span class="crit-num">Criterio 1</span>
       <h4><i class="fas fa-map-marked-alt" aria-hidden="true"></i>Copertura geografica</h4>
       <p>Solo comuni del territorio italiano, per garantire uniformità normativa nei dati ISTAT e confrontabilità diretta con le statistiche nazionali.</p>
     </div>
   </div>
   <div class="col-md-6 col-lg-4 mb-4">
     <div class="criteria-card">
-      <span class="crit-num">Criterio 02</span>
+      <span class="crit-num">Criterio 2</span>
       <h4><i class="fas fa-users" aria-hidden="true"></i>Dimensione demografica</h4>
       <p>Popolazione generalmente inferiore a <strong>50.000 abitanti</strong>, perché l'impatto di una singola produzione sia visibile nei dati e non si disperda nel rumore statistico delle grandi città. Fa eccezione <strong>Ragusa</strong> (73.878 ab.), inclusa per la rilevanza del legame con la saga di Montalbano.</p>
     </div>
   </div>
   <div class="col-md-6 col-lg-4 mb-4">
     <div class="criteria-card">
-      <span class="crit-num">Criterio 03</span>
+      <span class="crit-num">Criterio 3</span>
       <h4><i class="fas fa-compass" aria-hidden="true"></i>Varietà geografica</h4>
       <p>Copertura equilibrata tra le tre macro-aree del paese (Nord, Centro, Sud), per costruire un portafoglio di casi studio il più eterogeneo possibile.</p>
     </div>
   </div>
   <div class="col-md-6 col-lg-4 mb-4">
     <div class="criteria-card">
-      <span class="crit-num">Criterio 04</span>
+      <span class="crit-num">Criterio 4</span>
       <h4><i class="fas fa-calendar-alt" aria-hidden="true"></i>Finestra temporale</h4>
       <p>Produzioni collocate tra il <strong>2010 e il 2024</strong>, intervallo che copre la transizione dalla TV generalista allo streaming multicanale, garantendo sia presenza digitale sufficiente sia copertura ISTAT pre e post-uscita. Vanno contestualizzati i casi di lunga serialità come <em>Don Matteo</em> (dal 2000), <em>The Twilight Saga: New Moon</em> (2009), fuori finestra di un solo anno, e la vera eccezione <em>Elisa di Rivombrosa</em> (2003), inclusa per la sua particolare rilevanza culturale.</p>
     </div>
   </div>
   <div class="col-md-6 col-lg-4 mb-4">
     <div class="criteria-card">
-      <span class="crit-num">Criterio 05</span>
+      <span class="crit-num">Criterio 5</span>
       <h4><i class="fas fa-film" aria-hidden="true"></i>Varietà di formato e produzione</h4>
       <p>Il campione include sia film che serie/fiction, sia produzioni internazionali che domestiche, per evitare un quadro parziale legato a un solo tipo di prodotto audiovisivo.</p>
     </div>
