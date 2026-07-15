@@ -60,7 +60,7 @@ subtitle: "Dalla selezione dei casi di studio ai sette filoni di analisi"
     font-size: .95rem;
     font-weight: 600;
     color: #24487e;
-    margin-bottom: .5rem;
+    margin-bottom: .75rem;
     line-height: 1.3;
   }
   .criteria-recap .recap-list li:last-child { margin-bottom: 0; }
@@ -215,6 +215,18 @@ In particolare, poiché la metodologia si basa in gran parte sull'analisi del di
 
 <div class="row criteria-grid">
   <div class="col-md-6 col-lg-4 mb-4">
+    <div class="criteria-card criteria-recap">
+      <span class="crit-num">I cinque criteri</span>
+      <ol class="recap-list">
+        <li>Copertura geografica</li>
+        <li>Dimensione demografica</li>
+        <li>Varietà geografica</li>
+        <li>Finestra temporale</li>
+        <li>Varietà di formato e produzione</li>
+      </ol>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 mb-4">
     <div class="criteria-card">
       <span class="crit-num">Criterio 01</span>
       <h4><i class="fas fa-map-marked-alt" aria-hidden="true"></i>Copertura geografica</h4>
@@ -247,18 +259,6 @@ In particolare, poiché la metodologia si basa in gran parte sull'analisi del di
       <span class="crit-num">Criterio 05</span>
       <h4><i class="fas fa-film" aria-hidden="true"></i>Varietà di formato e produzione</h4>
       <p>Il campione include sia film che serie/fiction, sia produzioni internazionali che domestiche, per evitare un quadro parziale legato a un solo tipo di prodotto audiovisivo.</p>
-    </div>
-  </div>
-  <div class="col-md-6 col-lg-4 mb-4">
-    <div class="criteria-card criteria-recap">
-      <span class="crit-num">I cinque criteri</span>
-      <ol class="recap-list">
-        <li>Copertura geografica</li>
-        <li>Dimensione demografica</li>
-        <li>Varietà geografica</li>
-        <li>Finestra temporale</li>
-        <li>Varietà di formato e produzione</li>
-      </ol>
     </div>
   </div>
 </div>
