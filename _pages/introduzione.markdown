@@ -186,3 +186,13 @@ Di seguito la wordcloud delle recensioni di GetYourGuide:
 Il cineturismo è un laboratorio di trasformazione territoriale e culturale. Studiare questo fenomeno significa interrogarsi su come i media plasmino la realtà, e su come i territori possano rispondere in modo sostenibile.
 
 L'integrazione tra **analisi qualitativa** (narrazioni, percezioni, esperienze) e **analisi quantitativa** (dati, trend, metriche) è la chiave per comprendere e gestire il futuro di un turismo che nasce dallo schermo ma vive nel mondo reale.
+
+<a href="{{ site.baseurl }}/methodology.html">Metodologia →</a>
+
+<div class="row pt-4">
+    <div class="col-md-12 text-center">
+        <blockquote class="blockquote">
+            "La nostra metodologia trasforma il rumore digitale in evidenza empirica, permettendoci di osservare il CineTourism non come un evento isolato, ma come un processo evolutivo."
+        </blockquote>
+    </div>
+</div>
