@@ -43,6 +43,28 @@ subtitle: "Dalla selezione dei casi di studio ai sette filoni di analisi"
   .note-box .note-title i { margin-right: .4rem; }
   .criteria-card p { font-size: .92rem; margin: 0; color: #444; }
 
+  /* box riepilogo (cella libera della griglia 3-2) */
+  .criteria-recap {
+    background: #f4f8fc;
+    border-left-color: #24487e;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  .criteria-recap .recap-list {
+    margin: .4rem 0 0;
+    padding-left: 1.5rem;
+    counter-reset: none;
+  }
+  .criteria-recap .recap-list li {
+    font-size: .95rem;
+    font-weight: 600;
+    color: #24487e;
+    margin-bottom: .5rem;
+    line-height: 1.3;
+  }
+  .criteria-recap .recap-list li:last-child { margin-bottom: 0; }
+
   /* ---- Nota trasversale (COVID) ---- */
   .note-box {
     border-left: 4px solid #d69e2e;
@@ -225,6 +247,18 @@ In particolare, poiché la metodologia si basa in gran parte sull'analisi del di
       <span class="crit-num">Criterio 05</span>
       <h4><i class="fas fa-film" aria-hidden="true"></i>Varietà di formato e produzione</h4>
       <p>Il campione include sia film che serie/fiction, sia produzioni internazionali che domestiche, per evitare un quadro parziale legato a un solo tipo di prodotto audiovisivo.</p>
+    </div>
+  </div>
+  <div class="col-md-6 col-lg-4 mb-4">
+    <div class="criteria-card criteria-recap">
+      <span class="crit-num">I cinque criteri</span>
+      <ol class="recap-list">
+        <li>Copertura geografica</li>
+        <li>Dimensione demografica</li>
+        <li>Varietà geografica</li>
+        <li>Finestra temporale</li>
+        <li>Varietà di formato e produzione</li>
+      </ol>
     </div>
   </div>
 </div>
@@ -429,4 +463,12 @@ I sette filoni descritti confluiscono nel sito attraverso **tre cluster tematici
 <div class="note-box note-info">
   <span class="note-title"><i class="fas fa-info-circle" aria-hidden="true"></i>Come leggere i cluster</span>
   Ogni cluster attinge in proporzioni diverse ai dati fisici e digitali qui descritti, a seconda della <strong>disponibilità</strong> e della <strong>rilevanza</strong> di ciascuna fonte per il caso specifico.
+</div>
+
+<div class="row pt-4">
+    <div class="col-md-12 text-center">
+        <blockquote class="blockquote">
+            "La nostra metodologia trasforma il rumore digitale in evidenza empirica, permettendoci di osservare il CineTourism non come un evento isolato, ma come un processo evolutivo."
+        </blockquote>
+    </div>
 </div>
