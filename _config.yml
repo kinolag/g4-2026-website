@@ -59,8 +59,9 @@ navbar:
     - title: Metodologia
       url: /methodology.html
     - title: Risultati
-      url: /results.html
       child:
+        - title: Risultati Generali
+          url: /results.html
         - title: Cluster_01
           url: cluster01.html
         - title: Cluster_02
