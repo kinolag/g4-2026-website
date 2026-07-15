@@ -93,6 +93,24 @@ Il tratto più evidente che accomuna le tre produzioni è la profonda alterazion
   <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster01/chart_the_twilight_saga_new_moon_geo_Montepulciano_Area_ecosystem.json"></vegachart>
 </div>
 
+<div class="card border-primary mb-4">
+  <div class="card-body">
+    <h5 class="card-title">📌 Box 1 — L'istituzionalizzazione dell'offerta: La mappa di Volterra</h5>
+    <p class="card-text">
+      L'adattamento dell'ecosistema urbano non avviene solo tramite l'apertura spontanea di nuove attività, ma passa anche attraverso iniziative dirette di destination marketing.
+    </p>
+    <p class="card-text">
+      La mappa tematica ufficiale di <em>New Moon</em> distribuita a Volterra rappresenta un esempio perfetto di come un territorio si adatti proattivamente all'urto mediatico. Sebbene per questa specifica produzione non si registrino picchi anomali nei macro-dati ISTAT, a livello qualitativo l'amministrazione ha sovrapposto in modo ingegnoso la narrazione finzionale alla topografia reale. Strade ed edifici storici (come il <em>vicolo Mazzoni</em> o il <em>Palazzo dei Priori</em>) vengono ri-mappati seguendo le esatte traiettorie dei personaggi (es. <em>"run in the yellow Porsche"</em> o <em>"Bella finds Edward"</em>), trasformando la città da semplice location a uno spazio di "pellegrinaggio" esperienziale che intercetta e capitalizza la devozione dei fan in modo istituzionale.
+    </p>
+    <div class="text-center mt-4 mb-2">
+      <img src="{{site.baseurl}}/assets/images/cluster01/Volterra New Moon Map-images-0.jpg"
+           class="img-fluid mx-auto d-block"
+           style="border: 1px solid #e5e7eb; border-radius: 12px; padding: 5px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
+           alt="Mappa Turistica New Moon Volterra">
+    </div>
+  </div>
+</div>
+
 ---
 
 ## Sezione 2 — Racconto dall'alto
@@ -120,6 +138,21 @@ Oltre all'infrastruttura fisica, il cineturismo altera profondamente il modo in 
 
 <div class="chart-container">
   <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster01/chart_the_twilight_saga_new_moon_sentiment_2_evolution.json"></vegachart>
+</div>
+
+<div class="card border-primary mb-4" style="margin-top: 30px;">
+  <div class="card-body">
+    <h5 class="card-title">📌 Box 2 — La voce del territorio: Il "Paradosso Volterra" e la difesa del Brand</h5>
+    <p class="card-text">
+      L'intervista al Consorzio Turistico di Volterra offre una testimonianza diretta di come un territorio debba gestire attivamente l'urto di un blockbuster globale per preservare la propria identità. Emerge quello che possiamo definire il <strong>"Paradosso Volterra/Montepulciano"</strong>: sebbene le riprese di <em>New Moon</em> siano state effettuate fisicamente a Montepulciano, i flussi turistici si sono riversati massicciamente su Volterra. Questo è avvenuto perché i fan erano legati alla matrice letteraria dell'opera e perché il nome "Volterra" proiettato sullo schermo ha funzionato da calamita, specialmente per i turisti stranieri.
+    </p>
+    <blockquote class="blockquote">
+      "La nostra paura che una città come Volterra, che ha una forte identità legata all’arte e alla cultura, si trasformasse nella 'Città dei vampiri'. [...] Questo non è successo perché [...] abbiamo favorito questo aspetto attraverso un’attenta attività di promozione che non ha mai usato la parola 'vampiri' ma piuttosto quella 'Volturi' legando al passato etrusco della città."
+    </blockquote>
+    <p class="card-text">
+      Il Consorzio ha messo in atto una vera e propria <strong>strategia di assimilazione del brand</strong>: ha rifiutato la banalizzazione commerciale (niente "pizze di Edward e Bella") favorendo invece l'artigianato locale, come la produzione di mele e cuori in alabastro. L'integrazione tra fiction e patrimonio reale (i Volturi associati al mistero degli Etruschi, i tour conclusi nelle cisterne romane) ha garantito un turismo di fascia più alta e un effetto <em>long-tail</em> sorprendente: a oltre dieci anni di distanza, i teenager di allora tornano oggi a Volterra con le proprie famiglie.
+    </p>
+  </div>
 </div>
 
 ### Uno sguardo d'insieme
