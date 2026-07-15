@@ -152,6 +152,24 @@ subtitle: "Dalla selezione dei casi di studio ai sette filoni di analisi"
   @media (max-width: 767.98px) {             /* mobile: 1 colonna */
     .topic-grid { grid-template-columns: 1fr; }
   }
+  .topic-chip {
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    background: #fff;
+    padding: .6rem .8rem;
+    transition: background .15s ease, color .15s ease;
+  }
+  .topic-chip:hover { background: #1a1a1a; }
+  .topic-chip:hover .topic-name,
+  .topic-chip:hover .topic-desc { color: #fff; }
+  .topic-name {
+    display: block;
+    font-weight: 700;
+    font-size: .88rem;
+    letter-spacing: .02em;
+    color: #1a1a1a;
+    line-height: 1.25;
+  }
   .topic-desc {
     display: block;
     font-size: .78rem;
