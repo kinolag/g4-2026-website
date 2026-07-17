@@ -383,7 +383,7 @@ Vediamo alcuni esempi di questo fenomeno.
 
 <!-- GRAFICO: attenzione Reddit + YouTube -->
 
-### Reddit
+<!-- ### Reddit
 
 Commenti per tipologia di turismo dopo l'uscita - Gubbio
 
@@ -395,30 +395,54 @@ Commenti per tipologia di turismo dopo l'uscita - Spoleto
 
 <div class="chart-container">
   <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/grafico_spoleto_commenti_tipologia_turismo_dopo_uscita_film.json"></vegachart>
-</div>
+</div> -->
 
 ### YouTube
 
-Tasso di commenti contenenti un riferimento:
-nei _video su produzione e location_.
+<div class="chart-outer-container">
+  <span>
+    Tasso di commenti contenenti un riferimento:
+    nei <em>video su produzione e location</em>.
+  </span>
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/recap_reference_rate_run1_cluster02.vl.json"></vegachart>
+  </div>
 
-<div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/recap_reference_rate_run1_cluster02.vl.json"></vegachart>
+  <span>
+    Tasso di commenti contenenti un riferimento:
+    nei <em>video su sola location</em>.
+  </span>
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/recap_reference_rate_run2_cluster02.vl.json"></vegachart>
+  </div>
 </div>
 
-Tasso di commenti contenenti un riferimento:
-nei _video su sola location_.
+<div class="chart-outer-container">
+  <span>
+    Timeline dei commenti contenenti un riferimento:
+    nei <em>video su produzione e location</em>.
+  </span>
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/timeline_un_passo_dal_cielo_run1.vl.json"></vegachart>
+  </div>
 
-<div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/recap_reference_rate_run2_cluster02.vl.json"></vegachart>
+  <span>
+    Timeline dei commenti contenenti un riferimento:
+    nei <em>video su sola location</em>.
+  </span>
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/timeline_un_passo_dal_cielo_run2.vl.json"></vegachart>
+  </div>
 </div>
 
-<!-- <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/gubbio.vl.json"></vegachart>
+<!-- <div class="chart-outer-container">
+  <span>Timeline dei commenti contenenti un riferimento:
+  nei <em>video su produzione e location</em>.</span>
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/timeline_il_giovane_montalbano_run1.vl.json"></vegachart>
+  </div>
 </div> -->
-<!-- <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/spoleto.vl.json"></vegachart>
-</div> -->
+
 
 _Sezione in lavorazione._
 
