@@ -37,7 +37,39 @@ subtitle: "Le serie televisive a lunga esposizione e i loro territori"
     max-height: 700px; /* Evita che su schermi giganti diventi troppo alto */
     object-fit: contain !important;
   }
+
+  .chart-outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* Contenitore standard, centrato e responsivo */
+  .chart-container {
+    width: 100%;
+    max-width: 1000px; /* limite per evitare grafici troppo grandi */
+    margin: 40px auto; /* centra il grafico */
+    padding: 0 20px; /* margine laterale su mobile */
+    box-sizing: border-box;
+  }
+
+  /* Vega charts: impedisce stiramenti */
+  .chart-container vegachart,
+  .chart-container .vega-embed {
+    width: 100% !important;
+    height: auto !important;
+    display: block !important;
+  }
+
+  .chart-container canvas,
+  .chart-container svg {
+    width: 100% !important;
+    height: auto !important;
+    object-fit: contain !important;
+  }
 </style>
+
 
 ## Panoramica
 
@@ -123,7 +155,19 @@ iniziale che su una tenuta costante negli anni.
 **Nessuna evidenza** tra le 18 selezionate: il segnale ISTAT per queste location
 non ha superato le soglie.
 
-<!-- GRAFICI ISTAT: <vegachart schema-url="{{ site.baseurl }}/assets/charts/istat_*.json"></vegachart> -->
+<!-- GRAFICI ISTAT -->
+
+<div class="chart-outer-container">
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s1/rank_19_ev_039_scicli_I67_RICALCOLATO_v3_18.json"></vegachart>
+  </div>
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s1/rank_22_ev_040_scicli_I70_RICALCOLATO_v3_18.json"></vegachart>
+  </div>
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s1/rank_29_ev_041_ragusa_I67_RICALCOLATO_v3_18.json"></vegachart>
+  </div>
+</div>
 
 ### L'ecosistema turistico attorno ai set
 
@@ -143,7 +187,19 @@ otto stagioni:
   **93** attività turistiche. La crescita più marcata coincide proprio con
   l'arrivo della serie come "nuovo set" a partire dal 2021.
 
-<!-- GRAFICI ECOSYSTEM: <vegachart schema-url="{{ site.baseurl }}/assets/charts/ecosystem_*.json"></vegachart> -->
+<!-- GRAFICI ECOSYSTEM -->
+
+<div class="chart-outer-container">
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s1/chart_un_passo_dal_cielo_geo_Braies_Area_ecosystem.json"></vegachart>
+  </div>
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s1/chart_un_passo_dal_cielo_geo_San_Candido_Area_ecosystem.json"></vegachart>
+  </div>
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s1/chart_un_passo_dal_cielo_geo_San_Vito_di_Cadore_Area_ecosystem.json"></vegachart>
+  </div>
+</div>
 
 <div class="card border-primary mb-4">
   <div class="card-body">
@@ -224,6 +280,15 @@ Questo aspetto è stato riportato anche su _La Repubblica_:
   </footer>
 </blockquote>
 
+<div class="chart-outer-container">
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s2/chart_un_passo_dal_cielo_sentiment_5_polar.json"></vegachart>
+  </div>
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s2/chart_un_passo_dal_cielo_sentiment_2_evolution.json"></vegachart>
+  </div>
+</div>
+
 ### Il giovane Montalbano — località in Sicilia
 
 Qui il **Cine Tourism è protagonista assoluto**: 136 menzioni, di gran lunga il
@@ -233,6 +298,14 @@ produzione che i media collegano più esplicitamente e più positivamente al
 fenomeno cineturistico. Le criticità ci sono (Infrastructure Strain 27 menzioni,
 Overtourism 17) ma restano contenute rispetto al volume enorme di narrazione
 positiva.
+<div class="chart-outer-container">
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s2/chart_Il_giovane_Montalbano_Sicilia_sentiment_5_polar.json"></vegachart>
+  </div>
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s2/chart_Il_giovane_Montalbano_Sicilia_sentiment_2_evolution.json"></vegachart>
+  </div>
+</div>
 
 ### Uno sguardo d'insieme
 
@@ -246,6 +319,10 @@ problematico** del successo turistico: sovraffollamento e pressione
 infrastrutturale non sono note a margine, ma temi centrali.
 
 <!-- GRAFICI: sentiment evolution e sentiment polarization per ogni location -->
+
+<!-- <div class="full-width-chart">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s2/name.vl.json"></vegachart>
+</div> -->
 
 <div class="card border-primary mb-4">
   <div class="card-body">
@@ -301,7 +378,7 @@ Vediamo alcuni esempi di questo fenomeno.
 
 <!-- GRAFICO: Google Trends / pageview Wikipedia -->
 <!-- <div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/name.vl.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/name.vl.json"></vegachart>
 </div> -->
 
 <!-- GRAFICO: attenzione Reddit + YouTube -->
@@ -310,14 +387,14 @@ Vediamo alcuni esempi di questo fenomeno.
 
 Commenti per tipologia di turismo dopo l'uscita - Gubbio
 
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/grafico_gubbio_commenti_tipologia_turismo_dopo_uscita_film.json"></vegachart>
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/grafico_gubbio_commenti_tipologia_turismo_dopo_uscita_film.json"></vegachart>
 </div>
 
 Commenti per tipologia di turismo dopo l'uscita - Spoleto
 
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/grafico_spoleto_commenti_tipologia_turismo_dopo_uscita_film.json"></vegachart>
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/grafico_spoleto_commenti_tipologia_turismo_dopo_uscita_film.json"></vegachart>
 </div>
 
 ### YouTube
@@ -325,22 +402,22 @@ Commenti per tipologia di turismo dopo l'uscita - Spoleto
 Tasso di commenti contenenti un riferimento:
 nei _video su produzione e location_.
 
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/recap_reference_rate_run1_cluster02.vl.json"></vegachart>
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/recap_reference_rate_run1_cluster02.vl.json"></vegachart>
 </div>
 
 Tasso di commenti contenenti un riferimento:
 nei _video su sola location_.
 
-<div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/recap_reference_rate_run2_cluster02.vl.json"></vegachart>
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/recap_reference_rate_run2_cluster02.vl.json"></vegachart>
 </div>
 
-<!-- <div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/gubbio.vl.json"></vegachart>
+<!-- <div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/gubbio.vl.json"></vegachart>
 </div> -->
-<!-- <div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/spoleto.vl.json"></vegachart>
+<!-- <div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/spoleto.vl.json"></vegachart>
 </div> -->
 
 _Sezione in lavorazione._
