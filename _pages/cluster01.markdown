@@ -9,7 +9,25 @@ subtitle: "L'impatto di blockbuster globali e cult hollywoodiani sui territori i
 ---
 
 <style>
-  /* Contenitore standard */
+  /* =======================================================
+     1. CONTENITORI (Gestiscono lo spazio, non il grafico)
+     ======================================================= */
+
+  /* Contenitore Full-Width: esce dai margini e occupa tutto lo schermo */
+  .full-width-chart {
+    width: 100vw;
+    position: relative;
+    left: 50%;
+    right: 50%;
+    margin-left: -50vw;
+    margin-right: -50vw;
+    margin-top: 40px;
+    margin-bottom: 50px;
+    padding: 0 5vw; /* Margine di respiro laterale */
+    box-sizing: border-box;
+  }
+
+  /* Contenitore Standard: centrato con una larghezza massima */
   .chart-container {
     width: 100%;
     max-width: 1000px;
@@ -18,14 +36,30 @@ subtitle: "L'impatto di blockbuster globali e cult hollywoodiani sui territori i
     box-sizing: border-box;
   }
 
-  /* Centra il contenitore generato da Vega */
+  /* Outer Container opzionale (se ti serve per incolonnare elementi) */
+  .chart-outer-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+  }
+
+  /* =======================================================
+     2. FIX VEGA (Risolve lo shift dell'hover per entrambi)
+     ======================================================= */
+  
+  /* Diciamo al div contenitore generato da Vega di centrarsi e occupare il 100% */
+  .full-width-chart vegachart,
+  .full-width-chart .vega-embed,
+  .chart-container vegachart,
   .chart-container .vega-embed {
     display: flex;
     justify-content: center;
     width: 100%;
   }
-  
-  /* ELIMINATE tutte le regole per canvas e svg! */
+
+  /* NOTA: Tutte le forzature su 'canvas' e 'svg' sono state volutamente 
+     eliminate per non rompere le coordinate dell'hover di Vega. */
 </style>
 
 ## Panoramica
