@@ -273,4 +273,37 @@ Post per tipologia di turismo **dopo** l'uscita di _Rocco Schiavone_ - Aosta:
   <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/aosta_post_reddit_dopo.json"></vegachart>
 </div>
 
+---
+
+## In sintesi
+
+Il cineturismo italiano mostra una struttura chiara: ogni opera audiovisiva crea una rottura di trend, 
+un “prima” e un “dopo” che ridisegna la percezione del luogo, genera un sentiment ambivalente fatto di 
+opportunità e criticità, e produce un effetto persistente che si trascina nel tempo come una long tail 
+capace di influenzare narrazioni, economie e immaginari. All’interno di questa dinamica comune, però, i 
+territori reagiscono in modi diversi, dando vita a modelli distinti che mostrano la ricchezza e la complessità del fenomeno.
+
+Castellabate rappresenta il cineturismo identitario mediterraneo: il film non si limita a mostrare il borgo, 
+ma lo reinventa, trasformandolo in simbolo di autenticità e qualità della vita. L’impatto è narrativo, economico 
+e digitale, e rispecchia ciò che Marra definirebbe “la magia del cinema che dà valore a ciò che hai a disposizione”. 
+Curon, invece, incarna il cineturismo digitale globale: la serie Netflix proietta il paese in un immaginario 
+internazionale, dove il luogo reale supera la fiction e diventa icona culturale. La crescita infrastrutturale 
+è lenta ma profonda, segno di un processo che non si esaurisce nell’hype iniziale. Aosta offre un modello urbano 
+identitario: la città non viene scoperta, ma reinterpretata. Diventa personaggio, assume un ruolo narrativo e 
+culturale che rafforza il senso di appartenenza. McQuack parla di “campanilismo inevitabile” quando Hollywood 
+o la serialità scelgono un luogo italiano, e Aosta ne è un esempio evidente. Infine Opi e Pescasseroli mostrano 
+un cineturismo naturalistico diffuso: il film amplifica un discorso già esistente, senza stravolgere il territorio. 
+L’impatto è equilibrato, fatto di nuove attività turistiche, nuove categorie narrative e un sentiment complesso 
+che alterna entusiasmo e cautela.
+
+L’analisi dei quattro casi rivela che il cineturismo italiano è un fenomeno stratificato e profondamente territoriale. 
+Ogni opera genera un impatto diverso, ma tutte seguono la stessa traiettoria: accendono l’attenzione, modificano 
+la percezione, alimentano conversazioni, trasformano l’immaginario e, quando il territorio risponde, producono 
+cambiamenti concreti nell’economia e nell’ecosistema turistico. Come ricorda Marra, il cinema può farci “innamorare 
+di ciò che non avevamo davvero guardato”, mentre McQuack sottolinea come possa diventare “una via di fuga sensoriale” 
+che spinge le persone a cercare nella realtà la magia vista sullo schermo. In questo senso il cinema diventa uno 
+strumento di riscrittura territoriale: non si limita a rappresentare i luoghi, li cambia. Castellabate, Curon, Aosta 
+e Opi raccontano quattro modi diversi di vivere questa trasformazione, ma tutti mostrano la stessa verità. Quando un 
+luogo entra nell’immaginario collettivo, non è più soltanto un luogo: diventa un racconto che continua nel tempo.
+
 [Link di ritorno a Risultati](results.html)
