@@ -219,7 +219,8 @@ L’interesse digitale si sviluppa su due binari: la ricerca diretta della desti
 
 Per la serie I Medici, i volumi delle ricerche su Wikipedia e Google Trends rivelano una sincronizzazione millimetrica con le tre stagioni (ottobre 2016, ottobre 2018, dicembre 2019). Questo dimostra in modo lampante come la serialità televisiva riesca a rinvigorire ciclicamente e a più riprese l’attenzione globale sia sull’opera stessa che sulle location storiche.
 
-Per quanto riguarda il film *Call Me By Your Name*, i volumi delle ricerche su Google Trends per la città di Crema mostrano una frattura strutturale evidente: partendo da una baseline pre-produzione stagnante intorno a valori di 15-20[cite: 33], l'interesse subisce una prima impennata in concomitanza con le riprese (2016) e si consolida in modo definitivo con le uscite internazionali e italiane tra la fine del 2017 e l'inizio del 2018[cite: 33]. Come visibile nel grafico sottostante, il successo cinematografico non si è limitato a un picco effimero, ma ha innalzato permanentemente l'interesse organico verso la location, stabilizzatosi negli anni successivi in un range nettamente superiore (tra 70 e 100) senza mai tornare ai livelli originari[cite: 33].
+Per quanto riguarda il film *Call Me By Your Name*, i volumi delle ricerche su Google Trends per la città di Crema mostrano una frattura strutturale evidente: partendo da una baseline pre-produzione stagnante intorno a valori di 15-20
+, l'interesse subisce una prima impennata in concomitanza con le riprese (2016) e si consolida in modo definitivo con le uscite internazionali e italiane tra la fine del 2017 e l'inizio del 2018. Come visibile nel grafico sottostante, il successo cinematografico non si è limitato a un picco effimero, ma ha innalzato permanentemente l'interesse organico verso la location, stabilizzatosi negli anni successivi in un range nettamente superiore (tra 70 e 100) senza mai tornare ai livelli originari.
 
 <div class="chart-container">
   <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster01/crema_trends_chart.json"></vegachart>
@@ -228,12 +229,12 @@ Per quanto riguarda il film *Call Me By Your Name*, i volumi delle ricerche su G
 ### Reddit
 L'analisi delle discussioni sulla piattaforma Reddit permette di osservare la reazione "non filtrata" e gli interessi reali degli utenti a seguito del rilascio di una pellicola.
 
-Prendendo in esame la community e le interazioni relative alla città di Crema dopo l'uscita di *Call Me By Your Name*, i dati estratti (su un campione di 293 commenti) rivelano una transizione fondamentale nell'intento di viaggio del pubblico:
-*   Il **Turismo Culturale** domina in modo netto le conversazioni organiche, rappresentando quasi il 27% (esattamente il 26,96%) dei commenti classificati.
-*   Il **Cineturismo** allo stato puro si attesta come seconda motivazione di discussione, raccogliendo circa l'11,60% dei commenti.
-*   Seguono, con volumi decisamente inferiori, il turismo sportivo e quello balneare/lacuale (attorno al 4,09%), l'enogastronomico (1,36%) e il turismo montano (1,02%).
+Prendendo in esame la community e le interazioni relative alla città di Crema dopo l'uscita di *Call Me By Your Name*, i dati estratti relativi ai **post** (su un campione di 77 contenuti creati dagli utenti, di cui 12 con un focus turistico esplicito) rivelano chiaramente quale sia l'innesco primario che genera la curiosità del pubblico:
+*   Il **Cineturismo** domina in modo netto l'apertura delle conversazioni, rappresentando il motore principale per la ricerca di informazioni sulla destinazione (8 post tematici, pari a circa il 10,4% del campione totale).
+*   Il **Turismo Culturale** si attesta come seconda motivazione di discussione, emergendo in circa il 2,6% dei post totali (2 post).
+*   Seguono, con volumi residuali, il turismo sportivo e quello balneare/lacuale (attorno all'1,3% ciascuno), mentre risultano assenti riferimenti diretti all'enogastronomia o alla montagna nella fase di creazione dei topic.
 
-Questi dati confermano empiricamente l'ipotesi della "Metamorfosi del Brand" descritta nell'analisi delle news: la pellicola internazionale ha funzionato da innesco iniziale per attrarre l'attenzione (Cineturismo), ma la community ha convertito rapidamente questo stimolo in un interesse più profondo e radicato per il patrimonio storico, artistico e architettonico del territorio (Turismo Culturale).
+Questi dati evidenziano l'enorme forza del "gancio" cinematografico: la pellicola internazionale funziona come la calamita principale (Cineturismo) per catturare l'attenzione del pubblico globale e spingerlo ad avviare proattivamente discussioni sulla città, facendo da apripista indispensabile per la successiva scoperta del patrimonio storico e architettonico locale (Turismo Culturale).
 
 **Post per tipologia di turismo dopo l'uscita di *Call Me By Your Name* - Crema:**
 <div class="chart-container">
