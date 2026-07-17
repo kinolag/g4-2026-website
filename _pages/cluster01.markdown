@@ -68,6 +68,23 @@ Il cluster raccoglie quattro produzioni cinematografiche e seriali di risonanza 
 
 La scelta del nome per questo raggruppamento deriva dalla natura cross-culturale delle opere selezionate: si tratta di produzioni che hanno saputo fondere l'immaginario audiovisivo globale con le radici identitarie, enogastronomiche e storiche dei luoghi, trasformando una visibilità temporanea (il set) in un asset strategico e duraturo per il territorio. L'obiettivo è comprendere come la risonanza internazionale di un'opera possa ridefinire a lungo termine l'ecosistema turistico ed economico di realtà locali italiane.
 
+<div class="row">
+  <div class="col-md-12 text-center">
+    <img src="{{site.baseurl}}/assets/images/cluster01/cluster_image.png"
+         class="img-fluid mx-auto d-block"
+         style="margin: 20px 0 5px 0; border-radius: 8px; box-shadow: 0 4px 12px rgba(0,0,0,0.1);"
+         alt="Locandine delle produzioni analizzate: Avengers, Call Me By Your Name, I Medici, New Moon">
+    <p style="font-size: 0.85em; color: #6c757d; margin-bottom: 40px;">
+      <em>
+        Locandine promozionali ufficiali. I diritti d'autore appartengono alle rispettive case di produzione: 
+        &copy; Marvel Studios / Walt Disney Studios, &copy; Frenesy Film / Sony Pictures, 
+        &copy; Lux Vide / Rai Fiction, &copy; Summit Entertainment. <br>
+        Immagini utilizzate esclusivamente a scopo analitico, di ricerca e illustrativo ai sensi dell'art. 70 della Legge 633/1941 (Diritto di citazione).
+      </em>
+    </p>
+  </div>
+</div>
+
 ---
 
 ## Sezione 1 — Il fenomeno
