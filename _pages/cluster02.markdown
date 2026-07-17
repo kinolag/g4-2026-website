@@ -431,7 +431,7 @@ Commenti per tipologia di turismo dopo l'uscita - Spoleto
     nei <em>video su sola location</em>.
   </span>
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/timeline_un_passo_dal_cielo_run1.vl.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/timeline_un_passo_dal_cielo_run2.vl.json"></vegachart>
   </div>
 </div>
 
