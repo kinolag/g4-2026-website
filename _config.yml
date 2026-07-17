@@ -105,6 +105,16 @@ googlefonts:
 
 chulapa-skin:
   skin:  "pear" # temi disponibili: "sbd" "pixel" "graymor" "gitdev-dark" "gitdev" "universal" "academia" "gitdev" "towards" "pear" "twitter-lights-out" "twitter-dim" "wandoo" "lymcha" "twitter" "chulapa" "sunset" "minty" "lux" "journal" "deeply"
+  # gitdev-dark
+  # universal
+  # pear
+  # twitter-dim
+  # twitter-lights-out
+  # twitter
+  # lux
+  # journal
+  # deeply
+  # chulapa
   vars:
     # font-family-base:  "Space Mono"
 
