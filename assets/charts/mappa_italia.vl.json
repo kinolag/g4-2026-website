@@ -1,0 +1,555 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "hconcat": [
+    {
+      "width": 520,
+      "height": 640,
+      "title": {
+        "text": "Le location del CineTourism in Italia",
+        "fontSize": 15,
+        "anchor": "start"
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/openpolis/geojson-italy/master/topojson/limits_IT_regions.topo.json",
+            "format": {
+              "type": "topojson",
+              "feature": "regions"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#eaeef2",
+            "stroke": "white",
+            "strokeWidth": 0.6
+          },
+          "projection": {
+            "type": "mercator"
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "projection": {
+            "type": "mercator"
+          },
+          "mark": {
+            "type": "circle",
+            "stroke": "white",
+            "strokeWidth": 1
+          },
+          "params": [
+            {
+              "name": "sel",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "localita"
+                ],
+                "on": "click"
+              }
+            }
+          ],
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "size": {
+              "condition": {
+                "param": "sel",
+                "empty": false,
+                "value": 230
+              },
+              "value": 95
+            },
+            "opacity": {
+              "condition": {
+                "param": "sel",
+                "empty": true,
+                "value": 1
+              },
+              "value": 0.5
+            },
+            "color": {
+              "field": "cluster",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "Cluster 1",
+                  "Cluster 2",
+                  "Cluster 3"
+                ],
+                "range": [
+                  "#c05621",
+                  "#2b6cb0",
+                  "#2f855a"
+                ]
+              },
+              "legend": {
+                "title": null,
+                "orient": "top-left",
+                "fillColor": "white",
+                "padding": 6
+              }
+            },
+            "tooltip": [
+              {
+                "field": "localita",
+                "type": "nominal",
+                "title": "Località"
+              },
+              {
+                "field": "produzione",
+                "type": "nominal",
+                "title": "Produzione"
+              },
+              {
+                "field": "cluster",
+                "type": "nominal",
+                "title": "Cluster"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": 280,
+      "height": 640,
+      "view": {
+        "stroke": null
+      },
+      "layer": [
+        {
+          "data": {
+            "values": [
+              {}
+            ]
+          },
+          "mark": {
+            "type": "rect",
+            "fill": "#f7f9fb",
+            "stroke": "#d9e2ec",
+            "cornerRadius": 8
+          },
+          "encoding": {
+            "x": {
+              "value": 0
+            },
+            "x2": {
+              "value": 279
+            },
+            "y": {
+              "value": 0
+            },
+            "y2": {
+              "value": 639
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "SCHEDA PRODUZIONE"
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 11,
+            "fontWeight": "bold",
+            "color": "#94a3b8"
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 26
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 18,
+            "fontWeight": "bold",
+            "color": "#1a202c",
+            "limit": 250,
+            "lineHeight": 16
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 66
+            },
+            "text": {
+              "field": "produzione",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 15,
+            "fontWeight": "normal",
+            "color": "#2b6cb0",
+            "limit": 250,
+            "lineHeight": 16
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 104
+            },
+            "text": {
+              "field": "localita",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#444",
+            "limit": 250,
+            "lineHeight": 16
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 140
+            },
+            "text": {
+              "field": "tipo",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "color": "#777",
+            "limit": 250,
+            "lineHeight": 16
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 166
+            },
+            "text": {
+              "field": "cluster_label",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "Clicca una località per i dettagli"
+              }
+            ]
+          },
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 11,
+            "color": "#b0b8c1",
+            "font": "italic"
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 620
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "datasets": {
+    "loc": [
+      {
+        "localita": "Bard",
+        "lat": 45.6081,
+        "lon": 7.7462,
+        "produzione": "Avengers: Age of Ultron",
+        "tipo": "Film internazionale",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 — Grandi produzioni internazionali"
+      },
+      {
+        "localita": "Verrès",
+        "lat": 45.6664,
+        "lon": 7.6913,
+        "produzione": "Avengers: Age of Ultron",
+        "tipo": "Film internazionale",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 — Grandi produzioni internazionali"
+      },
+      {
+        "localita": "Pont-Saint-Martin",
+        "lat": 45.5953,
+        "lon": 7.7978,
+        "produzione": "Avengers: Age of Ultron",
+        "tipo": "Film internazionale",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 — Grandi produzioni internazionali"
+      },
+      {
+        "localita": "Opi",
+        "lat": 41.7756,
+        "lon": 13.8267,
+        "produzione": "Un mondo a parte",
+        "tipo": "Film italiano",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 — Produzioni di nicchia"
+      },
+      {
+        "localita": "Pescasseroli",
+        "lat": 41.8046,
+        "lon": 13.7897,
+        "produzione": "Un mondo a parte",
+        "tipo": "Film italiano",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 — Produzioni di nicchia"
+      },
+      {
+        "localita": "Agliè",
+        "lat": 45.3636,
+        "lon": 7.7686,
+        "produzione": "Elisa di Rivombrosa",
+        "tipo": "Serie italiana",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 — Serie italiane di lunga durata"
+      },
+      {
+        "localita": "Aosta",
+        "lat": 45.7372,
+        "lon": 7.3206,
+        "produzione": "Rocco Schiavone",
+        "tipo": "Serie italiana",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 — Produzioni di nicchia"
+      },
+      {
+        "localita": "Braies",
+        "lat": 46.6944,
+        "lon": 12.0857,
+        "produzione": "Un passo dal cielo",
+        "tipo": "Serie italiana",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 — Serie italiane di lunga durata"
+      },
+      {
+        "localita": "San Vito di Cadore",
+        "lat": 46.46,
+        "lon": 12.2058,
+        "produzione": "Un passo dal cielo",
+        "tipo": "Serie italiana",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 — Serie italiane di lunga durata"
+      },
+      {
+        "localita": "San Candido",
+        "lat": 46.7325,
+        "lon": 12.2789,
+        "produzione": "Un passo dal cielo",
+        "tipo": "Serie italiana",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 — Serie italiane di lunga durata"
+      },
+      {
+        "localita": "Castellabate",
+        "lat": 40.2786,
+        "lon": 14.9492,
+        "produzione": "Benvenuti al Sud",
+        "tipo": "Film italiano",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 — Produzioni di nicchia"
+      },
+      {
+        "localita": "Crema",
+        "lat": 45.3626,
+        "lon": 9.6803,
+        "produzione": "Call Me by Your Name",
+        "tipo": "Film internazionale",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 — Grandi produzioni internazionali"
+      },
+      {
+        "localita": "Curon Venosta",
+        "lat": 46.8082,
+        "lon": 10.5409,
+        "produzione": "Curon",
+        "tipo": "Serie italiana",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 — Produzioni di nicchia"
+      },
+      {
+        "localita": "Gubbio",
+        "lat": 43.3505,
+        "lon": 12.5783,
+        "produzione": "Don Matteo",
+        "tipo": "Serie italiana",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 — Serie italiane di lunga durata"
+      },
+      {
+        "localita": "Spoleto",
+        "lat": 42.7328,
+        "lon": 12.7357,
+        "produzione": "Don Matteo",
+        "tipo": "Serie italiana",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 — Serie italiane di lunga durata"
+      },
+      {
+        "localita": "Montepulciano",
+        "lat": 43.0927,
+        "lon": 11.7799,
+        "produzione": "The Twilight Saga: New Moon",
+        "tipo": "Film internazionale",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 — Grandi produzioni internazionali"
+      },
+      {
+        "localita": "Volterra",
+        "lat": 43.4025,
+        "lon": 10.8607,
+        "produzione": "The Twilight Saga: New Moon",
+        "tipo": "Film internazionale",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 — Grandi produzioni internazionali"
+      },
+      {
+        "localita": "Pienza",
+        "lat": 43.0766,
+        "lon": 11.6789,
+        "produzione": "I Medici",
+        "tipo": "Serie internazionale",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 — Grandi produzioni internazionali"
+      },
+      {
+        "localita": "Ragusa Ibla",
+        "lat": 36.9256,
+        "lon": 14.7306,
+        "produzione": "Il giovane Montalbano",
+        "tipo": "Serie italiana",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 — Serie italiane di lunga durata"
+      },
+      {
+        "localita": "Santa Croce Camerina",
+        "lat": 36.8281,
+        "lon": 14.525,
+        "produzione": "Il giovane Montalbano",
+        "tipo": "Serie italiana",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 — Serie italiane di lunga durata"
+      },
+      {
+        "localita": "Scicli",
+        "lat": 36.7908,
+        "lon": 14.7022,
+        "produzione": "Il giovane Montalbano",
+        "tipo": "Serie italiana",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 — Serie italiane di lunga durata"
+      }
+    ]
+  },
+  "resolve": {
+    "legend": {
+      "color": "independent"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}
