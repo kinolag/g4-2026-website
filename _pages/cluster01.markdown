@@ -237,7 +237,7 @@ Questi dati confermano empiricamente l'ipotesi della "Metamorfosi del Brand" des
 
 **Post per tipologia di turismo dopo l'uscita di *Call Me By Your Name* - Crema:**
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster01/grafico_crema_commenti_tipologia_turismo_dopo_uscita_film.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster01/grafico_stacked_crema_post.json"></vegachart>
 </div>
 
 [Link di ritorno a Risultati](results.html)
