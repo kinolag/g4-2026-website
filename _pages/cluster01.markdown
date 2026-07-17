@@ -9,29 +9,23 @@ subtitle: "L'impatto di blockbuster globali e cult hollywoodiani sui territori i
 ---
 
 <style>
-  /* Contenitore standard, centrato e responsivo */
+  /* Contenitore standard */
   .chart-container {
     width: 100%;
-    max-width: 1000px; /* limite per evitare grafici troppo grandi */
-    margin: 40px auto; /* centra il grafico */
-    padding: 0 20px; /* margine laterale su mobile */
+    max-width: 1000px;
+    margin: 40px auto;
+    padding: 0 20px;
     box-sizing: border-box;
   }
 
-  /* Vega charts: impedisce stiramenti */
-  .chart-container vegachart,
+  /* Centra il contenitore generato da Vega */
   .chart-container .vega-embed {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
-
-  .chart-container canvas,
-  .chart-container svg {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-  }
+  
+  /* ELIMINATE tutte le regole per canvas e svg! */
 </style>
 
 ## Panoramica
