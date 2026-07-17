@@ -188,11 +188,3 @@ Il cineturismo è un laboratorio di trasformazione territoriale e culturale. Stu
 L'integrazione tra **analisi qualitativa** (narrazioni, percezioni, esperienze) e **analisi quantitativa** (dati, trend, metriche) è la chiave per comprendere e gestire il futuro di un turismo che nasce dallo schermo ma vive nel mondo reale.
 
 <a href="{{ site.baseurl }}/methodology.html">Metodologia →</a>
-
-<div class="row pt-4">
-    <div class="col-md-12 text-center">
-        <blockquote class="blockquote">
-            "La nostra metodologia trasforma il rumore digitale in evidenza empirica, permettendoci di osservare il CineTourism non come un evento isolato, ma come un processo evolutivo."
-        </blockquote>
-    </div>
-</div>
