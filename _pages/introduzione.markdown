@@ -4,8 +4,8 @@ title: "Introduzione al CineTourism"
 vega: true
 header_type: hero
 header_img: assets/images/header.svg
-header_title: "CineTourism: L'Impatto dei Media sul Territorio"
-subtitle: "Analisi multidisciplinare tra visibilità globale e sostenibilità locale"
+header_title: "Introduzione al CineTourism"
+subtitle: "Un fenomeno in rapida evoluzione"
 ---
 
 <style>
