@@ -42,9 +42,9 @@ cliccando su un punto si evidenziano tutte le località di quella produzione e l
 scheda a fianco ne mostra i dettagli.
 
 <div class="note-box">
-  <span class="note-title"><i class="fas fa-hand-pointer" aria-hidden="true"></i>Come usarla</span>
+  <span class="note-title"><i class="fas fa-hand-pointer" aria-hidden="true"></i>Come usare la mappa</span>
   Clicca una località per selezionare la sua produzione: la scheda a destra mostra
-  titolo, cluster ed elenco delle località. Doppio click per deselezionare.
+  titolo, cluster di appartenenza, elenco delle località e altri dettagli. Doppio click per deselezionare.
 </div>
 
 <div class="map-container">
@@ -53,7 +53,7 @@ scheda a fianco ne mostra i dettagli.
 
 <!--
   Spec unico (mappa + scheda) generato da build_map.py a partire da
-  produzioni_full_v0.py. L'interazione click->scheda e il link nella scheda
+  dataset json. L'interazione click->scheda e il link nella scheda
   funzionano perché selezione, filtro e href stanno nella stessa specifica.
 -->
 

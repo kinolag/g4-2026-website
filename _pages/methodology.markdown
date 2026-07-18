@@ -470,11 +470,3 @@ I sette filoni descritti confluiscono nel sito attraverso **tre cluster tematici
   <span class="note-title"><i class="fas fa-info-circle" aria-hidden="true"></i>Come leggere i cluster</span>
   Ogni cluster attinge in proporzioni diverse ai dati fisici e digitali qui descritti, a seconda della <strong>disponibilità</strong> e della <strong>rilevanza</strong> di ciascuna fonte per il caso specifico.
 </div>
-
-<div class="row pt-4">
-    <div class="col-md-12 text-center">
-        <blockquote class="blockquote">
-            "La nostra metodologia trasforma il rumore digitale in evidenza empirica, permettendoci di osservare il CineTourism non come un evento isolato, ma come un processo evolutivo."
-        </blockquote>
-    </div>
-</div>
