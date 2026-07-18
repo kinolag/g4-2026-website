@@ -175,14 +175,18 @@ Questi esempi mostrano come il cineturismo non sia solo un fenomeno economico, m
 
 Di seguito la wordcloud delle recensioni di GetYourGuide:
 
+
 <div class="row">
   <div class="col-md-12 text-center">
-    <img src="{{site.baseurl}}/assets/images/introduzione/wordcloud_recensioni.png"
+    <img src="{{site.baseurl}}/assets/images/introduzione/recensioni_gyg_wordcloud.png"
          class="img-fluid mx-auto d-block"
-         style="margin: 20px 0 5px 0; border-radius: 8px;"
-         alt="Locandine delle produzioni analizzate: Benvenuti al Sud, Curon, Rocco Schiavone, Un mondo a parte">
+         style="margin: 20px 0;"
+         alt="Sovraffollamento al Lago di Braies">
   </div>
 </div>
+
+
+
 <hr class="section-rule">
 
 ## Conclusioni e Prospettive

@@ -45,12 +45,13 @@ Il cluster raccoglie **quattro produzioni italiane**, ciascuna legata a uno o pi
          class="img-fluid mx-auto d-block"
          style="margin: 20px 0 5px 0; border-radius: 8px;"
          alt="Locandine delle produzioni analizzate: Benvenuti al Sud, Curon, Rocco Schiavone, Un mondo a parte">
-    <p style="font-size: 0.85em; color: #6c757d; margin-bottom: 40px; margin-top: 10px">
-      <em>
-        Locandine promozionali ufficiali. I diritti d'autore appartengono alle rispettive case di produzione: 
-        &copy; Medusa Film / Cattleya / Constantin Film / Sky / Film Commission Regione Campania, &copy; Indiana Production / Netflix, &copy; Cross Productions, &copy; Wildside / Medusa Film. <br>
-        Immagini utilizzate esclusivamente a scopo analitico, di ricerca e illustrativo ai sensi dell'art. 70 della Legge 633/1941 (Diritto di citazione).
-      </em>
+    <p style="font-size: 0.75em; color: #6c757d; margin-bottom: 40px; margin-top: 10px">
+        <em>
+          Locandine promozionali ufficiali. I diritti d'autore appartengono alle rispettive case di produzione:<br>
+          &copy; Medusa Film / Cattleya / Constantin Film / Sky / Film Commission Regione Campania,<br>
+          &copy; Indiana Production / Netflix, &copy; Cross Productions, &copy; Wildside / Medusa Film.<br>
+          Immagini utilizzate esclusivamente a scopo analitico, di ricerca e illustrativo ai sensi dell'art. 70 della Legge 633/1941 (Diritto di citazione).
+        </em>
     </p>
   </div>
 </div>
@@ -214,6 +215,25 @@ convive con una consapevolezza crescente dei suoi effetti collaterali.
   <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/castellabate_evoluzione_sentiment.json"></vegachart>
 </div>
 
+
+<div class="card border-primary mb-4">
+  <div class="card-body">
+    <h5 class="card-title">📌 Box 1 — Servizio del TG1 del 18 novembre 2010</h5>
+    <p class="card-text">
+      <em>Castellabate, piccolo borgo del Cilento reso famoso da <strong>Benvenuti al Sud</strong>, fenomeno cinematografico dell'anno, viene preso d'assalto dai turisti. L’inviata descrive un flusso continuo 
+      di visitatori attratti dai luoghi del set, spesso arrivati in pullman per vedere “le poste”, che nella realtà sono un bar.
+      Questo fenomeno porta benefici immediati: ristoratori e albergatori parlano di pienoni 
+      già da dicembre e prenotazioni per l’estate successiva. Infine, non mancano cittadini con un angolo da mostrare o un aneddoto da raccontare. — 
+      <a href="https://www.youtube.com/watch?v=CxJJ_wCjT-w" target="_blank"> Clicca qui </a> per vedere il video completo. </em>
+    </p>
+    <blockquote class="blockquote">
+      "Cosa volete vedere?" — "L’ambiente in cui hanno fatto il film...Il centro, le poste." — "Ma lo sapete che le poste non ci sono? In realtà è un bar." — "Non lo sapevamo." </blockquote>
+    <blockquote class="blockquote">  "Si vocifera che a dicembre qui avremo il pienone, ma non solo dicembre. Gli alberghi già hanno avuto le prenotazioni per l'estate prossima." </blockquote>
+    <blockquote class="blockquote">  "Ero qui e ho partecipato anche come interprete nel film." — "Che parte ha fatto?" — "Ho fatto la parte dello zingaro."
+    </blockquote>
+  </div>
+</div>
+
 ### Curon Venosta — _Curon_
 
 Il racconto mediatico legato a Curon mostra una **progressione netta e ben scandita nel tempo**. Dopo la fase iniziale — tra il 2018 e il 2020 — 
@@ -232,6 +252,33 @@ turismo cinematografico.
 <div class="chart-container">
   <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/curon_evoluzione_sentiment.json"></vegachart>
 </div>
+
+<div class="card border-primary mb-4">
+  <div class="card-body">
+    <h5 class="card-title">📌 Box 2 — Servizio del TGR Bolzano del 28 giugno 2020</h5>
+    <p class="card-text">
+      <em>
+        Effetto Netflix a Curon: dopo l’uscita della serie, il borgo e il celebre campanile 
+        sommerso attirano turisti da tutta Italia e dall’estero, incuriositi dall’ambientazione 
+        della storia soprannaturale. Le rive del lago si riempiono di visitatori che vogliono 
+        vedere dal vivo il luogo reso iconico dalla produzione Netflix. — 
+        <a href="https://www.rainews.it/tgr/bolzano/video/2020/06/blz-effetto-Netflix-Curon-turisti-serie-TV-75c47ab1-7065-4fe4-8bf6-b9aa0110b2a5.html" target="_blank">
+          Clicca qui
+        </a> per vedere il video completo.
+      </em>
+    </p>
+    <blockquote class="blockquote">
+      "È ancora meglio che nella serie perché è più luminoso, c'è il sole e il paesaggio è molto 
+      bello." — <strong>Benoit, studente belga in Svizzera</strong>
+    </blockquote>
+    <blockquote class="blockquote">
+      "Mi ha chiamato tanta gente dall'Italia, e anche dalla Germania: vogliono vedere 
+      'il posto con la torre'. Mi sembra che questa serie stia portando un po' di turisti." — 
+      <strong>Karl-Heinz Theiner, albergatore</strong>
+    </blockquote>
+  </div>
+</div>
+
 
 ### Opi e Pescasseroli — _Un mondo a parte_
 
