@@ -5,7 +5,7 @@
       "width": 520,
       "height": 640,
       "title": {
-        "text": "Le location del CineTourism in Italia",
+        "text": "Località del CineTourism in Italia",
         "fontSize": 15,
         "anchor": "start"
       },
@@ -125,7 +125,7 @@
     },
     {
       "width": 280,
-      "height": 640,
+      "height": 700,
       "view": {
         "stroke": null
       },
@@ -153,7 +153,7 @@
               "value": 0
             },
             "y2": {
-              "value": 639
+              "value": 699
             }
           }
         },
@@ -378,7 +378,7 @@
               "value": 18
             },
             "y": {
-              "value": 320
+              "value": 318
             },
             "text": {
               "field": "_l",
@@ -386,6 +386,42 @@
             },
             "href": {
               "field": "link",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "image",
+            "width": 200,
+            "aspect": true,
+            "align": "left",
+            "baseline": "top"
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 360
+            },
+            "url": {
+              "field": "poster",
+              "type": "nominal"
+            },
+            "description": {
+              "field": "poster_alt",
               "type": "nominal"
             }
           }
@@ -402,7 +438,14 @@
         "produzione": "Avengers: Age of Ultron",
         "cluster": "Cluster 1",
         "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
-        "link": "cluster01.html"
+        "link": "cluster01.html",
+        "poster": "assets/images/locandine/avengers-age-of-ultron.jpg",
+        "poster_alt": "Locandina del film avengers age of ultron",
+        "rating": 7.3,
+        "incassi": 1405403694,
+        "budget": 365000000,
+        "valuta": "USD",
+        "descrizione": "Gli Avengers affrontano Ultron in una battaglia globale che mette alla prova il loro futuro come squadra."
       },
       {
         "localita": "Verrès",
@@ -411,7 +454,14 @@
         "produzione": "Avengers: Age of Ultron",
         "cluster": "Cluster 1",
         "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
-        "link": "cluster01.html"
+        "link": "cluster01.html",
+        "poster": "assets/images/locandine/avengers-age-of-ultron.jpg",
+        "poster_alt": "Locandina del film avengers age of ultron",
+        "rating": 7.3,
+        "incassi": 1405403694,
+        "budget": 365000000,
+        "valuta": "USD",
+        "descrizione": "Gli Avengers affrontano Ultron in una battaglia globale che mette alla prova il loro futuro come squadra."
       },
       {
         "localita": "Pont-Saint-Martin",
@@ -420,79 +470,14 @@
         "produzione": "Avengers: Age of Ultron",
         "cluster": "Cluster 1",
         "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
-        "link": "cluster01.html"
-      },
-      {
-        "localita": "Opi",
-        "lat": 41.7756,
-        "lon": 13.8267,
-        "produzione": "Un mondo a parte",
-        "cluster": "Cluster 3",
-        "cluster_label": "Cluster 3 · Produzioni di nicchia",
-        "link": "cluster03.html"
-      },
-      {
-        "localita": "Pescasseroli",
-        "lat": 41.8046,
-        "lon": 13.7897,
-        "produzione": "Un mondo a parte",
-        "cluster": "Cluster 3",
-        "cluster_label": "Cluster 3 · Produzioni di nicchia",
-        "link": "cluster03.html"
-      },
-      {
-        "localita": "Agliè",
-        "lat": 45.3636,
-        "lon": 7.7686,
-        "produzione": "Elisa di Rivombrosa",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
-        "link": "cluster02.html"
-      },
-      {
-        "localita": "Aosta",
-        "lat": 45.7372,
-        "lon": 7.3206,
-        "produzione": "Rocco Schiavone",
-        "cluster": "Cluster 3",
-        "cluster_label": "Cluster 3 · Produzioni di nicchia",
-        "link": "cluster03.html"
-      },
-      {
-        "localita": "Braies",
-        "lat": 46.6944,
-        "lon": 12.0857,
-        "produzione": "Un passo dal cielo",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
-        "link": "cluster02.html"
-      },
-      {
-        "localita": "San Vito di Cadore",
-        "lat": 46.46,
-        "lon": 12.2058,
-        "produzione": "Un passo dal cielo",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
-        "link": "cluster02.html"
-      },
-      {
-        "localita": "San Candido",
-        "lat": 46.7325,
-        "lon": 12.2789,
-        "produzione": "Un passo dal cielo",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
-        "link": "cluster02.html"
-      },
-      {
-        "localita": "Castellabate",
-        "lat": 40.2786,
-        "lon": 14.9492,
-        "produzione": "Benvenuti al Sud",
-        "cluster": "Cluster 3",
-        "cluster_label": "Cluster 3 · Produzioni di nicchia",
-        "link": "cluster03.html"
+        "link": "cluster01.html",
+        "poster": "assets/images/locandine/avengers-age-of-ultron.jpg",
+        "poster_alt": "Locandina del film avengers age of ultron",
+        "rating": 7.3,
+        "incassi": 1405403694,
+        "budget": 365000000,
+        "valuta": "USD",
+        "descrizione": "Gli Avengers affrontano Ultron in una battaglia globale che mette alla prova il loro futuro come squadra."
       },
       {
         "localita": "Crema",
@@ -501,34 +486,14 @@
         "produzione": "Call Me by Your Name",
         "cluster": "Cluster 1",
         "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
-        "link": "cluster01.html"
-      },
-      {
-        "localita": "Curon Venosta",
-        "lat": 46.8082,
-        "lon": 10.5409,
-        "produzione": "Curon",
-        "cluster": "Cluster 3",
-        "cluster_label": "Cluster 3 · Produzioni di nicchia",
-        "link": "cluster03.html"
-      },
-      {
-        "localita": "Gubbio",
-        "lat": 43.3505,
-        "lon": 12.5783,
-        "produzione": "Don Matteo",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
-        "link": "cluster02.html"
-      },
-      {
-        "localita": "Spoleto",
-        "lat": 42.7328,
-        "lon": 12.7357,
-        "produzione": "Don Matteo",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
-        "link": "cluster02.html"
+        "link": "cluster01.html",
+        "poster": "assets/images/locandine/call-me-by-your-name.jpg",
+        "poster_alt": "Locandina del film call me by your name",
+        "rating": 7.8,
+        "incassi": 41887000,
+        "budget": 3500000,
+        "valuta": "USD",
+        "descrizione": "Nell'estate del 1983, Elio vive un'intensa storia d'amore con Oliver nella campagna lombarda."
       },
       {
         "localita": "Montepulciano",
@@ -537,7 +502,14 @@
         "produzione": "The Twilight Saga: New Moon",
         "cluster": "Cluster 1",
         "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
-        "link": "cluster01.html"
+        "link": "cluster01.html",
+        "poster": "assets/images/locandine/the-twilight-saga-new-moon.jpg",
+        "poster_alt": "Locandina del film the twilight saga: new moon",
+        "rating": 4.8,
+        "incassi": 709827462,
+        "budget": 50000000,
+        "valuta": "USD",
+        "descrizione": "Bella affronta la perdita di Edward e si avvicina a Jacob, mentre i Volturi osservano nell'ombra."
       },
       {
         "localita": "Volterra",
@@ -546,16 +518,94 @@
         "produzione": "The Twilight Saga: New Moon",
         "cluster": "Cluster 1",
         "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
-        "link": "cluster01.html"
+        "link": "cluster01.html",
+        "poster": "assets/images/locandine/the-twilight-saga-new-moon.jpg",
+        "poster_alt": "Locandina del film the twilight saga: new moon",
+        "rating": 4.8,
+        "incassi": 709827462,
+        "budget": 50000000,
+        "valuta": "USD",
+        "descrizione": "Bella affronta la perdita di Edward e si avvicina a Jacob, mentre i Volturi osservano nell'ombra."
       },
       {
-        "localita": "Pienza",
-        "lat": 43.0766,
-        "lon": 11.6789,
-        "produzione": "I Medici",
-        "cluster": "Cluster 1",
-        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
-        "link": "cluster01.html"
+        "localita": "Braies",
+        "lat": 46.6944,
+        "lon": 12.0857,
+        "produzione": "Un passo dal cielo",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "poster": "assets/images/locandine/un-passo-dal-cielo.jpg",
+        "poster_alt": "Locandina del film un passo dal cielo",
+        "rating": 6.8,
+        "incassi": null,
+        "budget": null,
+        "valuta": null,
+        "descrizione": "Tra le Dolomiti, un gruppo di forestali affronta misteri e crimini."
+      },
+      {
+        "localita": "San Vito Di Cadore",
+        "lat": 46.46,
+        "lon": 12.2058,
+        "produzione": "Un passo dal cielo",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "poster": "assets/images/locandine/un-passo-dal-cielo.jpg",
+        "poster_alt": "Locandina del film un passo dal cielo",
+        "rating": 6.8,
+        "incassi": null,
+        "budget": null,
+        "valuta": null,
+        "descrizione": "Tra le Dolomiti, un gruppo di forestali affronta misteri e crimini."
+      },
+      {
+        "localita": "San Candido",
+        "lat": 46.7325,
+        "lon": 12.2789,
+        "produzione": "Un passo dal cielo",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "poster": "assets/images/locandine/un-passo-dal-cielo.jpg",
+        "poster_alt": "Locandina del film un passo dal cielo",
+        "rating": 6.8,
+        "incassi": null,
+        "budget": null,
+        "valuta": null,
+        "descrizione": "Tra le Dolomiti, un gruppo di forestali affronta misteri e crimini."
+      },
+      {
+        "localita": "Gubbio",
+        "lat": 43.3505,
+        "lon": 12.5783,
+        "produzione": "Don Matteo",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "poster": "assets/images/locandine/don-matteo.jpg",
+        "poster_alt": "Locandina del film don matteo",
+        "rating": 6.7,
+        "incassi": null,
+        "budget": null,
+        "valuta": null,
+        "descrizione": "Un prete-investigatore risolve casi complessi nelle città umbre."
+      },
+      {
+        "localita": "Spoleto",
+        "lat": 42.7328,
+        "lon": 12.7357,
+        "produzione": "Don Matteo",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "poster": "assets/images/locandine/don-matteo.jpg",
+        "poster_alt": "Locandina del film don matteo",
+        "rating": 6.7,
+        "incassi": null,
+        "budget": null,
+        "valuta": null,
+        "descrizione": "Un prete-investigatore risolve casi complessi nelle città umbre."
       },
       {
         "localita": "Ragusa Ibla",
@@ -564,7 +614,14 @@
         "produzione": "Il giovane Montalbano",
         "cluster": "Cluster 2",
         "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
-        "link": "cluster02.html"
+        "link": "cluster02.html",
+        "poster": "assets/images/locandine/il-giovane-montalbano.jpg",
+        "poster_alt": "Locandina del film il giovane montalbano",
+        "rating": 8.0,
+        "incassi": null,
+        "budget": null,
+        "valuta": null,
+        "descrizione": "Il giovane commissario Montalbano affronta i primi casi nella Sicilia meridionale."
       },
       {
         "localita": "Santa Croce Camerina",
@@ -573,7 +630,14 @@
         "produzione": "Il giovane Montalbano",
         "cluster": "Cluster 2",
         "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
-        "link": "cluster02.html"
+        "link": "cluster02.html",
+        "poster": "assets/images/locandine/il-giovane-montalbano.jpg",
+        "poster_alt": "Locandina del film il giovane montalbano",
+        "rating": 8.0,
+        "incassi": null,
+        "budget": null,
+        "valuta": null,
+        "descrizione": "Il giovane commissario Montalbano affronta i primi casi nella Sicilia meridionale."
       },
       {
         "localita": "Scicli",
@@ -582,7 +646,142 @@
         "produzione": "Il giovane Montalbano",
         "cluster": "Cluster 2",
         "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
-        "link": "cluster02.html"
+        "link": "cluster02.html",
+        "poster": "assets/images/locandine/il-giovane-montalbano.jpg",
+        "poster_alt": "Locandina del film il giovane montalbano",
+        "rating": 8.0,
+        "incassi": null,
+        "budget": null,
+        "valuta": null,
+        "descrizione": "Il giovane commissario Montalbano affronta i primi casi nella Sicilia meridionale."
+      },
+      {
+        "localita": "Agliè",
+        "lat": 45.3636,
+        "lon": 7.7686,
+        "produzione": "Elisa di Rivombrosa",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "poster": "assets/images/locandine/elisa-di-rivombrosa.jpg",
+        "poster_alt": "Locandina del film elisa di rivombrosa",
+        "rating": 7.4,
+        "incassi": null,
+        "budget": null,
+        "valuta": null,
+        "descrizione": "Una giovane donna dell’aristocrazia piemontese lotta contro intrighi politici nel XVIII secolo."
+      },
+      {
+        "localita": "Torino",
+        "lat": 45.0703,
+        "lon": 7.6869,
+        "produzione": "Elisa di Rivombrosa",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "poster": "assets/images/locandine/elisa-di-rivombrosa.jpg",
+        "poster_alt": "Locandina del film elisa di rivombrosa",
+        "rating": 7.4,
+        "incassi": null,
+        "budget": null,
+        "valuta": null,
+        "descrizione": "Una giovane donna dell’aristocrazia piemontese lotta contro intrighi politici nel XVIII secolo."
+      },
+      {
+        "localita": "Castellabate",
+        "lat": 40.2786,
+        "lon": 14.9492,
+        "produzione": "Benvenuti al Sud",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "link": "cluster03.html",
+        "poster": "assets/images/locandine/benvenuti-al-sud.jpg",
+        "poster_alt": "Locandina del film benvenuti al sud",
+        "rating": 6.6,
+        "incassi": 29000000,
+        "budget": 4500000,
+        "valuta": "EUR",
+        "descrizione": "Un impiegato del Nord scopre la bellezza e l’umanità del Sud Italia."
+      },
+      {
+        "localita": "Curon Venosta",
+        "lat": 46.8082,
+        "lon": 10.5409,
+        "produzione": "Curon",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "link": "cluster03.html",
+        "poster": "assets/images/locandine/curon.jpg",
+        "poster_alt": "Locandina del film curon",
+        "rating": 5.9,
+        "incassi": null,
+        "budget": null,
+        "valuta": null,
+        "descrizione": "Una famiglia torna a Curon, dove misteri e presenze sovrannaturali emergono dal lago sommerso."
+      },
+      {
+        "localita": "Aosta",
+        "lat": 45.7372,
+        "lon": 7.3206,
+        "produzione": "Rocco Schiavone",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "link": "cluster03.html",
+        "poster": "assets/images/locandine/rocco-schiavone.jpg",
+        "poster_alt": "Locandina del film rocco schiavone",
+        "rating": 7.9,
+        "incassi": null,
+        "budget": null,
+        "valuta": null,
+        "descrizione": "Il vicequestore Schiavone indaga tra crimini e ironia nella fredda Aosta."
+      },
+      {
+        "localita": "Opi",
+        "lat": 41.7756,
+        "lon": 13.8267,
+        "produzione": "Un mondo a parte",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "link": "cluster03.html",
+        "poster": "assets/images/locandine/un-mondo-a-parte.jpg",
+        "poster_alt": "Locandina del film un mondo a parte",
+        "rating": 6.4,
+        "incassi": null,
+        "budget": 9000000,
+        "valuta": "EUR",
+        "descrizione": "Un insegnante scopre una comunità montana che cambierà la sua vita."
+      },
+      {
+        "localita": "Pescasseroli",
+        "lat": 41.8046,
+        "lon": 13.7897,
+        "produzione": "Un mondo a parte",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "link": "cluster03.html",
+        "poster": "assets/images/locandine/un-mondo-a-parte.jpg",
+        "poster_alt": "Locandina del film un mondo a parte",
+        "rating": 6.4,
+        "incassi": null,
+        "budget": 9000000,
+        "valuta": "EUR",
+        "descrizione": "Un insegnante scopre una comunità montana che cambierà la sua vita."
+      },
+      {
+        "localita": "Pienza",
+        "lat": 43.0766,
+        "lon": 11.6789,
+        "produzione": "I Medici",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "link": "cluster01.html",
+        "poster": "assets/images/locandine/medici.jpg",
+        "poster_alt": "Locandina del film medici",
+        "rating": 7.9,
+        "incassi": null,
+        "budget": null,
+        "valuta": null,
+        "descrizione": "La storia della famiglia Medici, tra potere politico, arte e intrighi nella Firenze rinascimentale."
       }
     ]
   },
