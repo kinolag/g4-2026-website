@@ -227,9 +227,9 @@ convive con una consapevolezza crescente dei suoi effetti collaterali.
       <a href="https://www.youtube.com/watch?v=CxJJ_wCjT-w" target="_blank"> Clicca qui </a> per vedere il video completo. </em>
     </p>
     <blockquote class="blockquote">
-      "Cosa volete vedere?" — "L’ambiente in cui hanno fatto il film...Il centro, le poste." — "Ma lo sapete che le poste non ci sono? In realtà è un bar." — "Non lo sapevamo." </blockquote>
-    <blockquote class="blockquote">  "Si vocifera che a dicembre qui avremo il pienone, ma non solo dicembre. Gli alberghi già hanno avuto le prenotazioni per l'estate prossima." </blockquote>
-    <blockquote class="blockquote">  "Ero qui e ho partecipato anche come interprete nel film." — "Che parte ha fatto?" — "Ho fatto la parte dello zingaro."
+      "Cosa volete vedere?" — "L’ambiente in cui hanno fatto il film...Il centro, le poste." — "Ma lo sapete che le poste non ci sono? In realtà è un bar." — "Non lo sapevamo." — <strong>Coppia di turisti italiani</strong></blockquote>
+    <blockquote class="blockquote">  "Si vocifera che a dicembre qui avremo il pienone, ma non solo dicembre. Gli alberghi già hanno avuto le prenotazioni per l'estate prossima." — <strong>Albergatore del luogo</strong></blockquote>
+    <blockquote class="blockquote">  "Ero qui e ho partecipato anche come interprete nel film." — "Che parte ha fatto?" — "Ho fatto la parte dello zingaro." — <strong>Cittadino locale</strong>
     </blockquote>
   </div>
 </div>
