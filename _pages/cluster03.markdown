@@ -228,7 +228,7 @@ convive con una consapevolezza crescente dei suoi effetti collaterali.
     </p>
     <blockquote class="blockquote">
       "Cosa volete vedere?" — "L’ambiente in cui hanno fatto il film...Il centro, le poste." — "Ma lo sapete che le poste non ci sono? In realtà è un bar." — "Non lo sapevamo." — <strong>Coppia di turisti italiani</strong></blockquote>
-    <blockquote class="blockquote">  "Si vocifera che a dicembre qui avremo il pienone, ma non solo dicembre. Gli alberghi già hanno avuto le prenotazioni per l'estate prossima." — <strong>Albergatore del luogo</strong></blockquote>
+    <blockquote class="blockquote">  "Si vocifera che a dicembre qui avremo il pienone, ma non solo dicembre. Gli alberghi già hanno avuto le prenotazioni per l'estate prossima." — <strong>Albergatore</strong></blockquote>
     <blockquote class="blockquote">  "Ero qui e ho partecipato anche come interprete nel film." — "Che parte ha fatto?" — "Ho fatto la parte dello zingaro." — <strong>Cittadino locale</strong>
     </blockquote>
   </div>
@@ -269,12 +269,12 @@ turismo cinematografico.
     </p>
     <blockquote class="blockquote">
       "È ancora meglio che nella serie perché è più luminoso, c'è il sole e il paesaggio è molto 
-      bello." — <strong>Benoit, studente belga in Svizzera</strong>
+      bello." — <strong>Studente belga in Svizzera</strong>
     </blockquote>
     <blockquote class="blockquote">
       "Mi ha chiamato tanta gente dall'Italia, e anche dalla Germania: vogliono vedere 
       'il posto con la torre'. Mi sembra che questa serie stia portando un po' di turisti." — 
-      <strong>Karl-Heinz Theiner, albergatore</strong>
+      <strong>Albergatore</strong>
     </blockquote>
   </div>
 </div>
@@ -306,7 +306,7 @@ Il confronto disegna **tre profili narrativi ben distinti**.
 non solo il successo del film è riconosciuto, ma gli articoli lo celebrano come motore di sviluppo e simbolo identitario per Castellabate.  
 *Curon* rappresenta invece il caso più **polarizzato**: l’entusiasmo iniziale per la serie e per la riscoperta del Lago di Resia 
 convive con un crescente dibattito sulle criticità del turismo, tra sovraffollamento e pressione infrastrutturale.  
-*Un mondo a parte* si colloca in una posizione intermedia: il racconto mediatico è positivo e diffuso, ma evolve nel tempo, 
+*Un mondo a parte* si colloca in una **posizione intermedia**: il racconto mediatico è positivo e diffuso, ma evolve nel tempo, 
 passando dalla curiosità per la novità del film alla riflessione più matura sull’impatto turistico e ambientale nelle aree di Opi e Pescasseroli.  
 
 In sintesi, il cluster mostra come il cinema italiano possa generare **narrazioni territoriali di natura diversa** — dalla celebrazione 
@@ -360,6 +360,12 @@ Post per tipologia di turismo **dopo** l'uscita di _Rocco Schiavone_ - Aosta:
 
 <div class="chart-container">
   <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/aosta_post_reddit_dopo.json"></vegachart>
+</div>
+
+### YouTube
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/opi_youtube.json"></vegachart>
 </div>
 
 ---
