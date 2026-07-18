@@ -39,6 +39,22 @@ subtitle: " Come lo schermo trasforma i territori: produzioni di nicchia o non r
 Il cluster raccoglie **quattro produzioni italiane**, ciascuna legata a uno o più territori specifici: **Castellabate** per *Benvenuti al Sud*; 
 **Curon Venosta / Lago di Resia** per *Curon*; **Aosta** per *Rocco Schiavone*; **Opi e Pescasseroli** per *Un mondo a parte*.
 
+<div class="row">
+  <div class="col-md-12 text-center">
+    <img src="{{site.baseurl}}/assets/images/cluster03/locandine_cluster3.jpg"
+         class="img-fluid mx-auto d-block"
+         style="margin: 20px 0 5px 0; border-radius: 8px;"
+         alt="Locandine delle produzioni analizzate: Benvenuti al Sud, Curon, Rocco Schiavone, Un mondo a parte">
+    <p style="font-size: 0.85em; color: #6c757d; margin-bottom: 40px; margin-top: 10px">
+      <em>
+        Locandine promozionali ufficiali. I diritti d'autore appartengono alle rispettive case di produzione: 
+        &copy; Medusa Film / Cattleya / Constantin Film / Sky / Film Commission Regione Campania, &copy; Indiana Production / Netflix, &copy; Cross Productions, &copy; Wildside / Medusa Film. <br>
+        Immagini utilizzate esclusivamente a scopo analitico, di ricerca e illustrativo ai sensi dell'art. 70 della Legge 633/1941 (Diritto di citazione).
+      </em>
+    </p>
+  </div>
+</div>
+
 Le produzioni raccolte nel cluster appartengono a un immaginario **interamente italiano**, lontano dai blockbuster internazionali analizzati 
 nei cluster precedenti e radicato in un pubblico domestico che riconosce nei luoghi rappresentati una geografia familiare. Sono opere che non 
 hanno avuto particolare risonanza all’estero, ma che in Italia hanno saputo incidere profondamente sulla percezione dei territori, trasformando 
@@ -83,15 +99,35 @@ diverse tra loro.
 
 ### Castellabate — _Benvenuti al Sud_
 
-**Nessuna evidenza** tra gli indicatori selezionati: il segnale ISTAT non ha superato le soglie di validazione.
-Il caso resta comunque rilevante nel cluster, ma l’impatto misurabile non emerge dagli indicatori ISTAT utilizzati.
+Il grafico mostra in modo chiaro l’effetto del film *Benvenuti al Sud* sul turismo extra‑alberghiero di Castellabate.  
+Dopo anni di stabilità (2002‑2008), l’indicatore dei **letti extra‑alberghieri** esplode subito dopo l’uscita del film (2010‑2012), 
+con un incremento del **+403,81%** rispetto al periodo precedente e un **Zeta Shift** di **+242,67 σ**, segno di una variazione 
+eccezionale rispetto alla media storica.  
+
+Il **Cineturismo Impact Score (CIS)** di **93,33/100** conferma che l’effetto mediatico è stato fortissimo e duraturo: 
+la **persistenza del segnale (0,67/1)** indica che, pur con un calo dopo il picco iniziale, l’impatto non si è esaurito del tutto. 
+Dal 2018 si osserva infatti una nuova crescita, probabilmente legata alla valorizzazione del territorio e alla memoria del film.  
+
+In sintesi, Castellabate rappresenta un caso emblematico di **cineturismo strutturale**, dove la notorietà cinematografica ha generato 
+un’espansione reale e misurabile dell’offerta ricettiva, molto superiore al **benchmark regionale**, che resta quasi invariato.  
+Un esempio concreto di come il cinema possa trasformare un luogo in destinazione turistica stabile.
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/castellabate_istat.json"></vegachart>
+</div>
 
 ### Curon Venosta — _Curon_
 
-Segnale pieno e coerente: la **popolazione straniera** cresce del **+27,71%**, con uno **Zeta Shift di +5,68σ** e **persistenza piena (1/1)**. 
-Il **CIS** è **100/100**, e l’RGR raggiunge **+20,79%**.
-È un caso che non presenta anomalie: la crescita è moderata ma stabile, e si manifesta come una trasformazione graduale del territorio, 
-più che come un picco isolato. La serie Netflix ha introdotto una discontinuità evidente, ma senza sbilanciare gli equilibri locali.
+Il grafico trasmette un segnale pieno e coerente di come la serie *Curon* abbia modificato la traiettoria demografica del comune. 
+Prima del 2020 la quota di popolazione straniera cresce lentamente e rimane costantemente al di sotto del valore regionale; 
+dopo la messa in onda, invece, la curva comunale accelera, supera il benchmark e mantiene un andamento positivo fino al 2024.  
+
+L’aumento **(+27,71%)** rispetto al periodo pre‑evento e lo scarto storico **(+5,68 σ)** mostrano una variazione statisticamente eccezionale. 
+La **persistenza del segnale (1/1)** e il **Cineturismo Impact Score (100/100)** indicano che l’effetto non è episodico ma strutturale, 
+mentre la validazione ex‑post **(+20,79%)** conferma che la crescita non è un rimbalzo temporaneo ma un trend consolidato.  
+
+In sintesi, Curon Venosta diventa un caso emblematico di **cineturismo ad impatto sociale**, dove la visibilità mediatica non solo aumenta 
+l’attrattività turistica, ma contribuisce anche a trasformare la composizione demografica del territorio in modo stabile e misurabile.
 
 <div class="chart-container">
   <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/curon_istat.json"></vegachart>
@@ -100,10 +136,16 @@ più che come un picco isolato. La serie Netflix ha introdotto una discontinuit�
 
 ### Aosta — _Rocco Schiavone_
 
-Segnale solido e lineare: la **densità degli esercizi ricettivi** aumenta del **+26,19%**, con uno **Zeta Shift molto alto (+21,45σ)** e 
-**persistenza piena (1/1)**. Il **CIS** è **100/100**, e l’**RGR** si attesta a **+18,48%**.
-Non ci sono balzi improvvisi, ma una crescita coerente con la serialità e con la capacità della produzione di mantenere nel tempo 
-un’attenzione costante sulla città. È un caso “pulito”, privo di estremi, che riflette bene la natura progressiva dell’impatto.
+Il grafico mostra l’evoluzione della **densità di esercizi ricettivi alberghieri ed extra‑alberghieri ad Aosta** tra il 2014 e il 2024, 
+in relazione alla serie *Rocco Schiavone*. Prima dell’inizio delle riprese il valore comunale è stabile, mentre dopo la **messa in onda (2016)** 
+si osserva una crescita costante che porta la curva blu del comune a distanziarsi nettamente dal benchmark regionale, rimasto pressoché invariato.  
+
+L’aumento **(+26,19%)** e lo **scarto storico (+21,45 σ)** indicano una variazione significativa rispetto alla media precedente, mentre 
+la **persistenza del segnale (1/1)** e il **Cineturismo Impact Score (100/100)** confermano un impatto pienamente consolidato e duraturo. 
+La **validazione ex‑post (+18,48%)** rafforza l’evidenza di un trend stabile nel tempo.  
+
+In sintesi, Aosta rappresenta un caso di **cineturismo strutturale**: la notorietà televisiva di *Rocco Schiavone* ha contribuito ad ampliare 
+l’offerta ricettiva locale, trasformando la città in una destinazione riconoscibile e attrattiva ben oltre la dimensione regionale.
 
 <div class="chart-container">
   <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/aosta_istat.json"></vegachart>
@@ -111,16 +153,16 @@ un’attenzione costante sulla città. È un caso “pulito”, privo di estremi
 
 ### Opi e Pescasseroli — _Un mondo a parte_
 
-Nessuna evidenza tra gli indicatori selezionati: nessun indicatore validato, nessun RGR sopra soglia.
+**Nessuna evidenza** tra gli indicatori selezionati: nessun indicatore validato, nessun RGR sopra soglia.
 L’effetto del film è reale e riconoscibile sul territorio, ma non si manifesta nei KPI ISTAT considerati.
 
 ### Uno sguardo d'insieme
 
 Il quadro che emerge dal confronto è quasi a due velocità.
-Da un lato Curon e Aosta disegnano il profilo più “sano” del cluster — segnali coerenti, persistenti nel tempo, privi di anomalie 
+Da un lato **Castellabate, Curon e Aosta** disegnano il profilo più “sano” del cluster — segnali coerenti, persistenti nel tempo, privi di anomalie 
 statistiche.
-Dall’altro Castellabate e Opi/Pescasseroli, pur centrali nella narrazione del cluster, non superano le soglie ISTAT: l’impatto esiste, 
-ma non è misurabile attraverso gli indicatori selezionati.
+Dall’altro **Opi/Pescasseroli**, pur centrale nella narrazione del cluster, non supera le soglie ISTAT: l’impatto esiste, non è misurabile attraverso 
+gli indicatori selezionati, ma è riconoscibile se si guarda all'evoluzione dell'**ecosistema turistico**.
 
 ### L'ecosistema turistico attorno ai set
 
