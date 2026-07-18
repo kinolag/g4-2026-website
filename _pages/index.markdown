@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Mappa"
+title: "CineTourism Map"
 vega: true
 header_type: hero
 header_img: assets/images/header.svg
-header_title: "Mappa del CineTourism in Italia"
+header_title: "CineTourism in Italia"
 subtitle: "Le produzioni e le località"
 ---
 
