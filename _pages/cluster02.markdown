@@ -382,20 +382,17 @@ Vediamo alcuni esempi di questo fenomeno.
 </div> -->
 
 <!-- GRAFICO: attenzione Reddit + YouTube -->
+ 
+### Reddit
 
-<!-- ### Reddit
-
-Commenti per tipologia di turismo dopo l'uscita - Gubbio
-
-<div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/grafico_gubbio_commenti_tipologia_turismo_dopo_uscita_film.json"></vegachart>
+<div class="chart-outer-container">    
+    <div class="chart-container">
+      <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/grafico_stacked_scicli_commenti.json"></vegachart>
+    </div>
+    <div class="chart-container">
+      <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/grafico_stacked_ragusa_commenti.json"></vegachart>
+    </div> 
 </div>
-
-Commenti per tipologia di turismo dopo l'uscita - Spoleto
-
-<div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/grafico_spoleto_commenti_tipologia_turismo_dopo_uscita_film.json"></vegachart>
-</div> -->
 
 ### YouTube
 
@@ -442,16 +439,5 @@ Commenti per tipologia di turismo dopo l'uscita - Spoleto
     <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/timeline_il_giovane_montalbano_run1.vl.json"></vegachart>
   </div>
 </div> -->
-
-
-_Sezione in lavorazione._
-
----
-
-## In sintesi
-
-<!-- IN PROGRESS: cosa dicono insieme le tre voci per il Cluster 02 -->
-
-_Sezione in lavorazione._
 
 <a href="{{ site.baseurl }}/results.html">← Torna ai Risultati</a>
