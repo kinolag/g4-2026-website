@@ -395,7 +395,7 @@
         "name": "Theatrical Release (Mar 2024)",
         "produzione": "un mondo a parte",
         "series": null,
-        "label": "Uscita in sala · mar 2024"
+        "label": "Uscita in sala"
       },
       {
         "color": "#006400",
@@ -403,7 +403,7 @@
         "name": "Streaming Release (Jan 2026)",
         "produzione": "un mondo a parte",
         "series": null,
-        "label": "Streaming · gen 2026"
+        "label": "Streaming"
       }
     ]
   },
@@ -498,7 +498,7 @@
       "mark": {
         "type": "text",
         "angle": 270,
-        "align": "left",
+        "align": "right",
         "baseline": "bottom",
         "dx": 0,
         "dy": -6,
@@ -511,7 +511,7 @@
           "type": "temporal"
         },
         "y": {
-          "value": 292
+          "value": 8
         },
         "text": {
           "field": "label",
