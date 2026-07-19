@@ -1,29 +1,28 @@
 {
-  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "config": {
     "view": {
       "continuousHeight": 300,
-      "continuousWidth": 300
+      "continuousWidth": 300,
+      "stroke": null
     }
   },
+  "title": {
+    "text": "Un mondo a parte — commenti al mese e milestone di uscita",
+    "subtitle": "Video cercati per nome della produzione + località",
+    "fontSize": 15,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 300,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
   "datasets": {
-    "data-7ec1e99428e924dba687a288f0966d3d": [
-      {
-        "color": "#8B0000",
-        "date": "2024-03-28T00:00:00",
-        "name": "Theatrical Release (Mar 2024)",
-        "produzione": "un mondo a parte",
-        "series": NaN
-      },
-      {
-        "color": "#006400",
-        "date": "2026-01-15T00:00:00",
-        "name": "Streaming Release (Jan 2026)",
-        "produzione": "un mondo a parte",
-        "series": NaN
-      }
-    ],
-    "data-ee5ed02737ee2c1f4379382f114fd80a": [
+    "serie": [
       {
         "date": "2024-02-01T00:00:00",
         "month": "2024-02",
@@ -388,87 +387,143 @@
         "sim_mean": 0.76851803,
         "tipo": "film_ita"
       }
+    ],
+    "milestone": [
+      {
+        "color": "#8B0000",
+        "date": "2024-03-28T00:00:00",
+        "name": "Theatrical Release (Mar 2024)",
+        "produzione": "un mondo a parte",
+        "series": null,
+        "label": "Uscita in sala · mar 2024"
+      },
+      {
+        "color": "#006400",
+        "date": "2026-01-15T00:00:00",
+        "name": "Streaming Release (Jan 2026)",
+        "produzione": "un mondo a parte",
+        "series": null,
+        "label": "Streaming · gen 2026"
+      }
     ]
   },
-  "height": 300,
   "layer": [
     {
       "data": {
-        "name": "data-ee5ed02737ee2c1f4379382f114fd80a"
+        "name": "serie"
+      },
+      "mark": {
+        "type": "line",
+        "point": true,
+        "color": "#2b6cb0"
       },
       "encoding": {
-        "tooltip": [
-          {
-            "field": "date",
-            "format": "%m-%Y",
-            "title": "month",
-            "type": "temporal"
-          },
-          {
-            "field": "n_comments",
-            "type": "quantitative"
-          },
-          {
-            "field": "ref_rate_lex",
-            "format": ".2%",
-            "type": "quantitative"
-          }
-        ],
         "x": {
-          "axis": {
-            "format": "%m-%Y"
-          },
           "field": "date",
+          "type": "temporal",
           "title": null,
-          "type": "temporal"
+          "axis": {
+            "format": "%m-%Y",
+            "labelFontSize": 11
+          }
         },
         "y": {
           "field": "n_comments",
-          "title": "comments / month",
-          "type": "quantitative"
-        }
-      },
-      "mark": {
-        "point": true,
-        "type": "line"
+          "type": "quantitative",
+          "title": "commenti / mese"
+        },
+        "tooltip": [
+          {
+            "field": "date",
+            "type": "temporal",
+            "format": "%m-%Y",
+            "title": "mese"
+          },
+          {
+            "field": "n_comments",
+            "type": "quantitative",
+            "title": "commenti"
+          },
+          {
+            "field": "ref_rate_lex",
+            "type": "quantitative",
+            "format": ".1%",
+            "title": "tasso di menzione"
+          }
+        ]
       }
     },
     {
       "data": {
-        "name": "data-7ec1e99428e924dba687a288f0966d3d"
-      },
-      "encoding": {
-        "color": {
-          "field": "color",
-          "legend": null,
-          "scale": null,
-          "type": "nominal"
-        },
-        "tooltip": [
-          {
-            "field": "name",
-            "type": "nominal"
-          },
-          {
-            "field": "date",
-            "format": "%m-%Y",
-            "type": "temporal"
-          }
-        ],
-        "x": {
-          "field": "date",
-          "type": "temporal"
-        }
+        "name": "milestone"
       },
       "mark": {
+        "type": "rule",
         "strokeDash": [
           4,
           3
         ],
-        "type": "rule"
+        "strokeWidth": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "color": {
+          "field": "color",
+          "type": "nominal",
+          "scale": null,
+          "legend": null
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "type": "nominal",
+            "title": "milestone"
+          },
+          {
+            "field": "date",
+            "type": "temporal",
+            "format": "%m-%Y",
+            "title": "data"
+          }
+        ]
+      }
+    },
+    {
+      "data": {
+        "name": "milestone"
+      },
+      "mark": {
+        "type": "text",
+        "angle": 270,
+        "align": "left",
+        "baseline": "bottom",
+        "dx": 0,
+        "dy": -6,
+        "fontSize": 11,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "value": 292
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "color",
+          "type": "nominal",
+          "scale": null,
+          "legend": null
+        }
       }
     }
-  ],
-  "title": "un mondo a parte - comment volume with release milestones",
-  "width": 620
+  ]
 }
