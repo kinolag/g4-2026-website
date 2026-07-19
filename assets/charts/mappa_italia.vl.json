@@ -87,11 +87,6 @@
         {
           "width": 520,
           "height": 700,
-          "title": {
-            "text": "Località del CineTourism in Italia",
-            "fontSize": 15,
-            "anchor": "start"
-          },
           "layer": [
             {
               "data": {
@@ -208,7 +203,13 @@
           ]
         }
       ],
-      "spacing": 2
+      "spacing": 12,
+      "title": {
+        "text": "Località del CineTourism in Italia",
+        "fontSize": 16,
+        "anchor": "start",
+        "offset": 6
+      }
     },
     {
       "width": 300,
