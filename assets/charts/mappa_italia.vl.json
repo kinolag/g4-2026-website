@@ -58,8 +58,7 @@
                 "type": "point",
                 "fields": [
                   "gruppo"
-                ],
-                "clear": "dblclick"
+                ]
               },
               "bind": "legend"
             }
