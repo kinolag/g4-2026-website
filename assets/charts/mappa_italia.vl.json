@@ -6,7 +6,7 @@
       "height": 700,
       "title": {
         "text": "Località del CineTourism in Italia",
-        "fontSize": 15,
+        "fontSize": 16,
         "anchor": "start"
       },
       "layer": [
@@ -160,15 +160,26 @@
         },
         {
           "data": {
-            "values": [
-              {
-                "t": "SCHEDA PRODUZIONE"
-              }
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "length(data('sel_store')) > 0"
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
+            },
+            {
+              "calculate": "'SCHEDA PRODUZIONE'",
+              "as": "_h"
             }
           ],
           "mark": {
@@ -187,22 +198,36 @@
               "value": 22
             },
             "text": {
-              "field": "t",
+              "field": "_h",
               "type": "nominal"
             }
           }
         },
         {
           "data": {
-            "values": [
-              {
-                "t": "IN QUESTA MAPPA"
-              }
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "!length(data('sel_store'))"
+              "filter": {
+                "param": "sel",
+                "empty": true
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
+            },
+            {
+              "filter": "datum.n === 22"
+            },
+            {
+              "calculate": "'IN QUESTA MAPPA'",
+              "as": "_t"
             }
           ],
           "mark": {
@@ -211,7 +236,7 @@
             "fontSize": 12,
             "fontWeight": "bold",
             "color": "#94a3b8",
-            "limit": 250
+            "limit": 264
           },
           "encoding": {
             "x": {
@@ -221,22 +246,36 @@
               "value": 22
             },
             "text": {
-              "field": "t",
+              "field": "_t",
               "type": "nominal"
             }
           }
         },
         {
           "data": {
-            "values": [
-              {
-                "t": "12"
-              }
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "!length(data('sel_store'))"
+              "filter": {
+                "param": "sel",
+                "empty": true
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
+            },
+            {
+              "filter": "datum.n === 22"
+            },
+            {
+              "calculate": "'12'",
+              "as": "_t"
             }
           ],
           "mark": {
@@ -255,22 +294,36 @@
               "value": 150
             },
             "text": {
-              "field": "t",
+              "field": "_t",
               "type": "nominal"
             }
           }
         },
         {
           "data": {
-            "values": [
-              {
-                "t": "produzioni"
-              }
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "!length(data('sel_store'))"
+              "filter": {
+                "param": "sel",
+                "empty": true
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
+            },
+            {
+              "filter": "datum.n === 22"
+            },
+            {
+              "calculate": "'produzioni'",
+              "as": "_t"
             }
           ],
           "mark": {
@@ -289,22 +342,36 @@
               "value": 174
             },
             "text": {
-              "field": "t",
+              "field": "_t",
               "type": "nominal"
             }
           }
         },
         {
           "data": {
-            "values": [
-              {
-                "t": "22"
-              }
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "!length(data('sel_store'))"
+              "filter": {
+                "param": "sel",
+                "empty": true
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
+            },
+            {
+              "filter": "datum.n === 22"
+            },
+            {
+              "calculate": "'22'",
+              "as": "_t"
             }
           ],
           "mark": {
@@ -323,22 +390,36 @@
               "value": 240
             },
             "text": {
-              "field": "t",
+              "field": "_t",
               "type": "nominal"
             }
           }
         },
         {
           "data": {
-            "values": [
-              {
-                "t": "località di ripresa"
-              }
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "!length(data('sel_store'))"
+              "filter": {
+                "param": "sel",
+                "empty": true
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
+            },
+            {
+              "filter": "datum.n === 22"
+            },
+            {
+              "calculate": "'località di ripresa'",
+              "as": "_t"
             }
           ],
           "mark": {
@@ -357,22 +438,36 @@
               "value": 264
             },
             "text": {
-              "field": "t",
+              "field": "_t",
               "type": "nominal"
             }
           }
         },
         {
           "data": {
-            "values": [
-              {
-                "t": "3"
-              }
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "!length(data('sel_store'))"
+              "filter": {
+                "param": "sel",
+                "empty": true
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
+            },
+            {
+              "filter": "datum.n === 22"
+            },
+            {
+              "calculate": "'3'",
+              "as": "_t"
             }
           ],
           "mark": {
@@ -391,22 +486,36 @@
               "value": 330
             },
             "text": {
-              "field": "t",
+              "field": "_t",
               "type": "nominal"
             }
           }
         },
         {
           "data": {
-            "values": [
-              {
-                "t": "cluster narrativi"
-              }
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "!length(data('sel_store'))"
+              "filter": {
+                "param": "sel",
+                "empty": true
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
+            },
+            {
+              "filter": "datum.n === 22"
+            },
+            {
+              "calculate": "'cluster narrativi'",
+              "as": "_t"
             }
           ],
           "mark": {
@@ -425,20 +534,32 @@
               "value": 354
             },
             "text": {
-              "field": "t",
+              "field": "_t",
               "type": "nominal"
             }
           }
         },
         {
           "data": {
-            "values": [
-              {}
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "!length(data('sel_store'))"
+              "filter": {
+                "param": "sel",
+                "empty": true
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
+            },
+            {
+              "filter": "datum.n === 22"
             }
           ],
           "mark": {
@@ -460,15 +581,29 @@
         },
         {
           "data": {
-            "values": [
-              {
-                "t": "Clicca una località sulla mappa"
-              }
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "!length(data('sel_store'))"
+              "filter": {
+                "param": "sel",
+                "empty": true
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
+            },
+            {
+              "filter": "datum.n === 22"
+            },
+            {
+              "calculate": "'Clicca una località sulla mappa'",
+              "as": "_t"
             }
           ],
           "mark": {
@@ -487,22 +622,36 @@
               "value": 432
             },
             "text": {
-              "field": "t",
+              "field": "_t",
               "type": "nominal"
             }
           }
         },
         {
           "data": {
-            "values": [
-              {
-                "t": "per aprire la scheda della produzione"
-              }
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "!length(data('sel_store'))"
+              "filter": {
+                "param": "sel",
+                "empty": true
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
+            },
+            {
+              "filter": "datum.n === 22"
+            },
+            {
+              "calculate": "'per aprire la scheda della produzione'",
+              "as": "_t"
             }
           ],
           "mark": {
@@ -521,7 +670,7 @@
               "value": 452
             },
             "text": {
-              "field": "t",
+              "field": "_t",
               "type": "nominal"
             }
           }
@@ -666,13 +815,22 @@
         },
         {
           "data": {
-            "values": [
-              {}
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "length(data('sel_store')) > 0"
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
             }
           ],
           "mark": {
@@ -793,13 +951,22 @@
         },
         {
           "data": {
-            "values": [
-              {}
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "length(data('sel_store')) > 0"
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
             }
           ],
           "mark": {
@@ -920,13 +1087,22 @@
         },
         {
           "data": {
-            "values": [
-              {}
-            ]
+            "name": "loc"
           },
           "transform": [
             {
-              "filter": "length(data('sel_store')) > 0"
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            },
+            {
+              "aggregate": [
+                {
+                  "op": "count",
+                  "as": "n"
+                }
+              ]
             }
           ],
           "mark": {
