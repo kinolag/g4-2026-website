@@ -1,102 +1,300 @@
 ---
 layout: default
-title: "Introduzione al CineTourism"
+title: "CineTourism Map"
 vega: true
 header_type: hero
 header_img: assets/images/header.svg
 header_title: "CineTourism: L'Impatto dei Media sul Territorio"
-subtitle: "Analisi multidisciplinare tra visibilità globale e sostenibilità locale"
+subtitle: "Un'analisi tra visibilità globale e sostenibilità locale"
 ---
 
 <style>
-  /* Contenitore standard, centrato e responsivo */
-  .chart-container {
-    width: 100%;
-    max-width: 1000px; /* limite per evitare grafici troppo grandi */
-    margin: 40px auto; /* centra il grafico */
-    padding: 0 20px; /* margine laterale su mobile */
-    box-sizing: border-box;
+  /* ---- Attacco / lead ---- */
+  .lead-hook {
+    font-size: 1.35rem;
+    line-height: 1.45;
+    font-weight: 700;
+    color: #1a202c;
+    margin: .5rem 0 1.2rem;
+  }
+  .lead-hook .hook-accent { color: #2b6cb0; }
+
+  /* ---- Citazioni ---- */
+  .quote-card {
+    border-left: 4px solid #2b6cb0;
+    background: #f7f9fb;
+    border-radius: 4px;
+    padding: 1.1rem 1.3rem;
+    margin: 1.6rem 0;
+  }
+  .quote-card .q-text { font-size: 1.02rem; font-style: italic; color: #2d3748; line-height: 1.6; margin: 0 0 .6rem; }
+  .quote-card .q-author { font-size: .85rem; color: #666; font-weight: 700; display: block; }
+  .quote-card .q-role { font-weight: 400; color: #888; }
+
+  /* ---- Numeri del progetto ---- */
+  .facts-grid {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: .9rem;
+    margin: 1.6rem 0 2rem;
+  }
+  @media (max-width: 767.98px) { .facts-grid { grid-template-columns: 1fr; } }
+  .fact-card {
+    border: 1px solid #1a1a1a;
+    border-radius: 4px;
+    background: #fff;
+    padding: 1rem 1.1rem;
+    text-align: center;
+  }
+  .fact-num {
+    display: block;
+    font-size: 1.9rem;
+    font-weight: 700;
+    line-height: 1;
+    color: #1a1a1a;
+    margin-bottom: .35rem;
+  }
+  .fact-label { display: block; font-size: .85rem; color: #666; line-height: 1.35; }
+
+  /* ---- Casi in evidenza: righe a piena larghezza ---- */
+  .cases-list { margin: 1.8rem 0; }
+  .case-row {
+    display: flex;
+    align-items: flex-start;
+    gap: 1.4rem;
+    border: 1px solid #e6e8eb;
+    border-left: 5px solid var(--case-accent, #2b6cb0);
+    border-radius: 6px;
+    background: #fff;
+    padding: 1.1rem 1.4rem;
+    margin-bottom: .9rem;
+    transition: box-shadow .2s ease;
+  }
+  .case-row:hover { box-shadow: 0 4px 14px rgba(0,0,0,.07); }
+  .case-head { flex: 0 0 230px; }
+  .case-body { flex: 1 1 auto; }
+  .case-row .case-place {
+    display: block;
+    font-size: 1.08rem;
+    font-weight: 700;
+    color: #1a202c;
+    line-height: 1.25;
+  }
+  .case-row .case-prod {
+    display: block;
+    font-size: .82rem;
+    font-style: italic;
+    color: var(--case-accent, #2b6cb0);
+    margin-top: .2rem;
+  }
+  .case-row p { font-size: .94rem; color: #444; margin: 0; line-height: 1.55; }
+  @media (max-width: 767.98px) {
+    .case-row { flex-direction: column; gap: .6rem; }
+    .case-head { flex: none; }
+  }
+  .case-1 { --case-accent: #c05621; }
+  .case-2 { --case-accent: #2b6cb0; }
+  .case-3 { --case-accent: #2f855a; }
+
+  /* ---- Cluster ---- */
+  .cluster-grid { margin: 1.8rem 0; }
+  .cluster-card {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    border: 1px solid #e6e8eb;
+    border-top: 5px solid var(--cl-accent, #2b6cb0);
+    border-radius: 8px;
+    padding: 1.2rem;
+    background: #fff;
+    transition: box-shadow .2s ease, transform .2s ease;
+  }
+  .cluster-card:hover { box-shadow: 0 10px 24px rgba(0,0,0,.10); transform: translateY(-3px); }
+  .cluster-card .cl-kicker {
+    font-size: .72rem; font-weight: 700; letter-spacing: .08em;
+    text-transform: uppercase; color: var(--cl-accent, #2b6cb0);
+  }
+  .cluster-card h4 { font-size: 1.08rem; margin: .35rem 0 .5rem; }
+  .cluster-card p { font-size: .9rem; color: #444; flex-grow: 1; }
+  .cluster-card .btn { margin-top: .8rem; align-self: flex-start; }
+  .cl-1 { --cl-accent: #c05621; }
+  .cl-2 { --cl-accent: #2b6cb0; }
+  .cl-3 { --cl-accent: #2f855a; }
+
+  /* ---- Mappa a dimensione naturale, centrata.
+     IMPORTANTE: non forzare la larghezza dell'SVG/canvas: scalare il grafico via
+     CSS sfasa il rilevamento di click e tooltip di Vega. Su schermi stretti si
+     scorre orizzontalmente invece di deformare la mappa. ---- */
+  .map-container {
+    margin: 30px auto 40px;
+    text-align: center;
+    overflow-x: auto;
   }
 
-  /* Vega charts: impedisce stiramenti */
-  .chart-container vegachart,
-  .chart-container .vega-embed {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
+  .note-box {
+    border-left: 4px solid #2b6cb0;
+    background: #f4f8fc;
+    padding: 1rem 1.2rem;
+    border-radius: 4px;
+    margin: 1.6rem auto;
+    max-width: 900px;
   }
+  .note-box .note-title { font-weight: 700; display: block; margin-bottom: .3rem; color: #24487e; }
+  .note-box .note-title i { margin-right: .4rem; }
 
-  .chart-container canvas,
-  .chart-container svg {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-  }
+  .section-rule { border: 0; border-top: 1px solid #e6e8eb; margin: 3rem 0 2rem; }
+  .page-links { display: flex; flex-direction: column; gap: .6rem; }
+  .page-links a { font-weight: 600; }
 </style>
 
+<p class="lead-hook">
+  Spoiler: la tua prossima vacanza l'hai già vista al cinema.
+  <span class="hook-accent">Prossima fermata? Il set!</span>
+</p>
 
-## Definizione e Complessità del Fenomeno
-Il **CineTourism** identifica lo spostamento di flussi turistici verso destinazioni rese celebri da film o serie TV, un processo che fonde la realtà geografica con l’immaginario narrativo. La letteratura internazionale lo descrive come una forma di turismo esperienziale e identitario, in cui il visitatore cerca di “vivere” la storia che ha visto sullo schermo. Non si tratta solo di visitare un set, ma di entrare in un universo simbolico: un luogo reale che diventa spazio emotivo e culturale.
+Ogni anno migliaia di persone si spostano non per una spiaggia o un museo, ma per un luogo che hanno già "visitato" attraverso un film o una serie TV. È il **cineturismo**: un fenomeno che trasforma borghi, laghi e città in spazi narrativi, capaci di attrarre visitatori da tutto il mondo o semplicemente di far riscoprire un pezzo d'Italia a chi già ci vive.
 
-Come ha raccontato il podcaster **Davide Marra**, «_il cinema dà valore a ciò che abbiamo a disposizione_». Guardare un film può trasformare un luogo familiare in qualcosa di nuovo, risvegliando curiosità e senso di appartenenza. Allo stesso modo, il doppiatore **Rob McQuack** sottolinea che oggi il fenomeno è amplificato dallo streaming e dai social: scene iconiche diventano trend globali, e i fan si spostano per ricrearle, cercando di “_portare un po’ di quella magia nella realtà_”.
+Cos'è che fa scattare davvero questa scintilla? Secondo lo youtuber ed esperto di cinema Rob McQuack, **tutto nasce da una scena che colpisce emotivamente**: il fan vuole tornare in quel luogo per respirare gli stessi profumi e gli stessi sapori che ha solo immaginato guardando lo schermo, un piccolo atto di fuga dalla realtà.
 
----
+<hr class="section-rule">
 
-## Il Paradosso della Visibilità: Perché è Importante?
-Il successo mediatico di un’opera può trasformarsi in un **paradosso territoriale**: da un lato genera visibilità, investimenti e crescita economica; dall’altro espone il territorio a **stress infrastrutturali**, perdita di autenticità e sovraffollamento.
+## Misurare la scintilla
 
-### **Pro**
-- **Boom economico e occupazionale:** l’aumento dei flussi turistici porta nuove attività ricettive, ristorative e culturali.  
-- **Valorizzazione del patrimonio locale:** i luoghi diventano simboli identitari e attrattori di interesse internazionale.  
-- **Rinascita culturale:** come nel caso di *Gomorra*, citato da Davide Marra, la produzione audiovisiva può stimolare nuove iniziative artistiche e sociali.
+Questo progetto nasce per misurare quella scintilla, incrociando **dati ISTAT**, **ecosistema commerciale**, **stampa**, **Google Trends**, **Wikipedia**, **YouTube**, **Reddit**, **recensioni dei tour online** e le voci dirette di chi il fenomeno lo vive ogni giorno.
 
-### **Contro**
-- **Sovraffollamento e degrado ambientale:** l’afflusso non pianificato di visitatori può compromettere ecosistemi fragili.  
-- **Perdita della “vera storia” del luogo:** il territorio rischia di essere percepito solo attraverso la lente del film o della serie, riducendo la sua complessità culturale.  
-- **Stereotipizzazione:** come osserva McQuack, l’Italia viene spesso rappresentata con cliché turistici che non riflettono la realtà contemporanea.
-
-<div class="row">
-  <div class="col-md-12 text-center">
-    <img src="{{site.baseurl}}/assets/images/cinetourism_locations/braies_crowd_1.jpg"
-         class="img-fluid mx-auto d-block"
-         style="margin: 20px 0;"
-         alt="Sovraffollamento al Lago di Braies">
+<div class="facts-grid">
+  <div class="fact-card">
+    <span class="fact-num">12</span>
+    <span class="fact-label">casi di studio</span>
+  </div>
+  <div class="fact-card">
+    <span class="fact-num">7</span>
+    <span class="fact-label">filoni di analisi</span>
+  </div>
+  <div class="fact-card">
+    <span class="fact-num">1</span>
+    <span class="fact-label">domanda: cosa succede a un territorio quando finisce sullo schermo?</span>
   </div>
 </div>
 
+<hr class="section-rule">
 
-La visibilità globale può trasformarsi in un "paradosso": il successo mediatico attira capitali ma espone il territorio a stress infrastrutturali non pianificati. Il caso del <strong>Lago di Braies</strong> mostra come una serie TV possa attrarre migliaia di turisti, portando a soluzioni di gestione del traffico obbligate, come la chiusura della strada nei mesi di picco per preservare l'ecosistema.
+## Le risposte non sono mai scontate
 
----
+<div class="cases-list">
 
-## Dal Film al Territorio: Attività e Impatti
-Il cineturismo è oggi un **fenomeno emergente** e in rapida evoluzione.  
-Accanto agli studi sociologici e culturali, questo progetto propone di affiancare una **dimensione quantitativa**, basata su analisi di dati e metriche territoriali.  
-L’obiettivo è costruire una **pipeline metodologica riciclabile**, capace di analizzare casi di studio in Italia e all’estero, integrando dati di sentiment, flussi turistici, trend digitali e trasformazioni economiche.
-Studiare il cineturismo significa comprendere come l’immaginario audiovisivo influenzi comportamenti reali, economie locali e identità collettive.  
-È un campo di ricerca che unisce **media studies**, **data analytics** e **geografia culturale**, con l’ambizione di trasformare la visibilità mediatica in uno strumento di sviluppo sostenibile.
+  <div class="case-row case-1">
+    <div class="case-head">
+      <span class="case-place">Crema</span>
+      <span class="case-prod">Call Me by Your Name</span>
+    </div>
+    <div class="case-body">
+      <p>Dopo il film, i visitatori dei musei sono <strong>più che raddoppiati</strong>.</p>
+    </div>
+  </div>
 
-La crescita del cineturismo ha generato un ecosistema di **attività commerciali e culturali** che rispondono alle nuove esigenze dei visitatori.  
-Tra queste, iniziative indipendenti come l’**Elio & Oliver Love Tour** di Crema, dedicato a *Call Me By Your Name*. Come racconta l'organizzatore di questo tour,  **Gary Potter**, il tour è nato dal passaparola dei fan e oggi accoglie centinaia di persone ogni giorno, creando legami umani e culturali attorno al film: «Cerchiamo solo di continuare a condividere l’amore il più a lungo possibile.»
+  <div class="case-row case-1">
+    <div class="case-head">
+      <span class="case-place">Bard e Pont-Saint-Martin</span>
+      <span class="case-prod">Avengers: Age of Ultron</span>
+    </div>
+    <div class="case-body">
+      <p>L'arrivo degli Avengers ha fatto esplodere la ricettività extra-alberghiera di <strong>oltre il 200%</strong>.</p>
+    </div>
+  </div>
 
-Oppure i **tour cinematografici** organizzati da piattaforme come **GetYourGuide**, di cui abbiamo analizzato descrizioni e recensioni. Le descrizioni dei tour sono state analizzate con tecniche NLP, mostrando che gli operatori costruiscono un immaginario centrato sulla scoperta, sulla storia, sulla cultura cinematografica e sulla narrazione dei luoghi iconici.
-Sulle recensioni, invece, abbiamo studiato la distribuzione dei voti, la lunghezza dei testi, la provenienza dei turisti e la stagionalità. È emerso che il cineturismo attira in modo particolare turisti stranieri, soprattutto giovani, mentre gli italiani risultano meno rappresentati. Le recensioni estive sono più numerose e più entusiaste, segno che l’esperienza cinematografica si intreccia con la dimensione emozionale del viaggio.
-Infine, la parte più delicata è stata la **sentiment analysis**: abbiamo usato Pattern.it e poi costruito un sentiment combinato che integra il tono del testo con il voto numerico della recensione. Questo approccio ha prodotto una misura molto più stabile e realistica. Il risultato è chiaro: il sentiment medio dei tour è fortemente positivo, con valori compresi tra **0.4** e **0.6**. Le guide competenti sono il fattore più determinante del sentiment; i pochi valori più bassi riguardano problemi organizzativi o aspettative non soddisfatte.
+  <div class="case-row case-1">
+    <div class="case-head">
+      <span class="case-place">Volterra</span>
+      <span class="case-prod">The Twilight Saga: New Moon</span>
+    </div>
+    <div class="case-body">
+      <p>Il successo ha imposto una scelta difficile. Come ci ha raccontato il responsabile del Consorzio Turistico, la priorità è sempre stata governare un fenomeno passeggero <strong>senza legare la città per sempre alla "città dei vampiri"</strong>, proteggendo un'immagine costruita in trent'anni di promozione culturale.</p>
+    </div>
+  </div>
 
-<div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/sentiment_combinato_recensioni_gyg.json" style="width: 100%; height: 100%; display: block;"></vegachart>
+  <div class="case-row case-2">
+    <div class="case-head">
+      <span class="case-place">Lago di Braies</span>
+      <span class="case-prod">Un passo dal cielo</span>
+    </div>
+    <div class="case-body">
+      <p>Un successo così grande da mettere in crisi il territorio: appena <strong>650 residenti</strong>, contro punte di <strong>15.000 visitatori</strong> in un solo giorno. Dal 2025 l'accesso al lago è regolato da prenotazione obbligatoria e numero chiuso — un modello che le istituzioni altoatesine indicano oggi come esempio da replicare altrove.</p>
+    </div>
+  </div>
+
+  <div class="case-row case-3">
+    <div class="case-head">
+      <span class="case-place">Castellabate</span>
+      <span class="case-prod">Benvenuti al Sud</span>
+    </div>
+    <div class="case-body">
+      <p>Quattordici anni dopo l'uscita, il paese continua a incuriosire più della pellicola stessa: le ricerche online per la località superano ancora oggi quelle per i protagonisti del film, con <strong>picchi ricorrenti ogni estate</strong> (luglio su tutti).</p>
+    </div>
+  </div>
+
 </div>
 
-Questi esempi mostrano come il cineturismo non sia solo un fenomeno economico, ma anche **sociale e affettivo**: un modo per costruire comunità, condividere esperienze e riscoprire il valore dei luoghi attraverso la lente del cinema.
-Di seguito la wordcloud delle recensioni di Get Your Guide:
+<hr class="section-rule">
 
-<div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/wordcloud_recensioni_gyg.json" style="width: 100%; height: 100%; display: block;"></vegachart>
+## Esplora le produzioni sul territorio
+
+Ogni produzione analizzata è legata a uno o più **luoghi di ripresa** in Italia.
+La mappa raccoglie tutte le location del progetto, colorate per **cluster**:
+cliccando su un punto si evidenziano tutte le località di quella produzione e la
+scheda a fianco ne mostra i dettagli.
+
+<div class="note-box">
+  <span class="note-title"><i class="fas fa-hand-pointer" aria-hidden="true"></i>Come usare la mappa</span>
+  Clicca una località per selezionare la sua produzione: la scheda a destra mostra
+  titolo, cluster di appartenenza, elenco delle località e altri dettagli. Doppio click per deselezionare.
 </div>
 
----
+<div class="map-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/mappa_italia.vl.json"></vegachart>
+</div>
 
-## 4. Conclusioni e Prospettive
-Il cineturismo è un laboratorio di trasformazione territoriale e culturale.  
-Studiare questo fenomeno significa interrogarsi su come i media plasmino la realtà, e su come i territori possano rispondere in modo sostenibile.  
-L’integrazione tra **analisi qualitativa** (narrazioni, percezioni, esperienze) e **analisi quantitativa** (dati, trend, metriche) è la chiave per comprendere e gestire il futuro di un turismo che nasce dallo schermo ma vive nel mondo reale.
+<!--
+  Spec unico (mappa + scheda) generato da build_map.py a partire da
+  dataset json. L'interazione click->scheda e il link nella scheda
+  funzionano perché selezione, filtro e href stanno nella stessa specifica.
+-->
+
+<hr class="section-rule">
+
+## Tre cluster, tre modi di raccontare lo stesso fenomeno
+
+<div class="row cluster-grid">
+  <div class="col-md-4 mb-4">
+    <div class="cluster-card cl-1">
+      <span class="cl-kicker">Cluster 01</span>
+      <h4>Blockbuster globali</h4>
+      <p>Grandi produzioni internazionali girate in Italia: impatto improvviso e alta volatilità.</p>
+      <a href="{{ site.baseurl }}/cluster01.html" class="btn btn-primary">Vai al Cluster 01</a>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="cluster-card cl-2">
+      <span class="cl-kicker">Cluster 02</span>
+      <h4>Lunghe serialità italiane</h4>
+      <p>Fiction radicate nel territorio nel corso di anni, se non decenni, di messa in onda.</p>
+      <a href="{{ site.baseurl }}/cluster02.html" class="btn btn-primary">Vai al Cluster 02</a>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="cluster-card cl-3">
+      <span class="cl-kicker">Cluster 03</span>
+      <h4>Produzioni di nicchia</h4>
+      <p>Casi non riconducibili ai cluster precedenti: impatto focalizzato e target specifico.</p>
+      <a href="{{ site.baseurl }}/cluster03.html" class="btn btn-primary">Vai al Cluster 03</a>
+    </div>
+  </div>
+</div>
+
+<hr class="section-rule">
+
+<div class="page-links">
+  <a href="{{ site.baseurl }}/introduzione.html">Introduzione →</a>
+  <a href="{{ site.baseurl }}/methodology.html">Metodologia →</a>
+  <a href="{{ site.baseurl }}/results.html">Risultati →</a>
+</div>

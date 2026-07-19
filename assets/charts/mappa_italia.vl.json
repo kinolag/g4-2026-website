@@ -1,0 +1,1697 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "hconcat": [
+    {
+      "width": 520,
+      "height": 700,
+      "title": {
+        "text": "Località del CineTourism in Italia",
+        "fontSize": 15,
+        "anchor": "start"
+      },
+      "layer": [
+        {
+          "data": {
+            "url": "https://raw.githubusercontent.com/openpolis/geojson-italy/master/topojson/limits_IT_regions.topo.json",
+            "format": {
+              "type": "topojson",
+              "feature": "regions"
+            }
+          },
+          "mark": {
+            "type": "geoshape",
+            "fill": "#eaeef2",
+            "stroke": "white",
+            "strokeWidth": 0.6
+          },
+          "projection": {
+            "type": "mercator"
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "projection": {
+            "type": "mercator"
+          },
+          "mark": {
+            "type": "circle",
+            "stroke": "white",
+            "strokeWidth": 1,
+            "cursor": "pointer"
+          },
+          "params": [
+            {
+              "name": "sel",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "produzione"
+                ],
+                "on": "click",
+                "clear": "dblclick"
+              }
+            }
+          ],
+          "encoding": {
+            "longitude": {
+              "field": "lon",
+              "type": "quantitative"
+            },
+            "latitude": {
+              "field": "lat",
+              "type": "quantitative"
+            },
+            "size": {
+              "condition": {
+                "param": "sel",
+                "empty": false,
+                "value": 230
+              },
+              "value": 95
+            },
+            "opacity": {
+              "condition": {
+                "param": "sel",
+                "empty": true,
+                "value": 1
+              },
+              "value": 0.45
+            },
+            "color": {
+              "field": "cluster",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "Cluster 1",
+                  "Cluster 2",
+                  "Cluster 3"
+                ],
+                "range": [
+                  "#c05621",
+                  "#2b6cb0",
+                  "#2f855a"
+                ]
+              },
+              "legend": {
+                "title": null,
+                "orient": "top-right",
+                "fillColor": "white",
+                "padding": 8,
+                "cornerRadius": 4,
+                "offset": 6
+              }
+            },
+            "tooltip": [
+              {
+                "field": "produzione",
+                "type": "nominal",
+                "title": "Produzione"
+              },
+              {
+                "field": "localita",
+                "type": "nominal",
+                "title": "Località"
+              },
+              {
+                "field": "cluster",
+                "type": "nominal",
+                "title": "Cluster"
+              }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "width": 300,
+      "height": 820,
+      "view": {
+        "stroke": null
+      },
+      "layer": [
+        {
+          "data": {
+            "values": [
+              {}
+            ]
+          },
+          "mark": {
+            "type": "rect",
+            "fill": "#f7f9fb",
+            "stroke": "#d9e2ec",
+            "cornerRadius": 8
+          },
+          "encoding": {
+            "x": {
+              "value": 0
+            },
+            "x2": {
+              "value": 299
+            },
+            "y": {
+              "value": 0
+            },
+            "y2": {
+              "value": 819
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "SCHEDA PRODUZIONE"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "length(data('sel_store')) > 0"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#94a3b8",
+            "limit": 250
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 22
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "IN QUESTA MAPPA"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#94a3b8",
+            "limit": 250
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 22
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "12"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 40,
+            "fontWeight": "bold",
+            "color": "#1a202c",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 150
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "produzioni"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#64748b",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 174
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "22"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 40,
+            "fontWeight": "bold",
+            "color": "#1a202c",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 240
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "località di ripresa"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#64748b",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 264
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "3"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 40,
+            "fontWeight": "bold",
+            "color": "#1a202c",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 330
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "cluster narrativi"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#64748b",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 354
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {}
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "rule",
+            "color": "#e2e8f0",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "value": 40
+            },
+            "x2": {
+              "value": 260
+            },
+            "y": {
+              "value": 400
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "Clicca una località sulla mappa"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 13,
+            "fontWeight": "bold",
+            "color": "#2b6cb0",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 432
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "per aprire la scheda della produzione"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 11.5,
+            "fontWeight": "normal",
+            "color": "#94a3b8",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 452
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 18,
+            "fontWeight": "bold",
+            "color": "#1a202c",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 50
+            },
+            "text": {
+              "field": "t1",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 18,
+            "fontWeight": "bold",
+            "color": "#1a202c",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 72
+            },
+            "text": {
+              "field": "t2",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            },
+            {
+              "filter": "datum.t2 === ''"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "color": "#8a94a0",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 71
+            },
+            "text": {
+              "field": "cluster_label",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            },
+            {
+              "filter": "datum.t2 !== ''"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "color": "#8a94a0",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 93
+            },
+            "text": {
+              "field": "cluster_label",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {}
+            ]
+          },
+          "transform": [
+            {
+              "filter": "length(data('sel_store')) > 0"
+            }
+          ],
+          "mark": {
+            "type": "rule",
+            "color": "#e2e8f0",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "x2": {
+              "value": 282
+            },
+            "y": {
+              "value": 107
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#444",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 126
+            },
+            "text": {
+              "field": "meta",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#444",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 145
+            },
+            "text": {
+              "field": "rating",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#444",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 164
+            },
+            "text": {
+              "field": "box",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {}
+            ]
+          },
+          "transform": [
+            {
+              "filter": "length(data('sel_store')) > 0"
+            }
+          ],
+          "mark": {
+            "type": "rule",
+            "color": "#e2e8f0",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "x2": {
+              "value": 282
+            },
+            "y": {
+              "value": 178
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            },
+            {
+              "calculate": "'LOCALITÀ DI RIPRESA'",
+              "as": "_k"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#94a3b8",
+            "limit": 250
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 198
+            },
+            "text": {
+              "field": "_k",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            },
+            {
+              "window": [
+                {
+                  "op": "row_number",
+                  "as": "idx"
+                }
+              ],
+              "sort": [
+                {
+                  "field": "localita",
+                  "order": "ascending"
+                }
+              ]
+            },
+            {
+              "calculate": "'•  ' + datum.localita",
+              "as": "bullet"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 14,
+            "color": "#2b6cb0",
+            "limit": 250
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "field": "idx",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  1,
+                  6
+                ],
+                "range": [
+                  222,
+                  312
+                ]
+              },
+              "axis": null
+            },
+            "text": {
+              "field": "bullet",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {}
+            ]
+          },
+          "transform": [
+            {
+              "filter": "length(data('sel_store')) > 0"
+            }
+          ],
+          "mark": {
+            "type": "rule",
+            "color": "#e2e8f0",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "x2": {
+              "value": 282
+            },
+            "y": {
+              "value": 322
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            },
+            {
+              "calculate": "'TRAMA'",
+              "as": "_k"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#94a3b8",
+            "limit": 250
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 342
+            },
+            "text": {
+              "field": "_k",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "color": "#5a6470",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 364
+            },
+            "text": {
+              "field": "d1",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "color": "#5a6470",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 380
+            },
+            "text": {
+              "field": "d2",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "color": "#5a6470",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 396
+            },
+            "text": {
+              "field": "d3",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 12,
+            "fontWeight": "normal",
+            "color": "#5a6470",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 412
+            },
+            "text": {
+              "field": "d4",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "rect",
+            "fill": "#2b6cb0",
+            "cornerRadius": 5,
+            "cursor": "pointer"
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "x2": {
+              "value": 218
+            },
+            "y": {
+              "value": 434
+            },
+            "y2": {
+              "value": 466
+            },
+            "href": {
+              "field": "link",
+              "type": "nominal"
+            },
+            "tooltip": {
+              "value": "Apri la pagina del cluster"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            },
+            {
+              "calculate": "'Pagina del ' + datum.cluster + '  →'",
+              "as": "_b"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "baseline": "middle",
+            "fontSize": 13,
+            "fontWeight": "bold",
+            "color": "white",
+            "cursor": "pointer",
+            "limit": 190
+          },
+          "encoding": {
+            "x": {
+              "value": 118.0
+            },
+            "y": {
+              "value": 450
+            },
+            "text": {
+              "field": "_b",
+              "type": "nominal"
+            },
+            "href": {
+              "field": "link",
+              "type": "nominal"
+            },
+            "tooltip": {
+              "value": "Apri la pagina del cluster"
+            }
+          }
+        },
+        {
+          "data": {
+            "name": "loc"
+          },
+          "transform": [
+            {
+              "filter": {
+                "param": "sel",
+                "empty": false
+              }
+            }
+          ],
+          "mark": {
+            "type": "image",
+            "width": 200,
+            "aspect": true,
+            "align": "left",
+            "baseline": "top"
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 486
+            },
+            "url": {
+              "field": "poster",
+              "type": "nominal"
+            },
+            "description": {
+              "field": "poster_alt",
+              "type": "nominal"
+            }
+          }
+        }
+      ]
+    }
+  ],
+  "datasets": {
+    "loc": [
+      {
+        "localita": "Bard",
+        "lat": 45.6081,
+        "lon": 7.7462,
+        "produzione": "Avengers: Age of Ultron",
+        "t1": "Avengers: Age of Ultron",
+        "t2": "",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "link": "cluster01.html",
+        "meta": "Film internazionale  ·  2015",
+        "rating": "IMDb 7,3",
+        "box": "Box office  1,41 mld USD",
+        "d1": "Gli Avengers affrontano Ultron in una",
+        "d2": "battaglia globale che mette alla prova",
+        "d3": "il loro futuro come squadra.",
+        "d4": "",
+        "poster": "assets/images/locandine/avengers-age-of-ultron.jpg",
+        "poster_alt": "Locandina del film avengers age of ultron"
+      },
+      {
+        "localita": "Verrès",
+        "lat": 45.6664,
+        "lon": 7.6913,
+        "produzione": "Avengers: Age of Ultron",
+        "t1": "Avengers: Age of Ultron",
+        "t2": "",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "link": "cluster01.html",
+        "meta": "Film internazionale  ·  2015",
+        "rating": "IMDb 7,3",
+        "box": "Box office  1,41 mld USD",
+        "d1": "Gli Avengers affrontano Ultron in una",
+        "d2": "battaglia globale che mette alla prova",
+        "d3": "il loro futuro come squadra.",
+        "d4": "",
+        "poster": "assets/images/locandine/avengers-age-of-ultron.jpg",
+        "poster_alt": "Locandina del film avengers age of ultron"
+      },
+      {
+        "localita": "Pont-Saint-Martin",
+        "lat": 45.5953,
+        "lon": 7.7978,
+        "produzione": "Avengers: Age of Ultron",
+        "t1": "Avengers: Age of Ultron",
+        "t2": "",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "link": "cluster01.html",
+        "meta": "Film internazionale  ·  2015",
+        "rating": "IMDb 7,3",
+        "box": "Box office  1,41 mld USD",
+        "d1": "Gli Avengers affrontano Ultron in una",
+        "d2": "battaglia globale che mette alla prova",
+        "d3": "il loro futuro come squadra.",
+        "d4": "",
+        "poster": "assets/images/locandine/avengers-age-of-ultron.jpg",
+        "poster_alt": "Locandina del film avengers age of ultron"
+      },
+      {
+        "localita": "Crema",
+        "lat": 45.3626,
+        "lon": 9.6803,
+        "produzione": "Call Me by Your Name",
+        "t1": "Call Me by Your Name",
+        "t2": "",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "link": "cluster01.html",
+        "meta": "Film internazionale  ·  2017",
+        "rating": "IMDb 7,8",
+        "box": "Box office  42 mln USD",
+        "d1": "Nell'estate del 1983, Elio vive",
+        "d2": "un'intensa storia d'amore con Oliver",
+        "d3": "nella campagna lombarda.",
+        "d4": "",
+        "poster": "assets/images/locandine/call-me-by-your-name.jpg",
+        "poster_alt": "Locandina del film call me by your name"
+      },
+      {
+        "localita": "Montepulciano",
+        "lat": 43.0927,
+        "lon": 11.7799,
+        "produzione": "The Twilight Saga: New Moon",
+        "t1": "The Twilight Saga: New",
+        "t2": "Moon",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "link": "cluster01.html",
+        "meta": "Film internazionale  ·  2009",
+        "rating": "IMDb 4,8",
+        "box": "Box office  710 mln USD",
+        "d1": "Bella affronta la perdita di Edward e",
+        "d2": "si avvicina a Jacob, mentre i Volturi",
+        "d3": "osservano nell'ombra.",
+        "d4": "",
+        "poster": "assets/images/locandine/the-twilight-saga-new-moon.jpg",
+        "poster_alt": "Locandina del film the twilight saga: new moon"
+      },
+      {
+        "localita": "Volterra",
+        "lat": 43.4025,
+        "lon": 10.8607,
+        "produzione": "The Twilight Saga: New Moon",
+        "t1": "The Twilight Saga: New",
+        "t2": "Moon",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "link": "cluster01.html",
+        "meta": "Film internazionale  ·  2009",
+        "rating": "IMDb 4,8",
+        "box": "Box office  710 mln USD",
+        "d1": "Bella affronta la perdita di Edward e",
+        "d2": "si avvicina a Jacob, mentre i Volturi",
+        "d3": "osservano nell'ombra.",
+        "d4": "",
+        "poster": "assets/images/locandine/the-twilight-saga-new-moon.jpg",
+        "poster_alt": "Locandina del film the twilight saga: new moon"
+      },
+      {
+        "localita": "Braies",
+        "lat": 46.6944,
+        "lon": 12.0857,
+        "produzione": "Un passo dal cielo",
+        "t1": "Un passo dal cielo",
+        "t2": "",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "meta": "Serie italiana  ·  2011–2025",
+        "rating": "IMDb 6,8",
+        "box": "Box office  n.d.",
+        "d1": "Tra le Dolomiti, un gruppo di",
+        "d2": "forestali affronta misteri e crimini.",
+        "d3": "",
+        "d4": "",
+        "poster": "assets/images/locandine/un-passo-dal-cielo.jpg",
+        "poster_alt": "Locandina del film un passo dal cielo"
+      },
+      {
+        "localita": "San Vito Di Cadore",
+        "lat": 46.46,
+        "lon": 12.2058,
+        "produzione": "Un passo dal cielo",
+        "t1": "Un passo dal cielo",
+        "t2": "",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "meta": "Serie italiana  ·  2011–2025",
+        "rating": "IMDb 6,8",
+        "box": "Box office  n.d.",
+        "d1": "Tra le Dolomiti, un gruppo di",
+        "d2": "forestali affronta misteri e crimini.",
+        "d3": "",
+        "d4": "",
+        "poster": "assets/images/locandine/un-passo-dal-cielo.jpg",
+        "poster_alt": "Locandina del film un passo dal cielo"
+      },
+      {
+        "localita": "San Candido",
+        "lat": 46.7325,
+        "lon": 12.2789,
+        "produzione": "Un passo dal cielo",
+        "t1": "Un passo dal cielo",
+        "t2": "",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "meta": "Serie italiana  ·  2011–2025",
+        "rating": "IMDb 6,8",
+        "box": "Box office  n.d.",
+        "d1": "Tra le Dolomiti, un gruppo di",
+        "d2": "forestali affronta misteri e crimini.",
+        "d3": "",
+        "d4": "",
+        "poster": "assets/images/locandine/un-passo-dal-cielo.jpg",
+        "poster_alt": "Locandina del film un passo dal cielo"
+      },
+      {
+        "localita": "Gubbio",
+        "lat": 43.3505,
+        "lon": 12.5783,
+        "produzione": "Don Matteo",
+        "t1": "Don Matteo",
+        "t2": "",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "meta": "Serie italiana  ·  2000–oggi",
+        "rating": "IMDb 6,7",
+        "box": "Box office  n.d.",
+        "d1": "Un prete-investigatore risolve casi",
+        "d2": "complessi nelle città umbre.",
+        "d3": "",
+        "d4": "",
+        "poster": "assets/images/locandine/don-matteo.jpg",
+        "poster_alt": "Locandina del film don matteo"
+      },
+      {
+        "localita": "Spoleto",
+        "lat": 42.7328,
+        "lon": 12.7357,
+        "produzione": "Don Matteo",
+        "t1": "Don Matteo",
+        "t2": "",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "meta": "Serie italiana  ·  2000–oggi",
+        "rating": "IMDb 6,7",
+        "box": "Box office  n.d.",
+        "d1": "Un prete-investigatore risolve casi",
+        "d2": "complessi nelle città umbre.",
+        "d3": "",
+        "d4": "",
+        "poster": "assets/images/locandine/don-matteo.jpg",
+        "poster_alt": "Locandina del film don matteo"
+      },
+      {
+        "localita": "Ragusa Ibla",
+        "lat": 36.9256,
+        "lon": 14.7306,
+        "produzione": "Il giovane Montalbano",
+        "t1": "Il giovane Montalbano",
+        "t2": "",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "meta": "Serie italiana  ·  2012–2015",
+        "rating": "IMDb 8,0",
+        "box": "Box office  n.d.",
+        "d1": "Il giovane commissario Montalbano",
+        "d2": "affronta i primi casi nella Sicilia",
+        "d3": "meridionale.",
+        "d4": "",
+        "poster": "assets/images/locandine/il-giovane-montalbano.jpg",
+        "poster_alt": "Locandina del film il giovane montalbano"
+      },
+      {
+        "localita": "Santa Croce Camerina",
+        "lat": 36.8281,
+        "lon": 14.525,
+        "produzione": "Il giovane Montalbano",
+        "t1": "Il giovane Montalbano",
+        "t2": "",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "meta": "Serie italiana  ·  2012–2015",
+        "rating": "IMDb 8,0",
+        "box": "Box office  n.d.",
+        "d1": "Il giovane commissario Montalbano",
+        "d2": "affronta i primi casi nella Sicilia",
+        "d3": "meridionale.",
+        "d4": "",
+        "poster": "assets/images/locandine/il-giovane-montalbano.jpg",
+        "poster_alt": "Locandina del film il giovane montalbano"
+      },
+      {
+        "localita": "Scicli",
+        "lat": 36.7908,
+        "lon": 14.7022,
+        "produzione": "Il giovane Montalbano",
+        "t1": "Il giovane Montalbano",
+        "t2": "",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "meta": "Serie italiana  ·  2012–2015",
+        "rating": "IMDb 8,0",
+        "box": "Box office  n.d.",
+        "d1": "Il giovane commissario Montalbano",
+        "d2": "affronta i primi casi nella Sicilia",
+        "d3": "meridionale.",
+        "d4": "",
+        "poster": "assets/images/locandine/il-giovane-montalbano.jpg",
+        "poster_alt": "Locandina del film il giovane montalbano"
+      },
+      {
+        "localita": "Agliè",
+        "lat": 45.3636,
+        "lon": 7.7686,
+        "produzione": "Elisa di Rivombrosa",
+        "t1": "Elisa di Rivombrosa",
+        "t2": "",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "meta": "Serie italiana  ·  2003–2005",
+        "rating": "IMDb 7,4",
+        "box": "Box office  n.d.",
+        "d1": "Una giovane donna dell’aristocrazia",
+        "d2": "piemontese lotta contro intrighi",
+        "d3": "politici nel XVIII secolo.",
+        "d4": "",
+        "poster": "assets/images/locandine/elisa-di-rivombrosa.jpg",
+        "poster_alt": "Locandina del film elisa di rivombrosa"
+      },
+      {
+        "localita": "Torino",
+        "lat": 45.0703,
+        "lon": 7.6869,
+        "produzione": "Elisa di Rivombrosa",
+        "t1": "Elisa di Rivombrosa",
+        "t2": "",
+        "cluster": "Cluster 2",
+        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "link": "cluster02.html",
+        "meta": "Serie italiana  ·  2003–2005",
+        "rating": "IMDb 7,4",
+        "box": "Box office  n.d.",
+        "d1": "Una giovane donna dell’aristocrazia",
+        "d2": "piemontese lotta contro intrighi",
+        "d3": "politici nel XVIII secolo.",
+        "d4": "",
+        "poster": "assets/images/locandine/elisa-di-rivombrosa.jpg",
+        "poster_alt": "Locandina del film elisa di rivombrosa"
+      },
+      {
+        "localita": "Castellabate",
+        "lat": 40.2786,
+        "lon": 14.9492,
+        "produzione": "Benvenuti al Sud",
+        "t1": "Benvenuti al Sud",
+        "t2": "",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "link": "cluster03.html",
+        "meta": "Film italiano  ·  2010",
+        "rating": "IMDb 6,6",
+        "box": "Box office  29 mln EUR",
+        "d1": "Un impiegato del Nord scopre la",
+        "d2": "bellezza e l’umanità del Sud Italia.",
+        "d3": "",
+        "d4": "",
+        "poster": "assets/images/locandine/benvenuti-al-sud.jpg",
+        "poster_alt": "Locandina del film benvenuti al sud"
+      },
+      {
+        "localita": "Curon Venosta",
+        "lat": 46.8082,
+        "lon": 10.5409,
+        "produzione": "Curon",
+        "t1": "Curon",
+        "t2": "",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "link": "cluster03.html",
+        "meta": "Serie italiana  ·  2020",
+        "rating": "IMDb 5,9",
+        "box": "Box office  n.d.",
+        "d1": "Una famiglia torna a Curon, dove",
+        "d2": "misteri e presenze sovrannaturali",
+        "d3": "emergono dal lago sommerso.",
+        "d4": "",
+        "poster": "assets/images/locandine/curon.jpg",
+        "poster_alt": "Locandina del film curon"
+      },
+      {
+        "localita": "Aosta",
+        "lat": 45.7372,
+        "lon": 7.3206,
+        "produzione": "Rocco Schiavone",
+        "t1": "Rocco Schiavone",
+        "t2": "",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "link": "cluster03.html",
+        "meta": "Serie italiana  ·  2016–oggi",
+        "rating": "IMDb 7,9",
+        "box": "Box office  n.d.",
+        "d1": "Il vicequestore Schiavone indaga tra",
+        "d2": "crimini e ironia nella fredda Aosta.",
+        "d3": "",
+        "d4": "",
+        "poster": "assets/images/locandine/rocco-schiavone.jpg",
+        "poster_alt": "Locandina del film rocco schiavone"
+      },
+      {
+        "localita": "Opi",
+        "lat": 41.7756,
+        "lon": 13.8267,
+        "produzione": "Un mondo a parte",
+        "t1": "Un mondo a parte",
+        "t2": "",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "link": "cluster03.html",
+        "meta": "Film italiano  ·  2024",
+        "rating": "IMDb 6,4",
+        "box": "Box office  n.d.",
+        "d1": "Un insegnante scopre una comunità",
+        "d2": "montana che cambierà la sua vita.",
+        "d3": "",
+        "d4": "",
+        "poster": "assets/images/locandine/un-mondo-a-parte.jpg",
+        "poster_alt": "Locandina del film un mondo a parte"
+      },
+      {
+        "localita": "Pescasseroli",
+        "lat": 41.8046,
+        "lon": 13.7897,
+        "produzione": "Un mondo a parte",
+        "t1": "Un mondo a parte",
+        "t2": "",
+        "cluster": "Cluster 3",
+        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "link": "cluster03.html",
+        "meta": "Film italiano  ·  2024",
+        "rating": "IMDb 6,4",
+        "box": "Box office  n.d.",
+        "d1": "Un insegnante scopre una comunità",
+        "d2": "montana che cambierà la sua vita.",
+        "d3": "",
+        "d4": "",
+        "poster": "assets/images/locandine/un-mondo-a-parte.jpg",
+        "poster_alt": "Locandina del film un mondo a parte"
+      },
+      {
+        "localita": "Pienza",
+        "lat": 43.0766,
+        "lon": 11.6789,
+        "produzione": "I Medici",
+        "t1": "I Medici",
+        "t2": "",
+        "cluster": "Cluster 1",
+        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "link": "cluster01.html",
+        "meta": "Serie internazionale  ·  2016–2019",
+        "rating": "IMDb 7,9",
+        "box": "Box office  n.d.",
+        "d1": "La storia della famiglia Medici, tra",
+        "d2": "potere politico, arte e intrighi nella",
+        "d3": "Firenze rinascimentale.",
+        "d4": "",
+        "poster": "assets/images/locandine/medici.jpg",
+        "poster_alt": "Locandina del film medici"
+      }
+    ]
+  },
+  "resolve": {
+    "legend": {
+      "color": "independent"
+    }
+  },
+  "config": {
+    "view": {
+      "stroke": null
+    }
+  }
+}
