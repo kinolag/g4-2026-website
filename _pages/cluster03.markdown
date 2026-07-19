@@ -359,7 +359,7 @@ Post per tipologia di turismo **prima** dell'uscita di _Rocco Schiavone_ - Aosta
 Post per tipologia di turismo **dopo** l'uscita di _Rocco Schiavone_ - Aosta:
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/aosta_post_reddit_dopo.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/grafico_stacked_aosta_post.json"></vegachart>
 </div>
 
 ### YouTube
