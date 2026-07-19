@@ -2,56 +2,24 @@
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
   "hconcat": [
     {
-      "width": 520,
-      "height": 700,
-      "title": {
-        "text": "Località del CineTourism in Italia",
-        "fontSize": 15,
-        "anchor": "start"
-      },
-      "layer": [
+      "vconcat": [
         {
+          "width": 520,
+          "height": 30,
+          "view": {
+            "stroke": null
+          },
           "data": {
-            "url": "https://raw.githubusercontent.com/openpolis/geojson-italy/master/topojson/limits_IT_regions.topo.json",
-            "format": {
-              "type": "topojson",
-              "feature": "regions"
-            }
+            "name": "gruppi"
           },
           "mark": {
-            "type": "geoshape",
-            "fill": "#eaeef2",
-            "stroke": "white",
-            "strokeWidth": 0.6
-          },
-          "projection": {
-            "type": "mercator"
-          }
-        },
-        {
-          "data": {
-            "name": "loc"
-          },
-          "projection": {
-            "type": "mercator"
-          },
-          "mark": {
-            "type": "circle",
-            "cursor": "pointer",
-            "stroke": "white"
+            "type": "text",
+            "align": "left",
+            "baseline": "middle",
+            "fontSize": 14,
+            "cursor": "default"
           },
           "params": [
-            {
-              "name": "sel",
-              "select": {
-                "type": "point",
-                "fields": [
-                  "produzione"
-                ],
-                "on": "click",
-                "clear": "dblclick"
-              }
-            },
             {
               "name": "gru",
               "select": {
@@ -59,43 +27,29 @@
                 "fields": [
                   "gruppo"
                 ],
-                "toggle": true
-              },
-              "bind": "legend"
+                "on": "mouseover",
+                "clear": "mouseout"
+              }
             }
           ],
           "encoding": {
-            "longitude": {
-              "field": "lon",
-              "type": "quantitative"
-            },
-            "latitude": {
-              "field": "lat",
-              "type": "quantitative"
-            },
-            "size": {
-              "condition": {
-                "param": "sel",
-                "empty": false,
-                "value": 230
+            "x": {
+              "field": "x",
+              "type": "quantitative",
+              "scale": {
+                "domain": [
+                  0,
+                  520
+                ]
               },
-              "value": 95
+              "axis": null
             },
-            "opacity": {
-              "condition": {
-                "param": "gru",
-                "empty": true,
-                "value": 1
-              },
-              "value": 0.15
+            "y": {
+              "value": 15
             },
-            "strokeWidth": {
-              "condition": {
-                "param": "sel",
-                "empty": false,
-                "value": 2
-              },
-              "value": 1
+            "text": {
+              "field": "label",
+              "type": "nominal"
             },
             "color": {
               "field": "gruppo",
@@ -112,40 +66,149 @@
                   "#2f855a"
                 ]
               },
-              "legend": {
-                "title": null,
-                "orient": "top-right",
-                "fillColor": "white",
-                "padding": 10,
-                "cornerRadius": 4,
-                "offset": 6,
-                "labelFontSize": 14,
-                "labelFontWeight": "normal",
-                "symbolSize": 150,
-                "symbolStrokeWidth": 0,
-                "rowPadding": 6
+              "legend": null
+            },
+            "opacity": {
+              "condition": {
+                "param": "gru",
+                "empty": true,
+                "value": 1
+              },
+              "value": 0.35
+            }
+          },
+          "transform": [
+            {
+              "calculate": "'●  ' + datum.gruppo",
+              "as": "label"
+            }
+          ]
+        },
+        {
+          "width": 520,
+          "height": 700,
+          "title": {
+            "text": "Località del CineTourism in Italia",
+            "fontSize": 15,
+            "anchor": "start"
+          },
+          "layer": [
+            {
+              "data": {
+                "url": "https://raw.githubusercontent.com/openpolis/geojson-italy/master/topojson/limits_IT_regions.topo.json",
+                "format": {
+                  "type": "topojson",
+                  "feature": "regions"
+                }
+              },
+              "mark": {
+                "type": "geoshape",
+                "fill": "#eaeef2",
+                "stroke": "white",
+                "strokeWidth": 0.6
+              },
+              "projection": {
+                "type": "mercator"
               }
             },
-            "tooltip": [
-              {
-                "field": "produzione",
-                "type": "nominal",
-                "title": "Produzione"
+            {
+              "data": {
+                "name": "loc"
               },
-              {
-                "field": "localita",
-                "type": "nominal",
-                "title": "Località"
+              "projection": {
+                "type": "mercator"
               },
-              {
-                "field": "gruppo",
-                "type": "nominal",
-                "title": "Gruppo"
+              "mark": {
+                "type": "circle",
+                "cursor": "pointer",
+                "stroke": "white"
+              },
+              "params": [
+                {
+                  "name": "sel",
+                  "select": {
+                    "type": "point",
+                    "fields": [
+                      "produzione"
+                    ],
+                    "on": "click",
+                    "clear": "dblclick"
+                  }
+                }
+              ],
+              "encoding": {
+                "longitude": {
+                  "field": "lon",
+                  "type": "quantitative"
+                },
+                "latitude": {
+                  "field": "lat",
+                  "type": "quantitative"
+                },
+                "size": {
+                  "condition": {
+                    "param": "sel",
+                    "empty": false,
+                    "value": 230
+                  },
+                  "value": 95
+                },
+                "strokeWidth": {
+                  "condition": {
+                    "param": "sel",
+                    "empty": false,
+                    "value": 2
+                  },
+                  "value": 1
+                },
+                "color": {
+                  "field": "gruppo",
+                  "type": "nominal",
+                  "scale": {
+                    "domain": [
+                      "Gruppo 1",
+                      "Gruppo 2",
+                      "Gruppo 3"
+                    ],
+                    "range": [
+                      "#c05621",
+                      "#2b6cb0",
+                      "#2f855a"
+                    ]
+                  },
+                  "legend": null
+                },
+                "tooltip": [
+                  {
+                    "field": "produzione",
+                    "type": "nominal",
+                    "title": "Produzione"
+                  },
+                  {
+                    "field": "localita",
+                    "type": "nominal",
+                    "title": "Località"
+                  },
+                  {
+                    "field": "gruppo",
+                    "type": "nominal",
+                    "title": "Gruppo"
+                  }
+                ],
+                "opacity": {
+                  "condition": {
+                    "param": "gru",
+                    "empty": true,
+                    "value": 1
+                  },
+                  "value": 0.15
+                }
               }
-            ]
-          }
+            }
+          ]
         }
-      ]
+      ],
+      "spacing": 2
     },
     {
       "width": 300,
@@ -1881,6 +1944,20 @@
         "d4": "",
         "poster": "assets/images/locandine/medici.jpg",
         "poster_alt": "Locandina del film medici"
+      }
+    ],
+    "gruppi": [
+      {
+        "gruppo": "Gruppo 1",
+        "x": 10
+      },
+      {
+        "gruppo": "Gruppo 2",
+        "x": 175
+      },
+      {
+        "gruppo": "Gruppo 3",
+        "x": 340
       }
     ]
   },
