@@ -58,16 +58,16 @@ navbar:
       url: /introduzione.html
     - title: Metodologia
       url: /methodology.html
-    - title: Risultati
+    - title: Casi di studio
       child:
-        - title: Risultati Generali
-          url: /results.html
-        - title: Cluster_01
+        - title: Gruppo 1
           url: cluster01.html
-        - title: Cluster_02
+        - title: Gruppo 2
           url: cluster02.html
-        - title: Cluster_03
+        - title: Gruppo 3
           url: cluster03.html
+    - title: Conclusione & Raccomandazioni
+      url: /results.html
 #    - title: Pagina di esempio
 #      url: /example.html
 #    - title: Approfondimenti
