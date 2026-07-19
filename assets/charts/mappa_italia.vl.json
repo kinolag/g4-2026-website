@@ -38,7 +38,6 @@
           "mark": {
             "type": "circle",
             "stroke": "white",
-            "strokeWidth": 1,
             "cursor": "pointer"
           },
           "params": [
@@ -52,6 +51,16 @@
                 "on": "click",
                 "clear": "dblclick"
               }
+            },
+            {
+              "name": "gru",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "gruppo"
+                ]
+              },
+              "bind": "legend"
             }
           ],
           "encoding": {
@@ -73,20 +82,28 @@
             },
             "opacity": {
               "condition": {
-                "param": "sel",
+                "param": "gru",
                 "empty": true,
                 "value": 1
               },
-              "value": 0.45
+              "value": 0.12
+            },
+            "strokeWidth": {
+              "condition": {
+                "param": "sel",
+                "empty": false,
+                "value": 2
+              },
+              "value": 1
             },
             "color": {
-              "field": "cluster",
+              "field": "gruppo",
               "type": "nominal",
               "scale": {
                 "domain": [
-                  "Cluster 1",
-                  "Cluster 2",
-                  "Cluster 3"
+                  "Gruppo 1",
+                  "Gruppo 2",
+                  "Gruppo 3"
                 ],
                 "range": [
                   "#c05621",
@@ -98,9 +115,14 @@
                 "title": null,
                 "orient": "top-right",
                 "fillColor": "white",
-                "padding": 8,
+                "padding": 10,
                 "cornerRadius": 4,
-                "offset": 6
+                "offset": 6,
+                "labelFontSize": 14,
+                "labelFontWeight": "bold",
+                "symbolSize": 150,
+                "symbolStrokeWidth": 0,
+                "rowPadding": 6
               }
             },
             "tooltip": [
@@ -115,9 +137,9 @@
                 "title": "Località"
               },
               {
-                "field": "cluster",
+                "field": "gruppo",
                 "type": "nominal",
-                "title": "Cluster"
+                "title": "Gruppo"
               }
             ]
           }
@@ -223,7 +245,7 @@
               ]
             },
             {
-              "filter": "datum.n === 22"
+              "filter": "datum.n === 21"
             },
             {
               "calculate": "'IN QUESTA MAPPA'",
@@ -271,7 +293,7 @@
               ]
             },
             {
-              "filter": "datum.n === 22"
+              "filter": "datum.n === 21"
             },
             {
               "calculate": "'12'",
@@ -319,7 +341,7 @@
               ]
             },
             {
-              "filter": "datum.n === 22"
+              "filter": "datum.n === 21"
             },
             {
               "calculate": "'produzioni'",
@@ -367,10 +389,10 @@
               ]
             },
             {
-              "filter": "datum.n === 22"
+              "filter": "datum.n === 21"
             },
             {
-              "calculate": "'22'",
+              "calculate": "'21'",
               "as": "_t"
             }
           ],
@@ -415,7 +437,7 @@
               ]
             },
             {
-              "filter": "datum.n === 22"
+              "filter": "datum.n === 21"
             },
             {
               "calculate": "'località di ripresa'",
@@ -463,7 +485,7 @@
               ]
             },
             {
-              "filter": "datum.n === 22"
+              "filter": "datum.n === 21"
             },
             {
               "calculate": "'3'",
@@ -511,10 +533,10 @@
               ]
             },
             {
-              "filter": "datum.n === 22"
+              "filter": "datum.n === 21"
             },
             {
-              "calculate": "'cluster narrativi'",
+              "calculate": "'gruppi narrativi'",
               "as": "_t"
             }
           ],
@@ -559,7 +581,7 @@
               ]
             },
             {
-              "filter": "datum.n === 22"
+              "filter": "datum.n === 21"
             }
           ],
           "mark": {
@@ -599,7 +621,7 @@
               ]
             },
             {
-              "filter": "datum.n === 22"
+              "filter": "datum.n === 21"
             },
             {
               "calculate": "'Clicca una località sulla mappa'",
@@ -647,7 +669,7 @@
               ]
             },
             {
-              "filter": "datum.n === 22"
+              "filter": "datum.n === 21"
             },
             {
               "calculate": "'per aprire la scheda della produzione'",
@@ -1327,7 +1349,7 @@
               "type": "nominal"
             },
             "tooltip": {
-              "value": "Apri la pagina del cluster"
+              "value": "Apri la pagina del gruppo"
             }
           }
         },
@@ -1373,7 +1395,7 @@
               "type": "nominal"
             },
             "tooltip": {
-              "value": "Apri la pagina del cluster"
+              "value": "Apri la pagina del gruppo"
             }
           }
         },
@@ -1425,8 +1447,9 @@
         "produzione": "Avengers: Age of Ultron",
         "t1": "Avengers: Age of Ultron",
         "t2": "",
-        "cluster": "Cluster 1",
-        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "gruppo": "Gruppo 1",
+        "cluster": "Gruppo 1",
+        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "cluster01.html",
         "meta": "Film internazionale  ·  2015",
         "rating": "IMDb 7,3",
@@ -1445,8 +1468,9 @@
         "produzione": "Avengers: Age of Ultron",
         "t1": "Avengers: Age of Ultron",
         "t2": "",
-        "cluster": "Cluster 1",
-        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "gruppo": "Gruppo 1",
+        "cluster": "Gruppo 1",
+        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "cluster01.html",
         "meta": "Film internazionale  ·  2015",
         "rating": "IMDb 7,3",
@@ -1465,8 +1489,9 @@
         "produzione": "Avengers: Age of Ultron",
         "t1": "Avengers: Age of Ultron",
         "t2": "",
-        "cluster": "Cluster 1",
-        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "gruppo": "Gruppo 1",
+        "cluster": "Gruppo 1",
+        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "cluster01.html",
         "meta": "Film internazionale  ·  2015",
         "rating": "IMDb 7,3",
@@ -1485,8 +1510,9 @@
         "produzione": "Call Me by Your Name",
         "t1": "Call Me by Your Name",
         "t2": "",
-        "cluster": "Cluster 1",
-        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "gruppo": "Gruppo 1",
+        "cluster": "Gruppo 1",
+        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "cluster01.html",
         "meta": "Film internazionale  ·  2017",
         "rating": "IMDb 7,8",
@@ -1505,8 +1531,9 @@
         "produzione": "The Twilight Saga: New Moon",
         "t1": "The Twilight Saga: New",
         "t2": "Moon",
-        "cluster": "Cluster 1",
-        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "gruppo": "Gruppo 1",
+        "cluster": "Gruppo 1",
+        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "cluster01.html",
         "meta": "Film internazionale  ·  2009",
         "rating": "IMDb 4,8",
@@ -1525,8 +1552,9 @@
         "produzione": "The Twilight Saga: New Moon",
         "t1": "The Twilight Saga: New",
         "t2": "Moon",
-        "cluster": "Cluster 1",
-        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "gruppo": "Gruppo 1",
+        "cluster": "Gruppo 1",
+        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "cluster01.html",
         "meta": "Film internazionale  ·  2009",
         "rating": "IMDb 4,8",
@@ -1545,8 +1573,9 @@
         "produzione": "Un passo dal cielo",
         "t1": "Un passo dal cielo",
         "t2": "",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "gruppo": "Gruppo 2",
+        "cluster": "Gruppo 2",
+        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "cluster02.html",
         "meta": "Serie italiana  ·  2011–2025",
         "rating": "IMDb 6,8",
@@ -1565,8 +1594,9 @@
         "produzione": "Un passo dal cielo",
         "t1": "Un passo dal cielo",
         "t2": "",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "gruppo": "Gruppo 2",
+        "cluster": "Gruppo 2",
+        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "cluster02.html",
         "meta": "Serie italiana  ·  2011–2025",
         "rating": "IMDb 6,8",
@@ -1585,8 +1615,9 @@
         "produzione": "Un passo dal cielo",
         "t1": "Un passo dal cielo",
         "t2": "",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "gruppo": "Gruppo 2",
+        "cluster": "Gruppo 2",
+        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "cluster02.html",
         "meta": "Serie italiana  ·  2011–2025",
         "rating": "IMDb 6,8",
@@ -1605,8 +1636,9 @@
         "produzione": "Don Matteo",
         "t1": "Don Matteo",
         "t2": "",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "gruppo": "Gruppo 2",
+        "cluster": "Gruppo 2",
+        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "cluster02.html",
         "meta": "Serie italiana  ·  2000–oggi",
         "rating": "IMDb 6,7",
@@ -1625,8 +1657,9 @@
         "produzione": "Don Matteo",
         "t1": "Don Matteo",
         "t2": "",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "gruppo": "Gruppo 2",
+        "cluster": "Gruppo 2",
+        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "cluster02.html",
         "meta": "Serie italiana  ·  2000–oggi",
         "rating": "IMDb 6,7",
@@ -1645,8 +1678,9 @@
         "produzione": "Il giovane Montalbano",
         "t1": "Il giovane Montalbano",
         "t2": "",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "gruppo": "Gruppo 2",
+        "cluster": "Gruppo 2",
+        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "cluster02.html",
         "meta": "Serie italiana  ·  2012–2015",
         "rating": "IMDb 8,0",
@@ -1665,8 +1699,9 @@
         "produzione": "Il giovane Montalbano",
         "t1": "Il giovane Montalbano",
         "t2": "",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "gruppo": "Gruppo 2",
+        "cluster": "Gruppo 2",
+        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "cluster02.html",
         "meta": "Serie italiana  ·  2012–2015",
         "rating": "IMDb 8,0",
@@ -1685,8 +1720,9 @@
         "produzione": "Il giovane Montalbano",
         "t1": "Il giovane Montalbano",
         "t2": "",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "gruppo": "Gruppo 2",
+        "cluster": "Gruppo 2",
+        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "cluster02.html",
         "meta": "Serie italiana  ·  2012–2015",
         "rating": "IMDb 8,0",
@@ -1705,28 +1741,9 @@
         "produzione": "Elisa di Rivombrosa",
         "t1": "Elisa di Rivombrosa",
         "t2": "",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
-        "link": "cluster02.html",
-        "meta": "Serie italiana  ·  2003–2005",
-        "rating": "IMDb 7,4",
-        "box": "Box office  n.d.",
-        "d1": "Una giovane donna dell’aristocrazia",
-        "d2": "piemontese lotta contro intrighi",
-        "d3": "politici nel XVIII secolo.",
-        "d4": "",
-        "poster": "assets/images/locandine/elisa-di-rivombrosa.jpg",
-        "poster_alt": "Locandina del film elisa di rivombrosa"
-      },
-      {
-        "localita": "Torino",
-        "lat": 45.0703,
-        "lon": 7.6869,
-        "produzione": "Elisa di Rivombrosa",
-        "t1": "Elisa di Rivombrosa",
-        "t2": "",
-        "cluster": "Cluster 2",
-        "cluster_label": "Cluster 2 · Serie italiane di lunga durata",
+        "gruppo": "Gruppo 2",
+        "cluster": "Gruppo 2",
+        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "cluster02.html",
         "meta": "Serie italiana  ·  2003–2005",
         "rating": "IMDb 7,4",
@@ -1745,8 +1762,9 @@
         "produzione": "Benvenuti al Sud",
         "t1": "Benvenuti al Sud",
         "t2": "",
-        "cluster": "Cluster 3",
-        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "gruppo": "Gruppo 3",
+        "cluster": "Gruppo 3",
+        "cluster_label": "Gruppo 3 · Produzioni di nicchia",
         "link": "cluster03.html",
         "meta": "Film italiano  ·  2010",
         "rating": "IMDb 6,6",
@@ -1765,8 +1783,9 @@
         "produzione": "Curon",
         "t1": "Curon",
         "t2": "",
-        "cluster": "Cluster 3",
-        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "gruppo": "Gruppo 3",
+        "cluster": "Gruppo 3",
+        "cluster_label": "Gruppo 3 · Produzioni di nicchia",
         "link": "cluster03.html",
         "meta": "Serie italiana  ·  2020",
         "rating": "IMDb 5,9",
@@ -1785,8 +1804,9 @@
         "produzione": "Rocco Schiavone",
         "t1": "Rocco Schiavone",
         "t2": "",
-        "cluster": "Cluster 3",
-        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "gruppo": "Gruppo 3",
+        "cluster": "Gruppo 3",
+        "cluster_label": "Gruppo 3 · Produzioni di nicchia",
         "link": "cluster03.html",
         "meta": "Serie italiana  ·  2016–oggi",
         "rating": "IMDb 7,9",
@@ -1805,8 +1825,9 @@
         "produzione": "Un mondo a parte",
         "t1": "Un mondo a parte",
         "t2": "",
-        "cluster": "Cluster 3",
-        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "gruppo": "Gruppo 3",
+        "cluster": "Gruppo 3",
+        "cluster_label": "Gruppo 3 · Produzioni di nicchia",
         "link": "cluster03.html",
         "meta": "Film italiano  ·  2024",
         "rating": "IMDb 6,4",
@@ -1825,8 +1846,9 @@
         "produzione": "Un mondo a parte",
         "t1": "Un mondo a parte",
         "t2": "",
-        "cluster": "Cluster 3",
-        "cluster_label": "Cluster 3 · Produzioni di nicchia",
+        "gruppo": "Gruppo 3",
+        "cluster": "Gruppo 3",
+        "cluster_label": "Gruppo 3 · Produzioni di nicchia",
         "link": "cluster03.html",
         "meta": "Film italiano  ·  2024",
         "rating": "IMDb 6,4",
@@ -1845,8 +1867,9 @@
         "produzione": "I Medici",
         "t1": "I Medici",
         "t2": "",
-        "cluster": "Cluster 1",
-        "cluster_label": "Cluster 1 · Grandi produzioni internazionali",
+        "gruppo": "Gruppo 1",
+        "cluster": "Gruppo 1",
+        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "cluster01.html",
         "meta": "Serie internazionale  ·  2016–2019",
         "rating": "IMDb 7,9",
