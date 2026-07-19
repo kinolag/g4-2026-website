@@ -6,7 +6,7 @@
       "height": 700,
       "title": {
         "text": "Località del CineTourism in Italia",
-        "fontSize": 16,
+        "fontSize": 15,
         "anchor": "start"
       },
       "layer": [
@@ -51,6 +51,17 @@
                 "on": "click",
                 "clear": "dblclick"
               }
+            },
+            {
+              "name": "gru",
+              "select": {
+                "type": "point",
+                "fields": [
+                  "gruppo"
+                ],
+                "toggle": true
+              },
+              "bind": "legend"
             }
           ],
           "encoding": {
@@ -101,7 +112,19 @@
                   "#2f855a"
                 ]
               },
-              "legend": null
+              "legend": {
+                "title": null,
+                "orient": "top-right",
+                "fillColor": "white",
+                "padding": 10,
+                "cornerRadius": 4,
+                "offset": 6,
+                "labelFontSize": 14,
+                "labelFontWeight": "normal",
+                "symbolSize": 150,
+                "symbolStrokeWidth": 0,
+                "rowPadding": 6
+              }
             },
             "tooltip": [
               {
@@ -120,149 +143,6 @@
                 "title": "Gruppo"
               }
             ]
-          }
-        },
-        {
-          "data": {
-            "values": [
-              {}
-            ]
-          },
-          "mark": {
-            "type": "rect",
-            "fill": "white",
-            "stroke": "#e2e8f0",
-            "cornerRadius": 4,
-            "opacity": 0.92
-          },
-          "encoding": {
-            "x": {
-              "value": 358
-            },
-            "x2": {
-              "value": 516
-            },
-            "y": {
-              "value": 6
-            },
-            "y2": {
-              "value": 100
-            }
-          }
-        },
-        {
-          "data": {
-            "name": "gruppi"
-          },
-          "mark": {
-            "type": "circle",
-            "size": 150,
-            "cursor": "pointer"
-          },
-          "params": [
-            {
-              "name": "gru",
-              "select": {
-                "type": "point",
-                "fields": [
-                  "gruppo"
-                ],
-                "on": "click",
-                "clear": "dblclick",
-                "toggle": true
-              }
-            }
-          ],
-          "encoding": {
-            "x": {
-              "value": 372
-            },
-            "y": {
-              "field": "i",
-              "type": "quantitative",
-              "scale": {
-                "domain": [
-                  0,
-                  2
-                ],
-                "range": [
-                  24,
-                  84
-                ]
-              },
-              "axis": null
-            },
-            "color": {
-              "field": "gruppo",
-              "type": "nominal",
-              "scale": {
-                "domain": [
-                  "Gruppo 1",
-                  "Gruppo 2",
-                  "Gruppo 3"
-                ],
-                "range": [
-                  "#c05621",
-                  "#2b6cb0",
-                  "#2f855a"
-                ]
-              },
-              "legend": null
-            },
-            "opacity": {
-              "condition": {
-                "param": "gru",
-                "empty": true,
-                "value": 1
-              },
-              "value": 0.3
-            }
-          }
-        },
-        {
-          "data": {
-            "name": "gruppi"
-          },
-          "mark": {
-            "type": "text",
-            "align": "left",
-            "baseline": "middle",
-            "dx": 14,
-            "fontSize": 14,
-            "color": "#333",
-            "cursor": "pointer"
-          },
-          "encoding": {
-            "x": {
-              "value": 372
-            },
-            "y": {
-              "field": "i",
-              "type": "quantitative",
-              "scale": {
-                "domain": [
-                  0,
-                  2
-                ],
-                "range": [
-                  24,
-                  84
-                ]
-              },
-              "axis": null
-            },
-            "text": {
-              "field": "gruppo",
-              "type": "nominal"
-            },
-            "opacity": {
-              "condition": {
-                "param": "gru",
-                "empty": true,
-                "value": 1
-              },
-              "value": 0.35
-            }
           }
         }
       ]
@@ -2001,20 +1881,6 @@
         "d4": "",
         "poster": "assets/images/locandine/medici.jpg",
         "poster_alt": "Locandina del film medici"
-      }
-    ],
-    "gruppi": [
-      {
-        "gruppo": "Gruppo 1",
-        "i": 0
-      },
-      {
-        "gruppo": "Gruppo 2",
-        "i": 1
-      },
-      {
-        "gruppo": "Gruppo 3",
-        "i": 2
       }
     ]
   },
