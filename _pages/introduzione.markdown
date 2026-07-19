@@ -92,7 +92,7 @@ Il **CineTourism** identifica lo spostamento di flussi turistici verso destinazi
 Guardare un film può trasformare un luogo familiare in qualcosa di nuovo, risvegliando curiosità e senso di appartenenza. Allo stesso modo, il doppiatore **Rob McQuack** sottolinea che oggi il fenomeno è amplificato dallo streaming e dai social: scene iconiche diventano trend globali, e i fan si spostano per ricrearle.
 
 <div class="quote-card">
-  <p class="q-text">«[I fan cercano di] portare un po' di quella magia nella realtà.»</p>
+  <p class="q-text">«Viviamo in un’epoca in cui le nuove generazioni sperimentano un intrattenimento diverso da quello statunitense e questo rende costumi, moda, cucina e paesaggi italiani un <strong>leitmotiv</strong> da vivere almeno una volta nella vita.»</p>
   <span class="q-author">Rob McQuack <span class="q-role">— doppiatore</span></span>
 </div>
 
@@ -145,21 +145,69 @@ Studiare il cineturismo significa comprendere come l'immaginario audiovisivo inf
 
 ### Le esperienze nate attorno ai film
 
-La crescita del cineturismo ha generato un ecosistema di **attività commerciali e culturali** che rispondono alle nuove esigenze dei visitatori. Tra queste, iniziative indipendenti come l'**Elio & Oliver Love Tour** di Crema, dedicato a *Call Me By Your Name*: nato dal passaparola dei fan, oggi accoglie centinaia di persone ogni giorno, creando legami umani e culturali attorno al film.
+La crescita del cineturismo ha generato un ecosistema di **attività commerciali e culturali** che 
+rispondono alle nuove esigenze dei visitatori. Tra queste, iniziative indipendenti come 
+l'**Elio & Oliver Love Tour** di Crema, dedicato a *Call Me By Your Name*: nato dal passaparola dei fan, 
+oggi accoglie centinaia di persone ogni giorno, creando legami umani e culturali attorno al film.
+Durante une recente intervista per un importante Film Makers League, **Gary
+Potter**, statunitense allora residente a Bergamo, nonché **guida e co-fondatore del tour**, ha raccontato
+di aver scoperto il film grazie ai messaggi insistenti di amici e familiari: «Ricevevo tutte queste 
+telefonate e messaggi da familiari e amici. Tutti dicevano: “_Oh mio Dio, vivi vicino a Crema, 
+il posto più bello. Adoro il film. Non riesco a smettere di guardarlo!_”».
 
 <div class="quote-card">
   <p class="q-text">«Cerchiamo solo di continuare a condividere l'amore il più a lungo possibile.»</p>
   <span class="q-author">Gary Potter <span class="q-role">— organizzatore dell'Elio &amp; Oliver Love Tour, Crema</span></span>
 </div>
 
+All’inizio il tour non collaborava con l’agenzia turistica di Crema, ma il successo del film —
+con un **aumento del turismo del 300%** — portò a una partnership. Potter ricorda come **tutto
+nacque da un semplice messaggio in un forum di fan**: 
+
+<div class="quote-card">
+  <p class="q-text">«Dopodiché, è semplicemente
+esploso... È solo passaparola, e poi è esplosa e si è diffusa.»</p>
+  <span class="q-author">Gary Potter <span class="q-role">— organizzatore dell'Elio &amp; Oliver Love Tour, Crema</span></span>
+</div>
+
+Il tour ha generato anche **PeachCon**, un raduno annuale con balli in piazza, lezioni di cucina,
+attività artistiche e quiz. Potter ha guidato gruppi molto diversi, dagli studenti di cinema alle
+famiglie della troupe, fino a quattro generazioni di donne. Dice: 
+
+<div class="quote-card">
+  <p class="q-text">«Rimango sempre sorpresa
+dalle persone meravigliose che tira... È anche una storia d’amore in famiglia, su come i
+genitori sostengono i loro figli.»</p>
+  <span class="q-author">Gary Potter <span class="q-role">— organizzatore dell'Elio &amp; Oliver Love Tour, Crema</span></span>
+</div>
+
+La parte più difficile, per lui, è salutare ogni giorno persone con cui si è creato un legame
+attraverso il film.
+
 ### Cosa raccontano i tour e le recensioni
 
 Accanto alle iniziative indipendenti ci sono i **tour cinematografici** organizzati da piattaforme come **GetYourGuide**, di cui abbiamo analizzato descrizioni e recensioni.
 
 Le **descrizioni** dei tour, analizzate con tecniche NLP, mostrano che gli operatori costruiscono un immaginario centrato sulla scoperta, sulla storia, sulla cultura cinematografica e sulla narrazione dei luoghi iconici.
+È un linguaggio che non si limita a informare, ma evoca. Abbiamo chiesto a Rob McQuack quali fossero, dal suo punto di vista, le caratteristiche di un film o una serie che fanno
+scattare quella **scintilla che porta le persone a voler andare fisicamente nei luoghi** che
+vedono sullo schermo:
+
+<div class="quote-card">
+  <p class="q-text">«Secondo me, è legato al contesto in cui viene usata quella location:
+se c’è una <strong>scena particolarmente bella, potente o di grande impatto emotivo</strong>, i fan vogliono
+provare ad andare in quel posto per ricrearla, per capire cosa hanno visto e sentito, che aromi
+possano aver inebriato e che sapori possano aver assaggiato. Sai, penso che ci sia una
+correlazione tra l’aumento di film, serie, cartoni, anime, videogiochi che consumiamo ogni
+giorno e i tempi in cui stiamo vivendo: per me è <strong>escapismo</strong>, più peggiora la situazione, più
+cerchiamo una via di fuga, e immagina di poter mettere piede e lasciarti contaminare i sensi
+in un prodotto di fantasia che ti ha cullato... <strong>È come portare un po’ di quella magia nella
+realtà</strong>.»</p>
+  <span class="q-author">Rob McQuack <span class="q-role">— doppiatore</span></span>
+</div>
+
 
 Sulle **recensioni** abbiamo studiato la distribuzione dei voti, la lunghezza dei testi, la provenienza dei turisti e la stagionalità. È emerso che il cineturismo attira in modo particolare turisti stranieri, soprattutto giovani, mentre gli italiani risultano meno rappresentati. Le recensioni estive sono più numerose e più entusiaste, segno che l'esperienza cinematografica si intreccia con la dimensione emozionale del viaggio.
-
 Infine, la parte più delicata è stata la **sentiment analysis**: abbiamo usato Pattern.it e poi costruito un sentiment combinato che integra il tono del testo con il voto numerico della recensione, ottenendo una misura molto più stabile e realistica.
 
 <div class="note-box">
@@ -173,8 +221,6 @@ Infine, la parte più delicata è stata la **sentiment analysis**: abbiamo usato
 
 Questi esempi mostrano come il cineturismo non sia solo un fenomeno economico, ma anche **sociale e affettivo**: un modo per costruire comunità, condividere esperienze e riscoprire il valore dei luoghi attraverso la lente del cinema.
 
-Di seguito la wordcloud delle recensioni di GetYourGuide:
-
 
 <div class="row">
   <div class="col-md-12 text-center">
@@ -182,10 +228,21 @@ Di seguito la wordcloud delle recensioni di GetYourGuide:
          class="img-fluid mx-auto d-block"
          style="margin: 20px 0;"
          alt="Sovraffollamento al Lago di Braies">
+    <p style="font-size: 0.85em; color: #6c757d; margin-bottom: 40px; margin-top: 0px">
+        <em>
+          Wordcloud generata a partire dai testi delle recensioni di GetYourGuide
+        </em>
+    </p>
   </div>
 </div>
 
-
+Un altro punto di contatto tra dati e testimonianza di Rob McQuack riguarda la percezione dei luoghi. 
+Rob insiste sul fatto che le location devono essere rispettate culturalmente, non stereotipate. 
+Nel dataset, i pochi sentiment negativi riguardano proprio problemi organizzativi o aspettative tradite: 
+quando il luogo non corrisponde all’immaginario, quando la narrazione promessa non si realizza, 
+il turista se ne accorge. **La guida, infatti, è il fattore più determinante del sentiment**: è lei a 
+mediare tra immaginario e realtà, tra ciò che il turista ha visto sullo schermo e ciò che vede davanti 
+a sé.
 
 <hr class="section-rule">
 
