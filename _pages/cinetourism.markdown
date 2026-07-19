@@ -20,7 +20,7 @@ Il fenomeno si manifesta attraverso tre direttrici principali:
 La rilevanza del CineTourism risiede nella sua capacità di agire come una forza economica dirompente, capace di alterare in modo permanente le dinamiche di un territorio. Tuttavia, questa importanza si scontra spesso con una fragilità strutturale[cite: 1].
 
 * **Marketing Territoriale a costo zero:** Le produzioni audiovisive agiscono come campagne di promozione globale non pianificate, che intercettano segmenti di pubblico difficilmente raggiungibili dai canali istituzionali[cite: 1].
-* **La "Trappola della Crescita Rapida":** Molte destinazioni, come analizzato in **cluster01.markdown**, subiscono un’improvvisa esplosione di notorietà che mette a nudo l'inadeguatezza delle infrastrutture esistenti[cite: 1].
+* **La "Trappola della Crescita Rapida":** Molte destinazioni, come analizzato in **group1.markdown**, subiscono un’improvvisa esplosione di notorietà che mette a nudo l'inadeguatezza delle infrastrutture esistenti[cite: 1].
 * **Sostenibilità vs. Redditività:** Mentre la crescita dei flussi turistici porta capitali freschi, essa pone serie questioni sulla gestione dei carichi antropici, come evidenziato dalle linee guida contenute in **guide.markdown**[cite: 1].
 
 ## 3. Analisi Critica: Dal Dataset al Territorio
@@ -32,4 +32,4 @@ Come illustrato nelle nostre **charts.markdown**, il ciclo di vita di una destin
 3. **Fase di consolidamento o declino:** La capacità del territorio di trasformare il "successo mediatico" in "gestione turistica sostenibile" determina se la destinazione diventerà un punto di riferimento duraturo o se subirà un rapido degrado in termini di sentiment pubblico[cite: 1].
 
 ## 4. Conclusioni e Prospettive
-La sfida futura, che stiamo documentando all'interno del progetto, consiste nel passare da un CineTourism "spontaneo" e reattivo a una gestione programmata. L'integrazione di strumenti di Big Data Analytics, come quelli descritti in **cluster01.markdown**, permette ai decisori pubblici di monitorare in tempo reale il sentiment dei visitatori e l'impatto reale sull'infrastruttura, garantendo che l'immaginario cinematografico rimanga un asset strategico e non una minaccia per il territorio[cite: 1].
+La sfida futura, che stiamo documentando all'interno del progetto, consiste nel passare da un CineTourism "spontaneo" e reattivo a una gestione programmata. L'integrazione di strumenti di Big Data Analytics, come quelli descritti in **group1.markdown**, permette ai decisori pubblici di monitorare in tempo reale il sentiment dei visitatori e l'impatto reale sull'infrastruttura, garantendo che l'immaginario cinematografico rimanga un asset strategico e non una minaccia per il territorio[cite: 1].

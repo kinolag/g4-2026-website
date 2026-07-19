@@ -37,14 +37,16 @@ subtitle: "Le produzioni e le località"
 ## Esplora le produzioni sul territorio
 
 Ogni produzione analizzata è legata a uno o più **luoghi di ripresa** in Italia.
-La mappa raccoglie tutte le location del progetto, colorate per **cluster**:
+La mappa raccoglie tutte le location del progetto, colorate per **gruppi**:
 cliccando su un punto si evidenziano tutte le località di quella produzione e la
 scheda a fianco ne mostra i dettagli.
 
 <div class="note-box">
   <span class="note-title"><i class="fas fa-hand-pointer" aria-hidden="true"></i>Come usare la mappa</span>
   Clicca una località per selezionare la sua produzione: la scheda a destra mostra
-  titolo, cluster di appartenenza, elenco delle località e altri dettagli. Doppio click per deselezionare.
+  titolo, gruppo di appartenenza, elenco delle località e altri dettagli. Doppio click per deselezionare.
+  <br/>
+  Mouse over sul gruppo per evidenziare le sue località.
 </div>
 
 <div class="map-container">
@@ -60,7 +62,7 @@ scheda a fianco ne mostra i dettagli.
 <hr class="section-rule">
 
 <div class="page-links">
-  <a href="{{ site.baseurl }}/introduzione.html">Introduzione →</a>
+  <a href="{{ site.baseurl }}/introduction.html">Introduzione →</a>
   <a href="{{ site.baseurl }}/methodology.html">Metodologia →</a>
   <a href="{{ site.baseurl }}/results.html">Risultati →</a>
 </div>

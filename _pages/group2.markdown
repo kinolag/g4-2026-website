@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Cluster: Serie TV italiane"
+title: "Gruppo: Serie TV italiane"
 vega: true
 header_type: hero
 header_img: assets/images/header.svg
-header_title: "Analisi di Cluster: Serie TV italiane"
+header_title: "Analisi di Gruppo: Serie TV italiane"
 subtitle: "Le serie televisive a lunga esposizione e i loro territori"
 ---
 
@@ -73,14 +73,14 @@ subtitle: "Le serie televisive a lunga esposizione e i loro territori"
 
 ## Panoramica
 
-Il cluster raccoglie **quattro produzioni seriali italiane**, ciascuna legata a
+Il gruppo raccoglie **quattro produzioni seriali italiane**, ciascuna legata a
 uno o più territori specifici: il lago di **Braies**, **San Candido** e **San
 Vito di Cadore** per _Un passo dal cielo_; **Spoleto** e **Gubbio** per _Don
 Matteo_; la Sicilia di **Scicli**, **Ragusa** e **Santa Croce Camerina** per _Il
 giovane Montalbano_; **Agliè** per _Elisa di Rivombrosa_.
 
 Il filo conduttore è duplice. Da un lato l'ambientazione italiana e domestica,
-lontana dai blockbuster internazionali (i casi Marvel e Twilight del Cluster 1) e
+lontana dai blockbuster internazionali (i casi Marvel e Twilight del Gruppo 1) e
 radicata in un immaginario televisivo generalista molto popolare in Italia.
 Dall'altro la **longevità narrativa**: _Don Matteo_ trasmesso ininterrottamente
 dal 2000, _Un passo dal cielo_ dal 2011 con più stagioni e persino più
@@ -97,7 +97,7 @@ da un'eredità culturale duratura — è la chiave di lettura scelta per analizz
 l'impatto cineturistico di questi territori: l'obiettivo è isolare non un picco
 temporaneo, ma un **radicamento strutturale** costruito nel tempo.
 
-<!-- IMMAGINE: foto di apertura del cluster -->
+<!-- IMMAGINE: foto di apertura del gruppo -->
 
 <!--
   Domande-guida della pagina (temporaneamente non visibili):
@@ -115,7 +115,7 @@ temporaneo, ma un **radicamento strutturale** costruito nel tempo.
 _Il fenomeno esiste, è misurabile? Vediamo i primi numeri._
 
 Le evidenze **ISTAT** validate (CIS > 0,7, RGR ≥ 0,15) mostrano segnali
-misurabili in **due delle quattro produzioni** del cluster, con intensità molto
+misurabili in **due delle quattro produzioni** del gruppo, con intensità molto
 diverse tra loro.
 
 ### Scicli — _Il giovane Montalbano_
@@ -144,7 +144,7 @@ pieno 1/1 degli altri tre.
 
 Il quadro che emerge dal confronto è quasi **a due velocità**. Da un lato Scicli
 e Ragusa, trainate da _Il giovane Montalbano_, disegnano il profilo più "sano"
-del cluster — segnali magari meno appariscenti in termini assoluti, ma coerenti e
+del gruppo — segnali magari meno appariscenti in termini assoluti, ma coerenti e
 persistenti nel tempo su tutti gli indicatori. Dall'altro Agliè si impone come il
 numero più grande in assoluto, ma con una solidità statistica più fragile: il
 boom del Palazzo Ducale è reale, ma sembra pesare di più su un singolo balzo
@@ -159,13 +159,13 @@ non ha superato le soglie.
 
 <div class="chart-outer-container">
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s1/rank_19_ev_039_scicli_I67_RICALCOLATO_v3_18.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s1/rank_19_ev_039_scicli_I67_RICALCOLATO_v3_18.json"></vegachart>
   </div>
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s1/rank_22_ev_040_scicli_I70_RICALCOLATO_v3_18.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s1/rank_22_ev_040_scicli_I70_RICALCOLATO_v3_18.json"></vegachart>
   </div>
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s1/rank_29_ev_041_ragusa_I67_RICALCOLATO_v3_18.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s1/rank_29_ev_041_ragusa_I67_RICALCOLATO_v3_18.json"></vegachart>
   </div>
 </div>
 
@@ -191,13 +191,13 @@ otto stagioni:
 
 <div class="chart-outer-container">
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s1/chart_un_passo_dal_cielo_geo_Braies_Area_ecosystem.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s1/chart_un_passo_dal_cielo_geo_Braies_Area_ecosystem.json"></vegachart>
   </div>
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s1/chart_un_passo_dal_cielo_geo_San_Candido_Area_ecosystem.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s1/chart_un_passo_dal_cielo_geo_San_Candido_Area_ecosystem.json"></vegachart>
   </div>
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s1/chart_un_passo_dal_cielo_geo_San_Vito_di_Cadore_Area_ecosystem.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s1/chart_un_passo_dal_cielo_geo_San_Vito_di_Cadore_Area_ecosystem.json"></vegachart>
   </div>
 </div>
 
@@ -220,7 +220,7 @@ otto stagioni:
       Un riscontro indiretto ma significativo: anche una produzione seriale italiana
       radicata in un territorio specifico può generare un effetto duraturo su turismo
       e tessuto culturale locale, confermando dall'interno del settore quello che i
-      dati ISTAT del cluster misurano dall'esterno.
+      dati ISTAT del gruppo misurano dall'esterno.
     </p>
   </div>
 </div>
@@ -231,7 +231,7 @@ otto stagioni:
 
 <!-- Risponde alla domanda 2: i media offrono riscontri e alimentano il fenomeno? -->
 
-_L'eco dei media: come raccontano i media le località del Cluster 2?_
+_L'eco dei media: come raccontano i media le località del Gruppo 2?_
 
 Se nella Sezione 1 abbiamo visto se il fenomeno lascia un segno nei numeri, qui
 vediamo **come i media lo raccontano**. Sono state usate due chiavi di lettura
@@ -282,10 +282,10 @@ Questo aspetto è stato riportato anche su _La Repubblica_:
 
 <div class="chart-outer-container">
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s2/chart_un_passo_dal_cielo_sentiment_5_polar.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s2/chart_un_passo_dal_cielo_sentiment_5_polar.json"></vegachart>
   </div>
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s2/chart_un_passo_dal_cielo_sentiment_2_evolution.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s2/chart_un_passo_dal_cielo_sentiment_2_evolution.json"></vegachart>
   </div>
 </div>
 
@@ -300,10 +300,10 @@ Overtourism 17) ma restano contenute rispetto al volume enorme di narrazione
 positiva.
 <div class="chart-outer-container">
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s2/chart_Il_giovane_Montalbano_Sicilia_sentiment_5_polar.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s2/chart_Il_giovane_Montalbano_Sicilia_sentiment_5_polar.json"></vegachart>
   </div>
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s2/chart_Il_giovane_Montalbano_Sicilia_sentiment_2_evolution.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s2/chart_Il_giovane_Montalbano_Sicilia_sentiment_2_evolution.json"></vegachart>
   </div>
 </div>
 
@@ -321,7 +321,7 @@ infrastrutturale non sono note a margine, ma temi centrali.
 <!-- GRAFICI: sentiment evolution e sentiment polarization per ogni location -->
 
 <!-- <div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s2/name.vl.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s2/name.vl.json"></vegachart>
 </div> -->
 
 <div class="card border-primary mb-4">
@@ -378,7 +378,7 @@ Vediamo alcuni esempi di questo fenomeno.
 
 <!-- GRAFICO: Google Trends / pageview Wikipedia -->
 <!-- <div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/name.vl.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/name.vl.json"></vegachart>
 </div> -->
 
 <!-- GRAFICO: attenzione Reddit + YouTube -->
@@ -387,10 +387,10 @@ Vediamo alcuni esempi di questo fenomeno.
 
 <div class="chart-outer-container">    
     <div class="chart-container">
-      <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/grafico_stacked_scicli_commenti.json"></vegachart>
+      <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/grafico_stacked_scicli_commenti.json"></vegachart>
     </div>
     <div class="chart-container">
-      <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/grafico_stacked_ragusa_commenti.json"></vegachart>
+      <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/grafico_stacked_ragusa_commenti.json"></vegachart>
     </div> 
 </div>
 
@@ -402,7 +402,7 @@ Vediamo alcuni esempi di questo fenomeno.
     nei <em>video su produzione e location</em>.
   </span>
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/recap_reference_rate_run1_cluster02.vl.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/recap_reference_rate_run1_group2.vl.json"></vegachart>
   </div>
 
   <span>
@@ -410,7 +410,7 @@ Vediamo alcuni esempi di questo fenomeno.
     nei <em>video su sola location</em>.
   </span>
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/recap_reference_rate_run2_cluster02.vl.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/recap_reference_rate_run2_group2.vl.json"></vegachart>
   </div>
 </div>
 
@@ -420,7 +420,7 @@ Vediamo alcuni esempi di questo fenomeno.
     nei <em>video su produzione e location</em>.
   </span>
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/timeline_un_passo_dal_cielo_run1.vl.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/timeline_un_passo_dal_cielo_run1.vl.json"></vegachart>
   </div>
 
   <span>
@@ -428,7 +428,7 @@ Vediamo alcuni esempi di questo fenomeno.
     nei <em>video su sola location</em>.
   </span>
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/timeline_un_passo_dal_cielo_run2.vl.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/timeline_un_passo_dal_cielo_run2.vl.json"></vegachart>
   </div>
 </div>
 
@@ -436,8 +436,8 @@ Vediamo alcuni esempi di questo fenomeno.
   <span>Timeline dei commenti contenenti un riferimento:
   nei <em>video su produzione e location</em>.</span>
   <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster02/s3/timeline_il_giovane_montalbano_run1.vl.json"></vegachart>
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/timeline_il_giovane_montalbano_run1.vl.json"></vegachart>
   </div>
 </div> -->
 
-<a href="{{ site.baseurl }}/results.html">← Torna ai Risultati</a>
+<!-- <a href="{{ site.baseurl }}/results.html">← Torna ai Risultati</a> -->

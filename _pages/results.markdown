@@ -125,7 +125,7 @@ L’IIT sintetizza per ciascuna opera investigata il suo impatto su metriche ter
 
 ---
 
-## Integrazione con OpenStreetMap: Clusterizzazione Ex-Post
+## Integrazione con OpenStreetMap: Raggruppamento Ex-Post
 
 Integrando l’analisi effettuata sulla base delle evidenze ISTAT emerse con i dati raccolti da OpenStreetMap (OSM), è possibile affinare la lettura dell’IIT e giungere a una valutazione complessiva e differenziata dell’impatto territoriale delle varie opere. I dati OSM non costituiscono una settima area tematica, ma descrivono la materializzazione fisica dell’ecosistema turistico intorno ai set: alloggi, ristorazione, attrazioni, servizi e attività rivolte ai visitatori.
 
@@ -152,7 +152,7 @@ OpenStreetMap rafforza soprattutto il caso di **Bard**. Le evidenze ISTAT di *Av
 ### 3. Impatto “mordi e fuggi”
 *Riferito a: Twilight, Un Mondo a Parte e le location di Un passo dal cielo.*
 
-Questo cluster comprende esclusivamente opere e località per le quali non sono emerse evidenze ISTAT finali e va interpretato con cautela. La presenza di segnali molto forti in OSM potrebbe indicare che il cineturismo si sia manifestato attraverso canali non pienamente intercettati dalle statistiche ufficiali: ad esempio un’offerta locale insufficiente, escursioni giornaliere, turismo “mordi e fuggi” o visite orientate alla produzione di contenuti social senza pernottamento.
+Questo gruppo comprende esclusivamente opere e località per le quali non sono emerse evidenze ISTAT finali e va interpretato con cautela. La presenza di segnali molto forti in OSM potrebbe indicare che il cineturismo si sia manifestato attraverso canali non pienamente intercettati dalle statistiche ufficiali: ad esempio un’offerta locale insufficiente, escursioni giornaliere, turismo “mordi e fuggi” o visite orientate alla produzione di contenuti social senza pernottamento.
 
 *   A **Montepulciano**, le attività turistiche censite passano da zero nel 2007 a oltre 380 nel 2026, mentre i negozi ordinari si fermano a 99. Emerge una forte specializzazione turistica di lungo periodo, difficilmente attribuibile alla sola *Twilight*, considerata l'attrattività preesistente della destinazione. 
 *   Le location di **Un passo dal cielo** mostrano una crescita marcata e cumulativa: **San Candido** passa da 22 attività turistiche nel 2011 a 197 nel 2026, **Braies** da 21 a 105 e **San Vito di Cadore** da 57 a 93 (con un'accelerazione coincidente con il trasferimento del set nel 2021).
@@ -170,7 +170,7 @@ Casi in cui il segnale si concentra in un ambito specifico (attrattore) oppure c
 
 ## Sintesi
 
-Nel complesso, questa clusterizzazione ex-post integra e raffina la clusterizzazione iniziale ex-ante. Considerato che per Volterra e Montepulciano non sono emerse evidenze ISTAT forti, la scala internazionale dell’opera, da sola, non sembra determinare né una maggiore intensità misurabile né uno specifico tipo di impatto. Gli esiti dipendono quindi dall’interazione tra visibilità dell’opera, riconoscibilità della location, accessibilità, vocazione turistica preesistente e capacità del territorio di trasformare l’attenzione in domanda, servizi e infrastrutture.
+Nel complesso, questo raggruppamento ex-post integra e raffina il raggruppamento iniziale ex-ante. Considerato che per Volterra e Montepulciano non sono emerse evidenze ISTAT forti, la scala internazionale dell’opera, da sola, non sembra determinare né una maggiore intensità misurabile né uno specifico tipo di impatto. Gli esiti dipendono quindi dall’interazione tra visibilità dell’opera, riconoscibilità della location, accessibilità, vocazione turistica preesistente e capacità del territorio di trasformare l’attenzione in domanda, servizi e infrastrutture.
 
 > **Nota:** Le serie OSM descrivono l’evoluzione delle attività mappate e non un censimento amministrativo delle effettive aperture. Nei casi privi di conferma ISTAT costituiscono quindi evidenze territoriali esplorative, utili a integrare e problematizzare il quadro, ma non prove causali autonome.
 
@@ -186,27 +186,27 @@ Si evidenzia una profonda differenza strutturale tra un interesse forte e stabil
     <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
             <div class="card-body">
-                <h5 class="card-title">Cluster 01</h5>
+                <h5 class="card-title">Gruppo 1</h5>
                 <p class="card-text">Il Fenomeno Globale: Impatto improvviso e alta volatilità.</p>
-                <a href="{{site.baseurl}}/cluster01.html" class="btn btn-primary">Vai al Cluster 01</a>
+                <a href="{{site.baseurl}}/group1.html" class="btn btn-primary">Vai al Gruppo 1</a>
             </div>
         </div>
     </div>
     <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
             <div class="card-body">
-                <h5 class="card-title">Cluster 02</h5>
+                <h5 class="card-title">Gruppo 2</h5>
                 <p class="card-text">Destinazioni Radicate: Crescita sostenibile e integrazione locale.</p>
-                <a href="{{site.baseurl}}/cluster02.html" class="btn btn-primary">Vai al Cluster 02</a>
+                <a href="{{site.baseurl}}/group2.html" class="btn btn-primary">Vai al Gruppo 2</a>
             </div>
         </div>
     </div>
     <div class="col-md-4">
         <div class="card mb-4 shadow-sm">
             <div class="card-body">
-                <h5 class="card-title">Cluster 03</h5>
+                <h5 class="card-title">Gruppo 3</h5>
                 <p class="card-text">Set di Nicchia: Impatto focalizzato e target specifico.</p>
-                <a href="{{site.baseurl}}/cluster03.html" class="btn btn-primary">Vai al Cluster 03</a>
+                <a href="{{site.baseurl}}/group3.html" class="btn btn-primary">Vai al Gruppo 3</a>
             </div>
         </div>
     </div>

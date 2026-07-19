@@ -1,11 +1,11 @@
 ---
 layout: default
-title: "Cluster 3: Cineturismo Nazionale – Analisi dei Casi di Studio Italiani"
+title: "Gruppo 3: Cineturismo Nazionale – Analisi dei Casi di Studio Italiani"
 vega: true
 header_type: hero
 header_img: assets/images/header.svg
-header_title: "Analisi di Cluster: altre Produzioni italiane"
-subtitle: " Come lo schermo trasforma i territori: produzioni di nicchia o non riconducibili ai cluster precedenti"
+header_title: "Analisi di Gruppo: altre Produzioni italiane"
+subtitle: " Come lo schermo trasforma i territori: produzioni di nicchia o non riconducibili ai gruppi precedenti"
 ---
 
 <style>
@@ -59,12 +59,12 @@ subtitle: " Come lo schermo trasforma i territori: produzioni di nicchia o non r
 
 ## Panoramica
 
-Il cluster raccoglie **quattro produzioni italiane**, ciascuna legata a uno o più territori specifici: **Castellabate** per *Benvenuti al Sud*; 
+Il gruppo raccoglie **quattro produzioni italiane**, ciascuna legata a uno o più territori specifici: **Castellabate** per *Benvenuti al Sud*; 
 **Curon Venosta / Lago di Resia** per *Curon*; **Aosta** per *Rocco Schiavone*; **Opi e Pescasseroli** per *Un mondo a parte*.
 
 <div class="row">
   <div class="col-md-12 text-center">
-    <img src="{{site.baseurl}}/assets/images/cluster03/locandine_cluster3.jpg"
+    <img src="{{site.baseurl}}/assets/images/group3/locandine_cluster3.jpg"
          class="img-fluid mx-auto d-block"
          style="margin: 20px 0 5px 0; border-radius: 8px;"
          alt="Locandine delle produzioni analizzate: Benvenuti al Sud, Curon, Rocco Schiavone, Un mondo a parte">
@@ -79,8 +79,8 @@ Il cluster raccoglie **quattro produzioni italiane**, ciascuna legata a uno o pi
   </div>
 </div>
 
-Le produzioni raccolte nel cluster appartengono a un immaginario **interamente italiano**, lontano dai blockbuster internazionali analizzati 
-nei cluster precedenti e radicato in un pubblico domestico che riconosce nei luoghi rappresentati una geografia familiare. Sono opere che non 
+Le produzioni raccolte nel gruppo appartengono a un immaginario **interamente italiano**, lontano dai blockbuster internazionali analizzati 
+nei gruppi precedenti e radicato in un pubblico domestico che riconosce nei luoghi rappresentati una geografia familiare. Sono opere che non 
 hanno avuto particolare risonanza all'estero, ma che in Italia hanno saputo incidere profondamente sulla percezione dei territori, trasformando 
 borghi, laghi e città in spazi narrativi riconoscibili.
 Accanto a questa dimensione nazionale, emerge la loro capacità di **lasciare un segno duraturo**: _Benvenuti al Sud_ ha ridefinito l'immaginario 
@@ -90,7 +90,7 @@ serialità ultralongeve, ma di casi di studio che, pur partendo da una scala pro
 **effetti misurabili e persistenti** sui territori.
 
 Questa combinazione — una produzione non globale, ma capace di produrre una **rottura di trend** evidente — è 
-la chiave di lettura scelta per analizzare il cluster: l'obiettivo non è misurare l'eco di un successo planetario, bensì 
+la chiave di lettura scelta per analizzare il gruppo: l'obiettivo non è misurare l'eco di un successo planetario, bensì 
 osservare come opere nate per il pubblico italiano possano comunque costruire nel tempo un **radicamento strutturale**, modificando 
 narrazioni, percezioni e dinamiche turistiche. Non un picco isolato, ma una trasformazione che si consolida e si rinnova.
 
@@ -100,7 +100,7 @@ turistico ed economico.
 L'obiettivo è comprendere come il cinema e le serie TV, anche quando non hanno risonanza internazionale, possano generare effetti 
 persistenti e misurabili, trasformando borghi, città e paesaggi naturali in asset territoriali.
 
-<!-- IMMAGINE: foto di apertura del cluster -->
+<!-- IMMAGINE: foto di apertura del gruppo -->
 
 <!--
   Domande-guida della pagina (temporaneamente non visibili):
@@ -118,7 +118,7 @@ persistenti e misurabili, trasformando borghi, città e paesaggi naturali in ass
 _Il fenomeno esiste, è misurabile? Vediamo i primi numeri._
 
 Le evidenze **ISTAT** validate (CIS > 0,7, RGR ≥ 0,15) mostrano segnali
-misurabili in **due delle quattro produzioni** del cluster, con intensità molto
+misurabili in **due delle quattro produzioni** del gruppo, con intensità molto
 diverse tra loro.
 
 ### Castellabate — _Benvenuti al Sud_
@@ -137,7 +137,7 @@ un'espansione reale e misurabile dell'offerta ricettiva, molto superiore al **be
 Un esempio concreto di come il cinema possa trasformare un luogo in destinazione turistica stabile.
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/castellabate_istat.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/castellabate_istat.json"></vegachart>
 </div>
 
 ### Curon Venosta — _Curon_
@@ -154,7 +154,7 @@ In sintesi, Curon Venosta diventa un caso emblematico di **cineturismo ad impatt
 l'attrattività turistica, ma contribuisce anche a trasformare la composizione demografica del territorio in modo stabile e misurabile.
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/curon_istat.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/curon_istat.json"></vegachart>
 </div>
 
 
@@ -172,7 +172,7 @@ In sintesi, Aosta rappresenta un caso di **cineturismo strutturale**: la notorie
 l'offerta ricettiva locale, trasformando la città in una destinazione riconoscibile e attrattiva ben oltre la dimensione regionale.
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/aosta_istat.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/aosta_istat.json"></vegachart>
 </div>
 
 ### Opi e Pescasseroli — _Un mondo a parte_
@@ -183,9 +183,9 @@ L'effetto del film è reale e riconoscibile sul territorio, ma non si manifesta 
 ### Uno sguardo d'insieme
 
 Il quadro che emerge dal confronto è quasi a due velocità.
-Da un lato **Castellabate, Curon e Aosta** disegnano il profilo più "sano" del cluster — segnali coerenti, persistenti nel tempo, privi di anomalie 
+Da un lato **Castellabate, Curon e Aosta** disegnano il profilo più "sano" del gruppo — segnali coerenti, persistenti nel tempo, privi di anomalie 
 statistiche.
-Dall'altro **Opi/Pescasseroli**, pur centrale nella narrazione del cluster, non supera le soglie ISTAT: l'impatto esiste, non è misurabile attraverso 
+Dall'altro **Opi/Pescasseroli**, pur centrale nella narrazione del gruppo, non supera le soglie ISTAT: l'impatto esiste, non è misurabile attraverso 
 gli indicatori selezionati, ma è riconoscibile se si guarda all'evoluzione dell'**ecosistema turistico**.
 
 ### L'ecosistema turistico attorno ai set
@@ -201,7 +201,7 @@ In altre parole, l'effetto non si esaurisce nel momento della distribuzione cine
 nel circuito domestico e raggiunge un pubblico più ampio, suggerendo un impatto che non è solo immediato, ma capace di rinnovarsi nel tempo.
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/opi_ecosistema.json" style="width: 100%; height: 100%; display: block;"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/opi_ecosistema.json" style="width: 100%; height: 100%; display: block;"></vegachart>
 </div>
 
 ---
@@ -210,7 +210,7 @@ nel circuito domestico e raggiunge un pubblico più ampio, suggerendo un impatto
 
 <!-- Risponde alla domanda 2: i media offrono riscontri e alimentano il fenomeno? -->
 
-_L'eco dei media: come raccontano i media le località del Cluster 3?_
+_L'eco dei media: come raccontano i media le località del Gruppo 3?_
 
 Se nella Sezione 1 abbiamo visto se il fenomeno lascia un segno nei numeri, qui
 vediamo **come i media lo raccontano**. Sono state usate due chiavi di lettura
@@ -235,7 +235,7 @@ In sintesi, il grafico racconta un **fenomeno mediatico ampio, maturo e prevalen
 convive con una consapevolezza crescente dei suoi effetti collaterali.
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/castellabate_evoluzione_sentiment.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/castellabate_evoluzione_sentiment.json"></vegachart>
 </div>
 
 
@@ -284,7 +284,7 @@ nel tempo, mentre la narrazione si arricchisce di sfumature più mature, che ric
 turismo cinematografico.
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/curon_evoluzione_sentiment.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/curon_evoluzione_sentiment.json"></vegachart>
 </div>
 
 <div class="card border-primary mb-4">
@@ -330,7 +330,7 @@ negli anni successivi, a una crescente consapevolezza dei suoi effetti collatera
 analisi strutturale**, mantenendo sempre un tono prevalentemente positivo.
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/opi_evoluzione_sentiment.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/opi_evoluzione_sentiment.json"></vegachart>
 </div>
 
 ### Uno sguardo d'insieme
@@ -343,7 +343,7 @@ convive con un crescente dibattito sulle criticità del turismo, tra sovraffolla
 *Un mondo a parte* si colloca in una **posizione intermedia**: il racconto mediatico è positivo e diffuso, ma evolve nel tempo, 
 passando dalla curiosità per la novità del film alla riflessione più matura sull'impatto turistico e ambientale nelle aree di Opi e Pescasseroli.  
 
-In sintesi, il cluster mostra come il cinema italiano possa generare **narrazioni territoriali di natura diversa** — dalla celebrazione 
+In sintesi, il gruppo mostra come il cinema italiano possa generare **narrazioni territoriali di natura diversa** — dalla celebrazione 
 economica alla consapevolezza critica — ma tutte accomunate da un tratto comune: la capacità di trasformare luoghi reali in spazi simbolici 
 dell'immaginario collettivo.
 
@@ -379,7 +379,7 @@ Vediamo alcuni esempi di questo fenomeno.
 Google Trends e Wikipedia confermano che l'interesse non è effimero. **Castellabate** supera gli attori del film in **visibilità**:
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/castellabate_google_trends.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/castellabate_google_trends.json"></vegachart>
 </div>
 
 ### Reddit
@@ -387,13 +387,13 @@ Google Trends e Wikipedia confermano che l'interesse non è effimero. **Castella
 Post per tipologia di turismo **prima** dell'uscita di _Rocco Schiavone_ - Aosta:
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/aosta_post_reddit_prima.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/aosta_post_reddit_prima.json"></vegachart>
 </div>
 
 Post per tipologia di turismo **dopo** l'uscita di _Rocco Schiavone_ - Aosta:
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/grafico_stacked_aosta_post.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/grafico_stacked_aosta_post.json"></vegachart>
 </div>
 
 ### YouTube
@@ -404,7 +404,7 @@ insieme alla località**: la serie è quindi quasi interamente successiva all'us
 come andamento dell'attenzione *dopo* il film, non come confronto prima/dopo.
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/timeline_un_mondo_a_parte_run1.vl.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/timeline_un_mondo_a_parte_run1.vl.json"></vegachart>
 </div>
 
 ---
@@ -440,4 +440,4 @@ strumento di riscrittura territoriale: non si limita a rappresentare i luoghi, l
 e Opi raccontano quattro modi diversi di vivere questa trasformazione, ma tutti mostrano la stessa verità. Quando un 
 luogo entra nell'immaginario collettivo, non è più soltanto un luogo: diventa un racconto che continua nel tempo.
 
-<a href="{{ site.baseurl }}/results.html">← Torna ai Risultati</a>
+<!-- <a href="{{ site.baseurl }}/results.html">← Torna ai Risultati</a> -->

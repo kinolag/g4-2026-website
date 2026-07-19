@@ -109,9 +109,9 @@ subtitle: "Dalla selezione dei casi di studio ai sette filoni di analisi"
   .family-card h4 { font-size: 1.05rem; margin-top: 0; }
   .family-card ul { margin: .6rem 0 0; padding-left: 1.1rem; font-size: .92rem; }
 
-  /* ---- Cluster: blocchi cliccabili ---- */
-  .cluster-grid { margin: 2rem 0; }
-  .cluster-card {
+  /* ---- Gruppo: blocchi cliccabili ---- */
+  .gruppo-grid { margin: 2rem 0; }
+  .gruppo-card {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -122,18 +122,18 @@ subtitle: "Dalla selezione dei casi di studio ai sette filoni di analisi"
     background: #fff;
     transition: box-shadow .2s ease, transform .2s ease;
   }
-  .cluster-card:hover {
+  .gruppo-card:hover {
     box-shadow: 0 10px 24px rgba(0,0,0,.10);
     transform: translateY(-3px);
   }
-  .cluster-card .cl-kicker {
+  .gruppo-card .cl-kicker {
     font-size: .72rem; font-weight: 700; letter-spacing: .08em;
     text-transform: uppercase; color: var(--cl-accent, #2b6cb0);
   }
-  .cluster-card h4 { font-size: 1.12rem; margin: .35rem 0 .6rem; }
-  .cluster-card p  { font-size: .9rem; color: #444; flex-grow: 1; }
-  .cluster-card .cl-places { font-size: .85rem; color: #666; font-style: italic; }
-  .cluster-card .btn { margin-top: .9rem; align-self: flex-start; }
+  .gruppo-card h4 { font-size: 1.12rem; margin: .35rem 0 .6rem; }
+  .gruppo-card p  { font-size: .9rem; color: #444; flex-grow: 1; }
+  .gruppo-card .cl-places { font-size: .85rem; color: #666; font-style: italic; }
+  .gruppo-card .btn { margin-top: .9rem; align-self: flex-start; }
 
   .cl-1 { --cl-accent: #c05621; }
   .cl-2 { --cl-accent: #2b6cb0; }
@@ -432,41 +432,41 @@ Il sentiment è stato calcolato in due passaggi: un primo punteggio tramite **Pa
 
 <hr class="section-rule">
 
-## 4. Dai Dati ai Cluster Narrativi del Sito
+## 4. Dai Dati ai Gruppi Narrativi del Sito
 
-I sette filoni descritti confluiscono nel sito attraverso **tre cluster tematici**, ciascuno dedicato a un diverso profilo di produzione.
+I sette filoni descritti confluiscono nel sito attraverso **tre gruppi tematici**, ciascuno dedicato a un diverso profilo di produzione.
 
-<div class="row cluster-grid">
+<div class="row gruppo-grid">
   <div class="col-md-4 mb-4">
-    <div class="cluster-card cl-1">
-      <span class="cl-kicker">Cluster 01</span>
+    <div class="gruppo-card cl-1">
+      <span class="cl-kicker">Gruppo 1</span>
       <h4>Grandi produzioni internazionali</h4>
       <p>Film di successo globale, girati in Italia: impatto improvviso e alta volatilità.</p>
       <p class="cl-places">Crema (Chiamami col tuo nome) · Volterra e Montepulciano (Twilight) · Bard, Vèrres, Pont-Saint-Martin (Avengers) · Pienza (I Medici)</p>
-      <a href="{{ site.baseurl }}/cluster01.html" class="btn btn-primary">Vai al Cluster 01</a>
+      <a href="{{ site.baseurl }}/group1.html" class="btn btn-primary">Vai al Gruppo 1</a>
     </div>
   </div>
   <div class="col-md-4 mb-4">
-    <div class="cluster-card cl-2">
-      <span class="cl-kicker">Cluster 02</span>
+    <div class="gruppo-card cl-2">
+      <span class="cl-kicker">Gruppo 2</span>
       <h4>Serie italiane di lunga durata</h4>
       <p>Fiction radicate nel territorio nel corso di anni, se non decenni, di messa in onda.</p>
       <p class="cl-places">Braies, San Vito di Cadore, San Candido (Un passo dal cielo) · Spoleto e Gubbio (Don Matteo) · Agliè (Elisa di Rivombrosa) · Ragusa, Scicli, Santa Croce Camerina (Il giovane Montalbano)</p>
-      <a href="{{ site.baseurl }}/cluster02.html" class="btn btn-primary">Vai al Cluster 02</a>
+      <a href="{{ site.baseurl }}/group2.html" class="btn btn-primary">Vai al Gruppo 2</a>
     </div>
   </div>
   <div class="col-md-4 mb-4">
-    <div class="cluster-card cl-3">
-      <span class="cl-kicker">Cluster 03</span>
+    <div class="gruppo-card cl-3">
+      <span class="cl-kicker">Gruppo 3</span>
       <h4>Produzioni di nicchia</h4>
-      <p>Casi non riconducibili ai cluster precedenti: impatto focalizzato e target specifico.</p>
+      <p>Casi non riconducibili ai gruppi precedenti: impatto focalizzato e target specifico.</p>
       <p class="cl-places">Castellabate (Benvenuti al Sud) · Curon Venosta (Curon) · Opi e Pescasseroli (Un mondo a parte) · Aosta (Rocco Schiavone)</p>
-      <a href="{{ site.baseurl }}/cluster03.html" class="btn btn-primary">Vai al Cluster 03</a>
+      <a href="{{ site.baseurl }}/group3.html" class="btn btn-primary">Vai al Gruppo 3</a>
     </div>
   </div>
 </div>
 
 <div class="note-box note-info">
-  <span class="note-title"><i class="fas fa-info-circle" aria-hidden="true"></i>Come leggere i cluster</span>
-  Ogni cluster attinge in proporzioni diverse ai dati fisici e digitali qui descritti, a seconda della <strong>disponibilità</strong> e della <strong>rilevanza</strong> di ciascuna fonte per il caso specifico.
+  <span class="note-title"><i class="fas fa-info-circle" aria-hidden="true"></i>Come leggere i gruppi</span>
+  Ogni gruppo attinge in proporzioni diverse ai dati fisici e digitali qui descritti, a seconda della <strong>disponibilità</strong> e della <strong>rilevanza</strong> di ciascuna fonte per il caso specifico.
 </div>

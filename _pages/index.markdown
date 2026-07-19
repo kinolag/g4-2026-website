@@ -96,9 +96,9 @@ subtitle: "Un'analisi tra visibilità globale e sostenibilità locale"
   .case-2 { --case-accent: #2b6cb0; }
   .case-3 { --case-accent: #2f855a; }
 
-  /* ---- Cluster ---- */
-  .cluster-grid { margin: 1.8rem 0; }
-  .cluster-card {
+  /* ---- Gruppo ---- */
+  .gruppo-grid { margin: 1.8rem 0; }
+  .gruppo-card {
     height: 100%;
     display: flex;
     flex-direction: column;
@@ -109,14 +109,14 @@ subtitle: "Un'analisi tra visibilità globale e sostenibilità locale"
     background: #fff;
     transition: box-shadow .2s ease, transform .2s ease;
   }
-  .cluster-card:hover { box-shadow: 0 10px 24px rgba(0,0,0,.10); transform: translateY(-3px); }
-  .cluster-card .cl-kicker {
+  .gruppo-card:hover { box-shadow: 0 10px 24px rgba(0,0,0,.10); transform: translateY(-3px); }
+  .gruppo-card .cl-kicker {
     font-size: .72rem; font-weight: 700; letter-spacing: .08em;
     text-transform: uppercase; color: var(--cl-accent, #2b6cb0);
   }
-  .cluster-card h4 { font-size: 1.08rem; margin: .35rem 0 .5rem; }
-  .cluster-card p { font-size: .9rem; color: #444; flex-grow: 1; }
-  .cluster-card .btn { margin-top: .8rem; align-self: flex-start; }
+  .gruppo-card h4 { font-size: 1.08rem; margin: .35rem 0 .5rem; }
+  .gruppo-card p { font-size: .9rem; color: #444; flex-grow: 1; }
+  .gruppo-card .btn { margin-top: .8rem; align-self: flex-start; }
   .cl-1 { --cl-accent: #c05621; }
   .cl-2 { --cl-accent: #2b6cb0; }
   .cl-3 { --cl-accent: #2f855a; }
@@ -240,14 +240,14 @@ Questo progetto nasce per misurare quella scintilla, incrociando **dati ISTAT**,
 ## Esplora le produzioni sul territorio
 
 Ogni produzione analizzata è legata a uno o più **luoghi di ripresa** in Italia.
-La mappa raccoglie tutte le location del progetto, colorate per **cluster**:
+La mappa raccoglie tutte le location del progetto, colorate per **gruppo**:
 cliccando su un punto si evidenziano tutte le località di quella produzione e la
 scheda a fianco ne mostra i dettagli.
 
 <div class="note-box">
   <span class="note-title"><i class="fas fa-hand-pointer" aria-hidden="true"></i>Come usare la mappa</span>
   Clicca una località per selezionare la sua produzione: la scheda a destra mostra
-  titolo, cluster di appartenenza, elenco delle località e altri dettagli. Doppio click per deselezionare.
+  titolo, gruppo di appartenenza, elenco delle località e altri dettagli. Doppio click per deselezionare.
 </div>
 
 <div class="map-container">
@@ -262,31 +262,31 @@ scheda a fianco ne mostra i dettagli.
 
 <hr class="section-rule">
 
-## Tre cluster, tre modi di raccontare lo stesso fenomeno
+## Tre gruppi, tre modi di raccontare lo stesso fenomeno
 
-<div class="row cluster-grid">
+<div class="row gruppo-grid">
   <div class="col-md-4 mb-4">
-    <div class="cluster-card cl-1">
-      <span class="cl-kicker">Cluster 01</span>
-      <h4>Blockbuster globali</h4>
+    <div class="gruppo-card cl-1">
+      <span class="cl-kicker">Gruppo 1</span>
+      <h4>Grandi produzioni internazionali</h4>
       <p>Grandi produzioni internazionali girate in Italia: impatto improvviso e alta volatilità.</p>
-      <a href="{{ site.baseurl }}/cluster01.html" class="btn btn-primary">Vai al Cluster 01</a>
+      <a href="{{ site.baseurl }}/group1.html" class="btn btn-primary">Vai al Gruppo 1</a>
     </div>
   </div>
   <div class="col-md-4 mb-4">
-    <div class="cluster-card cl-2">
-      <span class="cl-kicker">Cluster 02</span>
-      <h4>Lunghe serialità italiane</h4>
+    <div class="gruppo-card cl-2">
+      <span class="cl-kicker">Gruppo 2</span>
+      <h4>Serie italiane di lunga durata</h4>
       <p>Fiction radicate nel territorio nel corso di anni, se non decenni, di messa in onda.</p>
-      <a href="{{ site.baseurl }}/cluster02.html" class="btn btn-primary">Vai al Cluster 02</a>
+      <a href="{{ site.baseurl }}/group2.html" class="btn btn-primary">Vai al Gruppo 2</a>
     </div>
   </div>
   <div class="col-md-4 mb-4">
-    <div class="cluster-card cl-3">
-      <span class="cl-kicker">Cluster 03</span>
+    <div class="gruppo-card cl-3">
+      <span class="cl-kicker">Gruppo 3</span>
       <h4>Produzioni di nicchia</h4>
-      <p>Casi non riconducibili ai cluster precedenti: impatto focalizzato e target specifico.</p>
-      <a href="{{ site.baseurl }}/cluster03.html" class="btn btn-primary">Vai al Cluster 03</a>
+      <p>Casi non riconducibili ai gruppi precedenti: impatto focalizzato e target specifico.</p>
+      <a href="{{ site.baseurl }}/group3.html" class="btn btn-primary">Vai al Gruppo 3</a>
     </div>
   </div>
 </div>
@@ -294,7 +294,7 @@ scheda a fianco ne mostra i dettagli.
 <hr class="section-rule">
 
 <div class="page-links">
-  <a href="{{ site.baseurl }}/introduzione.html">Introduzione →</a>
+  <a href="{{ site.baseurl }}/introduction.html">Introduzione →</a>
   <a href="{{ site.baseurl }}/methodology.html">Metodologia →</a>
   <a href="{{ site.baseurl }}/results.html">Risultati →</a>
 </div>
