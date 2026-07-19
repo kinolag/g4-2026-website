@@ -6,7 +6,7 @@
       "height": 700,
       "title": {
         "text": "Località del CineTourism in Italia",
-        "fontSize": 16,
+        "fontSize": 15,
         "anchor": "start"
       },
       "layer": [
@@ -166,6 +166,11 @@
               }
             ]
           },
+          "transform": [
+            {
+              "filter": "length(data('sel_store')) > 0"
+            }
+          ],
           "mark": {
             "type": "text",
             "align": "left",
@@ -180,6 +185,340 @@
             },
             "y": {
               "value": 22
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "IN QUESTA MAPPA"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "left",
+            "fontSize": 12,
+            "fontWeight": "bold",
+            "color": "#94a3b8",
+            "limit": 250
+          },
+          "encoding": {
+            "x": {
+              "value": 18
+            },
+            "y": {
+              "value": 22
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "12"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 40,
+            "fontWeight": "bold",
+            "color": "#1a202c",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 150
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "produzioni"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#64748b",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 174
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "22"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 40,
+            "fontWeight": "bold",
+            "color": "#1a202c",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 240
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "località di ripresa"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#64748b",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 264
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "3"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 40,
+            "fontWeight": "bold",
+            "color": "#1a202c",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 330
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "cluster narrativi"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 13,
+            "fontWeight": "normal",
+            "color": "#64748b",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 354
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {}
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "rule",
+            "color": "#e2e8f0",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "value": 40
+            },
+            "x2": {
+              "value": 260
+            },
+            "y": {
+              "value": 400
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "Clicca una località sulla mappa"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 13,
+            "fontWeight": "bold",
+            "color": "#2b6cb0",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 432
+            },
+            "text": {
+              "field": "t",
+              "type": "nominal"
+            }
+          }
+        },
+        {
+          "data": {
+            "values": [
+              {
+                "t": "per aprire la scheda della produzione"
+              }
+            ]
+          },
+          "transform": [
+            {
+              "filter": "!length(data('sel_store'))"
+            }
+          ],
+          "mark": {
+            "type": "text",
+            "align": "center",
+            "fontSize": 11.5,
+            "fontWeight": "normal",
+            "color": "#94a3b8",
+            "limit": 264
+          },
+          "encoding": {
+            "x": {
+              "value": 150.0
+            },
+            "y": {
+              "value": 452
             },
             "text": {
               "field": "t",
@@ -331,6 +670,11 @@
               {}
             ]
           },
+          "transform": [
+            {
+              "filter": "length(data('sel_store')) > 0"
+            }
+          ],
           "mark": {
             "type": "rule",
             "color": "#e2e8f0",
@@ -453,6 +797,11 @@
               {}
             ]
           },
+          "transform": [
+            {
+              "filter": "length(data('sel_store')) > 0"
+            }
+          ],
           "mark": {
             "type": "rule",
             "color": "#e2e8f0",
@@ -575,6 +924,11 @@
               {}
             ]
           },
+          "transform": [
+            {
+              "filter": "length(data('sel_store')) > 0"
+            }
+          ],
           "mark": {
             "type": "rule",
             "color": "#e2e8f0",
