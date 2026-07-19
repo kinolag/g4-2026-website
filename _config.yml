@@ -66,7 +66,7 @@ navbar:
           url: cluster02.html
         - title: Gruppo 3
           url: cluster03.html
-    - title: Conclusione & Raccomandazioni
+    - title: Conclusioni
       url: /results.html
 #    - title: Pagina di esempio
 #      url: /example.html
