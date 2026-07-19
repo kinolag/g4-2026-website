@@ -58,7 +58,8 @@
                 "type": "point",
                 "fields": [
                   "gruppo"
-                ]
+                ],
+                "clear": "dblclick"
               },
               "bind": "legend"
             }
@@ -119,7 +120,7 @@
                 "cornerRadius": 4,
                 "offset": 6,
                 "labelFontSize": 14,
-                "labelFontWeight": "bold",
+                "labelFontWeight": "normal",
                 "symbolSize": 150,
                 "symbolStrokeWidth": 0,
                 "rowPadding": 6
