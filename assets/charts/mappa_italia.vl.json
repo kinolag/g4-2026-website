@@ -37,8 +37,8 @@
           },
           "mark": {
             "type": "circle",
-            "stroke": "white",
-            "cursor": "pointer"
+            "cursor": "pointer",
+            "stroke": "white"
           },
           "params": [
             {
@@ -71,19 +71,12 @@
               "value": 95
             },
             "opacity": {
-              "condition": [
-                {
-                  "param": "sel",
-                  "empty": false,
-                  "value": 1
-                },
-                {
-                  "param": "gru",
-                  "empty": true,
-                  "value": 1
-                }
-              ],
-              "value": 0.12
+              "condition": {
+                "param": "gru",
+                "empty": true,
+                "value": 1
+              },
+              "value": 0.15
             },
             "strokeWidth": {
               "condition": {
