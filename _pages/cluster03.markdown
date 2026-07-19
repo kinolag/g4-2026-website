@@ -365,7 +365,7 @@ Post per tipologia di turismo **dopo** l'uscita di _Rocco Schiavone_ - Aosta:
 ### YouTube
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/opi_youtube.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/cluster03/timeline_un_mondo_a_parte_run1.vl.json"></vegachart>
 </div>
 
 ---
