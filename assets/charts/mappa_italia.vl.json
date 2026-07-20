@@ -185,7 +185,7 @@
                     "title": "Località"
                   },
                   {
-                    "field": "gruppo",
+                    "field": "gruppo_num",
                     "type": "nominal",
                     "title": "Gruppo"
                   }
@@ -859,7 +859,7 @@
               "value": 71
             },
             "text": {
-              "field": "cluster_label",
+              "field": "gruppo_label",
               "type": "nominal"
             }
           }
@@ -895,7 +895,7 @@
               "value": 93
             },
             "text": {
-              "field": "cluster_label",
+              "field": "gruppo_label",
               "type": "nominal"
             }
           }
@@ -1430,7 +1430,7 @@
               }
             },
             {
-              "calculate": "'Pagina del ' + datum.cluster + '  →'",
+              "calculate": "datum.gruppo + '  →'",
               "as": "_b"
             }
           ],
@@ -1513,8 +1513,6 @@
         "t1": "Avengers: Age of Ultron",
         "t2": "",
         "gruppo": "Gruppo 1",
-        "cluster": "Gruppo 1",
-        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "group1.html",
         "meta": "Film internazionale  ·  2015",
         "rating": "IMDb 7,3",
@@ -1524,7 +1522,9 @@
         "d3": "il loro futuro come squadra.",
         "d4": "",
         "poster": "assets/images/locandine/avengers-age-of-ultron.jpg",
-        "poster_alt": "Locandina del film avengers age of ultron"
+        "poster_alt": "Locandina del film avengers age of ultron",
+        "gruppo_label": "Gruppo 1 · Grandi produzioni internazionali",
+        "gruppo_num": "1"
       },
       {
         "localita": "Verrès",
@@ -1534,8 +1534,6 @@
         "t1": "Avengers: Age of Ultron",
         "t2": "",
         "gruppo": "Gruppo 1",
-        "cluster": "Gruppo 1",
-        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "group1.html",
         "meta": "Film internazionale  ·  2015",
         "rating": "IMDb 7,3",
@@ -1545,7 +1543,9 @@
         "d3": "il loro futuro come squadra.",
         "d4": "",
         "poster": "assets/images/locandine/avengers-age-of-ultron.jpg",
-        "poster_alt": "Locandina del film avengers age of ultron"
+        "poster_alt": "Locandina del film avengers age of ultron",
+        "gruppo_label": "Gruppo 1 · Grandi produzioni internazionali",
+        "gruppo_num": "1"
       },
       {
         "localita": "Pont-Saint-Martin",
@@ -1555,8 +1555,6 @@
         "t1": "Avengers: Age of Ultron",
         "t2": "",
         "gruppo": "Gruppo 1",
-        "cluster": "Gruppo 1",
-        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "group1.html",
         "meta": "Film internazionale  ·  2015",
         "rating": "IMDb 7,3",
@@ -1566,7 +1564,9 @@
         "d3": "il loro futuro come squadra.",
         "d4": "",
         "poster": "assets/images/locandine/avengers-age-of-ultron.jpg",
-        "poster_alt": "Locandina del film avengers age of ultron"
+        "poster_alt": "Locandina del film avengers age of ultron",
+        "gruppo_label": "Gruppo 1 · Grandi produzioni internazionali",
+        "gruppo_num": "1"
       },
       {
         "localita": "Crema",
@@ -1576,8 +1576,6 @@
         "t1": "Call Me by Your Name",
         "t2": "",
         "gruppo": "Gruppo 1",
-        "cluster": "Gruppo 1",
-        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "group1.html",
         "meta": "Film internazionale  ·  2017",
         "rating": "IMDb 7,8",
@@ -1587,7 +1585,9 @@
         "d3": "nella campagna lombarda.",
         "d4": "",
         "poster": "assets/images/locandine/call-me-by-your-name.jpg",
-        "poster_alt": "Locandina del film call me by your name"
+        "poster_alt": "Locandina del film call me by your name",
+        "gruppo_label": "Gruppo 1 · Grandi produzioni internazionali",
+        "gruppo_num": "1"
       },
       {
         "localita": "Montepulciano",
@@ -1597,8 +1597,6 @@
         "t1": "The Twilight Saga: New",
         "t2": "Moon",
         "gruppo": "Gruppo 1",
-        "cluster": "Gruppo 1",
-        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "group1.html",
         "meta": "Film internazionale  ·  2009",
         "rating": "IMDb 4,8",
@@ -1608,7 +1606,9 @@
         "d3": "osservano nell'ombra.",
         "d4": "",
         "poster": "assets/images/locandine/the-twilight-saga-new-moon.jpg",
-        "poster_alt": "Locandina del film the twilight saga: new moon"
+        "poster_alt": "Locandina del film the twilight saga: new moon",
+        "gruppo_label": "Gruppo 1 · Grandi produzioni internazionali",
+        "gruppo_num": "1"
       },
       {
         "localita": "Volterra",
@@ -1618,8 +1618,6 @@
         "t1": "The Twilight Saga: New",
         "t2": "Moon",
         "gruppo": "Gruppo 1",
-        "cluster": "Gruppo 1",
-        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "group1.html",
         "meta": "Film internazionale  ·  2009",
         "rating": "IMDb 4,8",
@@ -1629,7 +1627,9 @@
         "d3": "osservano nell'ombra.",
         "d4": "",
         "poster": "assets/images/locandine/the-twilight-saga-new-moon.jpg",
-        "poster_alt": "Locandina del film the twilight saga: new moon"
+        "poster_alt": "Locandina del film the twilight saga: new moon",
+        "gruppo_label": "Gruppo 1 · Grandi produzioni internazionali",
+        "gruppo_num": "1"
       },
       {
         "localita": "Braies",
@@ -1639,8 +1639,6 @@
         "t1": "Un passo dal cielo",
         "t2": "",
         "gruppo": "Gruppo 2",
-        "cluster": "Gruppo 2",
-        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "group2.html",
         "meta": "Serie italiana  ·  2011–2025",
         "rating": "IMDb 6,8",
@@ -1650,7 +1648,9 @@
         "d3": "",
         "d4": "",
         "poster": "assets/images/locandine/un-passo-dal-cielo.jpg",
-        "poster_alt": "Locandina del film un passo dal cielo"
+        "poster_alt": "Locandina del film un passo dal cielo",
+        "gruppo_label": "Gruppo 2 · Serie italiane di lunga durata",
+        "gruppo_num": "2"
       },
       {
         "localita": "San Vito Di Cadore",
@@ -1660,8 +1660,6 @@
         "t1": "Un passo dal cielo",
         "t2": "",
         "gruppo": "Gruppo 2",
-        "cluster": "Gruppo 2",
-        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "group2.html",
         "meta": "Serie italiana  ·  2011–2025",
         "rating": "IMDb 6,8",
@@ -1671,7 +1669,9 @@
         "d3": "",
         "d4": "",
         "poster": "assets/images/locandine/un-passo-dal-cielo.jpg",
-        "poster_alt": "Locandina del film un passo dal cielo"
+        "poster_alt": "Locandina del film un passo dal cielo",
+        "gruppo_label": "Gruppo 2 · Serie italiane di lunga durata",
+        "gruppo_num": "2"
       },
       {
         "localita": "San Candido",
@@ -1681,8 +1681,6 @@
         "t1": "Un passo dal cielo",
         "t2": "",
         "gruppo": "Gruppo 2",
-        "cluster": "Gruppo 2",
-        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "group2.html",
         "meta": "Serie italiana  ·  2011–2025",
         "rating": "IMDb 6,8",
@@ -1692,7 +1690,9 @@
         "d3": "",
         "d4": "",
         "poster": "assets/images/locandine/un-passo-dal-cielo.jpg",
-        "poster_alt": "Locandina del film un passo dal cielo"
+        "poster_alt": "Locandina del film un passo dal cielo",
+        "gruppo_label": "Gruppo 2 · Serie italiane di lunga durata",
+        "gruppo_num": "2"
       },
       {
         "localita": "Gubbio",
@@ -1702,8 +1702,6 @@
         "t1": "Don Matteo",
         "t2": "",
         "gruppo": "Gruppo 2",
-        "cluster": "Gruppo 2",
-        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "group2.html",
         "meta": "Serie italiana  ·  2000–oggi",
         "rating": "IMDb 6,7",
@@ -1713,7 +1711,9 @@
         "d3": "",
         "d4": "",
         "poster": "assets/images/locandine/don-matteo.jpg",
-        "poster_alt": "Locandina del film don matteo"
+        "poster_alt": "Locandina del film don matteo",
+        "gruppo_label": "Gruppo 2 · Serie italiane di lunga durata",
+        "gruppo_num": "2"
       },
       {
         "localita": "Spoleto",
@@ -1723,8 +1723,6 @@
         "t1": "Don Matteo",
         "t2": "",
         "gruppo": "Gruppo 2",
-        "cluster": "Gruppo 2",
-        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "group2.html",
         "meta": "Serie italiana  ·  2000–oggi",
         "rating": "IMDb 6,7",
@@ -1734,7 +1732,9 @@
         "d3": "",
         "d4": "",
         "poster": "assets/images/locandine/don-matteo.jpg",
-        "poster_alt": "Locandina del film don matteo"
+        "poster_alt": "Locandina del film don matteo",
+        "gruppo_label": "Gruppo 2 · Serie italiane di lunga durata",
+        "gruppo_num": "2"
       },
       {
         "localita": "Ragusa Ibla",
@@ -1744,8 +1744,6 @@
         "t1": "Il giovane Montalbano",
         "t2": "",
         "gruppo": "Gruppo 2",
-        "cluster": "Gruppo 2",
-        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "group2.html",
         "meta": "Serie italiana  ·  2012–2015",
         "rating": "IMDb 8,0",
@@ -1755,7 +1753,9 @@
         "d3": "meridionale.",
         "d4": "",
         "poster": "assets/images/locandine/il-giovane-montalbano.jpg",
-        "poster_alt": "Locandina del film il giovane montalbano"
+        "poster_alt": "Locandina del film il giovane montalbano",
+        "gruppo_label": "Gruppo 2 · Serie italiane di lunga durata",
+        "gruppo_num": "2"
       },
       {
         "localita": "Santa Croce Camerina",
@@ -1765,8 +1765,6 @@
         "t1": "Il giovane Montalbano",
         "t2": "",
         "gruppo": "Gruppo 2",
-        "cluster": "Gruppo 2",
-        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "group2.html",
         "meta": "Serie italiana  ·  2012–2015",
         "rating": "IMDb 8,0",
@@ -1776,7 +1774,9 @@
         "d3": "meridionale.",
         "d4": "",
         "poster": "assets/images/locandine/il-giovane-montalbano.jpg",
-        "poster_alt": "Locandina del film il giovane montalbano"
+        "poster_alt": "Locandina del film il giovane montalbano",
+        "gruppo_label": "Gruppo 2 · Serie italiane di lunga durata",
+        "gruppo_num": "2"
       },
       {
         "localita": "Scicli",
@@ -1786,8 +1786,6 @@
         "t1": "Il giovane Montalbano",
         "t2": "",
         "gruppo": "Gruppo 2",
-        "cluster": "Gruppo 2",
-        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "group2.html",
         "meta": "Serie italiana  ·  2012–2015",
         "rating": "IMDb 8,0",
@@ -1797,7 +1795,9 @@
         "d3": "meridionale.",
         "d4": "",
         "poster": "assets/images/locandine/il-giovane-montalbano.jpg",
-        "poster_alt": "Locandina del film il giovane montalbano"
+        "poster_alt": "Locandina del film il giovane montalbano",
+        "gruppo_label": "Gruppo 2 · Serie italiane di lunga durata",
+        "gruppo_num": "2"
       },
       {
         "localita": "Agliè",
@@ -1807,8 +1807,6 @@
         "t1": "Elisa di Rivombrosa",
         "t2": "",
         "gruppo": "Gruppo 2",
-        "cluster": "Gruppo 2",
-        "cluster_label": "Gruppo 2 · Serie italiane di lunga durata",
         "link": "group2.html",
         "meta": "Serie italiana  ·  2003–2005",
         "rating": "IMDb 7,4",
@@ -1818,7 +1816,9 @@
         "d3": "politici nel XVIII secolo.",
         "d4": "",
         "poster": "assets/images/locandine/elisa-di-rivombrosa.jpg",
-        "poster_alt": "Locandina del film elisa di rivombrosa"
+        "poster_alt": "Locandina del film elisa di rivombrosa",
+        "gruppo_label": "Gruppo 2 · Serie italiane di lunga durata",
+        "gruppo_num": "2"
       },
       {
         "localita": "Castellabate",
@@ -1828,8 +1828,6 @@
         "t1": "Benvenuti al Sud",
         "t2": "",
         "gruppo": "Gruppo 3",
-        "cluster": "Gruppo 3",
-        "cluster_label": "Gruppo 3 · Produzioni di nicchia",
         "link": "group3.html",
         "meta": "Film italiano  ·  2010",
         "rating": "IMDb 6,6",
@@ -1839,7 +1837,9 @@
         "d3": "",
         "d4": "",
         "poster": "assets/images/locandine/benvenuti-al-sud.jpg",
-        "poster_alt": "Locandina del film benvenuti al sud"
+        "poster_alt": "Locandina del film benvenuti al sud",
+        "gruppo_label": "Gruppo 3 · Produzioni di nicchia",
+        "gruppo_num": "3"
       },
       {
         "localita": "Curon Venosta",
@@ -1849,8 +1849,6 @@
         "t1": "Curon",
         "t2": "",
         "gruppo": "Gruppo 3",
-        "cluster": "Gruppo 3",
-        "cluster_label": "Gruppo 3 · Produzioni di nicchia",
         "link": "group3.html",
         "meta": "Serie italiana  ·  2020",
         "rating": "IMDb 5,9",
@@ -1860,7 +1858,9 @@
         "d3": "emergono dal lago sommerso.",
         "d4": "",
         "poster": "assets/images/locandine/curon.jpg",
-        "poster_alt": "Locandina del film curon"
+        "poster_alt": "Locandina del film curon",
+        "gruppo_label": "Gruppo 3 · Produzioni di nicchia",
+        "gruppo_num": "3"
       },
       {
         "localita": "Aosta",
@@ -1870,8 +1870,6 @@
         "t1": "Rocco Schiavone",
         "t2": "",
         "gruppo": "Gruppo 3",
-        "cluster": "Gruppo 3",
-        "cluster_label": "Gruppo 3 · Produzioni di nicchia",
         "link": "group3.html",
         "meta": "Serie italiana  ·  2016–oggi",
         "rating": "IMDb 7,9",
@@ -1881,7 +1879,9 @@
         "d3": "",
         "d4": "",
         "poster": "assets/images/locandine/rocco-schiavone.jpg",
-        "poster_alt": "Locandina del film rocco schiavone"
+        "poster_alt": "Locandina del film rocco schiavone",
+        "gruppo_label": "Gruppo 3 · Produzioni di nicchia",
+        "gruppo_num": "3"
       },
       {
         "localita": "Opi",
@@ -1891,8 +1891,6 @@
         "t1": "Un mondo a parte",
         "t2": "",
         "gruppo": "Gruppo 3",
-        "cluster": "Gruppo 3",
-        "cluster_label": "Gruppo 3 · Produzioni di nicchia",
         "link": "group3.html",
         "meta": "Film italiano  ·  2024",
         "rating": "IMDb 6,4",
@@ -1902,7 +1900,9 @@
         "d3": "",
         "d4": "",
         "poster": "assets/images/locandine/un-mondo-a-parte.jpg",
-        "poster_alt": "Locandina del film un mondo a parte"
+        "poster_alt": "Locandina del film un mondo a parte",
+        "gruppo_label": "Gruppo 3 · Produzioni di nicchia",
+        "gruppo_num": "3"
       },
       {
         "localita": "Pescasseroli",
@@ -1912,8 +1912,6 @@
         "t1": "Un mondo a parte",
         "t2": "",
         "gruppo": "Gruppo 3",
-        "cluster": "Gruppo 3",
-        "cluster_label": "Gruppo 3 · Produzioni di nicchia",
         "link": "group3.html",
         "meta": "Film italiano  ·  2024",
         "rating": "IMDb 6,4",
@@ -1923,7 +1921,9 @@
         "d3": "",
         "d4": "",
         "poster": "assets/images/locandine/un-mondo-a-parte.jpg",
-        "poster_alt": "Locandina del film un mondo a parte"
+        "poster_alt": "Locandina del film un mondo a parte",
+        "gruppo_label": "Gruppo 3 · Produzioni di nicchia",
+        "gruppo_num": "3"
       },
       {
         "localita": "Pienza",
@@ -1933,8 +1933,6 @@
         "t1": "I Medici",
         "t2": "",
         "gruppo": "Gruppo 1",
-        "cluster": "Gruppo 1",
-        "cluster_label": "Gruppo 1 · Grandi produzioni internazionali",
         "link": "group1.html",
         "meta": "Serie internazionale  ·  2016–2019",
         "rating": "IMDb 7,9",
@@ -1944,7 +1942,9 @@
         "d3": "Firenze rinascimentale.",
         "d4": "",
         "poster": "assets/images/locandine/medici.jpg",
-        "poster_alt": "Locandina del film medici"
+        "poster_alt": "Locandina del film medici",
+        "gruppo_label": "Gruppo 1 · Grandi produzioni internazionali",
+        "gruppo_num": "1"
       }
     ],
     "gruppi": [

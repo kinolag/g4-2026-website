@@ -1510,6 +1510,11 @@
       "data": {
         "name": "data-d7a4ae2ad529353a6a11f0a9fa495b0a"
       },
+      "transform": [
+        {
+          "filter": "datum.label !== 'Stagione 1'"
+        }
+      ],
       "mark": {
         "type": "text",
         "angle": 270,
@@ -1517,7 +1522,46 @@
         "baseline": "bottom",
         "dx": 0,
         "dy": -6,
-        "fontSize": 11,
+        "fontSize": 10,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "value": 8
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "color",
+          "type": "nominal",
+          "scale": null,
+          "legend": null
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-d7a4ae2ad529353a6a11f0a9fa495b0a"
+      },
+      "transform": [
+        {
+          "filter": "datum.label === 'Stagione 1'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "angle": 270,
+        "align": "right",
+        "baseline": "top",
+        "dx": 0,
+        "dy": 6,
+        "fontSize": 10,
         "fontWeight": "bold"
       },
       "encoding": {
