@@ -79,6 +79,23 @@ Vito di Cadore** per _Un passo dal cielo_; **Spoleto** e **Gubbio** per _Don
 Matteo_; la Sicilia di **Scicli**, **Ragusa** e **Santa Croce Camerina** per _Il
 giovane Montalbano_; **Agliè** per _Elisa di Rivombrosa_.
 
+<div class="row">
+  <div class="col-md-12 text-center">
+    <img src="{{site.baseurl}}/assets/images/group2/locandine_group2.jpg"
+         class="img-fluid mx-auto d-block"
+         style="margin: 20px 0 5px 0; border-radius: 8px;"
+         alt="Locandine delle produzioni analizzate: Don Matteo, Elisa di Rivombrosa, Un passo dal cielo, Il giovane Montalbano">
+    <p style="font-size: 0.75em; color: #6c757d; margin-bottom: 40px; margin-top: 10px">
+        <em>
+          Locandine promozionali ufficiali. I diritti d'autore appartengono alle rispettive case di produzione:<br>
+          &copy; Rai Fiction / Lux Vide, &copy; Rai Fiction / Titanus,<br>
+          &copy; Rai Fiction / Lux Vide, &copy; Rai Fiction / Palomar.<br>
+          Immagini utilizzate esclusivamente a scopo analitico, di ricerca e illustrativo ai sensi dell'art. 70 della Legge 633/1941 (Diritto di citazione).
+        </em>
+    </p>
+  </div>
+</div>
+
 Il filo conduttore è duplice. Da un lato l'ambientazione italiana e domestica,
 lontana dai blockbuster internazionali (i casi Marvel e Twilight del Gruppo 1) e
 radicata in un immaginario televisivo generalista molto popolare in Italia.
@@ -96,8 +113,6 @@ Questa esposizione prolungata nel tempo — che derivi da anni di messa in onda 
 da un'eredità culturale duratura — è la chiave di lettura scelta per analizzare
 l'impatto cineturistico di questi territori: l'obiettivo è isolare non un picco
 temporaneo, ma un **radicamento strutturale** costruito nel tempo.
-
-<!-- IMMAGINE: foto di apertura del gruppo -->
 
 <!--
   Domande-guida della pagina (temporaneamente non visibili):
