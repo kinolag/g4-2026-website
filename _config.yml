@@ -18,19 +18,17 @@
 # {{ site.title }}, {{ site.email }}, ecc. Puoi creare variabili personalizzate:
 # saranno accessibili nei template tramite {{ site.myvariable }}.
 
-title: "Template per Progettoni"
-subtitle: "Questo è un template per i progetti del Master SoBigData"
+title: "G4/2026"
+subtitle: "Un progetto di data science"
 description: >- # ignora i ritorni a capo fino a "baseurl:"
-  Scrivi qui una descrizione accattivante per il tuo nuovo sito. Puoi modificare questa
-  riga in _config.yml. Apparirà nei meta del documento head (per
-  i risultati di ricerca di Google) e nella descrizione del sito in feed.xml.
+  Un'analisi dell'impatto di film e serie TV su alcune località italiane utilizzate per le riprese. Attraverso un'accurata selezione di produzioni e territori, la ricerca integra diversi livelli di analisi per valutare sia gli effetti del turismo fisico che i segnali di attenzione digitale.
 
 
 # Riportare il github del gruppo di progetto e quello del sito web (se differente).
 # Tali informazioni appariranno nel Footer del sito.
 github_repo:
-  - name: "Template per i Progettoni del Master SoBigData"
-    url: "https://github.com/danielefadda/master-projects-template-2026/"
+  - name: "g4-2026-website"
+    url: "https://github.com/kinolag/g4-2026-website/"
 
 markdown: kramdown
 
@@ -48,12 +46,6 @@ navbar:
     img: "./assets/images/Logo_masthead.png" # non modificare
     url: /
   nav:
-#    - title: installazione di Jekyll
-#      child:
-#      - title: Sviluppo locale
-#        url: /local-development.html
-#      - title: Local development
-#        url: /local-development-eng.html
     - title: Introduzione
       url: /introduction.html
     - title: Metodologia
