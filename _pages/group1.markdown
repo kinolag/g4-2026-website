@@ -120,7 +120,7 @@ Segnale di crescita turistica eccezionale: gli **Arrivi Non Residenti** aumentan
 Il quadro che emerge dimostra come i blockbuster globali agiscano da shock asimmetrici: non alzano tutti gli indicatori in modo uniforme, ma colpiscono selettivamente l'infrastruttura più esposta (es. B&B in Valle d'Aosta, musei a Crema, gestione dei rifiuti a Pienza) alterando in modo mirato l'equilibrio dei luoghi.
 
 ### L'ecosistema turistico attorno ai set (OpenStreetMap)
-Il tratto più evidente che accomuna queste produzioni è la profonda alterazione del tessuto commerciale locale. Il CineTourism agisce come un catalizzatore urbano asimmetrico, polarizzando lo sviluppo verso i servizi di accoglienza a discapito delle attività tradizionali.
+Il tratto più evidente che accomuna queste produzioni è la profonda alterazione del tessuto commerciale locale. Il Cineturismo agisce come un catalizzatore urbano asimmetrico, polarizzando lo sviluppo verso i servizi di accoglienza a discapito delle attività tradizionali.
 
 * **Crema (*Call Me By Your Name*):** L'ecosistema turistico ha registrato un'impennata a ridosso dell'uscita del film (da 13 attività a inizio 2017 a 20 nell'aprile 2018), superando nettamente la crescita dei negozi locali standard.
 * **Forte di Bard (*Avengers: Age of Ultron*):** Le location turistiche attive sono esplose, passando da circa 40 unità a fine 2014 a oltre 100 a fine 2015, innescando un trend rialzista ininterrotto che ha superato le 240 unità nel 2026.

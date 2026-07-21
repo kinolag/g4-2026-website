@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "CineTourism Map"
+title: "Cineturismo"
 vega: true
 header_type: hero
 header_img: assets/images/header.svg
-header_title: "CineTourism: L'Impatto dei Media sul Territorio"
+header_title: "Cineturismo: L'Impatto dei Media sul Territorio"
 subtitle: "Un'analisi tra visibilità globale e sostenibilità locale"
 ---
 
