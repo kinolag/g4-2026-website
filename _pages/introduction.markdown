@@ -1,10 +1,10 @@
 ---
 layout: default
-title: "Introduzione al CineTourism"
+title: "Introduzione"
 vega: true
 header_type: hero
 header_img: assets/images/header.svg
-header_title: "Introduzione al CineTourism"
+header_title: "Introduzione al Cineturismo"
 subtitle: "Un fenomeno in rapida evoluzione"
 ---
 
@@ -82,7 +82,7 @@ subtitle: "Un fenomeno in rapida evoluzione"
 
 ## Definizione e Complessità del Fenomeno
 
-Il **CineTourism** identifica lo spostamento di flussi turistici verso destinazioni rese celebri da film o serie TV, un processo che fonde la realtà geografica con l'immaginario narrativo. La letteratura internazionale lo descrive come una forma di turismo esperienziale e identitario, in cui il visitatore cerca di "vivere" la storia che ha visto sullo schermo. Non si tratta solo di visitare un set, ma di entrare in un universo simbolico: un luogo reale che diventa spazio emotivo e culturale.
+Il **Cineturismo** identifica lo spostamento di flussi turistici verso destinazioni rese celebri da film o serie TV, un processo che fonde la realtà geografica con l'immaginario narrativo. La letteratura internazionale lo descrive come una forma di turismo esperienziale e identitario, in cui il visitatore cerca di "vivere" la storia che ha visto sullo schermo. Non si tratta solo di visitare un set, ma di entrare in un universo simbolico: un luogo reale che diventa spazio emotivo e culturale.
 
 <div class="quote-card">
   <p class="q-text">«Il cinema dà valore a ciò che abbiamo a disposizione.»</p>

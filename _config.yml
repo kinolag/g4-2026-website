@@ -44,7 +44,7 @@ baseurl: "/g4-2026-website"
 navbar:
   style :  dual # non modificarlo: imposta lo stile della navbar.
   brand: # brand della navbar, mostrato a sinistra.
-    title :  "CineTourism"
+    title :  "Cineturismo"
     img: "./assets/images/Logo_masthead.png" # non modificare
     url: /
   nav:
