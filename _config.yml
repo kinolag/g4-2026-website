@@ -1,4 +1,4 @@
-# Benvenuto in Jekyll!
+8# Benvenuto in Jekyll!
 #
 # Questo file di configurazione è pensato per impostazioni che interessano tutto il blog,
 # valori che in genere imposti una volta e modifichi raramente. Se ti ritrovi a modificare
@@ -59,7 +59,7 @@ navbar:
         - title: Gruppo 3
           url: group3.html
     - title: Conclusioni
-      url: /results.html
+      url: /conclusions.html
 
     - title: SBD Master # deve essere sempre l'ultimo elemento della navbar, non modificarlo
       url: https://masterbigdata.it/
