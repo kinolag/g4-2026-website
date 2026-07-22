@@ -216,24 +216,14 @@ Infine, la parte più delicata è stata la **sentiment analysis**: abbiamo usato
 </div>
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/sentiment_combinato_recensioni_gyg.json" style="width: 100%; height: 100%; display: block;"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/introduction/sentiment_combinato_recensioni_gyg_finale.json" style="width: 100%; height: 100%; display: block;"></vegachart>
 </div>
 
 Questi esempi mostrano come il cineturismo non sia solo un fenomeno economico, ma anche **sociale e affettivo**: un modo per costruire comunità, condividere esperienze e riscoprire il valore dei luoghi attraverso la lente del cinema.
 
 
-<div class="row">
-  <div class="col-md-12 text-center">
-    <img src="{{site.baseurl}}/assets/images/introduzione/recensioni_gyg_wordcloud.png"
-         class="img-fluid mx-auto d-block"
-         style="margin: 20px 0;"
-         alt="Sovraffollamento al Lago di Braies">
-    <p style="font-size: 0.85em; color: #6c757d; margin-bottom: 40px; margin-top: 0px">
-        <em>
-          Wordcloud generata a partire dai testi delle recensioni di GetYourGuide
-        </em>
-    </p>
-  </div>
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/introduction/wordcloud_vega_2.json" style="width: 100%; height: 100%; display: block;"></vegachart>
 </div>
 
 Un altro punto di contatto tra dati e testimonianza di Rob McQuack riguarda la percezione dei luoghi. 
