@@ -382,19 +382,30 @@ Google Trends e Wikipedia confermano che l'interesse non è effimero. **Castella
   <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/castellabate_google_trends.json"></vegachart>
 </div>
 
+Castellabate rappresenta il **cineturismo identitario mediterraneo**: il film non si limita a mostrare il borgo, 
+ma lo reinventa, trasformandolo in simbolo di autenticità e qualità della vita. L'impatto è narrativo, economico 
+e digitale, e rispecchia ciò che **Davide Marra** definirebbe "_la magia del cinema che dà valore a ciò che hai a disposizione_". 
+
 ### Reddit
-
-Post per tipologia di turismo **prima** dell'uscita di _Rocco Schiavone_ - Aosta:
-
-<div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/aosta_post_reddit_prima.json"></vegachart>
-</div>
 
 Post per tipologia di turismo **dopo** l'uscita di _Rocco Schiavone_ - Aosta:
 
 <div class="chart-container">
   <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/grafico_stacked_aosta_post.json"></vegachart>
 </div>
+
+Osservando il grafico, emerge con chiarezza come, dopo l’uscita della serie TV, Aosta abbia vissuto una 
+trasformazione profonda nella percezione del proprio turismo: **il turismo culturale, prima marginale, diventa 
+improvvisamente predominante**. Questo non è un semplice effetto di moda o curiosità, ma un segnale 
+di **ridefinizione identitaria**. La città non viene “scoperta” come destinazione turistica, bensì reinterpretata: 
+assume un ruolo narrativo, diventa personaggio, e attraverso questa nuova immagine rafforza il senso di appartenenza dei suoi abitanti.
+In questo caso, non si può parlare di cineturismo in senso stretto — non c’è un flusso di visitatori che vogliono “_vedere i luoghi del film_” 
+— ma di un modello urbano identitario, dove **la rappresentazione audiovisiva agisce come specchio culturale**. La serialità, come nota **McQuack** 
+con il concetto di “_campanilismo inevitabile_”, porta le città italiane scelte come set a riappropriarsi della propria immagine: il 
+luogo diventa simbolo, orgoglio, racconto.
+Aosta, dunque, non è solo sfondo, ma protagonista di una narrazione che la trasforma in emblema di sé stessa. Il grafico, 
+più che una distribuzione di dati, racconta la nascita di una nuova consapevolezza territoriale: la città che si guarda attraverso lo 
+schermo e si riconosce, riscoprendo la propria voce culturale.
 
 ### YouTube
 
@@ -407,37 +418,35 @@ come andamento dell'attenzione *dopo* il film, non come confronto prima/dopo.
   <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/timeline_un_mondo_a_parte_run1.vl.json"></vegachart>
 </div>
 
+Il grafico mostra in modo eloquente la parabola dell’attenzione pubblica verso _Un mondo a parte_: 
+un alto picco di commenti al momento dell’uscita in sala, seguito da un rapido declino e da una lunga 
+fase di quiete, interrotta solo da un lieve risveglio in corrispondenza dell’arrivo in streaming.
+Questo andamento racconta molto più di una semplice curva di _engagement_: è la traccia di un fenomeno culturale che 
+si consuma nel tempo. L’uscita cinematografica genera un’ondata di partecipazione emotiva e locale in cui la comunità 
+si riconosce nel racconto e lo celebra. Poi, con il passare dei mesi, l’interesse si sedimenta, trasformandosi in memoria condivisa.
+La successiva riemersione dei commenti in fase di streaming non riattiva il clamore iniziale, ma **consolida la narrazione**.
+
 ---
 
 ## In sintesi
 
-Il cineturismo italiano mostra una struttura chiara: ogni opera audiovisiva crea una rottura di trend, 
-un "prima" e un "dopo" che ridisegna la percezione del luogo, genera un sentiment ambivalente fatto di 
+Il cineturismo italiano mostra una struttura chiara: **ogni opera audiovisiva crea una rottura di trend, 
+un "prima" e un "dopo" che ridisegna la percezione del luogo**, genera un sentiment ambivalente fatto di 
 opportunità e criticità, e produce un effetto persistente che si trascina nel tempo come una long tail 
-capace di influenzare narrazioni, economie e immaginari. All'interno di questa dinamica comune, però, i 
-territori reagiscono in modi diversi, dando vita a modelli distinti che mostrano la ricchezza e la complessità del fenomeno.
-
-Castellabate rappresenta il cineturismo identitario mediterraneo: il film non si limita a mostrare il borgo, 
-ma lo reinventa, trasformandolo in simbolo di autenticità e qualità della vita. L'impatto è narrativo, economico 
-e digitale, e rispecchia ciò che Marra definirebbe "la magia del cinema che dà valore a ciò che hai a disposizione". 
-Curon, invece, incarna il cineturismo digitale globale: la serie Netflix proietta il paese in un immaginario 
-internazionale, dove il luogo reale supera la fiction e diventa icona culturale. La crescita infrastrutturale 
-è lenta ma profonda, segno di un processo che non si esaurisce nell'hype iniziale. Aosta offre un modello urbano 
-identitario: la città non viene scoperta, ma reinterpretata. Diventa personaggio, assume un ruolo narrativo e 
-culturale che rafforza il senso di appartenenza. McQuack parla di "campanilismo inevitabile" quando Hollywood 
-o la serialità scelgono un luogo italiano, e Aosta ne è un esempio evidente. Infine Opi e Pescasseroli mostrano 
-un cineturismo naturalistico diffuso: il film amplifica un discorso già esistente, senza stravolgere il territorio. 
-L'impatto è equilibrato, fatto di nuove attività turistiche, nuove categorie narrative e un sentiment complesso 
-che alterna entusiasmo e cautela.
+capace di influenzare narrazioni, economie e immaginari. **All'interno di questa dinamica comune, però, i 
+territori reagiscono in modi diversi**, dando vita a modelli distinti che mostrano la ricchezza e la complessità del fenomeno.
 
 L'analisi dei quattro casi rivela che il cineturismo italiano è un fenomeno stratificato e profondamente territoriale. 
 Ogni opera genera un impatto diverso, ma tutte seguono la stessa traiettoria: accendono l'attenzione, modificano 
 la percezione, alimentano conversazioni, trasformano l'immaginario e, quando il territorio risponde, producono 
-cambiamenti concreti nell'economia e nell'ecosistema turistico. Come ricorda Marra, il cinema può farci "innamorare 
-di ciò che non avevamo davvero guardato", mentre McQuack sottolinea come possa diventare "una via di fuga sensoriale" 
+cambiamenti concreti nell'economia e nell'ecosistema turistico. 
+
+Come ricorda **Davide Marra**, il cinema può farci "_innamorare 
+di ciò che non avevamo davvero guardato_", mentre **McQuack** sottolinea come possa diventare "_una via di fuga sensoriale_" 
 che spinge le persone a cercare nella realtà la magia vista sullo schermo. In questo senso il cinema diventa uno 
-strumento di riscrittura territoriale: non si limita a rappresentare i luoghi, li cambia. Castellabate, Curon, Aosta 
-e Opi raccontano quattro modi diversi di vivere questa trasformazione, ma tutti mostrano la stessa verità. Quando un 
-luogo entra nell'immaginario collettivo, non è più soltanto un luogo: diventa un racconto che continua nel tempo.
+strumento di riscrittura territoriale: non si limita a rappresentare i luoghi, li cambia. 
+
+**Castellabate, Curon, Aosta e Opi raccontano quattro modi diversi di vivere questa trasformazione, ma tutti mostrano la stessa verità**. 
+Quando un luogo entra nell'immaginario collettivo, non è più soltanto un luogo: diventa un racconto che continua nel tempo.
 
 <!-- <a href="{{ site.baseurl }}/results.html">← Torna ai Risultati</a> -->
