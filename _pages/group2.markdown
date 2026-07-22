@@ -68,6 +68,59 @@ subtitle: "Le serie televisive a lunga esposizione e i loro territori"
     height: auto !important;
     object-fit: contain !important;
   }
+
+  /* Didascalia sopra i grafici: stessa resa dei titoli interni ai grafici */
+  .chart-caption {
+    display: block;
+    width: 100%;
+    max-width: 1000px;
+    margin: 26px auto -20px;
+    padding: 0 20px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    font-weight: 600;
+    line-height: 1.4;
+    color: #1a202c;
+    text-align: left;
+  }
+  .chart-caption em { font-weight: 600; }
+
+  /* Box "Le voci del territorio" */
+  .box-interviste .q-domanda {
+    background: #f4f8fc;
+    border-left: 4px solid #2b6cb0;
+    border-radius: 4px;
+    padding: .9rem 1.1rem;
+    margin: .8rem 0 1.4rem;
+    font-size: .95rem;
+    color: #24487e;
+  }
+  .box-interviste .risposta {
+    height: 100%;
+    border-top: 3px solid #2b6cb0;
+    background: #fbfcfd;
+    border-radius: 6px;
+    padding: 1rem 1.2rem;
+  }
+  .box-interviste .risposta blockquote {
+    font-size: .95rem;
+    line-height: 1.6;
+    font-style: italic;
+    color: #2d3748;
+    margin: 0 0 .9rem;
+  }
+  .box-interviste .firma {
+    font-size: .82rem;
+    line-height: 1.4;
+    color: #666;
+  }
+  .box-interviste .firma strong { color: #1a202c; }
+  .box-interviste .ente {
+    display: block;
+    font-size: .78rem;
+    color: #8a94a0;
+    margin-top: .15rem;
+  }
 </style>
 
 
@@ -392,13 +445,13 @@ Vediamo alcuni esempi di questo fenomeno.
 **Fonti:** Google Trends, Wikipedia, Reddit, YouTube.
 
 <!-- GRAFICO: Google Trends / pageview Wikipedia -->
-<!-- <div class="full-width-chart">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/name.vl.json"></vegachart>
-</div> -->
 
 <!-- GRAFICO: attenzione Reddit + YouTube -->
  
 ### Reddit
+
+Come rivelano i dati di Reddit il cineturismo si è ritagliato uno spazio nelle
+intenzioni di chi viaggia, caso tipico i luoghi di Montalbano.
 
 <div class="chart-outer-container">    
     <div class="chart-container">
@@ -412,7 +465,7 @@ Vediamo alcuni esempi di questo fenomeno.
 ### YouTube
 
 <div class="chart-outer-container">
-  <span>
+  <span class="chart-caption">
     Tasso di commenti contenenti un riferimento:
     nei <em>video su produzione e location</em>.
   </span>
@@ -420,7 +473,7 @@ Vediamo alcuni esempi di questo fenomeno.
     <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/recap_reference_rate_run1_group2.vl.json"></vegachart>
   </div>
 
-  <span>
+  <span class="chart-caption">
     Tasso di commenti contenenti un riferimento:
     nei <em>video su sola location</em>.
   </span>
@@ -430,7 +483,7 @@ Vediamo alcuni esempi di questo fenomeno.
 </div>
 
 <div class="chart-outer-container">
-  <span>
+  <span class="chart-caption">
     Timeline dei commenti contenenti un riferimento:
     nei <em>video su produzione e location</em>.
   </span>
@@ -438,7 +491,7 @@ Vediamo alcuni esempi di questo fenomeno.
     <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/timeline_un_passo_dal_cielo_run1.vl.json"></vegachart>
   </div>
 
-  <span>
+  <span class="chart-caption">
     Timeline dei commenti contenenti un riferimento:
     nei <em>video su sola location</em>.
   </span>
@@ -448,11 +501,75 @@ Vediamo alcuni esempi di questo fenomeno.
 </div>
 
 <!-- <div class="chart-outer-container">
-  <span>Timeline dei commenti contenenti un riferimento:
+  <span class="chart-caption">Timeline dei commenti contenenti un riferimento:
   nei <em>video su produzione e location</em>.</span>
   <div class="chart-container">
     <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/timeline_il_giovane_montalbano_run1.vl.json"></vegachart>
   </div>
 </div> -->
+
+---
+
+## Le voci del territorio
+
+Accanto ai dati, abbiamo raccolto per iscritto le risposte di **due associazioni
+turistiche dell'Alta Pusteria**, competenti sulle località di _Un passo dal
+cielo_. Riportiamo qui la stessa domanda posta a entrambe, sul rapporto tra
+identità del territorio e immaginario televisivo.
+
+<div class="card border-primary mb-4 box-interviste">
+  <div class="card-body">
+    <h5 class="card-title">📌 Box 3 — Le voci degli uffici turistici</h5>
+
+    <div class="q-domanda">
+      <strong>La domanda:</strong> in che modo l'identità del territorio — natura alpina,
+      cultura ladina, tradizione turistica storica — convive con l'immaginario televisivo?
+      Sono state adottate strategie consapevoli per gestire o valorizzare il fenomeno, e
+      ci sono stati momenti di sovraffollamento riconducibili alla serie?
+    </div>
+
+    <div class="row">
+      <div class="col-md-6 mb-3">
+        <div class="risposta">
+          <blockquote>
+            "Devo essere sincera: non ho mai seguito la serie. Tuttavia, credo che abbia
+            saputo rappresentare il territorio in modo piuttosto autentico, valorizzandone
+            il paesaggio, la natura e l'atmosfera. Naturalmente ci sono sempre alcune
+            differenze tra la realtà e la rappresentazione televisiva, ma nel complesso
+            penso che l'immagine trasmessa sia stata fedele al luogo."
+          </blockquote>
+          <p class="firma">
+            <strong>Silke Stabinger</strong>
+            <span class="ente">Associazione Turistica Valle di Braies<br>
+            Tourismusverein Pragser Tal</span>
+          </p>
+        </div>
+      </div>
+
+      <div class="col-md-6 mb-3">
+        <div class="risposta">
+          <blockquote>
+            "Alcune scene erano veramente al di fuori dalle nostre usanze. Ma essendo
+            fiction, e anche un po' commedia, ci stava. La natura ovviamente è quella.
+            Tradizioni e cultura insomma, un po' esagerato il tutto, ma ci stava."
+          </blockquote>
+          <p class="firma">
+            <strong>Hanna Erharter</strong> — Direzione
+            <span class="ente">Associazione Turistica San Candido<br>
+            Tourismusverein Innichen</span>
+          </p>
+        </div>
+      </div>
+    </div>
+
+    <p class="card-text" style="margin-top:.6rem">
+      Due sguardi convergenti: la serie viene percepita come una rappresentazione
+      sostanzialmente riconoscibile del territorio, con la consapevolezza che la
+      finzione ne amplifica alcuni tratti. Nessuna delle due associazioni, però, ha
+      costruito iniziative dedicate al fenomeno: nessun tour a tema, nessun gadget
+      ufficiale. La notorietà televisiva è arrivata da sé, e da sé è stata assorbita.
+    </p>
+  </div>
+</div>
 
 <!-- <a href="{{ site.baseurl }}/results.html">← Torna ai Risultati</a> -->
