@@ -1,0 +1,1304 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "datasets": {
+    "data-41430e4f94b13e9e7f89690bd7aa12ac": [
+      {
+        "date": "2018-04-01T00:00:00",
+        "month": "2018-04",
+        "months_from_release": 84.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.74626887,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2018-05-01T00:00:00",
+        "month": "2018-05",
+        "months_from_release": 85.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7780602,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2018-06-01T00:00:00",
+        "month": "2018-06",
+        "months_from_release": 86.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.78863746,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2018-08-01T00:00:00",
+        "month": "2018-08",
+        "months_from_release": 88.0,
+        "n_comments": 1,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 1.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.8083217,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2019-02-01T00:00:00",
+        "month": "2019-02",
+        "months_from_release": 94.0,
+        "n_comments": 3,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7898077566666667,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2019-07-01T00:00:00",
+        "month": "2019-07",
+        "months_from_release": 99.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7698861,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2019-08-01T00:00:00",
+        "month": "2019-08",
+        "months_from_release": 100.0,
+        "n_comments": 13,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.1538461538461538,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7878881161538461,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2020-01-01T00:00:00",
+        "month": "2020-01",
+        "months_from_release": 105.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.78284794,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2020-02-01T00:00:00",
+        "month": "2020-02",
+        "months_from_release": 106.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.765906,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2020-03-01T00:00:00",
+        "month": "2020-03",
+        "months_from_release": 107.0,
+        "n_comments": 4,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7846696425,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2020-07-01T00:00:00",
+        "month": "2020-07",
+        "months_from_release": 111.0,
+        "n_comments": 4,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.780772165,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2020-08-01T00:00:00",
+        "month": "2020-08",
+        "months_from_release": 112.0,
+        "n_comments": 21,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7673549152380953,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2020-09-01T00:00:00",
+        "month": "2020-09",
+        "months_from_release": 113.0,
+        "n_comments": 5,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.4,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.779260222,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2020-10-01T00:00:00",
+        "month": "2020-10",
+        "months_from_release": 114.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.73383886,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2020-11-01T00:00:00",
+        "month": "2020-11",
+        "months_from_release": 115.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.79001915,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2020-12-01T00:00:00",
+        "month": "2020-12",
+        "months_from_release": 116.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7420493,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-01-01T00:00:00",
+        "month": "2021-01",
+        "months_from_release": 117.0,
+        "n_comments": 3,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.77061536,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-02-01T00:00:00",
+        "month": "2021-02",
+        "months_from_release": 118.0,
+        "n_comments": 5,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.75137424,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-03-01T00:00:00",
+        "month": "2021-03",
+        "months_from_release": 119.0,
+        "n_comments": 17,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0588235294117647,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7819071494117646,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-04-01T00:00:00",
+        "month": "2021-04",
+        "months_from_release": 120.0,
+        "n_comments": 3,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7814499933333333,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-05-01T00:00:00",
+        "month": "2021-05",
+        "months_from_release": 121.0,
+        "n_comments": 52,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0192307692307692,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7813647890384616,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-06-01T00:00:00",
+        "month": "2021-06",
+        "months_from_release": 122.0,
+        "n_comments": 6,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7708524933333334,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-07-01T00:00:00",
+        "month": "2021-07",
+        "months_from_release": 123.0,
+        "n_comments": 4,
+        "n_detected": 0,
+        "n_ref_lex": 1,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.25,
+        "sim_mean": 0.7533886,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-08-01T00:00:00",
+        "month": "2021-08",
+        "months_from_release": 124.0,
+        "n_comments": 4,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.76612039,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-09-01T00:00:00",
+        "month": "2021-09",
+        "months_from_release": 125.0,
+        "n_comments": 18,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7728972222222222,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-10-01T00:00:00",
+        "month": "2021-10",
+        "months_from_release": 126.0,
+        "n_comments": 2,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.76733958,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-11-01T00:00:00",
+        "month": "2021-11",
+        "months_from_release": 127.0,
+        "n_comments": 3,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7870838866666666,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-12-01T00:00:00",
+        "month": "2021-12",
+        "months_from_release": 128.0,
+        "n_comments": 6,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7629364216666666,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-01-01T00:00:00",
+        "month": "2022-01",
+        "months_from_release": 129.0,
+        "n_comments": 5,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.741451964,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-02-01T00:00:00",
+        "month": "2022-02",
+        "months_from_release": 130.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7351882,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-03-01T00:00:00",
+        "month": "2022-03",
+        "months_from_release": 131.0,
+        "n_comments": 3,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7374740666666666,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-04-01T00:00:00",
+        "month": "2022-04",
+        "months_from_release": 132.0,
+        "n_comments": 2,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7418162800000001,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-05-01T00:00:00",
+        "month": "2022-05",
+        "months_from_release": 133.0,
+        "n_comments": 6,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7669731949999999,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-06-01T00:00:00",
+        "month": "2022-06",
+        "months_from_release": 134.0,
+        "n_comments": 10,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.74446145,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-07-01T00:00:00",
+        "month": "2022-07",
+        "months_from_release": 135.0,
+        "n_comments": 10,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.749862276,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-08-01T00:00:00",
+        "month": "2022-08",
+        "months_from_release": 136.0,
+        "n_comments": 5,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.4,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7712551320000001,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-09-01T00:00:00",
+        "month": "2022-09",
+        "months_from_release": 137.0,
+        "n_comments": 35,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0285714285714285,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.773479038,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-10-01T00:00:00",
+        "month": "2022-10",
+        "months_from_release": 138.0,
+        "n_comments": 17,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7728312917647059,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-11-01T00:00:00",
+        "month": "2022-11",
+        "months_from_release": 139.0,
+        "n_comments": 9,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7681050555555555,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-12-01T00:00:00",
+        "month": "2022-12",
+        "months_from_release": 140.0,
+        "n_comments": 7,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7603158614285714,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-01-01T00:00:00",
+        "month": "2023-01",
+        "months_from_release": 141.0,
+        "n_comments": 4,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7683497375,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-02-01T00:00:00",
+        "month": "2023-02",
+        "months_from_release": 142.0,
+        "n_comments": 4,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7760901275000001,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-03-01T00:00:00",
+        "month": "2023-03",
+        "months_from_release": 143.0,
+        "n_comments": 8,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.76108185625,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-04-01T00:00:00",
+        "month": "2023-04",
+        "months_from_release": 144.0,
+        "n_comments": 3,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7665729666666666,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-05-01T00:00:00",
+        "month": "2023-05",
+        "months_from_release": 145.0,
+        "n_comments": 3,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7747096666666667,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-06-01T00:00:00",
+        "month": "2023-06",
+        "months_from_release": 146.0,
+        "n_comments": 3,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7655790833333334,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-07-01T00:00:00",
+        "month": "2023-07",
+        "months_from_release": 147.0,
+        "n_comments": 9,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7566311655555555,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-08-01T00:00:00",
+        "month": "2023-08",
+        "months_from_release": 148.0,
+        "n_comments": 4,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7513670575,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-09-01T00:00:00",
+        "month": "2023-09",
+        "months_from_release": 149.0,
+        "n_comments": 265,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7663917771698113,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-10-01T00:00:00",
+        "month": "2023-10",
+        "months_from_release": 150.0,
+        "n_comments": 12,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7685341533333333,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-11-01T00:00:00",
+        "month": "2023-11",
+        "months_from_release": 151.0,
+        "n_comments": 9,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7718696455555556,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-12-01T00:00:00",
+        "month": "2023-12",
+        "months_from_release": 152.0,
+        "n_comments": 3,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.75286289,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-01-01T00:00:00",
+        "month": "2024-01",
+        "months_from_release": 153.0,
+        "n_comments": 14,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7654614857142857,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-02-01T00:00:00",
+        "month": "2024-02",
+        "months_from_release": 154.0,
+        "n_comments": 42,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7485259338095238,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-03-01T00:00:00",
+        "month": "2024-03",
+        "months_from_release": 155.0,
+        "n_comments": 6,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7531817483333333,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-04-01T00:00:00",
+        "month": "2024-04",
+        "months_from_release": 156.0,
+        "n_comments": 3,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.76834728,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-05-01T00:00:00",
+        "month": "2024-05",
+        "months_from_release": 157.0,
+        "n_comments": 7,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7496192857142857,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-06-01T00:00:00",
+        "month": "2024-06",
+        "months_from_release": 158.0,
+        "n_comments": 8,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.25,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.78223306375,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-07-01T00:00:00",
+        "month": "2024-07",
+        "months_from_release": 159.0,
+        "n_comments": 6,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7624783516666667,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-08-01T00:00:00",
+        "month": "2024-08",
+        "months_from_release": 160.0,
+        "n_comments": 12,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7684783374999999,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-09-01T00:00:00",
+        "month": "2024-09",
+        "months_from_release": 161.0,
+        "n_comments": 15,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7626910986666666,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-10-01T00:00:00",
+        "month": "2024-10",
+        "months_from_release": 162.0,
+        "n_comments": 25,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7599218232,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-11-01T00:00:00",
+        "month": "2024-11",
+        "months_from_release": 163.0,
+        "n_comments": 30,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0333333333333333,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7590672246666668,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-12-01T00:00:00",
+        "month": "2024-12",
+        "months_from_release": 164.0,
+        "n_comments": 23,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7568806060869566,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-01-01T00:00:00",
+        "month": "2025-01",
+        "months_from_release": 165.0,
+        "n_comments": 27,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7586125959259259,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-02-01T00:00:00",
+        "month": "2025-02",
+        "months_from_release": 166.0,
+        "n_comments": 11,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7598418963636363,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-03-01T00:00:00",
+        "month": "2025-03",
+        "months_from_release": 167.0,
+        "n_comments": 11,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7603157654545455,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-04-01T00:00:00",
+        "month": "2025-04",
+        "months_from_release": 168.0,
+        "n_comments": 6,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7720563716666667,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-05-01T00:00:00",
+        "month": "2025-05",
+        "months_from_release": 169.0,
+        "n_comments": 34,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7685333685294118,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-06-01T00:00:00",
+        "month": "2025-06",
+        "months_from_release": 170.0,
+        "n_comments": 6,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7601787766666667,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-07-01T00:00:00",
+        "month": "2025-07",
+        "months_from_release": 171.0,
+        "n_comments": 47,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7708910125531914,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-08-01T00:00:00",
+        "month": "2025-08",
+        "months_from_release": 172.0,
+        "n_comments": 54,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7596066685185185,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-09-01T00:00:00",
+        "month": "2025-09",
+        "months_from_release": 173.0,
+        "n_comments": 13,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0769230769230769,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.77024537,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-10-01T00:00:00",
+        "month": "2025-10",
+        "months_from_release": 174.0,
+        "n_comments": 23,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7645135395652174,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-11-01T00:00:00",
+        "month": "2025-11",
+        "months_from_release": 175.0,
+        "n_comments": 8,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.125,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.76165997375,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-12-01T00:00:00",
+        "month": "2025-12",
+        "months_from_release": 176.0,
+        "n_comments": 4,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.76171764,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2026-01-01T00:00:00",
+        "month": "2026-01",
+        "months_from_release": 177.0,
+        "n_comments": 11,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7638913245454546,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2026-02-01T00:00:00",
+        "month": "2026-02",
+        "months_from_release": 178.0,
+        "n_comments": 9,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7622650222222221,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2026-03-01T00:00:00",
+        "month": "2026-03",
+        "months_from_release": 179.0,
+        "n_comments": 14,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7671900464285715,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2026-04-01T00:00:00",
+        "month": "2026-04",
+        "months_from_release": 180.0,
+        "n_comments": 8,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.76172180125,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2026-05-01T00:00:00",
+        "month": "2026-05",
+        "months_from_release": 181.0,
+        "n_comments": 15,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.76195352,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2026-06-01T00:00:00",
+        "month": "2026-06",
+        "months_from_release": 182.0,
+        "n_comments": 9,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_detected": 0.1111111111111111,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7645743533333333,
+        "tipo": "serie_ita"
+      }
+    ],
+    "data-d7a4ae2ad529353a6a11f0a9fa495b0a": [
+      {
+        "color": "#1E90FF",
+        "date": "2011-04-10T00:00:00",
+        "name": "Season 1 Premiere - Terence Hill",
+        "produzione": "un passo dal cielo",
+        "series": "Un Passo Dal Cielo 1",
+        "label": "Stagione 1"
+      },
+      {
+        "color": "#1E90FF",
+        "date": "2012-10-14T00:00:00",
+        "name": "Season 2 Premiere - Terence Hill",
+        "produzione": "un passo dal cielo",
+        "series": "Un Passo Dal Cielo 2",
+        "label": "Stagione 2"
+      },
+      {
+        "color": "#1E90FF",
+        "date": "2015-01-08T00:00:00",
+        "name": "Season 3 Premiere - Terence Hill Finale",
+        "produzione": "un passo dal cielo",
+        "series": "Un Passo Dal Cielo 3",
+        "label": "Stagione 3"
+      },
+      {
+        "color": "#FF8C00",
+        "date": "2017-01-17T00:00:00",
+        "name": "Season 4 Premiere - Daniele Liotti Debut",
+        "produzione": "un passo dal cielo",
+        "series": "Un Passo Dal Cielo 4",
+        "label": "Stagione 4"
+      },
+      {
+        "color": "#FF8C00",
+        "date": "2019-09-12T00:00:00",
+        "name": "Season 5 Premiere - Daniele Liotti",
+        "produzione": "un passo dal cielo",
+        "series": "Un Passo Dal Cielo 5",
+        "label": "Stagione 5"
+      },
+      {
+        "color": "#4B0082",
+        "date": "2021-04-01T00:00:00",
+        "name": "Season 6 Premiere - I Guardiani (Veneto Shift)",
+        "produzione": "un passo dal cielo",
+        "series": "Un Passo Dal Cielo 6",
+        "label": "Stagione 6"
+      },
+      {
+        "color": "#4B0082",
+        "date": "2023-03-30T00:00:00",
+        "name": "Season 7 Premiere - Giusy Buscemi Lead",
+        "produzione": "un passo dal cielo",
+        "series": "Un Passo Dal Cielo 7",
+        "label": "Stagione 7"
+      },
+      {
+        "color": "#4B0082",
+        "date": "2025-01-09T00:00:00",
+        "name": "Season 8 Premiere - Eco & Climate Focus",
+        "produzione": "un passo dal cielo",
+        "series": "Un Passo Dal Cielo 8",
+        "label": "Stagione 8"
+      }
+    ]
+  },
+  "height": 300,
+  "layer": [
+    {
+      "data": {
+        "name": "data-41430e4f94b13e9e7f89690bd7aa12ac"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "date",
+            "format": "%m-%Y",
+            "title": "month",
+            "type": "temporal"
+          },
+          {
+            "field": "n_comments",
+            "type": "quantitative"
+          },
+          {
+            "field": "ref_rate_lex",
+            "format": ".2%",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "format": "%m-%Y"
+          },
+          "field": "date",
+          "title": null,
+          "type": "temporal"
+        },
+        "y": {
+          "field": "n_comments",
+          "title": "comments / month",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "point": true,
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "name": "data-d7a4ae2ad529353a6a11f0a9fa495b0a"
+      },
+      "encoding": {
+        "color": {
+          "field": "color",
+          "legend": null,
+          "scale": null,
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "type": "nominal"
+          },
+          {
+            "field": "date",
+            "format": "%m-%Y",
+            "type": "temporal"
+          }
+        ],
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        }
+      },
+      "mark": {
+        "strokeDash": [
+          4,
+          3
+        ],
+        "type": "rule"
+      }
+    },
+    {
+      "data": {
+        "name": "data-d7a4ae2ad529353a6a11f0a9fa495b0a"
+      },
+      "transform": [
+        {
+          "filter": "datum.label !== 'Stagione 1'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "angle": 270,
+        "align": "right",
+        "baseline": "bottom",
+        "dx": 0,
+        "dy": -6,
+        "fontSize": 10,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "value": 8
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "color",
+          "type": "nominal",
+          "scale": null,
+          "legend": null
+        }
+      }
+    },
+    {
+      "data": {
+        "name": "data-d7a4ae2ad529353a6a11f0a9fa495b0a"
+      },
+      "transform": [
+        {
+          "filter": "datum.label === 'Stagione 1'"
+        }
+      ],
+      "mark": {
+        "type": "text",
+        "angle": 270,
+        "align": "right",
+        "baseline": "top",
+        "dx": 0,
+        "dy": 6,
+        "fontSize": 10,
+        "fontWeight": "bold"
+      },
+      "encoding": {
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        },
+        "y": {
+          "value": 8
+        },
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        },
+        "color": {
+          "field": "color",
+          "type": "nominal",
+          "scale": null,
+          "legend": null
+        }
+      }
+    }
+  ],
+  "title": "un passo dal cielo - comment volume with release milestones",
+  "width": 620
+}

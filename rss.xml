@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:dc="http://purl.org/dc/elements/1.1/" xmlns:atom="http://www.w3.org/2005/Atom" xmlns:media="http://search.yahoo.com/mrss/">
+	<channel>
+		<title>G4/2026 | Un progetto di data science</title>
+		<generator>(c) Chulapa Jekyll Theme RSS generator</generator>
+		<link>https://kinolag.github.io/g4-2026-website</link>
+		<description>Un&apos;analisi dell&apos;impatto di film e serie TV su alcune località italiane utilizzate per le riprese. Attraverso un&apos;accurata selezione di produzioni e territori, la ricerca integra diversi livelli di analisi per valutare sia gli effetti del turismo fisico che i segnali di attenzione digitale.</description>
+		<language>en-US</language>
+		<copyright>(c) 2026, </copyright>	
+		<pubDate>Thu, 23 Jul 2026 11:17:03 +0000</pubDate>
+		<lastBuildDate>Thu, 23 Jul 2026 11:17:03 +0000</lastBuildDate>
+		<category>blog</category>
+		<ttl>60</ttl>
+		<atom:link href="https://kinolag.github.io/g4-2026-website/rss.xml" rel="self" type="application/rss+xml" />
+		<image>
+			<title>G4/2026 | Un progetto di data science</title>
+			<url></url>
+			<link>https://kinolag.github.io/g4-2026-website</link>
+			<description>Un&apos;analisi dell&apos;impatto di film e serie TV su alcune località italiane utilizzate per le riprese. Attraverso un&apos;accurata selezione di produzioni e territori, la ricerca integra diversi livelli di analisi per valutare sia gli effetti del turismo fisico che i segnali di attenzione digitale.</description>
+		</image></channel>
+</rss>

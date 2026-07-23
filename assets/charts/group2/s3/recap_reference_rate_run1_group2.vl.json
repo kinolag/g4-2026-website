@@ -1,0 +1,132 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "title": {
+    "text": "Riferimenti alla produzione nei commenti YouTube",
+    "subtitle": "Video cercati per nome della produzione + località — Cluster 2",
+    "fontSize": 16,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "subtitleColor": "#666"
+  },
+  "width": "container",
+  "height": 260,
+  "autosize": {
+    "type": "fit",
+    "contains": "padding"
+  },
+  "data": {
+    "values": [
+      {
+        "produzione": "Don Matteo",
+        "rate": 0.236,
+        "n_ref": 169,
+        "n_comments": 716,
+        "affidabile": "sì"
+      },
+      {
+        "produzione": "Il giovane Montalbano",
+        "rate": 0.1255,
+        "n_ref": 61,
+        "n_comments": 486,
+        "affidabile": "sì"
+      },
+      {
+        "produzione": "Un passo dal cielo",
+        "rate": 0.075,
+        "n_ref": 63,
+        "n_comments": 840,
+        "affidabile": "sì"
+      },
+      {
+        "produzione": "Elisa di Rivombrosa",
+        "rate": 0.0714,
+        "n_ref": 33,
+        "n_comments": 462,
+        "affidabile": "sì"
+      }
+    ]
+  },
+  "encoding": {
+    "y": {
+      "field": "produzione",
+      "type": "nominal",
+      "title": null,
+      "sort": "-x",
+      "axis": {
+        "labelFontSize": 13,
+        "labelLimit": 220
+      }
+    },
+    "x": {
+      "field": "rate",
+      "type": "quantitative",
+      "title": "tasso di menzione della produzione",
+      "axis": {
+        "format": ".0%",
+        "labelFontSize": 12,
+        "titleFontSize": 12
+      }
+    }
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "height": 26
+      },
+      "encoding": {
+        "color": {
+          "value": "#2b6cb0"
+        },
+        "tooltip": [
+          {
+            "field": "produzione",
+            "type": "nominal",
+            "title": "produzione"
+          },
+          {
+            "field": "rate",
+            "type": "quantitative",
+            "format": ".2%",
+            "title": "tasso di menzione"
+          },
+          {
+            "field": "n_ref",
+            "type": "quantitative",
+            "title": "commenti con riferimento"
+          },
+          {
+            "field": "n_comments",
+            "type": "quantitative",
+            "title": "commenti totali"
+          }
+        ]
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "align": "left",
+        "dx": 6,
+        "fontSize": 12,
+        "color": "#333"
+      },
+      "encoding": {
+        "text": {
+          "field": "rate",
+          "type": "quantitative",
+          "format": ".1%"
+        }
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "axis": {
+      "grid": true,
+      "gridColor": "#eeeeee"
+    }
+  }
+}
