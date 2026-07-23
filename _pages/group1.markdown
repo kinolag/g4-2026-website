@@ -124,7 +124,7 @@ Il tratto più evidente che accomuna queste produzioni è la profonda alterazion
 
 * **Crema (*Call Me By Your Name*):** L'ecosistema turistico ha registrato un'impennata a ridosso dell'uscita del film (da 13 attività a inizio 2017 a 20 nell'aprile 2018), superando nettamente la crescita dei negozi locali standard.
 * **Forte di Bard (*Avengers: Age of Ultron*):** Le location turistiche attive sono esplose, passando da circa 40 unità a fine 2014 a oltre 100 a fine 2015, innescando un trend rialzista ininterrotto che ha superato le 240 unità nel 2026.
-* **Montepulciano (*The Twilight Saga: New Moon*):** L'effetto a lungo termine è drastico, con le attività turistiche che passano da zero nel 2007 a oltre 380 all'inizio del 2026, lasciando i negozi di prossimità fermi a quota 99.
+* **Montepulciano (*The Twilight Saga: New Moon*):** L'effetto a lungo termine è drastico, con le attività turistiche che passano da sei nel 2009 a 128 all'inizio del 2026, lasciando i negozi di prossimità fermi a quota 120.
 * **Pienza (*I Medici*):** La serie contribuisce all'innesco di un'espansione senza sosta dell'infrastruttura di accoglienza. A Pienza l'ecosistema turistico triplica quasi i propri volumi in poco più di dieci anni, passando da 96 location nel 2014 a 290 a inizio 2026, distanziando in modo netto l'evoluzione dei negozi di vicinato (cresciuti più timidamente da 14 a 57).
 
 <div class="chart-container">
