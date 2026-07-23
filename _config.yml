@@ -59,7 +59,7 @@ navbar:
         - title: Gruppo 3
           url: group3.html
     - title: Conclusioni
-      url: /results.html
+      url: /conclusions.html
 
     - title: SBD Master # deve essere sempre l'ultimo elemento della navbar, non modificarlo
       url: https://masterbigdata.it/
