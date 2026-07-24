@@ -351,7 +351,7 @@ Per ogni coppia comune-indicatore viene calcolato un **Cineturismo Impact Score 
   </div>
 </div>
 
-Le evidenze con **CIS > 0,7** vengono validate esternamente tramite **Relative Growth Rate (RGR)**, che confronta la crescita del comune con il benchmark della relativa regione, con soglia di accettazione **RGR ≥ 0,15**. Il processo ha prodotto **18 evidenze**.
+Le evidenze con **CIS > 0,7** vengono validate esternamente tramite **Relative Growth Rate (RGR)**, che confronta la crescita del comune con il benchmark della relativa regione, con soglia di accettazione **RGR ≥ 0,15**. Il processo ha prodotto **19 evidenze**.
 
 ### 3.2 — Ecosistema commerciale (OpenStreetMap) <span class="fam-badge fam-fisico">Fisico</span>
 
