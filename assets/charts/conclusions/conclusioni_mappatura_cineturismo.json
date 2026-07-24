@@ -287,19 +287,19 @@
       "data": {
         "values": [
           {
-            "v": -0.5
+            "b": -0.5
           },
           {
-            "v": 0.5
+            "b": 0.5
           },
           {
-            "v": 1.5
+            "b": 1.5
           },
           {
-            "v": 2.5
+            "b": 2.5
           },
           {
-            "v": 3.5
+            "b": 3.5
           }
         ]
       },
@@ -310,8 +310,9 @@
       },
       "encoding": {
         "x": {
-          "field": "v",
+          "field": "b",
           "type": "quantitative",
+          "title": "Evidenze territoriali",
           "scale": {
             "domain": [
               -0.55,
@@ -320,7 +321,27 @@
             "nice": false,
             "zero": false
           },
-          "axis": null
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
+            "labelAngle": 0,
+            "grid": false,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "titleFontWeight": "bold",
+            "labelLimit": 200,
+            "labelColor": "#162832",
+            "titleColor": "#173B57",
+            "domainColor": "#9AA5A8",
+            "tickColor": "#9AA5A8",
+            "labelPadding": 8,
+            "titlePadding": 14
+          }
         }
       }
     },
@@ -328,19 +349,19 @@
       "data": {
         "values": [
           {
-            "v": -0.5
+            "b": -0.5
           },
           {
-            "v": 0.5
+            "b": 0.5
           },
           {
-            "v": 1.5
+            "b": 1.5
           },
           {
-            "v": 2.5
+            "b": 2.5
           },
           {
-            "v": 3.5
+            "b": 3.5
           }
         ]
       },
@@ -351,8 +372,9 @@
       },
       "encoding": {
         "y": {
-          "field": "v",
+          "field": "b",
           "type": "quantitative",
+          "title": "Evidenze digitali",
           "scale": {
             "domain": [
               -0.55,
@@ -361,7 +383,27 @@
             "nice": false,
             "zero": false
           },
-          "axis": null
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
+            "labelAngle": 0,
+            "grid": false,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "titleFontWeight": "bold",
+            "labelLimit": 200,
+            "labelColor": "#162832",
+            "titleColor": "#173B57",
+            "domainColor": "#9AA5A8",
+            "tickColor": "#9AA5A8",
+            "labelPadding": 8,
+            "titlePadding": 14
+          }
         }
       }
     },
@@ -399,7 +441,7 @@
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
-            "labelLimit": 190,
+            "labelLimit": 200,
             "labelColor": "#162832",
             "titleColor": "#173B57",
             "domainColor": "#9AA5A8",
@@ -433,7 +475,7 @@
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
-            "labelLimit": 190,
+            "labelLimit": 200,
             "labelColor": "#162832",
             "titleColor": "#173B57",
             "domainColor": "#9AA5A8",
@@ -463,7 +505,31 @@
             "direction": "vertical",
             "labelFontSize": 12,
             "titleFontSize": 12,
-            "symbolSize": 200,
+            "symbolFillColor": "#667985",
+            "symbolStrokeColor": "#667985"
+          }
+        },
+        "size": {
+          "field": "gruppo_legenda",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Produzioni Internazionali",
+              "Serie TV Italiane",
+              "Altre Produzioni Italiane"
+            ],
+            "range": [
+              730,
+              730,
+              980
+            ]
+          },
+          "legend": {
+            "title": "Tipo di produzione",
+            "orient": "bottom",
+            "direction": "vertical",
+            "labelFontSize": 12,
+            "titleFontSize": 12,
             "symbolFillColor": "#667985",
             "symbolStrokeColor": "#667985"
           }
@@ -494,23 +560,6 @@
             "symbolSize": 200,
             "symbolType": "circle"
           }
-        },
-        "size": {
-          "field": "gruppo_legenda",
-          "type": "nominal",
-          "scale": {
-            "domain": [
-              "Produzioni Internazionali",
-              "Serie TV Italiane",
-              "Altre Produzioni Italiane"
-            ],
-            "range": [
-              730,
-              730,
-              980
-            ]
-          },
-          "legend": null
         },
         "tooltip": [
           {
@@ -611,7 +660,7 @@
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
-            "labelLimit": 190,
+            "labelLimit": 200,
             "labelColor": "#162832",
             "titleColor": "#173B57",
             "domainColor": "#9AA5A8",
@@ -645,7 +694,7 @@
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
-            "labelLimit": 190,
+            "labelLimit": 200,
             "labelColor": "#162832",
             "titleColor": "#173B57",
             "domainColor": "#9AA5A8",
@@ -757,7 +806,7 @@
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
-            "labelLimit": 190,
+            "labelLimit": 200,
             "labelColor": "#162832",
             "titleColor": "#173B57",
             "domainColor": "#9AA5A8",
@@ -791,7 +840,7 @@
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
-            "labelLimit": 190,
+            "labelLimit": 200,
             "labelColor": "#162832",
             "titleColor": "#173B57",
             "domainColor": "#9AA5A8",
@@ -903,7 +952,7 @@
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
-            "labelLimit": 190,
+            "labelLimit": 200,
             "labelColor": "#162832",
             "titleColor": "#173B57",
             "domainColor": "#9AA5A8",
@@ -937,7 +986,7 @@
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
-            "labelLimit": 190,
+            "labelLimit": 200,
             "labelColor": "#162832",
             "titleColor": "#173B57",
             "domainColor": "#9AA5A8",
@@ -1049,7 +1098,7 @@
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
-            "labelLimit": 190,
+            "labelLimit": 200,
             "labelColor": "#162832",
             "titleColor": "#173B57",
             "domainColor": "#9AA5A8",
@@ -1083,7 +1132,7 @@
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
-            "labelLimit": 190,
+            "labelLimit": 200,
             "labelColor": "#162832",
             "titleColor": "#173B57",
             "domainColor": "#9AA5A8",
@@ -1151,6 +1200,12 @@
       }
     }
   ],
+  "resolve": {
+    "scale": {
+      "size": "shared",
+      "shape": "shared"
+    }
+  },
   "config": {
     "view": {
       "stroke": null
@@ -1159,7 +1214,7 @@
     "font": "Arial",
     "legend": {
       "padding": 8,
-      "rowPadding": 4,
+      "rowPadding": 6,
       "labelColor": "#162832",
       "titleColor": "#173B57"
     }
