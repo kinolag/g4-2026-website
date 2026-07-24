@@ -220,7 +220,7 @@ iniziale che su una tenuta costante negli anni.
 
 ### Un passo dal cielo e Don Matteo
 
-**Nessuna evidenza** tra le 18 selezionate: il segnale ISTAT per queste location
+**Nessuna evidenza** tra le 19 selezionate: il segnale ISTAT per queste location
 non ha superato le soglie.
 
 <!-- GRAFICI ISTAT -->
