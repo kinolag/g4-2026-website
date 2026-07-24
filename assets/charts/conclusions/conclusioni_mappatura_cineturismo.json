@@ -284,6 +284,88 @@
   },
   "layer": [
     {
+      "data": {
+        "values": [
+          {
+            "v": -0.5
+          },
+          {
+            "v": 0.5
+          },
+          {
+            "v": 1.5
+          },
+          {
+            "v": 2.5
+          },
+          {
+            "v": 3.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#9AA5A8",
+        "strokeWidth": 1.3
+      },
+      "encoding": {
+        "x": {
+          "field": "v",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          },
+          "axis": null
+        }
+      }
+    },
+    {
+      "data": {
+        "values": [
+          {
+            "v": -0.5
+          },
+          {
+            "v": 0.5
+          },
+          {
+            "v": 1.5
+          },
+          {
+            "v": 2.5
+          },
+          {
+            "v": 3.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#9AA5A8",
+        "strokeWidth": 1.3
+      },
+      "encoding": {
+        "y": {
+          "field": "v",
+          "type": "quantitative",
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          },
+          "axis": null
+        }
+      }
+    },
+    {
       "mark": {
         "type": "point",
         "filled": true,
@@ -313,18 +395,17 @@
             ],
             "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
             "labelAngle": 0,
+            "grid": false,
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
             "labelLimit": 190,
             "labelColor": "#162832",
             "titleColor": "#173B57",
-            "grid": true,
-            "gridColor": "#E5EBEF",
-            "gridWidth": 1.3,
             "domainColor": "#9AA5A8",
             "tickColor": "#9AA5A8",
-            "titlePadding": 12
+            "labelPadding": 8,
+            "titlePadding": 14
           }
         },
         "y": {
@@ -348,18 +429,17 @@
             ],
             "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
             "labelAngle": 0,
+            "grid": false,
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
             "labelLimit": 190,
             "labelColor": "#162832",
             "titleColor": "#173B57",
-            "grid": true,
-            "gridColor": "#E5EBEF",
-            "gridWidth": 1.3,
             "domainColor": "#9AA5A8",
             "tickColor": "#9AA5A8",
-            "titlePadding": 12
+            "labelPadding": 8,
+            "titlePadding": 14
           }
         },
         "shape": {
@@ -527,18 +607,17 @@
             ],
             "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
             "labelAngle": 0,
+            "grid": false,
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
             "labelLimit": 190,
             "labelColor": "#162832",
             "titleColor": "#173B57",
-            "grid": true,
-            "gridColor": "#E5EBEF",
-            "gridWidth": 1.3,
             "domainColor": "#9AA5A8",
             "tickColor": "#9AA5A8",
-            "titlePadding": 12
+            "labelPadding": 8,
+            "titlePadding": 14
           }
         },
         "y": {
@@ -562,18 +641,17 @@
             ],
             "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
             "labelAngle": 0,
+            "grid": false,
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
             "labelLimit": 190,
             "labelColor": "#162832",
             "titleColor": "#173B57",
-            "grid": true,
-            "gridColor": "#E5EBEF",
-            "gridWidth": 1.3,
             "domainColor": "#9AA5A8",
             "tickColor": "#9AA5A8",
-            "titlePadding": 12
+            "labelPadding": 8,
+            "titlePadding": 14
           }
         },
         "text": {
@@ -675,18 +753,17 @@
             ],
             "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
             "labelAngle": 0,
+            "grid": false,
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
             "labelLimit": 190,
             "labelColor": "#162832",
             "titleColor": "#173B57",
-            "grid": true,
-            "gridColor": "#E5EBEF",
-            "gridWidth": 1.3,
             "domainColor": "#9AA5A8",
             "tickColor": "#9AA5A8",
-            "titlePadding": 12
+            "labelPadding": 8,
+            "titlePadding": 14
           }
         },
         "y": {
@@ -710,18 +787,17 @@
             ],
             "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
             "labelAngle": 0,
+            "grid": false,
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
             "labelLimit": 190,
             "labelColor": "#162832",
             "titleColor": "#173B57",
-            "grid": true,
-            "gridColor": "#E5EBEF",
-            "gridWidth": 1.3,
             "domainColor": "#9AA5A8",
             "tickColor": "#9AA5A8",
-            "titlePadding": 12
+            "labelPadding": 8,
+            "titlePadding": 14
           }
         },
         "text": {
@@ -823,18 +899,17 @@
             ],
             "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
             "labelAngle": 0,
+            "grid": false,
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
             "labelLimit": 190,
             "labelColor": "#162832",
             "titleColor": "#173B57",
-            "grid": true,
-            "gridColor": "#E5EBEF",
-            "gridWidth": 1.3,
             "domainColor": "#9AA5A8",
             "tickColor": "#9AA5A8",
-            "titlePadding": 12
+            "labelPadding": 8,
+            "titlePadding": 14
           }
         },
         "y": {
@@ -858,18 +933,17 @@
             ],
             "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
             "labelAngle": 0,
+            "grid": false,
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
             "labelLimit": 190,
             "labelColor": "#162832",
             "titleColor": "#173B57",
-            "grid": true,
-            "gridColor": "#E5EBEF",
-            "gridWidth": 1.3,
             "domainColor": "#9AA5A8",
             "tickColor": "#9AA5A8",
-            "titlePadding": 12
+            "labelPadding": 8,
+            "titlePadding": 14
           }
         },
         "text": {
@@ -971,18 +1045,17 @@
             ],
             "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
             "labelAngle": 0,
+            "grid": false,
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
             "labelLimit": 190,
             "labelColor": "#162832",
             "titleColor": "#173B57",
-            "grid": true,
-            "gridColor": "#E5EBEF",
-            "gridWidth": 1.3,
             "domainColor": "#9AA5A8",
             "tickColor": "#9AA5A8",
-            "titlePadding": 12
+            "labelPadding": 8,
+            "titlePadding": 14
           }
         },
         "y": {
@@ -1006,18 +1079,17 @@
             ],
             "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
             "labelAngle": 0,
+            "grid": false,
             "labelFontSize": 12,
             "titleFontSize": 13,
             "titleFontWeight": "bold",
             "labelLimit": 190,
             "labelColor": "#162832",
             "titleColor": "#173B57",
-            "grid": true,
-            "gridColor": "#E5EBEF",
-            "gridWidth": 1.3,
             "domainColor": "#9AA5A8",
             "tickColor": "#9AA5A8",
-            "titlePadding": 12
+            "labelPadding": 8,
+            "titlePadding": 14
           }
         },
         "text": {
