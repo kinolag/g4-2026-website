@@ -243,12 +243,9 @@ Nella maggior parte dei casi in cui il territorio mostra un'evidenza **ISTAT** s
 
 Il primo grafico mostra l'**evoluzione temporale dell'impatto cineturistico complessivo** — evidenza territoriale e digitale combinate in un unico punteggio — rispetto all'anno di uscita di ciascuna opera, distinguendo produzioni internazionali, serie TV italiane e altre produzioni italiane.
 
-<!-- GRAFICO 2 — da inserire
-<span class="chart-caption">Le dodici produzioni mappate per ampiezza delle evidenze territoriali e maturità delle evidenze digitali.</span>
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/conclusioni/grafico2.vl.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/conclusions/conclusioni_mappatura_cineturismo_vegalite.json"></vegachart>
 </div>
--->
 
 Il secondo grafico mappa invece le dodici produzioni lungo **due assi graduati**: sull'asse orizzontale l'ampiezza delle **evidenze territoriali**, dall'assenza di segnale fino alla conferma su più macro-aree ISTAT/MiBACT; sull'asse verticale la maturità delle **evidenze digitali**, dall'assenza fino alla combinazione più completa di rassegna stampa, ricerche online e conversazione spontanea su piattaforme come YouTube o Reddit.
 
