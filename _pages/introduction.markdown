@@ -77,7 +77,8 @@ subtitle: "Un fenomeno in rapida evoluzione"
   .note-box .note-title i { margin-right: .4rem; }
   .stat-inline { font-weight: 700; color: #2b6cb0; }
 
-  .section-rule { border: 0; border-top: 1px solid #e6e8eb; margin: 3rem 0 2rem; }
+  .page-links { display: flex; flex-direction: column; gap: .6rem; }
+  .page-links a { font-weight: 600; }
 </style>
 
 ## Definizione e Complessità del Fenomeno
@@ -96,7 +97,7 @@ Guardare un film può trasformare un luogo familiare in qualcosa di nuovo, risve
   <span class="q-author">Rob McQuack <span class="q-role">— doppiatore</span></span>
 </div>
 
-<hr class="section-rule">
+---
 
 ## Il Paradosso della Visibilità: Perché è Importante?
 
@@ -135,7 +136,7 @@ Il successo mediatico di un'opera può trasformarsi in un **paradosso territoria
   </figcaption>
 </figure>
 
-<hr class="section-rule">
+---
 
 ## Dal Film al Territorio: Attività e Impatti
 
@@ -238,7 +239,7 @@ il turista se ne accorge. **La guida, infatti, è il fattore più determinante d
 mediare tra immaginario e realtà, tra ciò che il turista ha visto sullo schermo e ciò che vede davanti 
 a sé.
 
-<hr class="section-rule">
+---
 
 ## Conclusioni e Prospettive
 
@@ -246,4 +247,8 @@ Il cineturismo è un laboratorio di trasformazione territoriale e culturale. Stu
 
 L'integrazione tra **analisi qualitativa** (narrazioni, percezioni, esperienze) e **analisi quantitativa** (dati, trend, metriche) è la chiave per comprendere e gestire il futuro di un turismo che nasce dallo schermo ma vive nel mondo reale.
 
-<a href="{{ site.baseurl }}/methodology.html">Metodologia →</a>
+--- 
+
+<div class="page-links">
+  <a href="{{ site.baseurl }}/methodology.html">Metodologia →</a>
+</div>

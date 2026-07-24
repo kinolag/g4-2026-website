@@ -55,6 +55,9 @@ subtitle: " Come lo schermo trasforma i territori: produzioni di nicchia o non r
     color: #6c757d;
     text-align: center;
   }
+
+  .page-links { display: flex; flex-direction: column; gap: .6rem; }
+  .page-links a { font-weight: 600; }
 </style>
 
 ## Panoramica
@@ -449,4 +452,10 @@ strumento di riscrittura territoriale: non si limita a rappresentare i luoghi, l
 **Castellabate, Curon, Aosta e Opi raccontano quattro modi diversi di vivere questa trasformazione, ma tutti mostrano la stessa verità**. 
 Quando un luogo entra nell'immaginario collettivo, non è più soltanto un luogo: diventa un racconto che continua nel tempo.
 
-<!-- <a href="{{ site.baseurl }}/results.html">← Torna ai Risultati</a> -->
+---
+
+<div class="page-links">
+  <a href="{{ site.baseurl }}/group1.html">Gruppo 1 →</a>
+  <a href="{{ site.baseurl }}/group2.html">Gruppo 2 →</a>
+  <a href="{{ site.baseurl }}/conclusions.html">Conclusioni →</a>
+</div>

@@ -121,6 +121,9 @@ subtitle: "Le serie televisive a lunga esposizione e i loro territori"
     color: #8a94a0;
     margin-top: .15rem;
   }
+
+  .page-links { display: flex; flex-direction: column; gap: .6rem; }
+  .page-links a { font-weight: 600; }
 </style>
 
 
@@ -443,10 +446,6 @@ L'analisi testuale dei documenti così raccolti, pur non portando a risultati ge
 Vediamo alcuni esempi di questo fenomeno.
 
 **Fonti:** Google Trends, Wikipedia, Reddit, YouTube.
-
-<!-- GRAFICO: Google Trends / pageview Wikipedia -->
-
-<!-- GRAFICO: attenzione Reddit + YouTube -->
  
 ### Reddit
 
@@ -463,6 +462,8 @@ intenzioni di chi viaggia, caso tipico i luoghi di Montalbano.
 </div>
 
 ### YouTube
+
+L'analisi dei commenti raccolti sulla popolare piattaforma video mostra un'attività maggiore da parte degli utenti in relazione alle produzioni seriali, rispetto a quelle degli altri gruppi narrativi esaminati.
 
 <div class="chart-outer-container">
   <span class="chart-caption">
@@ -482,6 +483,8 @@ intenzioni di chi viaggia, caso tipico i luoghi di Montalbano.
   </div>
 </div>
 
+L'analisi dei commenti relativi a _Un passo dal cielo_ - dove disponibili - mostra un aumento dell'attività e dei riferimenti in momenti specifici, in particolare nei mesi successivi alla messa in onda del primo episodio di una serie.
+
 <div class="chart-outer-container">
   <span class="chart-caption">
     Timeline dei commenti contenenti un riferimento:
@@ -500,14 +503,6 @@ intenzioni di chi viaggia, caso tipico i luoghi di Montalbano.
   </div>
 </div>
 
-<!-- <div class="chart-outer-container">
-  <span class="chart-caption">Timeline dei commenti contenenti un riferimento:
-  nei <em>video su produzione e location</em>.</span>
-  <div class="chart-container">
-    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/timeline_il_giovane_montalbano_run1.vl.json"></vegachart>
-  </div>
-</div> -->
-
 ---
 
 ## Le voci del territorio
@@ -519,7 +514,7 @@ identità del territorio e immaginario televisivo.
 
 <div class="card border-primary mb-4 box-interviste">
   <div class="card-body">
-    <h5 class="card-title">📌 Box 3 — Le voci degli uffici turistici</h5>
+    <h5 class="card-title">📌 Box 3 — Le testimonianze degli uffici turistici</h5>
 
     <div class="q-domanda">
       <strong>La domanda:</strong> in che modo l'identità del territorio — natura alpina,
@@ -572,4 +567,10 @@ identità del territorio e immaginario televisivo.
   </div>
 </div>
 
-<!-- <a href="{{ site.baseurl }}/results.html">← Torna ai Risultati</a> -->
+---
+
+<div class="page-links">
+  <a href="{{ site.baseurl }}/group1.html">Gruppo 1 →</a>
+  <a href="{{ site.baseurl }}/group3.html">Gruppo 3 →</a>
+  <a href="{{ site.baseurl }}/conclusions.html">Conclusioni →</a>
+</div>

@@ -142,7 +142,6 @@ subtitle: "Un'analisi tra visibilità globale e sostenibilità locale"
   .note-box .note-title { font-weight: 700; display: block; margin-bottom: .3rem; color: #24487e; }
   .note-box .note-title i { margin-right: .4rem; }
 
-  .section-rule { border: 0; border-top: 1px solid #e6e8eb; margin: 3rem 0 2rem; }
   .page-links { display: flex; flex-direction: column; gap: .6rem; }
   .page-links a { font-weight: 600; }
 </style>
@@ -156,7 +155,7 @@ Ogni anno migliaia di persone si spostano non per una spiaggia o un museo, ma pe
 
 Cos'è che fa scattare davvero questa scintilla? Secondo lo youtuber ed esperto di cinema Rob McQuack, **tutto nasce da una scena che colpisce emotivamente**: il fan vuole tornare in quel luogo per respirare gli stessi profumi e gli stessi sapori che ha solo immaginato guardando lo schermo, un piccolo atto di fuga dalla realtà.
 
-<hr class="section-rule">
+---
 
 ## Misurare la scintilla
 
@@ -177,7 +176,7 @@ Questo progetto nasce per misurare quella scintilla, incrociando **dati ISTAT**,
   </div>
 </div>
 
-<hr class="section-rule">
+---
 
 ## Le risposte non sono mai scontate
 
@@ -235,7 +234,7 @@ Questo progetto nasce per misurare quella scintilla, incrociando **dati ISTAT**,
 
 </div>
 
-<hr class="section-rule">
+---
 
 ## Esplora le produzioni sul territorio
 
@@ -260,7 +259,7 @@ scheda a fianco ne mostra i dettagli.
   funzionano perché selezione, filtro e href stanno nella stessa specifica.
 -->
 
-<hr class="section-rule">
+---
 
 ## Tre gruppi, tre modi di raccontare lo stesso fenomeno
 
@@ -291,10 +290,10 @@ scheda a fianco ne mostra i dettagli.
   </div>
 </div>
 
-<hr class="section-rule">
+---
 
 <div class="page-links">
   <a href="{{ site.baseurl }}/introduction.html">Introduzione →</a>
   <a href="{{ site.baseurl }}/methodology.html">Metodologia →</a>
-  <a href="{{ site.baseurl }}/results.html">Risultati →</a>
+  <a href="{{ site.baseurl }}/conclusions.html">Conclusioni →</a>
 </div>

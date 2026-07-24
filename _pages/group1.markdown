@@ -60,6 +60,9 @@ subtitle: "L'impatto di blockbuster globali e cult hollywoodiani sui territori i
 
   /* NOTA: Tutte le forzature su 'canvas' e 'svg' sono state volutamente 
      eliminate per non rompere le coordinate dell'hover di Vega. */
+
+  .page-links { display: flex; flex-direction: column; gap: .6rem; }
+  .page-links a { font-weight: 600; }
 </style>
 
 ## Panoramica
@@ -241,4 +244,10 @@ Questi dati evidenziano l'enorme forza del "gancio" cinematografico: la pellicol
   <vegachart schema-url="{{site.baseurl}}/assets/charts/group1/grafico_stacked_crema_post.json"></vegachart>
 </div>
 
-<!-- <a href="{{ site.baseurl }}/results.html">← Torna ai Risultati</a> -->
+---
+
+<div class="page-links">
+  <a href="{{ site.baseurl }}/group2.html">Gruppo 2 →</a>
+  <a href="{{ site.baseurl }}/group3.html">Gruppo 3 →</a>
+  <a href="{{ site.baseurl }}/conclusions.html">Conclusioni →</a>
+</div>
