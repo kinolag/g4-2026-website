@@ -156,34 +156,19 @@ di aver scoperto il film grazie ai messaggi insistenti di amici e familiari: «R
 telefonate e messaggi da familiari e amici. Tutti dicevano: “_Oh mio Dio, vivi vicino a Crema, 
 il posto più bello. Adoro il film. Non riesco a smettere di guardarlo!_”».
 
+All’inizio il tour non collaborava con l’agenzia turistica di Crema, ma il successo del film —
+con un **aumento del turismo del 300%** — portò a una partnership. Potter ricorda come **tutto
+nacque da un semplice messaggio in un forum di fan**. Il tour ha generato anche **PeachCon**, 
+un raduno annuale con balli in piazza, lezioni di cucina,
+attività artistiche e quiz. Potter ha guidato gruppi molto diversi, dagli studenti di cinema alle
+famiglie della _troupe_, fino a quattro generazioni di donne. La parte più difficile, per lui, è salutare 
+ogni giorno persone con cui si è creato un legame
+attraverso il film.
+
 <div class="quote-card">
   <p class="q-text">«Cerchiamo solo di continuare a condividere l'amore il più a lungo possibile.»</p>
   <span class="q-author">Gary Potter <span class="q-role">— organizzatore dell'Elio &amp; Oliver Love Tour, Crema</span></span>
 </div>
-
-All’inizio il tour non collaborava con l’agenzia turistica di Crema, ma il successo del film —
-con un **aumento del turismo del 300%** — portò a una partnership. Potter ricorda come **tutto
-nacque da un semplice messaggio in un forum di fan**: 
-
-<div class="quote-card">
-  <p class="q-text">«Dopodiché, è semplicemente
-esploso... È solo passaparola, e poi è esplosa e si è diffusa.»</p>
-  <span class="q-author">Gary Potter <span class="q-role">— organizzatore dell'Elio &amp; Oliver Love Tour, Crema</span></span>
-</div>
-
-Il tour ha generato anche **PeachCon**, un raduno annuale con balli in piazza, lezioni di cucina,
-attività artistiche e quiz. Potter ha guidato gruppi molto diversi, dagli studenti di cinema alle
-famiglie della troupe, fino a quattro generazioni di donne. Dice: 
-
-<div class="quote-card">
-  <p class="q-text">«Rimango sempre sorpresa
-dalle persone meravigliose che tira... È anche una storia d’amore in famiglia, su come i
-genitori sostengono i loro figli.»</p>
-  <span class="q-author">Gary Potter <span class="q-role">— organizzatore dell'Elio &amp; Oliver Love Tour, Crema</span></span>
-</div>
-
-La parte più difficile, per lui, è salutare ogni giorno persone con cui si è creato un legame
-attraverso il film.
 
 ### Cosa raccontano i tour e le recensioni
 

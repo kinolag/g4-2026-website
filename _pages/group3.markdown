@@ -120,7 +120,7 @@ persistenti e misurabili, trasformando borghi, città e paesaggi naturali in ass
 _Il fenomeno esiste, è misurabile? Vediamo i primi numeri._
 
 Le evidenze **ISTAT** validate (CIS > 0,7, RGR ≥ 0,15) mostrano segnali
-misurabili in **due delle quattro produzioni** del gruppo, con intensità molto
+misurabili in **tre delle quattro produzioni** del gruppo, con intensità molto
 diverse tra loro.
 
 ### Castellabate — _Benvenuti al Sud_

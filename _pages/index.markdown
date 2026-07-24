@@ -3,9 +3,9 @@ layout: default
 title: "Cineturismo"
 vega: true
 header_type: hero
-header_img: assets/images/header.svg
-header_title: "Cineturismo: L'Impatto dei Media sul Territorio"
-subtitle: "Un'analisi tra visibilità globale e sostenibilità locale"
+header_img: assets/images/header_hp.png
+header_title: " "
+subtitle: " "
 ---
 
 <style>
