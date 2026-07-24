@@ -23,20 +23,17 @@ subtitle: "Le serie televisive a lunga esposizione e i loro territori"
     box-sizing: border-box;
   }
 
-  /* 2. Impedisce ai temi Jekyll di "stirare" verticalmente il grafico */
+  /* 2. Il grafico non viene scalato via CSS: si centra e, se troppo largo,
+     il contenitore scorre in orizzontale (hover e tooltip restano allineati). */
   .full-width-chart vegachart,
   .full-width-chart .vega-embed {
-    width: 100% !important;
-    display: block !important;
+    display: flex;
+    justify-content: center;
+    justify-content: safe center;  /* se il grafico sborda, allinea a sinistra
+                                      invece di tagliarlo (titolo/asse Y) */
+    width: 100%;
   }
-  
-  .full-width-chart canvas, 
-  .full-width-chart svg {
-    width: 100% !important;
-    height: auto !important; /* RISOLVE L'EFFETTO STIRATO VERTICALE */
-    max-height: 700px; /* Evita che su schermi giganti diventi troppo alto */
-    object-fit: contain !important;
-  }
+  .full-width-chart { overflow-x: auto; }
 
   .chart-outer-container {
     display: flex;
@@ -54,20 +51,20 @@ subtitle: "Le serie televisive a lunga esposizione e i loro territori"
     box-sizing: border-box;
   }
 
-  /* Vega charts: impedisce stiramenti */
+  /* Vega charts: il contenitore si adatta, il grafico NON viene scalato via CSS
+     (scalare svg/canvas sposta le coordinate e rompe hover e tooltip). */
   .chart-container vegachart,
   .chart-container .vega-embed {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
+    display: flex;
+    justify-content: center;
+    justify-content: safe center;  /* se il grafico sborda, allinea a sinistra
+                                      invece di tagliarlo (titolo/asse Y) */
+    width: 100%;
   }
 
-  .chart-container canvas,
-  .chart-container svg {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-  }
+  /* Se un grafico è più largo del contenitore, si scorre invece di deformarlo.
+     Il tooltip di Vega è agganciato al body, quindi non viene tagliato. */
+  .chart-container { overflow-x: auto; }
 
   /* Didascalia sopra i grafici: stessa resa dei titoli interni ai grafici */
   .chart-caption {

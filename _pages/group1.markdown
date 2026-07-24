@@ -55,11 +55,18 @@ subtitle: "L'impatto di blockbuster globali e cult hollywoodiani sui territori i
   .chart-container .vega-embed {
     display: flex;
     justify-content: center;
+    justify-content: safe center;  /* se sborda, allinea a sinistra
+                                      invece di tagliarlo (titolo/asse Y) */
     width: 100%;
   }
 
   /* NOTA: Tutte le forzature su 'canvas' e 'svg' sono state volutamente 
      eliminate per non rompere le coordinate dell'hover di Vega. */
+
+  /* Se un grafico è più largo del contenitore, si scorre invece di deformarlo.
+     Il tooltip di Vega è agganciato al body, quindi non viene tagliato. */
+  .full-width-chart,
+  .chart-container { overflow-x: auto; }
 
   .page-links { display: flex; flex-direction: column; gap: .6rem; }
   .page-links a { font-weight: 600; }

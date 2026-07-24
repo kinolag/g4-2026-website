@@ -18,20 +18,18 @@ subtitle: " Come lo schermo trasforma i territori: produzioni di nicchia o non r
     box-sizing: border-box;
   }
 
-  /* Vega charts: impedisce stiramenti */
+  /* Vega charts: il contenitore si adatta, il grafico non viene scalato via CSS
+     (scalare svg/canvas sposta le coordinate rompendo hover e tooltip) */
   .chart-container vegachart,
   .chart-container .vega-embed {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
+    display: flex;
+    justify-content: center;
+    width: 100%;
   }
 
-  .chart-container canvas,
-  .chart-container svg {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
-  }
+  /* Se un grafico è più largo del contenitore, si scorre invece di deformarlo.
+     Il tooltip di Vega è agganciato al body, quindi non viene tagliato. */
+  .chart-container { overflow-x: auto; }
 
   /* Video incorporati: responsivi e centrati */
   .video-embed {
