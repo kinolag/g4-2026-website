@@ -287,19 +287,19 @@
       "data": {
         "values": [
           {
-            "b": -0.5
+            "x": -0.5
           },
           {
-            "b": 0.5
+            "x": 0.5
           },
           {
-            "b": 1.5
+            "x": 1.5
           },
           {
-            "b": 2.5
+            "x": 2.5
           },
           {
-            "b": 3.5
+            "x": 3.5
           }
         ]
       },
@@ -310,9 +310,8 @@
       },
       "encoding": {
         "x": {
-          "field": "b",
+          "field": "x",
           "type": "quantitative",
-          "title": "Evidenze territoriali",
           "scale": {
             "domain": [
               -0.55,
@@ -321,27 +320,7 @@
             "nice": false,
             "zero": false
           },
-          "axis": {
-            "values": [
-              0,
-              1,
-              2,
-              3
-            ],
-            "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
-            "labelAngle": 0,
-            "grid": false,
-            "labelFontSize": 12,
-            "titleFontSize": 13,
-            "titleFontWeight": "bold",
-            "labelLimit": 200,
-            "labelColor": "#162832",
-            "titleColor": "#173B57",
-            "domainColor": "#9AA5A8",
-            "tickColor": "#9AA5A8",
-            "labelPadding": 8,
-            "titlePadding": 14
-          }
+          "axis": null
         }
       }
     },
@@ -349,19 +328,19 @@
       "data": {
         "values": [
           {
-            "b": -0.5
+            "y": -0.5
           },
           {
-            "b": 0.5
+            "y": 0.5
           },
           {
-            "b": 1.5
+            "y": 1.5
           },
           {
-            "b": 2.5
+            "y": 2.5
           },
           {
-            "b": 3.5
+            "y": 3.5
           }
         ]
       },
@@ -372,9 +351,8 @@
       },
       "encoding": {
         "y": {
-          "field": "b",
+          "field": "y",
           "type": "quantitative",
-          "title": "Evidenze digitali",
           "scale": {
             "domain": [
               -0.55,
@@ -383,27 +361,7 @@
             "nice": false,
             "zero": false
           },
-          "axis": {
-            "values": [
-              0,
-              1,
-              2,
-              3
-            ],
-            "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
-            "labelAngle": 0,
-            "grid": false,
-            "labelFontSize": 12,
-            "titleFontSize": 13,
-            "titleFontWeight": "bold",
-            "labelLimit": 200,
-            "labelColor": "#162832",
-            "titleColor": "#173B57",
-            "domainColor": "#9AA5A8",
-            "tickColor": "#9AA5A8",
-            "labelPadding": 8,
-            "titlePadding": 14
-          }
+          "axis": null
         }
       }
     },
@@ -411,6 +369,7 @@
       "mark": {
         "type": "point",
         "filled": true,
+        "size": 780,
         "stroke": "#FFFFFF",
         "strokeWidth": 2.3,
         "opacity": 1.0
@@ -435,7 +394,7 @@
               2,
               3
             ],
-            "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
+            "labelExpr": "datum.value === 0 ? 'Assenti' : datum.value === 1 ? 'Rilevazione aperta (OSM)' : datum.value === 2 ? 'Istituzionale mono-area' : 'Istituzionale multi-area'",
             "labelAngle": 0,
             "grid": false,
             "labelFontSize": 12,
@@ -469,7 +428,7 @@
               2,
               3
             ],
-            "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
+            "labelExpr": "datum.value === 0 ? 'Assenti' : datum.value === 1 ? 'Copertura mediatica' : datum.value === 2 ? 'Digital engagement' : 'Attenzione integrata'",
             "labelAngle": 0,
             "grid": false,
             "labelFontSize": 12,
@@ -503,35 +462,7 @@
             "title": "Tipo di produzione",
             "orient": "bottom",
             "direction": "vertical",
-            "labelFontSize": 12,
-            "titleFontSize": 12,
-            "symbolFillColor": "#667985",
-            "symbolStrokeColor": "#667985"
-          }
-        },
-        "size": {
-          "field": "gruppo_legenda",
-          "type": "nominal",
-          "scale": {
-            "domain": [
-              "Produzioni Internazionali",
-              "Serie TV Italiane",
-              "Altre Produzioni Italiane"
-            ],
-            "range": [
-              730,
-              730,
-              980
-            ]
-          },
-          "legend": {
-            "title": "Tipo di produzione",
-            "orient": "bottom",
-            "direction": "vertical",
-            "labelFontSize": 12,
-            "titleFontSize": 12,
-            "symbolFillColor": "#667985",
-            "symbolStrokeColor": "#667985"
+            "symbolSize": 200
           }
         },
         "color": {
@@ -555,8 +486,6 @@
             "title": "Tono del racconto digitale",
             "orient": "bottom",
             "direction": "vertical",
-            "labelFontSize": 12,
-            "titleFontSize": 12,
             "symbolSize": 200,
             "symbolType": "circle"
           }
@@ -638,7 +567,6 @@
         "x": {
           "field": "x",
           "type": "quantitative",
-          "title": "Evidenze territoriali",
           "scale": {
             "domain": [
               -0.55,
@@ -647,32 +575,11 @@
             "nice": false,
             "zero": false
           },
-          "axis": {
-            "values": [
-              0,
-              1,
-              2,
-              3
-            ],
-            "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
-            "labelAngle": 0,
-            "grid": false,
-            "labelFontSize": 12,
-            "titleFontSize": 13,
-            "titleFontWeight": "bold",
-            "labelLimit": 200,
-            "labelColor": "#162832",
-            "titleColor": "#173B57",
-            "domainColor": "#9AA5A8",
-            "tickColor": "#9AA5A8",
-            "labelPadding": 8,
-            "titlePadding": 14
-          }
+          "axis": null
         },
         "y": {
           "field": "y",
           "type": "quantitative",
-          "title": "Evidenze digitali",
           "scale": {
             "domain": [
               -0.55,
@@ -681,27 +588,7 @@
             "nice": false,
             "zero": false
           },
-          "axis": {
-            "values": [
-              0,
-              1,
-              2,
-              3
-            ],
-            "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
-            "labelAngle": 0,
-            "grid": false,
-            "labelFontSize": 12,
-            "titleFontSize": 13,
-            "titleFontWeight": "bold",
-            "labelLimit": 200,
-            "labelColor": "#162832",
-            "titleColor": "#173B57",
-            "domainColor": "#9AA5A8",
-            "tickColor": "#9AA5A8",
-            "labelPadding": 8,
-            "titlePadding": 14
-          }
+          "axis": null
         },
         "text": {
           "field": "label",
@@ -784,7 +671,6 @@
         "x": {
           "field": "x",
           "type": "quantitative",
-          "title": "Evidenze territoriali",
           "scale": {
             "domain": [
               -0.55,
@@ -793,32 +679,11 @@
             "nice": false,
             "zero": false
           },
-          "axis": {
-            "values": [
-              0,
-              1,
-              2,
-              3
-            ],
-            "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
-            "labelAngle": 0,
-            "grid": false,
-            "labelFontSize": 12,
-            "titleFontSize": 13,
-            "titleFontWeight": "bold",
-            "labelLimit": 200,
-            "labelColor": "#162832",
-            "titleColor": "#173B57",
-            "domainColor": "#9AA5A8",
-            "tickColor": "#9AA5A8",
-            "labelPadding": 8,
-            "titlePadding": 14
-          }
+          "axis": null
         },
         "y": {
           "field": "y",
           "type": "quantitative",
-          "title": "Evidenze digitali",
           "scale": {
             "domain": [
               -0.55,
@@ -827,27 +692,7 @@
             "nice": false,
             "zero": false
           },
-          "axis": {
-            "values": [
-              0,
-              1,
-              2,
-              3
-            ],
-            "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
-            "labelAngle": 0,
-            "grid": false,
-            "labelFontSize": 12,
-            "titleFontSize": 13,
-            "titleFontWeight": "bold",
-            "labelLimit": 200,
-            "labelColor": "#162832",
-            "titleColor": "#173B57",
-            "domainColor": "#9AA5A8",
-            "tickColor": "#9AA5A8",
-            "labelPadding": 8,
-            "titlePadding": 14
-          }
+          "axis": null
         },
         "text": {
           "field": "label",
@@ -930,7 +775,6 @@
         "x": {
           "field": "x",
           "type": "quantitative",
-          "title": "Evidenze territoriali",
           "scale": {
             "domain": [
               -0.55,
@@ -939,32 +783,11 @@
             "nice": false,
             "zero": false
           },
-          "axis": {
-            "values": [
-              0,
-              1,
-              2,
-              3
-            ],
-            "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
-            "labelAngle": 0,
-            "grid": false,
-            "labelFontSize": 12,
-            "titleFontSize": 13,
-            "titleFontWeight": "bold",
-            "labelLimit": 200,
-            "labelColor": "#162832",
-            "titleColor": "#173B57",
-            "domainColor": "#9AA5A8",
-            "tickColor": "#9AA5A8",
-            "labelPadding": 8,
-            "titlePadding": 14
-          }
+          "axis": null
         },
         "y": {
           "field": "y",
           "type": "quantitative",
-          "title": "Evidenze digitali",
           "scale": {
             "domain": [
               -0.55,
@@ -973,27 +796,7 @@
             "nice": false,
             "zero": false
           },
-          "axis": {
-            "values": [
-              0,
-              1,
-              2,
-              3
-            ],
-            "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
-            "labelAngle": 0,
-            "grid": false,
-            "labelFontSize": 12,
-            "titleFontSize": 13,
-            "titleFontWeight": "bold",
-            "labelLimit": 200,
-            "labelColor": "#162832",
-            "titleColor": "#173B57",
-            "domainColor": "#9AA5A8",
-            "tickColor": "#9AA5A8",
-            "labelPadding": 8,
-            "titlePadding": 14
-          }
+          "axis": null
         },
         "text": {
           "field": "label",
@@ -1076,7 +879,6 @@
         "x": {
           "field": "x",
           "type": "quantitative",
-          "title": "Evidenze territoriali",
           "scale": {
             "domain": [
               -0.55,
@@ -1085,32 +887,11 @@
             "nice": false,
             "zero": false
           },
-          "axis": {
-            "values": [
-              0,
-              1,
-              2,
-              3
-            ],
-            "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
-            "labelAngle": 0,
-            "grid": false,
-            "labelFontSize": 12,
-            "titleFontSize": 13,
-            "titleFontWeight": "bold",
-            "labelLimit": 200,
-            "labelColor": "#162832",
-            "titleColor": "#173B57",
-            "domainColor": "#9AA5A8",
-            "tickColor": "#9AA5A8",
-            "labelPadding": 8,
-            "titlePadding": 14
-          }
+          "axis": null
         },
         "y": {
           "field": "y",
           "type": "quantitative",
-          "title": "Evidenze digitali",
           "scale": {
             "domain": [
               -0.55,
@@ -1119,27 +900,7 @@
             "nice": false,
             "zero": false
           },
-          "axis": {
-            "values": [
-              0,
-              1,
-              2,
-              3
-            ],
-            "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
-            "labelAngle": 0,
-            "grid": false,
-            "labelFontSize": 12,
-            "titleFontSize": 13,
-            "titleFontWeight": "bold",
-            "labelLimit": 200,
-            "labelColor": "#162832",
-            "titleColor": "#173B57",
-            "domainColor": "#9AA5A8",
-            "tickColor": "#9AA5A8",
-            "labelPadding": 8,
-            "titlePadding": 14
-          }
+          "axis": null
         },
         "text": {
           "field": "label",
@@ -1200,12 +961,6 @@
       }
     }
   ],
-  "resolve": {
-    "scale": {
-      "size": "shared",
-      "shape": "shared"
-    }
-  },
   "config": {
     "view": {
       "stroke": null
