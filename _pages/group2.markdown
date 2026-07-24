@@ -24,7 +24,7 @@ subtitle: "Le serie televisive a lunga esposizione e i loro territori"
   }
 
   /* 2. Il grafico non viene scalato via CSS: si centra e, se troppo largo,
-     il contenitore scorre in orizzontale (hover e tooltip restano allineati). */
+     il contenitore scorre in orizzontale (così hover e tooltip restano allineati). */
   .full-width-chart vegachart,
   .full-width-chart .vega-embed {
     display: flex;
@@ -234,6 +234,9 @@ non ha superato le soglie.
   </div>
   <div class="chart-container">
     <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s1/rank_29_ev_041_ragusa_I67_RICALCOLATO_v3_18.json"></vegachart>
+  </div>
+  <div class="chart-container">
+    <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s1/rank_02_ev_050_aglie_AG-CULT_RICALCOLATO_v3_18.json"></vegachart>
   </div>
 </div>
 
