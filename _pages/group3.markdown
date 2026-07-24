@@ -4,8 +4,9 @@ title: "Gruppo 3: Cineturismo Nazionale – Analisi dei Casi di Studio Italiani"
 vega: true
 header_type: hero
 header_img: assets/images/header.svg
-header_title: "Analisi di Gruppo: altre Produzioni italiane"
-subtitle: " Come lo schermo trasforma i territori: produzioni di nicchia o non riconducibili ai gruppi precedenti"
+header_title: "Analisi di Gruppo: Produzioni a esposizione breve"
+subtitle: " film e serie che trasformano i territori in un’unica stagione
+"
 ---
 
 <style>
@@ -437,10 +438,10 @@ opportunità e criticità, e produce un effetto persistente che si trascina nel 
 capace di influenzare narrazioni, economie e immaginari. **All'interno di questa dinamica comune, però, i 
 territori reagiscono in modi diversi**, dando vita a modelli distinti che mostrano la ricchezza e la complessità del fenomeno.
 
-L'analisi dei quattro casi rivela che il cineturismo italiano è un fenomeno stratificato e profondamente territoriale. 
-Ogni opera genera un impatto diverso, ma tutte seguono la stessa traiettoria: accendono l'attenzione, modificano 
-la percezione, alimentano conversazioni, trasformano l'immaginario e, quando il territorio risponde, producono 
-cambiamenti concreti nell'economia e nell'ecosistema turistico. 
+L’analisi dei quattro casi mostra che il cineturismo italiano è un fenomeno stratificato e profondamente territoriale.
+Ogni produzione genera un impatto diverso, ma tutte seguono la stessa traiettoria: accendono l’attenzione, modificano la percezione, alimentano conversazioni, trasformano l’immaginario e, quando il territorio risponde, producono cambiamenti concreti nell’economia e nell’ecosistema turistico.
+
+Il cinema non si limita a raccontare i luoghi: li trasforma, li riscrive e lascia tracce misurabili nella realtà, nei media e online.
 
 Come ricorda **Davide Marra**, il cinema può farci "_innamorare 
 di ciò che non avevamo davvero guardato_", mentre **McQuack** sottolinea come possa diventare "_una via di fuga sensoriale_" 

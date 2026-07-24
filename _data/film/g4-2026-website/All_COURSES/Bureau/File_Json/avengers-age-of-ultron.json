@@ -1,0 +1,93 @@
+{
+    "nome": "avengers age of ultron",
+    "locations": [
+        "bard",
+        "vèrres",
+        "pont-saint-martin"
+    ],
+    "tipo": "film_int",
+    "actors": [
+        "robert downey jr",
+        "chris evans",
+        "chris hemsworth"
+    ],
+    "characters": [
+        "iron man",
+        "tony stark",
+        "captain america",
+        "thor",
+        "ultron"
+    ],
+    "aliases": [
+        "avengers",
+        "age of ultron",
+        "marvel"
+    ],
+    "dates": {
+        "global_start": "2013-04-22",
+        "global_end": "2026-06-01"
+    },
+    "milestones": [
+        {
+            "date": "2015-04-22",
+            "name": "Theatrical Release (Apr 2015)",
+            "color": "#8B0000"
+        }
+    ],
+    "budget": null,
+    "fonti_dati": {
+        "istat": {
+            "descrizione": "Indicatori comunali ISTAT/MiC-MiBACT (CIS, RGR)",
+            "link": "https://www.istat.it/it/dati-analisi-e-prodotti"
+        },
+        "openstreetmap": {
+            "descrizione": "Analisi dell’ecosistema commerciale locale (POI entro 5 km)",
+            "link": "https://www.openstreetmap.org/"
+        },
+        "google_news": {
+            "descrizione": "Articoli estratti tramite Google News API, analisi sentiment e topic modeling",
+            "parole_chiave": [
+                "avengers age of ultron",
+                "bard",
+                "vèrres",
+                "pont-saint-martin",
+                "turismo",
+                "economia locale"
+            ]
+        },
+        "reddit": {
+            "descrizione": "Analisi del discorso della community tramite API PullPush",
+            "subreddit": [
+                "r/italy",
+                "r/travel",
+                "r/movies",
+                "r/europe",
+                "r/turismo"
+            ]
+        },
+        "youtube": {
+            "descrizione": "Commenti ai video girati nelle location tramite YouTube Data API v3",
+            "query": [
+                "avengers age of ultron bard",
+                "avengers age of ultron vèrres",
+                "avengers age of ultron pont-saint-martin"
+            ]
+        },
+        "google_trends_wikipedia": {
+            "descrizione": "Interesse informativo e comportamento di ricerca",
+            "voci_wikipedia": [
+                "bard",
+                "vèrres",
+                "pont-saint-martin"
+            ]
+        },
+        "getyourguide": {
+            "descrizione": "Analisi dei tour e delle recensioni (topic modeling + sentiment)",
+            "link": "https://www.getyourguide.com/"
+        }
+    },
+    "locandina": {
+        "img": "/assets/locandine/avengers-age-of-ultron.jpg",
+        "alt": "Locandina del film avengers age of ultron"
+    }
+}

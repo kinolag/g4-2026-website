@@ -1,0 +1,88 @@
+{
+    "nome": "un mondo a parte",
+    "locations": [
+        "opi",
+        "pescasseroli"
+    ],
+    "tipo": "film_ita",
+    "actors": [
+        "antonio albanese",
+        "virginia raffaele"
+    ],
+    "characters": [
+        "michele cortese",
+        "agnese"
+    ],
+    "aliases": [
+        "un mondo a parte"
+    ],
+    "dates": {
+        "global_start": "2023-01-01",
+        "global_end": "2026-06-01"
+    },
+    "milestones": [
+        {
+            "date": "2024-03-28",
+            "name": "Theatrical Release (Mar 2024)",
+            "color": "#8B0000"
+        },
+        {
+            "date": "2026-01-15",
+            "name": "Streaming Release (Jan 2026)",
+            "color": "#006400"
+        }
+    ],
+    "budget": 9000000,
+    "fonti_dati": {
+        "istat": {
+            "descrizione": "Indicatori comunali ISTAT/MiC-MiBACT (CIS, RGR)",
+            "link": "https://www.istat.it/it/dati-analisi-e-prodotti"
+        },
+        "openstreetmap": {
+            "descrizione": "Analisi dell’ecosistema commerciale locale (POI entro 5 km)",
+            "link": "https://www.openstreetmap.org/"
+        },
+        "google_news": {
+            "descrizione": "Articoli estratti tramite Google News API, analisi sentiment e topic modeling",
+            "parole_chiave": [
+                "un mondo a parte",
+                "opi",
+                "pescasseroli",
+                "turismo",
+                "economia locale"
+            ]
+        },
+        "reddit": {
+            "descrizione": "Analisi del discorso della community tramite API PullPush",
+            "subreddit": [
+                "r/italy",
+                "r/travel",
+                "r/movies",
+                "r/europe",
+                "r/turismo"
+            ]
+        },
+        "youtube": {
+            "descrizione": "Commenti ai video girati nelle location tramite YouTube Data API v3",
+            "query": [
+                "un mondo a parte opi",
+                "un mondo a parte pescasseroli"
+            ]
+        },
+        "google_trends_wikipedia": {
+            "descrizione": "Interesse informativo e comportamento di ricerca",
+            "voci_wikipedia": [
+                "opi",
+                "pescasseroli"
+            ]
+        },
+        "getyourguide": {
+            "descrizione": "Analisi dei tour e delle recensioni (topic modeling + sentiment)",
+            "link": "https://www.getyourguide.com/"
+        }
+    },
+    "locandina": {
+        "img": "/assets/locandine/un-mondo-a-parte.jpg",
+        "alt": "Locandina del film un mondo a parte"
+    }
+}

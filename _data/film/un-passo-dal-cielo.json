@@ -1,0 +1,132 @@
+{
+    "nome": "un passo dal cielo",
+    "locations": [
+        "braies",
+        "san vito di cadore",
+        "san candido"
+    ],
+    "tipo": "serie_ita",
+    "actors": [
+        "terence hill",
+        "daniele liotti",
+        "enrico ianniello"
+    ],
+    "characters": [
+        "pietro thiene",
+        "francesco neri",
+        "vincenzo nappi"
+    ],
+    "aliases": [
+        "un passo dal cielo"
+    ],
+    "dates": {
+        "global_start": "2011-01-01",
+        "global_end": "2026-06-01"
+    },
+    "milestones": [
+        {
+            "date": "2011-04-10",
+            "name": "Season 1 Premiere - Terence Hill",
+            "series": "Un Passo Dal Cielo 1",
+            "color": "#1E90FF"
+        },
+        {
+            "date": "2012-10-14",
+            "name": "Season 2 Premiere - Terence Hill",
+            "series": "Un Passo Dal Cielo 2",
+            "color": "#1E90FF"
+        },
+        {
+            "date": "2015-01-08",
+            "name": "Season 3 Premiere - Terence Hill Finale",
+            "series": "Un Passo Dal Cielo 3",
+            "color": "#1E90FF"
+        },
+        {
+            "date": "2017-01-17",
+            "name": "Season 4 Premiere - Daniele Liotti Debut",
+            "series": "Un Passo Dal Cielo 4",
+            "color": "#FF8C00"
+        },
+        {
+            "date": "2019-09-12",
+            "name": "Season 5 Premiere - Daniele Liotti",
+            "series": "Un Passo Dal Cielo 5",
+            "color": "#FF8C00"
+        },
+        {
+            "date": "2021-04-01",
+            "name": "Season 6 Premiere - I Guardiani (Veneto Shift)",
+            "series": "Un Passo Dal Cielo 6",
+            "color": "#4B0082"
+        },
+        {
+            "date": "2023-03-30",
+            "name": "Season 7 Premiere - Giusy Buscemi Lead",
+            "series": "Un Passo Dal Cielo 7",
+            "color": "#4B0082"
+        },
+        {
+            "date": "2025-01-09",
+            "name": "Season 8 Premiere - Eco & Climate Focus",
+            "series": "Un Passo Dal Cielo 8",
+            "color": "#4B0082"
+        }
+    ],
+    "budget": null,
+    "fonti_dati": {
+        "istat": {
+            "descrizione": "Indicatori comunali ISTAT/MiC-MiBACT (CIS, RGR)",
+            "link": "https://www.istat.it/it/dati-analisi-e-prodotti"
+        },
+        "openstreetmap": {
+            "descrizione": "Analisi dell’ecosistema commerciale locale (POI entro 5 km)",
+            "link": "https://www.openstreetmap.org/"
+        },
+        "google_news": {
+            "descrizione": "Articoli estratti tramite Google News API, analisi sentiment e topic modeling",
+            "parole_chiave": [
+                "un passo dal cielo",
+                "braies",
+                "san vito di cadore",
+                "san candido",
+                "turismo",
+                "economia locale"
+            ]
+        },
+        "reddit": {
+            "descrizione": "Analisi del discorso della community tramite API PullPush",
+            "subreddit": [
+                "r/italy",
+                "r/travel",
+                "r/movies",
+                "r/europe",
+                "r/turismo"
+            ]
+        },
+        "youtube": {
+            "descrizione": "Commenti ai video girati nelle location tramite YouTube Data API v3",
+            "query": [
+                "un passo dal cielo braies",
+                "un passo dal cielo san vito di cadore",
+                "un passo dal cielo san candido"
+            ]
+        },
+        "google_trends_wikipedia": {
+            "descrizione": "Interesse informativo e comportamento di ricerca",
+            "voci_wikipedia": [
+                "braies",
+                "san vito di cadore",
+                "san candido"
+            ]
+        },
+        "getyourguide": {
+            "descrizione": "Analisi dei tour e delle recensioni (topic modeling + sentiment)",
+            "link": "https://www.getyourguide.com/"
+        }
+    },
+    "locandina": {
+        "img": "/assets/locandine/un-passo-dal-cielo.jpg",
+        "alt": "Locandina del film un passo dal cielo"
+    }
+}

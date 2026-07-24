@@ -1,0 +1,82 @@
+{
+    "nome": "curon",
+    "locations": [
+        "curon venosta"
+    ],
+    "tipo": "serie_ita",
+    "actors": [
+        "valeria bilello",
+        "federico russo",
+        "margherita morchio"
+    ],
+    "characters": [
+        "anna",
+        "mauro",
+        "daria",
+        "thomas"
+    ],
+    "aliases": [
+        "curon"
+    ],
+    "dates": {
+        "global_start": "2018-06-10",
+        "global_end": "2026-06-01"
+    },
+    "milestones": [
+        {
+            "date": "2020-06-10",
+            "name": "Streaming Release (Jun 2020)",
+            "color": "#006400"
+        }
+    ],
+    "budget": null,
+    "fonti_dati": {
+        "istat": {
+            "descrizione": "Indicatori comunali ISTAT/MiC-MiBACT (CIS, RGR)",
+            "link": "https://www.istat.it/it/dati-analisi-e-prodotti"
+        },
+        "openstreetmap": {
+            "descrizione": "Analisi dell’ecosistema commerciale locale (POI entro 5 km)",
+            "link": "https://www.openstreetmap.org/"
+        },
+        "google_news": {
+            "descrizione": "Articoli estratti tramite Google News API, analisi sentiment e topic modeling",
+            "parole_chiave": [
+                "curon",
+                "curon venosta",
+                "turismo",
+                "economia locale"
+            ]
+        },
+        "reddit": {
+            "descrizione": "Analisi del discorso della community tramite API PullPush",
+            "subreddit": [
+                "r/italy",
+                "r/travel",
+                "r/movies",
+                "r/europe",
+                "r/turismo"
+            ]
+        },
+        "youtube": {
+            "descrizione": "Commenti ai video girati nelle location tramite YouTube Data API v3",
+            "query": [
+                "curon curon venosta"
+            ]
+        },
+        "google_trends_wikipedia": {
+            "descrizione": "Interesse informativo e comportamento di ricerca",
+            "voci_wikipedia": [
+                "curon venosta"
+            ]
+        },
+        "getyourguide": {
+            "descrizione": "Analisi dei tour e delle recensioni (topic modeling + sentiment)",
+            "link": "https://www.getyourguide.com/"
+        }
+    },
+    "locandina": {
+        "img": "/assets/locandine/curon.jpg",
+        "alt": "Locandina del film curon"
+    }
+}
