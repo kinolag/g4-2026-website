@@ -250,7 +250,7 @@ scheda a fianco ne mostra i dettagli.
 </div>
 
 <div class="map-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/mappa_italia.vl.json"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/map/mappa_italia.vl.json"></vegachart>
 </div>
 
 <!--

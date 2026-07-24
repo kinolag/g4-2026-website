@@ -777,7 +777,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 18,
+            "fontSize": 20,
             "fontWeight": "bold",
             "color": "#1a202c",
             "limit": 264
@@ -810,7 +810,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 18,
+            "fontSize": 20,
             "fontWeight": "bold",
             "color": "#1a202c",
             "limit": 264
@@ -846,7 +846,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 12,
+            "fontSize": 13,
             "fontWeight": "normal",
             "color": "#8a94a0",
             "limit": 264
@@ -882,7 +882,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 12,
+            "fontSize": 13,
             "fontWeight": "normal",
             "color": "#8a94a0",
             "limit": 264
@@ -952,7 +952,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 13,
+            "fontSize": 14,
             "fontWeight": "normal",
             "color": "#444",
             "limit": 264
@@ -985,7 +985,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 13,
+            "fontSize": 14,
             "fontWeight": "normal",
             "color": "#444",
             "limit": 264
@@ -1018,7 +1018,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 13,
+            "fontSize": 14,
             "fontWeight": "normal",
             "color": "#444",
             "limit": 264
@@ -1092,7 +1092,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 12,
+            "fontSize": 13,
             "fontWeight": "bold",
             "color": "#94a3b8",
             "limit": 250
@@ -1143,7 +1143,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 14,
+            "fontSize": 15,
             "color": "#2b6cb0",
             "limit": 250
           },
@@ -1228,7 +1228,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 12,
+            "fontSize": 13,
             "fontWeight": "bold",
             "color": "#94a3b8",
             "limit": 250
@@ -1261,7 +1261,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 12,
+            "fontSize": 13,
             "fontWeight": "normal",
             "color": "#5a6470",
             "limit": 264
@@ -1294,7 +1294,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 12,
+            "fontSize": 13,
             "fontWeight": "normal",
             "color": "#5a6470",
             "limit": 264
@@ -1327,7 +1327,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 12,
+            "fontSize": 13,
             "fontWeight": "normal",
             "color": "#5a6470",
             "limit": 264
@@ -1360,7 +1360,7 @@
           "mark": {
             "type": "text",
             "align": "left",
-            "fontSize": 12,
+            "fontSize": 13,
             "fontWeight": "normal",
             "color": "#5a6470",
             "limit": 264
@@ -1438,7 +1438,7 @@
             "type": "text",
             "align": "center",
             "baseline": "middle",
-            "fontSize": 13,
+            "fontSize": 14,
             "fontWeight": "bold",
             "color": "white",
             "cursor": "pointer",
