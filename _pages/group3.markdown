@@ -4,9 +4,8 @@ title: "Gruppo 3: Cineturismo Nazionale – Analisi dei Casi di Studio Italiani"
 vega: true
 header_type: hero
 header_img: assets/images/header.svg
-header_title: "Analisi di Gruppo: Produzioni a esposizione breve"
-subtitle: " film e serie che trasformano i territori in un’unica stagione
-"
+header_title: "Analisi di Gruppo: Produzioni italiane a breve esposizione"
+subtitle: "Film e Serie TV che trasformano i territori in un’unica stagione"
 ---
 
 <style>
