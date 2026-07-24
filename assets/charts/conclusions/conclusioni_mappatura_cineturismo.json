@@ -1,13 +1,18 @@
 {
   "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
-  "description": "Conclusioni: mappatura delle evidenze di cineturismo — trasposizione fedele in Vega-Lite.",
-  "width": 1060,
-  "height": 679,
-  "padding": 0,
-  "autosize": {
-    "type": "none",
-    "contains": "content"
+  "description": "Conclusioni: mappatura delle evidenze di cineturismo.",
+  "title": {
+    "text": "Conclusioni: mappatura delle evidenze di cineturismo",
+    "subtitle": "Forma = tipo di produzione · Colore = tono del racconto digitale",
+    "fontSize": 17,
+    "subtitleFontSize": 12,
+    "anchor": "start",
+    "color": "#173B57",
+    "subtitleColor": "#667985",
+    "offset": 10
   },
+  "width": 780,
+  "height": 540,
   "background": "#FFFFFF",
   "data": {
     "values": [
@@ -279,304 +284,209 @@
   },
   "layer": [
     {
-      "data": {
-        "values": [
+      "mark": {
+        "type": "point",
+        "filled": true,
+        "stroke": "#FFFFFF",
+        "strokeWidth": 2.3,
+        "opacity": 1.0
+      },
+      "encoding": {
+        "x": {
+          "field": "x",
+          "type": "quantitative",
+          "title": "Evidenze territoriali",
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          },
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
+            "labelAngle": 0,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "titleFontWeight": "bold",
+            "labelLimit": 190,
+            "labelColor": "#162832",
+            "titleColor": "#173B57",
+            "grid": true,
+            "gridColor": "#E5EBEF",
+            "gridWidth": 1.3,
+            "domainColor": "#9AA5A8",
+            "tickColor": "#9AA5A8",
+            "titlePadding": 12
+          }
+        },
+        "y": {
+          "field": "y",
+          "type": "quantitative",
+          "title": "Evidenze digitali",
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          },
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
+            "labelAngle": 0,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "titleFontWeight": "bold",
+            "labelLimit": 190,
+            "labelColor": "#162832",
+            "titleColor": "#173B57",
+            "grid": true,
+            "gridColor": "#E5EBEF",
+            "gridWidth": 1.3,
+            "domainColor": "#9AA5A8",
+            "tickColor": "#9AA5A8",
+            "titlePadding": 12
+          }
+        },
+        "shape": {
+          "field": "gruppo_legenda",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Produzioni Internazionali",
+              "Serie TV Italiane",
+              "Altre Produzioni Italiane"
+            ],
+            "range": [
+              "circle",
+              "square",
+              "triangle-up"
+            ]
+          },
+          "legend": {
+            "title": "Tipo di produzione",
+            "orient": "bottom",
+            "direction": "vertical",
+            "labelFontSize": 12,
+            "titleFontSize": 12,
+            "symbolSize": 200,
+            "symbolFillColor": "#667985",
+            "symbolStrokeColor": "#667985"
+          }
+        },
+        "color": {
+          "field": "sentiment_legenda",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Positivo",
+              "Neutro / Informativo",
+              "Negativo / Critico",
+              "N/A · Digitale assente"
+            ],
+            "range": [
+              "#50C878",
+              "#FFC107",
+              "#DC3545",
+              "#8E9AA3"
+            ]
+          },
+          "legend": {
+            "title": "Tono del racconto digitale",
+            "orient": "bottom",
+            "direction": "vertical",
+            "labelFontSize": 12,
+            "titleFontSize": 12,
+            "symbolSize": 200,
+            "symbolType": "circle"
+          }
+        },
+        "size": {
+          "field": "gruppo_legenda",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Produzioni Internazionali",
+              "Serie TV Italiane",
+              "Altre Produzioni Italiane"
+            ],
+            "range": [
+              730,
+              730,
+              980
+            ]
+          },
+          "legend": null
+        },
+        "tooltip": [
           {
-            "x0": -0.5,
-            "x1": 0.5,
-            "y0": -0.5,
-            "y1": 0.5
+            "field": "opera",
+            "type": "nominal",
+            "title": "Opera"
           },
           {
-            "x0": 0.5,
-            "x1": 1.5,
-            "y0": -0.5,
-            "y1": 0.5
+            "field": "anno",
+            "type": "quantitative",
+            "title": "Anno"
           },
           {
-            "x0": 1.5,
-            "x1": 2.5,
-            "y0": -0.5,
-            "y1": 0.5
+            "field": "gruppo",
+            "type": "nominal",
+            "title": "Gruppo"
           },
           {
-            "x0": 2.5,
-            "x1": 3.5,
-            "y0": -0.5,
-            "y1": 0.5
+            "field": "evidenze_territoriali",
+            "type": "nominal",
+            "title": "Evidenze territoriali"
           },
           {
-            "x0": -0.5,
-            "x1": 0.5,
-            "y0": 0.5,
-            "y1": 1.5
+            "field": "evidenze_digitali",
+            "type": "nominal",
+            "title": "Evidenze digitali"
           },
           {
-            "x0": 0.5,
-            "x1": 1.5,
-            "y0": 0.5,
-            "y1": 1.5
+            "field": "sentiment_legenda",
+            "type": "nominal",
+            "title": "Tono"
           },
           {
-            "x0": 1.5,
-            "x1": 2.5,
-            "y0": 0.5,
-            "y1": 1.5
+            "field": "integrazione_osm",
+            "type": "nominal",
+            "title": "Integrazione OSM"
           },
           {
-            "x0": 2.5,
-            "x1": 3.5,
-            "y0": 0.5,
-            "y1": 1.5
+            "field": "canali_digitali_attivi",
+            "type": "nominal",
+            "title": "Canali digitali"
           },
           {
-            "x0": -0.5,
-            "x1": 0.5,
-            "y0": 1.5,
-            "y1": 2.5
+            "field": "aree_istat_coperte",
+            "type": "nominal",
+            "title": "Aree ISTAT/MiBACT"
           },
           {
-            "x0": 0.5,
-            "x1": 1.5,
-            "y0": 1.5,
-            "y1": 2.5
-          },
-          {
-            "x0": 1.5,
-            "x1": 2.5,
-            "y0": 1.5,
-            "y1": 2.5
-          },
-          {
-            "x0": 2.5,
-            "x1": 3.5,
-            "y0": 1.5,
-            "y1": 2.5
-          },
-          {
-            "x0": -0.5,
-            "x1": 0.5,
-            "y0": 2.5,
-            "y1": 3.5
-          },
-          {
-            "x0": 0.5,
-            "x1": 1.5,
-            "y0": 2.5,
-            "y1": 3.5
-          },
-          {
-            "x0": 1.5,
-            "x1": 2.5,
-            "y0": 2.5,
-            "y1": 3.5
-          },
-          {
-            "x0": 2.5,
-            "x1": 3.5,
-            "y0": 2.5,
-            "y1": 3.5
+            "field": "key_finding",
+            "type": "nominal",
+            "title": "Insight"
           }
         ]
-      },
-      "mark": {
-        "type": "rect",
-        "fill": "#FFFFFF",
-        "stroke": "#9AA5A8",
-        "strokeWidth": 1.3,
-        "opacity": 1.0
-      },
-      "encoding": {
-        "x": {
-          "field": "x0",
-          "type": "quantitative",
-          "scale": {
-            "domain": [
-              -0.55,
-              3.55
-            ],
-            "nice": false,
-            "zero": false
-          },
-          "axis": null
-        },
-        "x2": {
-          "field": "x1"
-        },
-        "y": {
-          "field": "y0",
-          "type": "quantitative",
-          "scale": {
-            "domain": [
-              -0.55,
-              3.55
-            ],
-            "nice": false,
-            "zero": false
-          },
-          "axis": null
-        },
-        "y2": {
-          "field": "y1"
-        }
       }
     },
     {
-      "transform": [
-        {
-          "filter": "datum.shape === 'circle'"
-        }
-      ],
-      "mark": {
-        "type": "point",
-        "shape": "circle",
-        "filled": true,
-        "size": 730,
-        "stroke": "#FFFFFF",
-        "strokeWidth": 2.3,
-        "opacity": 1.0
-      },
-      "encoding": {
-        "x": {
-          "field": "x",
-          "type": "quantitative",
-          "scale": {
-            "domain": [
-              -0.55,
-              3.55
-            ],
-            "nice": false,
-            "zero": false
-          },
-          "axis": null
-        },
-        "y": {
-          "field": "y",
-          "type": "quantitative",
-          "scale": {
-            "domain": [
-              -0.55,
-              3.55
-            ],
-            "nice": false,
-            "zero": false
-          },
-          "axis": null
-        },
-        "color": {
-          "field": "color_hex",
-          "type": "nominal",
-          "scale": null,
-          "legend": null
-        }
-      }
-    },
-    {
-      "transform": [
-        {
-          "filter": "datum.shape === 'square'"
-        }
-      ],
-      "mark": {
-        "type": "point",
-        "shape": "square",
-        "filled": true,
-        "size": 730,
-        "stroke": "#FFFFFF",
-        "strokeWidth": 2.3,
-        "opacity": 1.0
-      },
-      "encoding": {
-        "x": {
-          "field": "x",
-          "type": "quantitative",
-          "scale": {
-            "domain": [
-              -0.55,
-              3.55
-            ],
-            "nice": false,
-            "zero": false
-          },
-          "axis": null
-        },
-        "y": {
-          "field": "y",
-          "type": "quantitative",
-          "scale": {
-            "domain": [
-              -0.55,
-              3.55
-            ],
-            "nice": false,
-            "zero": false
-          },
-          "axis": null
-        },
-        "color": {
-          "field": "color_hex",
-          "type": "nominal",
-          "scale": null,
-          "legend": null
-        }
-      }
-    },
-    {
-      "transform": [
-        {
-          "filter": "datum.shape === 'triangle-up'"
-        }
-      ],
-      "mark": {
-        "type": "point",
-        "shape": "triangle-up",
-        "filled": true,
-        "size": 980,
-        "stroke": "#FFFFFF",
-        "strokeWidth": 2.3,
-        "opacity": 1.0
-      },
-      "encoding": {
-        "x": {
-          "field": "x",
-          "type": "quantitative",
-          "scale": {
-            "domain": [
-              -0.55,
-              3.55
-            ],
-            "nice": false,
-            "zero": false
-          },
-          "axis": null
-        },
-        "y": {
-          "field": "y",
-          "type": "quantitative",
-          "scale": {
-            "domain": [
-              -0.55,
-              3.55
-            ],
-            "nice": false,
-            "zero": false
-          },
-          "axis": null
-        },
-        "color": {
-          "field": "color_hex",
-          "type": "nominal",
-          "scale": null,
-          "legend": null
-        }
-      }
-    },
-    {
-      "transform": [
-        {
-          "filter": "datum.label_position === 'bottom-center'"
-        }
-      ],
       "mark": {
         "type": "text",
         "font": "Arial Black",
@@ -590,10 +500,16 @@
         "dx": 0,
         "dy": 23
       },
+      "transform": [
+        {
+          "filter": "datum.label_position === 'bottom-center'"
+        }
+      ],
       "encoding": {
         "x": {
           "field": "x",
           "type": "quantitative",
+          "title": "Evidenze territoriali",
           "scale": {
             "domain": [
               -0.55,
@@ -602,11 +518,33 @@
             "nice": false,
             "zero": false
           },
-          "axis": null
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
+            "labelAngle": 0,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "titleFontWeight": "bold",
+            "labelLimit": 190,
+            "labelColor": "#162832",
+            "titleColor": "#173B57",
+            "grid": true,
+            "gridColor": "#E5EBEF",
+            "gridWidth": 1.3,
+            "domainColor": "#9AA5A8",
+            "tickColor": "#9AA5A8",
+            "titlePadding": 12
+          }
         },
         "y": {
           "field": "y",
           "type": "quantitative",
+          "title": "Evidenze digitali",
           "scale": {
             "domain": [
               -0.55,
@@ -615,20 +553,88 @@
             "nice": false,
             "zero": false
           },
-          "axis": null
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
+            "labelAngle": 0,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "titleFontWeight": "bold",
+            "labelLimit": 190,
+            "labelColor": "#162832",
+            "titleColor": "#173B57",
+            "grid": true,
+            "gridColor": "#E5EBEF",
+            "gridWidth": 1.3,
+            "domainColor": "#9AA5A8",
+            "tickColor": "#9AA5A8",
+            "titlePadding": 12
+          }
         },
         "text": {
           "field": "label",
           "type": "nominal"
-        }
+        },
+        "tooltip": [
+          {
+            "field": "opera",
+            "type": "nominal",
+            "title": "Opera"
+          },
+          {
+            "field": "anno",
+            "type": "quantitative",
+            "title": "Anno"
+          },
+          {
+            "field": "gruppo",
+            "type": "nominal",
+            "title": "Gruppo"
+          },
+          {
+            "field": "evidenze_territoriali",
+            "type": "nominal",
+            "title": "Evidenze territoriali"
+          },
+          {
+            "field": "evidenze_digitali",
+            "type": "nominal",
+            "title": "Evidenze digitali"
+          },
+          {
+            "field": "sentiment_legenda",
+            "type": "nominal",
+            "title": "Tono"
+          },
+          {
+            "field": "integrazione_osm",
+            "type": "nominal",
+            "title": "Integrazione OSM"
+          },
+          {
+            "field": "canali_digitali_attivi",
+            "type": "nominal",
+            "title": "Canali digitali"
+          },
+          {
+            "field": "aree_istat_coperte",
+            "type": "nominal",
+            "title": "Aree ISTAT/MiBACT"
+          },
+          {
+            "field": "key_finding",
+            "type": "nominal",
+            "title": "Insight"
+          }
+        ]
       }
     },
     {
-      "transform": [
-        {
-          "filter": "datum.label_position === 'top-center'"
-        }
-      ],
       "mark": {
         "type": "text",
         "font": "Arial Black",
@@ -642,10 +648,16 @@
         "dx": 0,
         "dy": -23
       },
+      "transform": [
+        {
+          "filter": "datum.label_position === 'top-center'"
+        }
+      ],
       "encoding": {
         "x": {
           "field": "x",
           "type": "quantitative",
+          "title": "Evidenze territoriali",
           "scale": {
             "domain": [
               -0.55,
@@ -654,11 +666,33 @@
             "nice": false,
             "zero": false
           },
-          "axis": null
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
+            "labelAngle": 0,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "titleFontWeight": "bold",
+            "labelLimit": 190,
+            "labelColor": "#162832",
+            "titleColor": "#173B57",
+            "grid": true,
+            "gridColor": "#E5EBEF",
+            "gridWidth": 1.3,
+            "domainColor": "#9AA5A8",
+            "tickColor": "#9AA5A8",
+            "titlePadding": 12
+          }
         },
         "y": {
           "field": "y",
           "type": "quantitative",
+          "title": "Evidenze digitali",
           "scale": {
             "domain": [
               -0.55,
@@ -667,20 +701,88 @@
             "nice": false,
             "zero": false
           },
-          "axis": null
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
+            "labelAngle": 0,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "titleFontWeight": "bold",
+            "labelLimit": 190,
+            "labelColor": "#162832",
+            "titleColor": "#173B57",
+            "grid": true,
+            "gridColor": "#E5EBEF",
+            "gridWidth": 1.3,
+            "domainColor": "#9AA5A8",
+            "tickColor": "#9AA5A8",
+            "titlePadding": 12
+          }
         },
         "text": {
           "field": "label",
           "type": "nominal"
-        }
+        },
+        "tooltip": [
+          {
+            "field": "opera",
+            "type": "nominal",
+            "title": "Opera"
+          },
+          {
+            "field": "anno",
+            "type": "quantitative",
+            "title": "Anno"
+          },
+          {
+            "field": "gruppo",
+            "type": "nominal",
+            "title": "Gruppo"
+          },
+          {
+            "field": "evidenze_territoriali",
+            "type": "nominal",
+            "title": "Evidenze territoriali"
+          },
+          {
+            "field": "evidenze_digitali",
+            "type": "nominal",
+            "title": "Evidenze digitali"
+          },
+          {
+            "field": "sentiment_legenda",
+            "type": "nominal",
+            "title": "Tono"
+          },
+          {
+            "field": "integrazione_osm",
+            "type": "nominal",
+            "title": "Integrazione OSM"
+          },
+          {
+            "field": "canali_digitali_attivi",
+            "type": "nominal",
+            "title": "Canali digitali"
+          },
+          {
+            "field": "aree_istat_coperte",
+            "type": "nominal",
+            "title": "Aree ISTAT/MiBACT"
+          },
+          {
+            "field": "key_finding",
+            "type": "nominal",
+            "title": "Insight"
+          }
+        ]
       }
     },
     {
-      "transform": [
-        {
-          "filter": "datum.label_position === 'middle-left'"
-        }
-      ],
       "mark": {
         "type": "text",
         "font": "Arial Black",
@@ -694,10 +796,16 @@
         "dx": -23,
         "dy": 0
       },
+      "transform": [
+        {
+          "filter": "datum.label_position === 'middle-left'"
+        }
+      ],
       "encoding": {
         "x": {
           "field": "x",
           "type": "quantitative",
+          "title": "Evidenze territoriali",
           "scale": {
             "domain": [
               -0.55,
@@ -706,11 +814,33 @@
             "nice": false,
             "zero": false
           },
-          "axis": null
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
+            "labelAngle": 0,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "titleFontWeight": "bold",
+            "labelLimit": 190,
+            "labelColor": "#162832",
+            "titleColor": "#173B57",
+            "grid": true,
+            "gridColor": "#E5EBEF",
+            "gridWidth": 1.3,
+            "domainColor": "#9AA5A8",
+            "tickColor": "#9AA5A8",
+            "titlePadding": 12
+          }
         },
         "y": {
           "field": "y",
           "type": "quantitative",
+          "title": "Evidenze digitali",
           "scale": {
             "domain": [
               -0.55,
@@ -719,20 +849,88 @@
             "nice": false,
             "zero": false
           },
-          "axis": null
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
+            "labelAngle": 0,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "titleFontWeight": "bold",
+            "labelLimit": 190,
+            "labelColor": "#162832",
+            "titleColor": "#173B57",
+            "grid": true,
+            "gridColor": "#E5EBEF",
+            "gridWidth": 1.3,
+            "domainColor": "#9AA5A8",
+            "tickColor": "#9AA5A8",
+            "titlePadding": 12
+          }
         },
         "text": {
           "field": "label",
           "type": "nominal"
-        }
+        },
+        "tooltip": [
+          {
+            "field": "opera",
+            "type": "nominal",
+            "title": "Opera"
+          },
+          {
+            "field": "anno",
+            "type": "quantitative",
+            "title": "Anno"
+          },
+          {
+            "field": "gruppo",
+            "type": "nominal",
+            "title": "Gruppo"
+          },
+          {
+            "field": "evidenze_territoriali",
+            "type": "nominal",
+            "title": "Evidenze territoriali"
+          },
+          {
+            "field": "evidenze_digitali",
+            "type": "nominal",
+            "title": "Evidenze digitali"
+          },
+          {
+            "field": "sentiment_legenda",
+            "type": "nominal",
+            "title": "Tono"
+          },
+          {
+            "field": "integrazione_osm",
+            "type": "nominal",
+            "title": "Integrazione OSM"
+          },
+          {
+            "field": "canali_digitali_attivi",
+            "type": "nominal",
+            "title": "Canali digitali"
+          },
+          {
+            "field": "aree_istat_coperte",
+            "type": "nominal",
+            "title": "Aree ISTAT/MiBACT"
+          },
+          {
+            "field": "key_finding",
+            "type": "nominal",
+            "title": "Insight"
+          }
+        ]
       }
     },
     {
-      "transform": [
-        {
-          "filter": "datum.label_position === 'middle-right'"
-        }
-      ],
       "mark": {
         "type": "text",
         "font": "Arial Black",
@@ -746,10 +944,16 @@
         "dx": 23,
         "dy": 0
       },
+      "transform": [
+        {
+          "filter": "datum.label_position === 'middle-right'"
+        }
+      ],
       "encoding": {
         "x": {
           "field": "x",
           "type": "quantitative",
+          "title": "Evidenze territoriali",
           "scale": {
             "domain": [
               -0.55,
@@ -758,11 +962,33 @@
             "nice": false,
             "zero": false
           },
-          "axis": null
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
+            "labelAngle": 0,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "titleFontWeight": "bold",
+            "labelLimit": 190,
+            "labelColor": "#162832",
+            "titleColor": "#173B57",
+            "grid": true,
+            "gridColor": "#E5EBEF",
+            "gridWidth": 1.3,
+            "domainColor": "#9AA5A8",
+            "tickColor": "#9AA5A8",
+            "titlePadding": 12
+          }
         },
         "y": {
           "field": "y",
           "type": "quantitative",
+          "title": "Evidenze digitali",
           "scale": {
             "domain": [
               -0.55,
@@ -771,54 +997,83 @@
             "nice": false,
             "zero": false
           },
-          "axis": null
+          "axis": {
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
+            "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
+            "labelAngle": 0,
+            "labelFontSize": 12,
+            "titleFontSize": 13,
+            "titleFontWeight": "bold",
+            "labelLimit": 190,
+            "labelColor": "#162832",
+            "titleColor": "#173B57",
+            "grid": true,
+            "gridColor": "#E5EBEF",
+            "gridWidth": 1.3,
+            "domainColor": "#9AA5A8",
+            "tickColor": "#9AA5A8",
+            "titlePadding": 12
+          }
         },
         "text": {
           "field": "label",
           "type": "nominal"
-        }
-      }
-    },
-    {
-      "mark": {
-        "type": "point",
-        "shape": "circle",
-        "filled": true,
-        "size": 1550,
-        "opacity": 0.001,
-        "cursor": "pointer"
-      },
-      "encoding": {
-        "x": {
-          "field": "x",
-          "type": "quantitative",
-          "scale": {
-            "domain": [
-              -0.55,
-              3.55
-            ],
-            "nice": false,
-            "zero": false
-          },
-          "axis": null
-        },
-        "y": {
-          "field": "y",
-          "type": "quantitative",
-          "scale": {
-            "domain": [
-              -0.55,
-              3.55
-            ],
-            "nice": false,
-            "zero": false
-          },
-          "axis": null
         },
         "tooltip": [
           {
             "field": "opera",
-            "type": "nominal"
+            "type": "nominal",
+            "title": "Opera"
+          },
+          {
+            "field": "anno",
+            "type": "quantitative",
+            "title": "Anno"
+          },
+          {
+            "field": "gruppo",
+            "type": "nominal",
+            "title": "Gruppo"
+          },
+          {
+            "field": "evidenze_territoriali",
+            "type": "nominal",
+            "title": "Evidenze territoriali"
+          },
+          {
+            "field": "evidenze_digitali",
+            "type": "nominal",
+            "title": "Evidenze digitali"
+          },
+          {
+            "field": "sentiment_legenda",
+            "type": "nominal",
+            "title": "Tono"
+          },
+          {
+            "field": "integrazione_osm",
+            "type": "nominal",
+            "title": "Integrazione OSM"
+          },
+          {
+            "field": "canali_digitali_attivi",
+            "type": "nominal",
+            "title": "Canali digitali"
+          },
+          {
+            "field": "aree_istat_coperte",
+            "type": "nominal",
+            "title": "Aree ISTAT/MiBACT"
+          },
+          {
+            "field": "key_finding",
+            "type": "nominal",
+            "title": "Insight"
           }
         ]
       }
@@ -829,147 +1084,12 @@
       "stroke": null
     },
     "background": "#FFFFFF",
-    "font": "Arial"
-  },
-  "usermeta": {
-    "format": "Vega-Lite",
-    "source_html": "CONCLU~1.HTM",
-    "source_html_sha256": "b02b89ec0de1d224e39cd578b4dec561b93e89a1e2e90ebef6e08c7d3831b9d8",
-    "generated_at_utc": "2026-07-24T17:57:55.709587+00:00",
-    "canvas": {
-      "width": 1920,
-      "height": 1060,
-      "background": "#FFFFFF"
-    },
-    "plot": {
-      "left": 280,
-      "top": 125,
-      "width": 1140,
-      "height": 730,
-      "x_domain": [
-        -0.55,
-        3.55
-      ],
-      "y_domain": [
-        -0.55,
-        3.55
-      ]
-    },
-    "title": {
-      "text": "Conclusioni: mappatura delle evidenze di cineturismo",
-      "font": "Arial",
-      "font_size": 34,
-      "font_weight": "bold",
-      "color": "#173B57",
-      "alignment": "center"
-    },
-    "axis_titles": {
-      "x": "ASSE DELLE EVIDENZE TERRITORIALI",
-      "y": "ASSE DELLE EVIDENZE DIGITALI"
-    },
-    "axis_labels": {
-      "x": [
-        {
-          "level": 0,
-          "html": "0 ·<br><b>ASSENTI</b>"
-        },
-        {
-          "level": 1,
-          "html": "1 ·<br><b>RILEVAZIONE APERTA</b><br>(OSM)"
-        },
-        {
-          "level": 2,
-          "html": "2 ·<br><b>ISTITUZIONALE<br>MONO-AREA</b><br>(ISTAT, MiBACT)"
-        },
-        {
-          "level": 3,
-          "html": "3 ·<br><b>ISTITUZIONALE<br>MULTI-AREA</b><br>(ISTAT, MiBACT)"
-        }
-      ],
-      "y": [
-        {
-          "level": 0,
-          "html": "0 · <b>ASSENTI</b>"
-        },
-        {
-          "level": 1,
-          "html": "1 · <b>COPERTURA MEDIATICA</b><br>(GOOGLE NEWS)"
-        },
-        {
-          "level": 2,
-          "html": "2 · <b>DIGITAL ENGAGEMENT</b><br>(NEWS + SEARCH/UGC)"
-        },
-        {
-          "level": 3,
-          "html": "3 · <b>ATTENZIONE INTEGRATA</b><br>(NEWS + SEARCH + UGC)"
-        }
-      ]
-    },
-    "axis_tooltips": {
-      "x": {
-        "0": "Nessuna evidenza territoriale rintracciabile dai canali ufficiali e non ufficiali monitorati.",
-        "1": "Rilevazione OSM (OpenStreetMap): evidenze cartografiche e geografiche ad apporto collaborativo/aperto, non validate da dati ufficiali.",
-        "2": "Rilevata almeno un’evidenza statistica o culturale ufficiale (ISTAT o MiBACT) afferente a 1 sola delle 6 macro-dimensioni mappate, con eventuale supporto di dati OSM.",
-        "3": "Rilevate evidenze statistiche o culturali ufficiali (ISTAT o MiBACT) distribuite su almeno 2 o più delle 6 macro-dimensioni mappate, con eventuale supporto di dati OSM."
-      },
-      "y": {
-        "0": "Nessuna evidenza rintracciabile dai canali digitali monitorati.",
-        "1": "News: rassegna stampa e articoli giornalistici online (Google News) incentrati sull’opera o sui luoghi di ripresa.",
-        "2": "Alla copertura mediatica si affianca un inizio di engagement attivo da parte del pubblico.<br>News: copertura giornalistica (Google News).<br>Search: intenzione attiva di ricerca del pubblico su Google Trends e Wikipedia.<br>UGC (User-Generated Content): conversazioni, commenti e contenuti creati spontaneamente dagli utenti su YouTube e Reddit.",
-        "3": "Copertura olistica dell’ecosistema digitale con presenza simultanea di Stampa (News), Ricerche Attive (Search) e Community/Social (UGC — User-Generated Content)."
-      }
-    },
+    "font": "Arial",
     "legend": {
-      "left": 1460,
-      "top": 125,
-      "background": "#FFFFFF",
-      "border_color": "#AEB8BB",
-      "border_width": 1.6,
-      "font_size": 17,
-      "shape_entries": [
-        {
-          "label": "Produzioni Internazionali",
-          "shape": "circle"
-        },
-        {
-          "label": "Serie TV Italiane",
-          "shape": "square"
-        },
-        {
-          "label": "Altre Produzioni Italiane",
-          "shape": "triangle-up"
-        }
-      ],
-      "color_entries": [
-        {
-          "label": "Positivo",
-          "color": "#50C878"
-        },
-        {
-          "label": "Neutro / Informativo",
-          "color": "#FFC107"
-        },
-        {
-          "label": "Negativo / Critico",
-          "color": "#DC3545"
-        },
-        {
-          "label": "N/A · Digitale assente",
-          "color": "#8E9AA3"
-        }
-      ]
-    },
-    "tooltip_fields": [
-      "opera",
-      "anno",
-      "gruppo",
-      "evidenze_territoriali",
-      "aree_istat_coperte",
-      "integrazione_osm",
-      "evidenze_digitali",
-      "canali_digitali_attivi",
-      "topic_sentiment_prevalente",
-      "key_finding"
-    ]
+      "padding": 8,
+      "rowPadding": 4,
+      "labelColor": "#162832",
+      "titleColor": "#173B57"
+    }
   }
 }
