@@ -414,13 +414,13 @@ I testi sono stati poi ripuliti — rimozione di URL, emoji e contenuti vuoti, d
 
 ### 3.6 — Reddit (analisi del discorso della community) <span class="fam-badge fam-digitale">Digitale</span>
 
-La raccolta dati è stata condotta tramite l'**API PullPush**, con query mirate per produzione e location sui 12 casi studio, concentrandosi su subreddit popolari generici e sui principali subreddit dedicati al turismo e ai consigli di viaggio.
+La raccolta dati è stata condotta tramite l'**API PullPush**, con **query mirate per produzione e location** sui 12 casi studio, concentrandosi su subreddit popolari generici e sui principali subreddit dedicati al turismo e ai consigli di viaggio.
 
-Il volume grezzo estratto era molto rumoroso, e ha richiesto una **pipeline di pulizia a tre stadi** — filtri regex, poi un *bi-encoder*, infine un *cross-encoder* — per isolare i contenuti effettivamente pertinenti.
+Il volume grezzo estratto era molto rumoroso e ha richiesto una **pipeline di pulizia a tre stadi** — filtri regex, poi un bi-encoder, infine un cross-encoder — per isolare i contenuti effettivamente pertinenti.
 
-Dopo la pulizia dei dati è iniziata una prima analisi esplorativa dedicata alla validazione di una **finestra temporale di 3 anni pre/post uscita**: solo **5 produzioni su 12** disponevano di dati sufficienti per un confronto in questo arco temporale. Per queste produzioni sono state condotte analisi descrittive (volumi e lingua della discussione).
+Dopo la pulizia dei dati è iniziata una prima analisi esplorativa dedicata alla validazione di una **finestra temporale di 3 anni pre/post uscita: solo 5 produzioni su 12 disponevano di dati sufficienti per un confronto in questo arco temporale**. Per queste produzioni sono state condotte analisi descrittive (volumi e lingua della discussione).
 
-Successivamente si è proseguito con la **classificazione** dei post e dei commenti dell'intero corpus raccolto. Usando il modello `moritz-laurer/mDeBERTa` (*zero-shot classification*) sono state distinte 6 etichette corrispondenti a sei tipologie di turismo. Di queste, l'etichetta "Cineturismo" è stata la meno accurata, per cui i risultati sono stati affinati con **Gemini Flash 2.5**. Inoltre è stato analizzato anche il **tipo di cineturista**, secondo le categorie individuate dagli autori Bolan, Boy e Bell (*scenico*, *emotivo* e *puro*).
+Successivamente si è proseguito con la **classificazione** dei post e dei commenti dell'intero corpus raccolto. Utilizzando un **modello di classificazione zero-shot multilingua** sono state distinte **6 etichette corrispondenti a 6 tipologie di turismo**. Infine, i risultati della classificazione sono stati affinati con un modello linguistico generativo.
 
 ### 3.7 — GetYourGuide (analisi di tour ed esperienze) <span class="fam-badge fam-misto">Digitale · esperienza fisica</span>
 
