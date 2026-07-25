@@ -249,12 +249,6 @@ Il secondo grafico mappa invece le dodici produzioni lungo **due assi graduati**
   <vegachart schema-url="{{site.baseurl}}/assets/charts/conclusions/conclusioni_mappatura_cineturismo.json"></vegachart>
 </div>
 
-<div class="note-box">
-  <span class="note-title"><i class="fas fa-map-signs" aria-hidden="true"></i>Come leggere la mappa</span>
-  Il <strong>colore</strong> rappresenta il tono prevalente del racconto digitale.
-  La <strong>forma</strong> del simbolo indica il tipo di produzione. 
-</div>
-
 ### Tre osservazioni trasversali
 
 <div class="row obs-grid">
@@ -397,5 +391,4 @@ La **pipeline metodologica** costruita — l'integrazione di ISTAT, OpenStreetMa
 
 <div class="page-links">
   <a href="{{ site.baseurl }}/methodology.html">Metodologia →</a>
-  <a href="{{ site.baseurl }}/results.html">Risultati →</a>
 </div>
