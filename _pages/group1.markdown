@@ -13,27 +13,13 @@ subtitle: "L'impatto di blockbuster globali e cult hollywoodiani sui territori i
      1. CONTENITORI (Gestiscono lo spazio, non il grafico)
      ======================================================= */
 
-  /* Contenitore Full-Width: esce dai margini e occupa tutto lo schermo */
-  .full-width-chart {
-    width: 100vw;
-    position: relative;
-    left: 50%;
-    right: 50%;
-    margin-left: -50vw;
-    margin-right: -50vw;
-    margin-top: 40px;
-    margin-bottom: 50px;
-    padding: 0 5vw; /* Margine di respiro laterale */
-    box-sizing: border-box;
-  }
-
-  /* Contenitore Standard: centrato con una larghezza massima */
+  /* Contenitore Standard: centrato, larghezza naturale del grafico (no max-width) */
   .chart-container {
     width: 100%;
-    max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
     box-sizing: border-box;
+    text-align: center;
   }
 
   /* Outer Container opzionale (se ti serve per incolonnare elementi) */
@@ -45,19 +31,14 @@ subtitle: "L'impatto di blockbuster globali e cult hollywoodiani sui territori i
   }
 
   /* =======================================================
-     2. FIX VEGA (Risolve lo shift dell'hover per entrambi)
+     2. FIX VEGA (Risolve lo shift dell'hover)
      ======================================================= */
-  
-  /* Diciamo al div contenitore generato da Vega di centrarsi e occupare il 100% */
-  .full-width-chart vegachart,
-  .full-width-chart .vega-embed,
+
+  /* chart-container: inline-block per centrare la larghezza naturale del grafico
+     (ridimensionare l'SVG via CSS romperebbe le coordinate del tooltip) */
   .chart-container vegachart,
   .chart-container .vega-embed {
-    display: flex;
-    justify-content: center;
-    justify-content: safe center;  /* se sborda, allinea a sinistra
-                                      invece di tagliarlo (titolo/asse Y) */
-    width: 100%;
+    display: inline-block;
   }
 
   /* NOTA: Tutte le forzature su 'canvas' e 'svg' sono state volutamente 
@@ -65,8 +46,9 @@ subtitle: "L'impatto di blockbuster globali e cult hollywoodiani sui territori i
 
   /* Se un grafico è più largo del contenitore, si scorre invece di deformarlo.
      Il tooltip di Vega è agganciato al body, quindi non viene tagliato. */
-  .full-width-chart,
-  .chart-container { overflow-x: auto; }
+  @media (max-width: 767.98px) {
+    .chart-container { overflow-x: auto; }
+  }
 
   .page-links { display: flex; flex-direction: column; gap: .6rem; }
   .page-links a { font-weight: 600; }

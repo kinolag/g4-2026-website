@@ -9,27 +9,27 @@ subtitle: "Film e Serie TV che trasformano i territori in un’unica stagione"
 ---
 
 <style>
-  /* Contenitore standard, centrato e responsivo */
+  /* Contenitore standard, centrato: larghezza naturale del grafico (no max-width) */
   .chart-container {
     width: 100%;
-    max-width: 1000px; /* limite per evitare grafici troppo grandi */
     margin: 40px auto; /* centra il grafico */
     padding: 0 20px; /* margine laterale su mobile */
     box-sizing: border-box;
+    text-align: center;
   }
 
   /* Vega charts: il contenitore si adatta, il grafico non viene scalato via CSS
      (scalare svg/canvas sposta le coordinate rompendo hover e tooltip) */
   .chart-container vegachart,
   .chart-container .vega-embed {
-    display: flex;
-    justify-content: center;
-    width: 100%;
+    display: inline-block;
   }
 
   /* Se un grafico è più largo del contenitore, si scorre invece di deformarlo.
      Il tooltip di Vega è agganciato al body, quindi non viene tagliato. */
-  .chart-container { overflow-x: auto; }
+  @media (max-width: 767.98px) {
+    .chart-container { overflow-x: auto; }
+  }
 
   /* Video incorporati: responsivi e centrati */
   .video-embed {
@@ -202,7 +202,7 @@ In altre parole, l'effetto non si esaurisce nel momento della distribuzione cine
 nel circuito domestico e raggiunge un pubblico più ampio, suggerendo un impatto che non è solo immediato, ma capace di rinnovarsi nel tempo.
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/opi_ecosistema.json" style="width: 100%; height: 100%; display: block;"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/opi_ecosistema.json"></vegachart>
 </div>
 
 ---

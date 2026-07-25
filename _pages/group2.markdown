@@ -42,29 +42,27 @@ subtitle: "Le serie televisive a lunga esposizione e i loro territori"
     justify-content: center;
   }
 
-  /* Contenitore standard, centrato e responsivo */
+  /* Contenitore standard, centrato: larghezza naturale del grafico (no max-width) */
   .chart-container {
     width: 100%;
-    max-width: 1000px; /* limite per evitare grafici troppo grandi */
     margin: 40px auto; /* centra il grafico */
     padding: 0 20px; /* margine laterale su mobile */
     box-sizing: border-box;
+    text-align: center;
   }
 
   /* Vega charts: il contenitore si adatta, il grafico NON viene scalato via CSS
      (scalare svg/canvas sposta le coordinate e rompe hover e tooltip). */
   .chart-container vegachart,
   .chart-container .vega-embed {
-    display: flex;
-    justify-content: center;
-    justify-content: safe center;  /* se il grafico sborda, allinea a sinistra
-                                      invece di tagliarlo (titolo/asse Y) */
-    width: 100%;
+    display: inline-block;
   }
 
   /* Se un grafico è più largo del contenitore, si scorre invece di deformarlo.
      Il tooltip di Vega è agganciato al body, quindi non viene tagliato. */
-  .chart-container { overflow-x: auto; }
+  @media (max-width: 767.98px) {
+    .chart-container { overflow-x: auto; }
+  }
 
   /* Didascalia sopra i grafici: stessa resa dei titoli interni ai grafici */
   .chart-caption {
