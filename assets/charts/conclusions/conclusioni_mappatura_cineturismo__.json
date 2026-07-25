@@ -3,13 +3,13 @@
   "description": "Conclusioni: mappatura delle evidenze di cineturismo.",
   "title": {
     "text": "Conclusioni: mappatura delle evidenze di cineturismo",
-    "subtitle": "Punto colorato = tipo di produzione · Espressione integrata = tono del racconto",
+    "subtitle": "Forma = tipo di produzione · Colore = tono del racconto digitale",
     "fontSize": 17,
     "subtitleFontSize": 12,
-    "anchor": "middle",
+    "anchor": "start",
     "color": "#173B57",
     "subtitleColor": "#667985",
-    "offset": 12
+    "offset": 10
   },
   "width": 780,
   "height": 540,
@@ -20,274 +20,371 @@
         "id": 1,
         "opera": "Call Me by Your Name",
         "anno": 2017,
-        "gruppo_legenda": "Grandi Produzioni Internazionali",
-        "sentiment_emoji": "😀",
-        "sentiment_legenda": "Positivo 😀",
+        "gruppo": "Gruppo 1 — Produzioni Internazionali",
+        "gruppo_legenda": "Produzioni Internazionali",
+        "shape": "circle",
+        "color_hex": "#50C878",
+        "sentiment_legenda": "Positivo",
         "x": 2.8,
         "y": 3.13,
         "label": "Call Me by\nYour Name",
         "label_position": "bottom-center",
+        "marker_size_plotly_px": 27,
         "evidenze_territoriali": "Istituzionale Multi-Area (ISTAT, MiBACT)",
         "aree_istat_coperte": "Domanda/flussi; Cultura/attrattori",
         "integrazione_osm": "SI (Ecosistemi Turistici)",
         "evidenze_digitali": "Attenzione Integrata (News + Search + UGC)",
         "canali_digitali_attivi": "Google News, Google Trends, Reddit",
-        "topic_sentiment_prevalente": "Prevalentemente positivo | Valorizzazione territoriale; enogastronomia; turismo lento; cultura",
+        "topic_sentiment_prevalente": "Verde Smeraldo — prevalentemente positivo | Valorizzazione territoriale; enogastronomia; turismo lento; cultura",
         "key_finding": "Piena integrazione tra News, Search, UGC e impatti territoriali multi-area."
       },
       {
         "id": 2,
         "opera": "The Twilight Saga: New Moon",
         "anno": 2009,
-        "gruppo_legenda": "Grandi Produzioni Internazionali",
-        "sentiment_emoji": "😐",
-        "sentiment_legenda": "Neutro / Informativo 😐",
-        "x": 1,
-        "y": 1,
+        "gruppo": "Gruppo 1 — Produzioni Internazionali",
+        "gruppo_legenda": "Produzioni Internazionali",
+        "shape": "circle",
+        "color_hex": "#FFC107",
+        "sentiment_legenda": "Neutro / Informativo",
+        "x": 1.0,
+        "y": 1.0,
         "label": "New Moon",
         "label_position": "bottom-center",
+        "marker_size_plotly_px": 27,
         "evidenze_territoriali": "Rilevazione Aperta (OSM)",
         "aree_istat_coperte": "N/A",
         "integrazione_osm": "SI (Ecosistemi Turistici)",
         "evidenze_digitali": "Copertura Mediatica (Google News)",
         "canali_digitali_attivi": "Google News",
-        "topic_sentiment_prevalente": "Neutro / informativo | Opportunità economiche vs pressione comunitaria; difesa dell’identità",
+        "topic_sentiment_prevalente": "Giallo — neutro / informativo | Opportunità economiche vs pressione comunitaria; difesa dell’identità",
         "key_finding": "Risonanza mediatica presente, ma riscontro territoriale limitato alla rilevazione aperta."
       },
       {
         "id": 3,
         "opera": "Avengers: Age of Ultron",
         "anno": 2015,
-        "gruppo_legenda": "Grandi Produzioni Internazionali",
-        "sentiment_emoji": "😀",
-        "sentiment_legenda": "Positivo 😀",
+        "gruppo": "Gruppo 1 — Produzioni Internazionali",
+        "gruppo_legenda": "Produzioni Internazionali",
+        "shape": "circle",
+        "color_hex": "#50C878",
+        "sentiment_legenda": "Positivo",
         "x": 1.83,
         "y": 1.08,
         "label": "Avengers:\nAge of Ultron",
         "label_position": "bottom-center",
+        "marker_size_plotly_px": 27,
         "evidenze_territoriali": "Istituzionale Mono-Area (ISTAT, MiBACT)",
         "aree_istat_coperte": "Offerta ricettiva",
         "integrazione_osm": "SI (Ecosistemi Turistici)",
         "evidenze_digitali": "Copertura Mediatica (Google News)",
         "canali_digitali_attivi": "Google News",
-        "topic_sentiment_prevalente": "Prevalentemente positivo | Promozione delle location; indotto; ricettività",
+        "topic_sentiment_prevalente": "Verde Smeraldo — prevalentemente positivo | Promozione delle location; indotto; ricettività",
         "key_finding": "Una singola area ISTAT è corroborata dalla densificazione dei servizi rilevata in OSM."
       },
       {
         "id": 4,
         "opera": "I Medici – Masters of Florence",
         "anno": 2016,
-        "gruppo_legenda": "Grandi Produzioni Internazionali",
-        "sentiment_emoji": "😐",
-        "sentiment_legenda": "Neutro / Informativo 😐",
+        "gruppo": "Gruppo 1 — Produzioni Internazionali",
+        "gruppo_legenda": "Produzioni Internazionali",
+        "shape": "circle",
+        "color_hex": "#FFC107",
+        "sentiment_legenda": "Neutro / Informativo",
         "x": 2.82,
         "y": 2.08,
         "label": "I Medici",
         "label_position": "bottom-center",
+        "marker_size_plotly_px": 27,
         "evidenze_territoriali": "Istituzionale Multi-Area (ISTAT, MiBACT)",
         "aree_istat_coperte": "Domanda/flussi; Imprese/lavoro; Demografia/ambiente",
         "integrazione_osm": "SI (Ecosistemi Turistici)",
         "evidenze_digitali": "Digital Engagement (News + Search/UGC)",
         "canali_digitali_attivi": "Google News, Google Trends, Wikipedia",
-        "topic_sentiment_prevalente": "Neutro / informativo | Economic Boom; patrimonio rinascimentale; strain e overtourism",
+        "topic_sentiment_prevalente": "Giallo — neutro / informativo | Economic Boom; patrimonio rinascimentale; strain e overtourism",
         "key_finding": "Impatto territoriale ampio e interesse search-led, senza una componente UGC valida."
       },
       {
         "id": 5,
         "opera": "Don Matteo",
         "anno": 2000,
+        "gruppo": "Gruppo 2 — Serie TV Italiane",
         "gruppo_legenda": "Serie TV Italiane",
-        "sentiment_emoji": "😐",
-        "sentiment_legenda": "Neutro / Informativo 😐",
-        "x": 0,
-        "y": 2,
+        "shape": "square",
+        "color_hex": "#FFC107",
+        "sentiment_legenda": "Neutro / Informativo",
+        "x": 0.0,
+        "y": 2.0,
         "label": "Don Matteo",
         "label_position": "bottom-center",
+        "marker_size_plotly_px": 27,
         "evidenze_territoriali": "Assenti",
         "aree_istat_coperte": "N/A",
         "integrazione_osm": "NO",
         "evidenze_digitali": "Digital Engagement (News + Search/UGC)",
         "canali_digitali_attivi": "Google News, YouTube",
-        "topic_sentiment_prevalente": "Neutro / informativo | Economic Boom; Urban Change; Cine Tourism tardivo",
+        "topic_sentiment_prevalente": "Giallo — neutro / informativo | Economic Boom; Urban Change; Cine Tourism tardivo",
         "key_finding": "L’engagement digitale non trova un corrispondente riscontro territoriale finale."
       },
       {
         "id": 6,
         "opera": "Un passo dal cielo",
         "anno": 2011,
+        "gruppo": "Gruppo 2 — Serie TV Italiane",
         "gruppo_legenda": "Serie TV Italiane",
-        "sentiment_emoji": "🙁",
-        "sentiment_legenda": "Negativo / Critico 🙁",
+        "shape": "square",
+        "color_hex": "#DC3545",
+        "sentiment_legenda": "Negativo / Critico",
         "x": 0.8,
         "y": 2.1,
         "label": "Un passo\ndal cielo",
         "label_position": "bottom-center",
+        "marker_size_plotly_px": 27,
         "evidenze_territoriali": "Rilevazione Aperta (OSM)",
         "aree_istat_coperte": "N/A",
         "integrazione_osm": "SI (Ecosistemi Turistici)",
         "evidenze_digitali": "Digital Engagement (News + Search/UGC)",
         "canali_digitali_attivi": "Google News, YouTube",
-        "topic_sentiment_prevalente": "Negativo / misto / critico | Infrastructure Strain; overtourism; pressione sul paesaggio",
+        "topic_sentiment_prevalente": "Rosso Acceso — negativo / misto / critico | Infrastructure Strain; overtourism; pressione sul paesaggio",
         "key_finding": "Engagement digitale critico, con trasformazione territoriale documentata solo tramite OSM."
       },
       {
         "id": 7,
         "opera": "Il giovane Montalbano",
         "anno": 2012,
+        "gruppo": "Gruppo 2 — Serie TV Italiane",
         "gruppo_legenda": "Serie TV Italiane",
-        "sentiment_emoji": "😀",
-        "sentiment_legenda": "Positivo 😀",
+        "shape": "square",
+        "color_hex": "#50C878",
+        "sentiment_legenda": "Positivo",
         "x": 3.19,
         "y": 1.89,
         "label": "Il giovane\nMontalbano",
         "label_position": "top-center",
+        "marker_size_plotly_px": 27,
         "evidenze_territoriali": "Istituzionale Multi-Area (ISTAT, MiBACT)",
         "aree_istat_coperte": "Offerta ricettiva; Mobilità/infrastrutture",
         "integrazione_osm": "NO",
         "evidenze_digitali": "Digital Engagement (News + Search/UGC)",
         "canali_digitali_attivi": "Google News, YouTube, Reddit",
-        "topic_sentiment_prevalente": "Prevalentemente positivo | Cine Tourism; identità siciliana; intenzioni di viaggio",
+        "topic_sentiment_prevalente": "Verde Smeraldo — prevalentemente positivo | Cine Tourism; identità siciliana; intenzioni di viaggio",
         "key_finding": "Due aree ISTAT e un engagement UGC ricco, ma senza una dimensione Search valida."
       },
       {
         "id": 8,
         "opera": "Elisa di Rivombrosa",
         "anno": 2003,
+        "gruppo": "Gruppo 2 — Serie TV Italiane",
         "gruppo_legenda": "Serie TV Italiane",
-        "sentiment_emoji": "⚪",
-        "sentiment_legenda": "N/A · Digitale assente ⚪",
+        "shape": "square",
+        "color_hex": "#8E9AA3",
+        "sentiment_legenda": "N/A · Digitale assente",
         "x": 1.75,
-        "y": 0,
+        "y": 0.0,
         "label": "Elisa di\nRivombrosa",
         "label_position": "middle-left",
+        "marker_size_plotly_px": 27,
         "evidenze_territoriali": "Istituzionale Mono-Area (ISTAT, MiBACT)",
         "aree_istat_coperte": "Cultura/attrattori",
         "integrazione_osm": "NO",
         "evidenze_digitali": "Assenti",
         "canali_digitali_attivi": "Nessun canale digitale valido",
-        "topic_sentiment_prevalente": "N/A — evidenze digitali valide assenti",
+        "topic_sentiment_prevalente": "N/A — evidenze digitali valide assenti | Evidenze digitali valide assenti",
         "key_finding": "Impatto culturale misurabile, ma nessuna evidenza digitale è mantenuta dopo il controllo di validità."
       },
       {
         "id": 9,
         "opera": "Benvenuti al Sud",
         "anno": 2010,
-        "gruppo_legenda": "Produzioni di nicchia",
-        "sentiment_emoji": "😀",
-        "sentiment_legenda": "Positivo 😀",
-        "x": 2,
-        "y": 2,
+        "gruppo": "Gruppo 3 — Altre Produzioni Italiane",
+        "gruppo_legenda": "Altre Produzioni Italiane",
+        "shape": "triangle-up",
+        "color_hex": "#50C878",
+        "sentiment_legenda": "Positivo",
+        "x": 2.0,
+        "y": 2.0,
         "label": "Benvenuti\nal Sud",
         "label_position": "bottom-center",
+        "marker_size_plotly_px": 32,
         "evidenze_territoriali": "Istituzionale Mono-Area (ISTAT, MiBACT)",
         "aree_istat_coperte": "Offerta ricettiva",
         "integrazione_osm": "NO",
         "evidenze_digitali": "Digital Engagement (News + Search/UGC)",
         "canali_digitali_attivi": "Google News, Google Trends, Wikipedia",
-        "topic_sentiment_prevalente": "Prevalentemente positivo | Economic Boom; destagionalizzazione; Urban Change",
+        "topic_sentiment_prevalente": "Verde Smeraldo — prevalentemente positivo | Economic Boom; destagionalizzazione; Urban Change",
         "key_finding": "Search engagement persistente e impatto istituzionale focalizzato sulla capacità ricettiva."
       },
       {
         "id": 10,
         "opera": "Curon",
         "anno": 2020,
-        "gruppo_legenda": "Produzioni di nicchia",
-        "sentiment_emoji": "😀",
-        "sentiment_legenda": "Positivo 😀",
+        "gruppo": "Gruppo 3 — Altre Produzioni Italiane",
+        "gruppo_legenda": "Altre Produzioni Italiane",
+        "shape": "triangle-up",
+        "color_hex": "#50C878",
+        "sentiment_legenda": "Positivo",
         "x": 2.18,
         "y": 0.88,
         "label": "Curon",
         "label_position": "top-center",
+        "marker_size_plotly_px": 32,
         "evidenze_territoriali": "Istituzionale Mono-Area (ISTAT, MiBACT)",
         "aree_istat_coperte": "Demografia/ambiente",
         "integrazione_osm": "NO",
         "evidenze_digitali": "Copertura Mediatica (Google News)",
         "canali_digitali_attivi": "Google News",
-        "topic_sentiment_prevalente": "Prevalentemente positivo | Economic Boom; Cine Tourism; Urban Change",
+        "topic_sentiment_prevalente": "Verde Smeraldo — prevalentemente positivo | Economic Boom; Cine Tourism; Urban Change",
         "key_finding": "La copertura mediatica positiva si associa a una singola dimensione istituzionale."
       },
       {
         "id": 11,
         "opera": "Rocco Schiavone",
         "anno": 2016,
-        "gruppo_legenda": "Produzioni di nicchia",
-        "sentiment_emoji": "⚪",
-        "sentiment_legenda": "N/A · Digitale assente ⚪",
+        "gruppo": "Gruppo 3 — Altre Produzioni Italiane",
+        "gruppo_legenda": "Altre Produzioni Italiane",
+        "shape": "triangle-up",
+        "color_hex": "#8E9AA3",
+        "sentiment_legenda": "N/A · Digitale assente",
         "x": 2.25,
-        "y": 0,
+        "y": 0.0,
         "label": "Rocco\nSchiavone",
         "label_position": "middle-right",
+        "marker_size_plotly_px": 32,
         "evidenze_territoriali": "Istituzionale Mono-Area (ISTAT, MiBACT)",
         "aree_istat_coperte": "Offerta ricettiva",
         "integrazione_osm": "NO",
         "evidenze_digitali": "Assenti",
         "canali_digitali_attivi": "Nessun canale digitale valido",
-        "topic_sentiment_prevalente": "N/A — evidenze digitali valide assenti",
+        "topic_sentiment_prevalente": "N/A — evidenze digitali valide assenti | Evidenze digitali valide assenti",
         "key_finding": "Segnale ricettivo istituzionale senza una componente digitale mantenuta come valida."
       },
       {
         "id": 12,
         "opera": "Un mondo a parte",
         "anno": 2024,
-        "gruppo_legenda": "Produzioni di nicchia",
-        "sentiment_emoji": "😐",
-        "sentiment_legenda": "Neutro / Informativo 😐",
+        "gruppo": "Gruppo 3 — Altre Produzioni Italiane",
+        "gruppo_legenda": "Altre Produzioni Italiane",
+        "shape": "triangle-up",
+        "color_hex": "#FFC107",
+        "sentiment_legenda": "Neutro / Informativo",
         "x": 1.2,
         "y": 1.88,
         "label": "Un mondo\na parte",
         "label_position": "top-center",
+        "marker_size_plotly_px": 32,
         "evidenze_territoriali": "Rilevazione Aperta (OSM)",
         "aree_istat_coperte": "N/A",
         "integrazione_osm": "SI (Ecosistemi Turistici)",
         "evidenze_digitali": "Digital Engagement (News + Search/UGC)",
         "canali_digitali_attivi": "Google News, YouTube",
-        "topic_sentiment_prevalente": "Neutro / informativo | Valorizzazione; strain/overtourism; riattivazione streaming",
+        "topic_sentiment_prevalente": "Giallo — neutro / informativo | Valorizzazione; strain/overtourism; riattivazione streaming",
         "key_finding": "L’engagement si riattiva con lo streaming, mentre il riscontro territoriale resta confinato a OSM."
       }
     ]
   },
   "layer": [
     {
-      "data": {"values": [{"b": 0.5}, {"b": 1.5}, {"b": 2.5}]},
-      "mark": {"type": "rule", "color": "#9AA5A8", "strokeWidth": 1.3},
+      "data": {
+        "values": [
+          {
+            "b": 0.5
+          },
+          {
+            "b": 1.5
+          },
+          {
+            "b": 2.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#9AA5A8",
+        "strokeWidth": 1.3
+      },
       "encoding": {
         "x": {
           "field": "b",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55], "nice": false, "zero": false}
+          "title": "Evidenze territoriali",
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         }
       }
     },
     {
-      "data": {"values": [{"b": 0.5}, {"b": 1.5}, {"b": 2.5}]},
-      "mark": {"type": "rule", "color": "#9AA5A8", "strokeWidth": 1.3},
+      "data": {
+        "values": [
+          {
+            "b": 0.5
+          },
+          {
+            "b": 1.5
+          },
+          {
+            "b": 2.5
+          }
+        ]
+      },
+      "mark": {
+        "type": "rule",
+        "color": "#9AA5A8",
+        "strokeWidth": 1.3
+      },
       "encoding": {
         "y": {
           "field": "b",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55], "nice": false, "zero": false}
+          "title": "Evidenze digitali",
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         }
       }
     },
     {
       "mark": {
-        "type": "circle",
-        "size": 950,
-        "opacity": 1,
-        "cursor": "pointer"
+        "type": "point",
+        "filled": true,
+        "stroke": "#FFFFFF",
+        "strokeWidth": 2.3,
+        "opacity": 1.0
       },
       "encoding": {
         "x": {
           "field": "x",
           "type": "quantitative",
           "title": "Evidenze territoriali",
-          "scale": {"domain": [-0.55, 3.55], "nice": false, "zero": false},
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          },
           "axis": {
             "domain": true,
             "ticks": true,
             "labels": true,
             "grid": false,
-            "values": [0, 1, 2, 3],
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
             "labelExpr": "{0:'Assenti', 1:'Rilevazione aperta (OSM)', 2:'Istituzionale mono-area', 3:'Istituzionale multi-area'}[datum.value]",
             "labelAngle": 0,
             "labelFontSize": 12,
@@ -301,8 +398,12 @@
             "labelPadding": 8,
             "titlePadding": 14,
             "domainWidth": 1.3,
+            "domainOpacity": 1,
             "tickWidth": 1.3,
             "tickSize": 6,
+            "tickOpacity": 1,
+            "labelOpacity": 1,
+            "titleOpacity": 1,
             "labelFont": "Arial",
             "titleFont": "Arial"
           }
@@ -311,13 +412,25 @@
           "field": "y",
           "type": "quantitative",
           "title": "Evidenze digitali",
-          "scale": {"domain": [-0.55, 3.55], "nice": false, "zero": false},
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          },
           "axis": {
             "domain": true,
             "ticks": true,
             "labels": true,
             "grid": false,
-            "values": [0, 1, 2, 3],
+            "values": [
+              0,
+              1,
+              2,
+              3
+            ],
             "labelExpr": "{0:'Assenti', 1:'Copertura mediatica', 2:'Digital engagement', 3:'Attenzione integrata'}[datum.value]",
             "labelAngle": 0,
             "labelFontSize": 12,
@@ -331,22 +444,30 @@
             "labelPadding": 8,
             "titlePadding": 14,
             "domainWidth": 1.3,
+            "domainOpacity": 1,
             "tickWidth": 1.3,
             "tickSize": 6,
+            "tickOpacity": 1,
+            "labelOpacity": 1,
+            "titleOpacity": 1,
             "labelFont": "Arial",
             "titleFont": "Arial"
           }
         },
-        "color": {
+        "shape": {
           "field": "gruppo_legenda",
           "type": "nominal",
           "scale": {
             "domain": [
-              "Grandi Produzioni Internazionali",
+              "Produzioni Internazionali",
               "Serie TV Italiane",
-              "Produzioni di nicchia"
+              "Altre Produzioni Italiane"
             ],
-            "range": ["#B22222", "#1F77B4", "#2CA02C"]
+            "range": [
+              "circle",
+              "square",
+              "triangle-up"
+            ]
           },
           "legend": {
             "title": "Tipo di produzione",
@@ -354,14 +475,78 @@
             "direction": "vertical",
             "labelFontSize": 12,
             "titleFontSize": 12,
-            "symbolType": "circle",
-            "symbolSize": 220
+            "symbolFillColor": "#667985",
+            "symbolStrokeColor": "#667985"
+          }
+        },
+        "size": {
+          "field": "gruppo_legenda",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Produzioni Internazionali",
+              "Serie TV Italiane",
+              "Altre Produzioni Italiane"
+            ],
+            "range": [
+              730,
+              730,
+              980
+            ]
+          },
+          "legend": {
+            "title": "Tipo di produzione",
+            "orient": "bottom",
+            "direction": "vertical",
+            "labelFontSize": 12,
+            "titleFontSize": 12,
+            "symbolFillColor": "#667985",
+            "symbolStrokeColor": "#667985"
+          }
+        },
+        "color": {
+          "field": "sentiment_legenda",
+          "type": "nominal",
+          "scale": {
+            "domain": [
+              "Positivo",
+              "Neutro / Informativo",
+              "Negativo / Critico",
+              "N/A · Digitale assente"
+            ],
+            "range": [
+              "#50C878",
+              "#FFC107",
+              "#DC3545",
+              "#8E9AA3"
+            ]
+          },
+          "legend": {
+            "title": "Tono del racconto digitale",
+            "orient": "bottom",
+            "direction": "vertical",
+            "labelFontSize": 12,
+            "titleFontSize": 12,
+            "symbolSize": 200,
+            "symbolType": "circle"
           }
         },
         "tooltip": [
-          {"field": "opera", "type": "nominal", "title": "Opera"},
-          {"field": "anno", "type": "quantitative", "title": "Anno"},
-          {"field": "gruppo_legenda", "type": "nominal", "title": "Categoria"},
+          {
+            "field": "opera",
+            "type": "nominal",
+            "title": "Opera"
+          },
+          {
+            "field": "anno",
+            "type": "quantitative",
+            "title": "Anno"
+          },
+          {
+            "field": "gruppo",
+            "type": "nominal",
+            "title": "Gruppo"
+          },
           {
             "field": "evidenze_territoriali",
             "type": "nominal",
@@ -375,7 +560,7 @@
           {
             "field": "sentiment_legenda",
             "type": "nominal",
-            "title": "Tono del racconto"
+            "title": "Tono"
           },
           {
             "field": "integrazione_osm",
@@ -392,67 +577,11 @@
             "type": "nominal",
             "title": "Aree ISTAT/MiBACT"
           },
-          {"field": "key_finding", "type": "nominal", "title": "Insight"}
-        ]
-      }
-    },
-    {
-      "mark": {
-        "type": "text",
-        "fontSize": 22,
-        "baseline": "middle",
-        "align": "center",
-        "dx": 0,
-        "dy": 0,
-        "cursor": "pointer"
-      },
-      "encoding": {
-        "x": {
-          "field": "x",
-          "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
-        },
-        "y": {
-          "field": "y",
-          "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
-        },
-        "text": {"field": "sentiment_emoji", "type": "nominal"},
-        "tooltip": [
-          {"field": "opera", "type": "nominal", "title": "Opera"},
-          {"field": "anno", "type": "quantitative", "title": "Anno"},
-          {"field": "gruppo_legenda", "type": "nominal", "title": "Categoria"},
           {
-            "field": "evidenze_territoriali",
+            "field": "key_finding",
             "type": "nominal",
-            "title": "Evidenze territoriali"
-          },
-          {
-            "field": "evidenze_digitali",
-            "type": "nominal",
-            "title": "Evidenze digitali"
-          },
-          {
-            "field": "sentiment_legenda",
-            "type": "nominal",
-            "title": "Tono del racconto"
-          },
-          {
-            "field": "integrazione_osm",
-            "type": "nominal",
-            "title": "Integrazione OSM"
-          },
-          {
-            "field": "canali_digitali_attivi",
-            "type": "nominal",
-            "title": "Canali digitali"
-          },
-          {
-            "field": "aree_istat_coperte",
-            "type": "nominal",
-            "title": "Aree ISTAT/MiBACT"
-          },
-          {"field": "key_finding", "type": "nominal", "title": "Insight"}
+            "title": "Insight"
+          }
         ]
       }
     },
@@ -461,29 +590,49 @@
         "type": "text",
         "font": "Arial Black",
         "fontWeight": "bold",
-        "fontSize": 13,
-        "lineHeight": 15,
+        "fontSize": 14,
+        "lineHeight": 16,
         "lineBreak": "\n",
         "color": "#162832",
         "align": "center",
         "baseline": "top",
         "dx": 0,
-        "dy": 26,
-        "tooltip": null
+        "dy": 23
       },
-      "transform": [{"filter": "datum.label_position === 'bottom-center'"}],
+      "transform": [
+        {
+          "filter": "datum.label_position === 'bottom-center'"
+        }
+      ],
       "encoding": {
         "x": {
           "field": "x",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         },
         "y": {
           "field": "y",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         },
-        "text": {"field": "label", "type": "nominal"}
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
       }
     },
     {
@@ -491,29 +640,49 @@
         "type": "text",
         "font": "Arial Black",
         "fontWeight": "bold",
-        "fontSize": 13,
-        "lineHeight": 15,
+        "fontSize": 14,
+        "lineHeight": 16,
         "lineBreak": "\n",
         "color": "#162832",
         "align": "center",
         "baseline": "bottom",
         "dx": 0,
-        "dy": -28,
-        "tooltip": null
+        "dy": -33
       },
-      "transform": [{"filter": "datum.opera === 'Il giovane Montalbano'"}],
+      "transform": [
+        {
+          "filter": "datum.opera === 'Il giovane Montalbano'"
+        }
+      ],
       "encoding": {
         "x": {
           "field": "x",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         },
         "y": {
           "field": "y",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         },
-        "text": {"field": "label", "type": "nominal"}
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
       }
     },
     {
@@ -521,29 +690,49 @@
         "type": "text",
         "font": "Arial Black",
         "fontWeight": "bold",
-        "fontSize": 13,
-        "lineHeight": 15,
+        "fontSize": 14,
+        "lineHeight": 16,
         "lineBreak": "\n",
         "color": "#162832",
         "align": "center",
         "baseline": "bottom",
         "dx": 0,
-        "dy": -28,
-        "tooltip": null
+        "dy": -16
       },
-      "transform": [{"filter": "datum.opera === 'Curon'"}],
+      "transform": [
+        {
+          "filter": "datum.opera === 'Curon'"
+        }
+      ],
       "encoding": {
         "x": {
           "field": "x",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         },
         "y": {
           "field": "y",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         },
-        "text": {"field": "label", "type": "nominal"}
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
       }
     },
     {
@@ -551,15 +740,14 @@
         "type": "text",
         "font": "Arial Black",
         "fontWeight": "bold",
-        "fontSize": 13,
-        "lineHeight": 15,
+        "fontSize": 14,
+        "lineHeight": 16,
         "lineBreak": "\n",
         "color": "#162832",
         "align": "center",
         "baseline": "bottom",
         "dx": 0,
-        "dy": -28,
-        "tooltip": null
+        "dy": -23
       },
       "transform": [
         {
@@ -570,14 +758,31 @@
         "x": {
           "field": "x",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         },
         "y": {
           "field": "y",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         },
-        "text": {"field": "label", "type": "nominal"}
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
       }
     },
     {
@@ -585,29 +790,49 @@
         "type": "text",
         "font": "Arial Black",
         "fontWeight": "bold",
-        "fontSize": 13,
-        "lineHeight": 15,
+        "fontSize": 14,
+        "lineHeight": 16,
         "lineBreak": "\n",
         "color": "#162832",
         "align": "right",
         "baseline": "middle",
-        "dx": -26,
-        "dy": 0,
-        "tooltip": null
+        "dx": -23,
+        "dy": 0
       },
-      "transform": [{"filter": "datum.label_position === 'middle-left'"}],
+      "transform": [
+        {
+          "filter": "datum.label_position === 'middle-left'"
+        }
+      ],
       "encoding": {
         "x": {
           "field": "x",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         },
         "y": {
           "field": "y",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         },
-        "text": {"field": "label", "type": "nominal"}
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
       }
     },
     {
@@ -615,41 +840,127 @@
         "type": "text",
         "font": "Arial Black",
         "fontWeight": "bold",
-        "fontSize": 13,
-        "lineHeight": 15,
+        "fontSize": 14,
+        "lineHeight": 16,
         "lineBreak": "\n",
         "color": "#162832",
         "align": "left",
         "baseline": "middle",
-        "dx": 26,
-        "dy": 0,
-        "tooltip": null
+        "dx": 23,
+        "dy": 0
       },
-      "transform": [{"filter": "datum.label_position === 'middle-right'"}],
+      "transform": [
+        {
+          "filter": "datum.label_position === 'middle-right'"
+        }
+      ],
       "encoding": {
         "x": {
           "field": "x",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         },
         "y": {
           "field": "y",
           "type": "quantitative",
-          "scale": {"domain": [-0.55, 3.55]}
+          "scale": {
+            "domain": [
+              -0.55,
+              3.55
+            ],
+            "nice": false,
+            "zero": false
+          }
         },
-        "text": {"field": "label", "type": "nominal"}
+        "text": {
+          "field": "label",
+          "type": "nominal"
+        }
       }
     }
   ],
+  "resolve": {
+    "scale": {
+      "size": "shared",
+      "shape": "shared"
+    },
+    "axis": {
+      "x": "shared",
+      "y": "shared"
+    }
+  },
   "config": {
-    "view": {"stroke": null},
+    "view": {
+      "stroke": null
+    },
     "background": "#FFFFFF",
     "font": "Arial",
     "legend": {
       "padding": 8,
       "rowPadding": 6,
       "labelColor": "#162832",
-      "titleColor": "#173B57"
+      "titleColor": "#173B57",
+      "labelOpacity": 1,
+      "titleOpacity": 1
+    },
+    "axis": {
+      "domain": true,
+      "ticks": true,
+      "labels": true,
+      "grid": false,
+      "domainColor": "#9AA5A8",
+      "tickColor": "#9AA5A8",
+      "labelColor": "#162832",
+      "titleColor": "#173B57",
+      "domainOpacity": 1,
+      "tickOpacity": 1,
+      "labelOpacity": 1,
+      "titleOpacity": 1,
+      "labelFont": "Arial",
+      "titleFont": "Arial"
+    },
+    "axisX": {
+      "domain": true,
+      "ticks": true,
+      "labels": true,
+      "grid": false,
+      "domainColor": "#9AA5A8",
+      "tickColor": "#9AA5A8",
+      "labelColor": "#162832",
+      "titleColor": "#173B57",
+      "domainOpacity": 1,
+      "tickOpacity": 1,
+      "labelOpacity": 1,
+      "titleOpacity": 1,
+      "labelFont": "Arial",
+      "titleFont": "Arial"
+    },
+    "axisY": {
+      "domain": true,
+      "ticks": true,
+      "labels": true,
+      "grid": false,
+      "domainColor": "#9AA5A8",
+      "tickColor": "#9AA5A8",
+      "labelColor": "#162832",
+      "titleColor": "#173B57",
+      "domainOpacity": 1,
+      "tickOpacity": 1,
+      "labelOpacity": 1,
+      "titleOpacity": 1,
+      "labelFont": "Arial",
+      "titleFont": "Arial"
+    },
+    "title": {
+      "color": "#173B57",
+      "subtitleColor": "#667985"
     }
   }
 }
