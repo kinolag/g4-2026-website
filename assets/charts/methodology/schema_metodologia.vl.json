@@ -395,7 +395,7 @@
             "id": "f3",
             "y": 125,
             "y2": 165,
-            "label": "3.3  Stampa\n(sentiment & topic modeling)",
+            "label": "3.3  News\n(sentiment & topic modeling)",
             "fam": "digitale",
             "cy": 145.0,
             "x": 340,
@@ -715,7 +715,7 @@
           {
             "cx": 465.0,
             "y": 137.75,
-            "text": "3.3  Stampa",
+            "text": "3.3  News",
             "txt_hex": "#24487e",
             "fs": 12.5
           },
