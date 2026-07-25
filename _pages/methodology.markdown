@@ -209,8 +209,17 @@ subtitle: "Dalla selezione dei casi di studio ai sette filoni di analisi"
     margin-bottom: .3rem;
   }
   .cis-desc { display: block; font-size: .82rem; color: #666; line-height: 1.4; }
-
-  .section-rule { border: 0; border-top: 1px solid #e6e8eb; margin: 3rem 0 2rem; }
+  
+  /* Contenitore Standard: centrato con una larghezza massima */
+  .chart-container {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1200px;
+    margin: 20px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
 </style>
 
 ## 1. Criteri di Selezione dei Casi Studio
@@ -280,7 +289,7 @@ Un'ulteriore precisazione riguarda non le produzioni in sé, ma le **location** 
 
 Per ogni produzione abbiamo selezionato solo le **location principali** — quelle che ospitano l'ambientazione narrativa portante o una quota sostanziale delle riprese — escludendo deliberatamente comparse marginali o location visibili solo per pochi fotogrammi, prive di un legame narrativo stabile con l'opera.
 
-<hr class="section-rule">
+---
 
 ## 2. Esplorazione dei Dati Strutturati (Tentativi Iniziali)
 
@@ -291,14 +300,14 @@ In una fase preliminare, abbiamo testato l'utilizzo di fonti istituzionali per m
 
 Nella sezione che segue si spiegherà come si è ovviato a questi limiti.
 
-<hr class="section-rule">
+---
 
 ## 3. Le Fonti Adottate e l'Approccio Metodologico Proposto
 
 Il progetto si articola in **sette filoni di analisi**, ciascuno costruito per intercettare una diversa manifestazione del fenomeno cineturistico. Le fonti si dividono in due grandi famiglie:
 
 <div class="row" style="margin: 1.5rem 0;">
-  <div class="col-md-6 mb-3">
+  <div class="col-md-6 mb-2">
     <div class="family-card">
       <h4><i class="fas fa-mountain" aria-hidden="true"></i>Dati fisici / territoriali</h4>
       <p style="font-size:.92rem; margin:0; color:#444;">Misurano l'impatto direttamente sul territorio.</p>
@@ -308,7 +317,7 @@ Il progetto si articola in **sette filoni di analisi**, ciascuno costruito per i
       </ul>
     </div>
   </div>
-  <div class="col-md-6 mb-3">
+  <div class="col-md-6 mb-2">
     <div class="family-card">
       <h4><i class="fas fa-comments" aria-hidden="true"></i>Dati digitali</h4>
       <p style="font-size:.92rem; margin:0; color:#444;">Osservano il riflesso nel comportamento e nel discorso online.</p>
@@ -323,7 +332,11 @@ Il progetto si articola in **sette filoni di analisi**, ciascuno costruito per i
   </div>
 </div>
 
-La distinzione non è sempre netta: le recensioni GetYourGuide, ad esempio, sono dati digitali a tutti gli effetti, ma raccontano un'esperienza **fisica realmente vissuta** sul luogo, non un'opinione formata a distanza come può essere un commento Reddit o YouTube.
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/methodology/schema_metodologia.vl.json"></vegachart>
+</div>
+
+La **distinzione non è sempre netta**: le recensioni GetYourGuide, ad esempio, sono **dati digitali** a tutti gli effetti, ma raccontano **un'esperienza fisica realmente vissuta** sul luogo, non un'opinione formata a distanza come può essere un commento Reddit o YouTube.
 
 Di seguito il dettaglio tecnico di ciascun filone.
 
@@ -430,7 +443,7 @@ Sul fronte testuale, descrizioni e recensioni sono state tokenizzate, ripulite d
 
 Il sentiment è stato calcolato in due passaggi: un primo punteggio tramite **Pattern.it** sul testo della recensione, poi combinato in modo ponderato con il **voto numerico normalizzato** — una scelta introdotta per correggere la tendenza del modello linguistico a sottostimare recensioni molto positive ma scritte in tono neutro.
 
-<hr class="section-rule">
+---
 
 ## 4. Dai Dati ai Gruppi Narrativi del Sito
 
