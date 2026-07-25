@@ -64,6 +64,27 @@ subtitle: "Le serie televisive a lunga esposizione e i loro territori"
     .chart-container { overflow-x: auto; }
   }
 
+  /* Variante per grafici con "width": "container" nel loro spec Vega-Lite
+     (responsive, si adattano alla larghezza del contenitore): qui il figlio
+     deve essere display:block e width:100%, non inline-block, altrimenti il
+     contenitore non ha una larghezza propria da cui il grafico possa misurarsi
+     (con inline-block la larghezza dipende dal contenuto, il contenuto dipende
+     dalla larghezza: risultato, grafico invisibile). */
+  .autosize-chart-container {
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .autosize-chart-container vegachart,
+  .autosize-chart-container .vega-embed {
+    display: block;
+    width: 100%;
+  }
+  @media (max-width: 767.98px) {
+    .autosize-chart-container { overflow-x: auto; }
+  }
+
   /* Didascalia sopra i grafici: stessa resa dei titoli interni ai grafici */
   .chart-caption {
     display: block;
@@ -468,7 +489,7 @@ L'analisi dei commenti raccolti sulla popolare piattaforma video mostra un'attiv
     Tasso di commenti contenenti un riferimento:
     nei <em>video su produzione e location</em>.
   </span>
-  <div class="chart-container">
+  <div class="autosize-chart-container">
     <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/recap_reference_rate_run1_group2.vl.json"></vegachart>
   </div>
 
@@ -476,7 +497,7 @@ L'analisi dei commenti raccolti sulla popolare piattaforma video mostra un'attiv
     Tasso di commenti contenenti un riferimento:
     nei <em>video su sola location</em>.
   </span>
-  <div class="chart-container">
+  <div class="autosize-chart-container">
     <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/recap_reference_rate_run2_group2.vl.json"></vegachart>
   </div>
 </div>

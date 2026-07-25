@@ -31,6 +31,27 @@ subtitle: "Film e Serie TV che trasformano i territori in un’unica stagione"
     .chart-container { overflow-x: auto; }
   }
 
+  /* Variante per grafici con "width": "container" nel loro spec Vega-Lite
+     (responsive, si adattano alla larghezza del contenitore): qui il figlio
+     deve essere display:block e width:100%, non inline-block, altrimenti il
+     contenitore non ha una larghezza propria da cui il grafico possa misurarsi
+     (con inline-block la larghezza dipende dal contenuto, il contenuto dipende
+     dalla larghezza: risultato, grafico invisibile). */
+  .autosize-chart-container {
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .autosize-chart-container vegachart,
+  .autosize-chart-container .vega-embed {
+    display: block;
+    width: 100%;
+  }
+  @media (max-width: 767.98px) {
+    .autosize-chart-container { overflow-x: auto; }
+  }
+
   /* Video incorporati: responsivi e centrati */
   .video-embed {
     position: relative;
@@ -415,7 +436,7 @@ Volume dei commenti nel tempo sui video di _Un mondo a parte_, con le due date d
 insieme alla località**: la serie è quindi quasi interamente successiva all'uscita e va letta
 come andamento dell'attenzione *dopo* il film, non come confronto prima/dopo.
 
-<div class="chart-container">
+<div class="autosize-chart-container">
   <vegachart schema-url="{{site.baseurl}}/assets/charts/group3/timeline_un_mondo_a_parte_run1.vl.json"></vegachart>
 </div>
 
