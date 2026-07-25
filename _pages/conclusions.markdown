@@ -237,21 +237,22 @@ Nella maggior parte dei casi in cui il territorio mostra un'evidenza **ISTAT** s
 
 ## Mappatura delle evidenze di cineturismo
 
+Il primo grafico mostra l'**evoluzione temporale dell'impatto cineturistico complessivo** — evidenza territoriale e digitale combinate in un unico punteggio — rispetto all'anno di uscita di ciascuna opera, distinguendo produzioni internazionali, serie TV italiane e altre produzioni italiane.
+
 <div class="chart-container">
   <vegachart schema-url="{{site.baseurl}}/assets/charts/conclusions/evoluzione_temporale_cineturismo.json"></vegachart>
 </div>
 
-Il primo grafico mostra l'**evoluzione temporale dell'impatto cineturistico complessivo** — evidenza territoriale e digitale combinate in un unico punteggio — rispetto all'anno di uscita di ciascuna opera, distinguendo produzioni internazionali, serie TV italiane e altre produzioni italiane.
+Il secondo grafico mappa invece le dodici produzioni lungo **due assi graduati**: sull'asse orizzontale l'ampiezza delle **evidenze territoriali**, dall'assenza di segnale fino alla conferma su più macro-aree ISTAT/MiBACT; sull'asse verticale la maturità delle **evidenze digitali**, dall'assenza fino alla combinazione più completa di rassegna stampa, ricerche online e conversazione spontanea su piattaforme come YouTube o Reddit.
 
 <div class="chart-container">
   <vegachart schema-url="{{site.baseurl}}/assets/charts/conclusions/conclusioni_mappatura_cineturismo.json"></vegachart>
 </div>
 
-Il secondo grafico mappa invece le dodici produzioni lungo **due assi graduati**: sull'asse orizzontale l'ampiezza delle **evidenze territoriali**, dall'assenza di segnale fino alla conferma su più macro-aree ISTAT/MiBACT; sull'asse verticale la maturità delle **evidenze digitali**, dall'assenza fino alla combinazione più completa di rassegna stampa, ricerche online e conversazione spontanea su piattaforme come YouTube o Reddit.
-
 <div class="note-box">
   <span class="note-title"><i class="fas fa-map-signs" aria-hidden="true"></i>Come leggere la mappa</span>
-  La <strong>forma</strong> del punto indica il tipo di produzione — cerchio per le produzioni internazionali, quadrato per le serie TV italiane, triangolo per le altre produzioni italiane. Il <strong>colore</strong> rappresenta il tono prevalente del racconto digitale. L'<strong>alone</strong> segnala i casi in cui il dato ISTAT/MiBACT trova conferma incrociata anche su OpenStreetMap.
+  Il <strong>colore</strong> rappresenta il tono prevalente del racconto digitale.
+  La <strong>forma</strong> del simbolo indica il tipo di produzione. 
 </div>
 
 ### Tre osservazioni trasversali
