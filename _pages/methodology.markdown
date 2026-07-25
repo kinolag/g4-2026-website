@@ -210,15 +210,18 @@ subtitle: "Dalla selezione dei casi di studio ai sette filoni di analisi"
   }
   .cis-desc { display: block; font-size: .82rem; color: #666; line-height: 1.4; }
   
-  /* Contenitore Standard: centrato con una larghezza massima */
   .chart-container {
-    display: flex;
-    justify-content: center;
     width: 100%;
     max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
     box-sizing: border-box;
+    overflow-x: auto;
+    text-align: center;
+  }
+
+  .chart-container vegachart {
+    display: inline-block;
   }
 </style>
 
@@ -322,7 +325,7 @@ Il progetto si articola in **sette filoni di analisi**, ciascuno costruito per i
       <h4><i class="fas fa-comments" aria-hidden="true"></i>Dati digitali</h4>
       <p style="font-size:.92rem; margin:0; color:#444;">Osservano il riflesso nel comportamento e nel discorso online.</p>
       <ul>
-        <li>Stampa (sentiment e topic modeling)</li>
+        <li>News (sentiment e topic modeling)</li>
         <li>Google Trends e Wikipedia</li>
         <li>YouTube</li>
         <li>Reddit</li>
