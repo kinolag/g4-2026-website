@@ -236,6 +236,37 @@ Questo progetto nasce per misurare quella scintilla, incrociando **dati ISTAT**,
 
 ---
 
+## Tre gruppi, tre modi di raccontare lo stesso fenomeno
+
+<div class="row gruppo-grid">
+  <div class="col-md-4 mb-4">
+    <div class="gruppo-card cl-1">
+      <span>Gruppo 1</span>
+      <h4>Grandi produzioni internazionali</h4>
+      <p>Produzioni internazionali girate in Italia: impatto improvviso e alta volatilità.</p>
+      <a href="{{ site.baseurl }}/group1.html" class="btn btn-primary">Vai al Gruppo 1</a>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="gruppo-card cl-2">
+      <span class="cl-kicker">Gruppo 2</span>
+      <h4>Serie italiane di lunga durata</h4>
+      <p>Fiction radicate nel territorio nel corso di anni, se non decenni, di messa in onda.</p>
+      <a href="{{ site.baseurl }}/group2.html" class="btn btn-primary">Vai al Gruppo 2</a>
+    </div>
+  </div>
+  <div class="col-md-4 mb-4">
+    <div class="gruppo-card cl-3">
+      <span class="cl-kicker">Gruppo 3</span>
+      <h4>Produzioni di nicchia</h4>
+      <p>Casi non riconducibili ai gruppi precedenti: impatto focalizzato e target specifico.</p>
+      <a href="{{ site.baseurl }}/group3.html" class="btn btn-primary">Vai al Gruppo 3</a>
+    </div>
+  </div>
+</div>
+
+---
+
 ## Esplora le produzioni sul territorio
 
 Ogni produzione analizzata è legata a uno o più **luoghi di ripresa** in Italia.
@@ -258,37 +289,6 @@ scheda a fianco ne mostra i dettagli.
   dataset json. L'interazione click->scheda e il link nella scheda
   funzionano perché selezione, filtro e href stanno nella stessa specifica.
 -->
-
----
-
-## Tre gruppi, tre modi di raccontare lo stesso fenomeno
-
-<div class="row gruppo-grid">
-  <div class="col-md-4 mb-4">
-    <div class="gruppo-card cl-1">
-      <span class="cl-kicker">Gruppo 1</span>
-      <h4>Grandi produzioni internazionali</h4>
-      <p>Grandi produzioni internazionali girate in Italia: impatto improvviso e alta volatilità.</p>
-      <a href="{{ site.baseurl }}/group1.html" class="btn btn-primary">Vai al Gruppo 1</a>
-    </div>
-  </div>
-  <div class="col-md-4 mb-4">
-    <div class="gruppo-card cl-2">
-      <span class="cl-kicker">Gruppo 2</span>
-      <h4>Serie italiane di lunga durata</h4>
-      <p>Fiction radicate nel territorio nel corso di anni, se non decenni, di messa in onda.</p>
-      <a href="{{ site.baseurl }}/group2.html" class="btn btn-primary">Vai al Gruppo 2</a>
-    </div>
-  </div>
-  <div class="col-md-4 mb-4">
-    <div class="gruppo-card cl-3">
-      <span class="cl-kicker">Gruppo 3</span>
-      <h4>Produzioni di nicchia</h4>
-      <p>Casi non riconducibili ai gruppi precedenti: impatto focalizzato e target specifico.</p>
-      <a href="{{ site.baseurl }}/group3.html" class="btn btn-primary">Vai al Gruppo 3</a>
-    </div>
-  </div>
-</div>
 
 ---
 
