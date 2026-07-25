@@ -46,10 +46,10 @@ subtitle: "Risultati dell'analisi"
     .pattern-row { flex-direction: column; gap: .6rem; }
     .pattern-head { flex: none; }
   }
-  .pat-ok    { --pat-accent: #2f855a; }
-  .pat-fisico{ --pat-accent: #c05621; }
-  .pat-eco   { --pat-accent: #2b6cb0; }
-  .pat-none  { --pat-accent: #718096; }
+  .pat-blu { --pat-accent: #2b6cb0; }
+  .pat-none { --pat-accent: #94a3b8; }
+  .pat-teal { --pat-accent: #0f766e; }
+  .pat-violet { --pat-accent: #6d28d9; }
 
   /* ---- Osservazioni trasversali ---- */
   .obs-grid { margin: 1.8rem 0 2rem; }
@@ -100,9 +100,9 @@ subtitle: "Risultati dell'analisi"
     color: #8a94a0;
     margin-top: .7rem;
   }
-  .mod-1 { --mod-accent: #c05621; }
-  .mod-2 { --mod-accent: #2b6cb0; }
-  .mod-3 { --mod-accent: #2f855a; }
+  .mod-1 { --mod-accent: #2b6cb0; }  /* Un passo dal cielo = Gruppo 2 */
+  .mod-2 { --mod-accent: #8a94a0; }  /* cita sia Gruppo 1 (New Moon) sia Gruppo 2 (Montalbano): neutro */
+  .mod-3 { --mod-accent: #c05621; }  /* Call Me by Your Name = Gruppo 1 */
 
   /* ---- Numeri in evidenza ---- */
   .facts-grid {
@@ -186,7 +186,7 @@ Nella maggior parte dei casi in cui il territorio mostra un'evidenza **ISTAT** s
 
 <div class="pattern-list">
 
-  <div class="pattern-row pat-ok">
+  <div class="pattern-row pat-blu">
     <div class="pattern-head">
       <span class="pat-title">Segnali convergenti</span>
       <span class="pat-places">Crema · Pienza · Castellabate · Curon Venosta · location siciliane di Montalbano · location valdostane di Avengers</span>
@@ -196,7 +196,7 @@ Nella maggior parte dei casi in cui il territorio mostra un'evidenza **ISTAT** s
     </div>
   </div>
 
-  <div class="pattern-row pat-fisico">
+  <div class="pattern-row pat-blu">
     <div class="pattern-head">
       <span class="pat-title">Impatto senza rumore</span>
       <span class="pat-places">Agliè · Aosta</span>
@@ -206,7 +206,7 @@ Nella maggior parte dei casi in cui il territorio mostra un'evidenza **ISTAT** s
     </div>
   </div>
 
-  <div class="pattern-row pat-eco">
+  <div class="pattern-row pat-blu">
     <div class="pattern-head">
       <span class="pat-title">Eco senza riscontro istituzionale</span>
       <span class="pat-places">Volterra e Montepulciano · Opi e Pescasseroli · Braies e San Candido</span>
@@ -230,7 +230,7 @@ Nella maggior parte dei casi in cui il territorio mostra un'evidenza **ISTAT** s
 
 <div class="note-box note-warning">
   <span class="note-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Il caso più critico</span>
-  Resta quello delle <strong>location dolomitiche</strong> di <em>Un passo dal cielo</em>, dove la narrazione mediatica sull'overtourism supera in volume quella sul cineturismo stesso.
+  Resta quello delle <strong>location dolomitiche</strong> di <em>Un passo dal cielo</em>, dove la <strong>narrazione mediatica sull'overtourism</strong> supera in volume quella sul cineturismo stesso.
 </div>
 
 <hr class="section-rule">
@@ -254,21 +254,21 @@ Il secondo grafico mappa invece le dodici produzioni lungo **due assi graduati**
 <div class="row obs-grid">
   <div class="col-md-4 mb-4">
     <div class="obs-card">
-      <span class="obs-num">Osservazione 01</span>
+      <span class="obs-num">Osservazione 1</span>
       <h4>L'anno di uscita conta</h4>
       <p>Le produzioni troppo recenti o troppo datate mostrano un punteggio di impatto complessivo più basso, mentre il massimo si concentra sugli anni intermedi. È un limite <strong>più metodologico che sostanziale</strong>, legato alla finestra temporale in cui esistono dati sia ISTAT/MiBACT sia digitali comparabili.</p>
     </div>
   </div>
   <div class="col-md-4 mb-4">
     <div class="obs-card">
-      <span class="obs-num">Osservazione 02</span>
+      <span class="obs-num">Osservazione 2</span>
       <h4>Senza territorio, niente toni positivi</h4>
       <p>Le produzioni prive di evidenze territoriali istituzionali (ISTAT/MiBACT) ottengono <strong>sempre un tono neutro o negativo</strong>, mai positivo.</p>
     </div>
   </div>
   <div class="col-md-4 mb-4">
     <div class="obs-card">
-      <span class="obs-num">Osservazione 03</span>
+      <span class="obs-num">Osservazione 3</span>
       <h4>Il tipo di produzione non basta</h4>
       <p>La tipologia non spiega il profilo di impatto: produzioni internazionali come <em>Call Me by Your Name</em> e <em>The Twilight Saga: New Moon</em> occupano posizioni distanti fra loro, così come, tra le serie italiane, <em>Il giovane Montalbano</em> e <em>Don Matteo</em>.</p>
     </div>
@@ -289,7 +289,7 @@ Dai casi analizzati emergono **tre modelli** di risposta al fenomeno cineturisti
 <div class="row models-grid">
   <div class="col-md-4 mb-4">
     <div class="model-card mod-1">
-      <span class="mod-kicker">Modello 01</span>
+      <span class="mod-kicker">Modello 1</span>
       <h4>Contenimento dell'overtourism</h4>
       <p>Gestire i flussi senza vietarli, redistribuendo la pressione verso orari e modalità più sostenibili.</p>
       <span class="mod-place">Braies</span>
@@ -297,7 +297,7 @@ Dai casi analizzati emergono **tre modelli** di risposta al fenomeno cineturisti
   </div>
   <div class="col-md-4 mb-4">
     <div class="model-card mod-2">
-      <span class="mod-kicker">Modello 02</span>
+      <span class="mod-kicker">Modello 2</span>
       <h4>Valorizzazione identitaria attiva e istituzionalizzazione</h4>
       <p>Governare la narrazione mentre il fenomeno è in corso, poi consolidarla a livello formale perché sopravviva al ciclo di popolarità dell'opera.</p>
       <span class="mod-place">Volterra · location de Il giovane Montalbano</span>
@@ -305,7 +305,7 @@ Dai casi analizzati emergono **tre modelli** di risposta al fenomeno cineturisti
   </div>
   <div class="col-md-4 mb-4">
     <div class="model-card mod-3">
-      <span class="mod-kicker">Modello 03</span>
+      <span class="mod-kicker">Modello 3</span>
       <h4>Valorizzazione dal basso e comunitaria</h4>
       <p>Riconoscere e sostenere le iniziative organiche già nate sul territorio, senza gestirle dall'alto.</p>
       <span class="mod-place">Crema</span>
@@ -382,10 +382,10 @@ Il cineturismo è un fenomeno ampiamente raccontato a livello descrittivo, ma qu
 
 <div class="note-box note-warning">
   <span class="note-title"><i class="fas fa-exclamation-triangle" aria-hidden="true"></i>Il limite principale</span>
-  Il campione è ridotto e non generalizzabile statisticamente: le conclusioni vanno lette come indicazioni sui singoli casi studio, non come misure estendibili al fenomeno nel suo complesso.
+  <strong>Il campione è ridotto e non generalizzabile statisticamente</strong>: le conclusioni vanno lette come indicazioni sui singoli casi studio, non come misure estendibili al fenomeno nel suo complesso.
 </div>
 
-La **pipeline metodologica** costruita — l'integrazione di ISTAT, OpenStreetMap, rassegna stampa e piattaforme digitali — è però replicabile, e apre la strada a un'estensione futura ad altri casi studio.
+La **pipeline metodologica** costruita — l'integrazione di ISTAT, OpenStreetMap, rassegna stampa e piattaforme digitali — **è però replicabile**, e apre la strada a un'estensione futura ad altri possibili casi studio.
 
 <hr class="section-rule">
 
