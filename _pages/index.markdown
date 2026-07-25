@@ -270,9 +270,8 @@ Questo progetto nasce per misurare quella scintilla, incrociando **dati ISTAT**,
 ## Esplora le produzioni sul territorio
 
 Ogni produzione analizzata è legata a uno o più **luoghi di ripresa** in Italia.
-La mappa raccoglie tutte le location del progetto, colorate per **gruppo**:
-cliccando su un punto si evidenziano tutte le località di quella produzione e la
-scheda a fianco ne mostra i dettagli.
+La mappa raccoglie tutte le location del progetto, colorate per gruppo:
+**cliccando su un punto si evidenziano tutte le località di quella produzione**.
 
 <div class="note-box">
   <span class="note-title"><i class="fas fa-hand-pointer" aria-hidden="true"></i>Come usare la mappa</span>

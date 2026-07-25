@@ -965,7 +965,7 @@
               "value": 282
             },
             "y": {
-              "value": 107
+              "value": 97
             }
           }
         },
@@ -994,7 +994,7 @@
               "value": 18
             },
             "y": {
-              "value": 126
+              "value": 116
             },
             "text": {
               "field": "meta",
@@ -1027,7 +1027,7 @@
               "value": 18
             },
             "y": {
-              "value": 145
+              "value": 135
             },
             "text": {
               "field": "rating",
@@ -1060,7 +1060,7 @@
               "value": 18
             },
             "y": {
-              "value": 164
+              "value": 154
             },
             "text": {
               "field": "box",
@@ -1101,7 +1101,7 @@
               "value": 282
             },
             "y": {
-              "value": 178
+              "value": 168
             }
           }
         },
@@ -1134,7 +1134,7 @@
               "value": 18
             },
             "y": {
-              "value": 198
+              "value": 188
             },
             "text": {
               "field": "_k",
@@ -1192,8 +1192,8 @@
                   6
                 ],
                 "range": [
-                  222,
-                  312
+                  212,
+                  302
                 ]
               },
               "axis": null
@@ -1237,7 +1237,7 @@
               "value": 282
             },
             "y": {
-              "value": 322
+              "value": 282
             }
           }
         },
@@ -1270,7 +1270,7 @@
               "value": 18
             },
             "y": {
-              "value": 342
+              "value": 302
             },
             "text": {
               "field": "_k",
@@ -1303,7 +1303,7 @@
               "value": 18
             },
             "y": {
-              "value": 364
+              "value": 324
             },
             "text": {
               "field": "d1",
@@ -1336,7 +1336,7 @@
               "value": 18
             },
             "y": {
-              "value": 380
+              "value": 340
             },
             "text": {
               "field": "d2",
@@ -1369,7 +1369,7 @@
               "value": 18
             },
             "y": {
-              "value": 396
+              "value": 356
             },
             "text": {
               "field": "d3",
@@ -1402,7 +1402,7 @@
               "value": 18
             },
             "y": {
-              "value": 412
+              "value": 372
             },
             "text": {
               "field": "d4",
@@ -1436,10 +1436,10 @@
               "value": 218
             },
             "y": {
-              "value": 434
+              "value": 374
             },
             "y2": {
-              "value": 466
+              "value": 406
             },
             "href": {
               "field": "link",
@@ -1481,7 +1481,7 @@
               "value": 118.0
             },
             "y": {
-              "value": 450
+              "value": 390
             },
             "text": {
               "field": "_b",
@@ -1520,7 +1520,7 @@
               "value": 18
             },
             "y": {
-              "value": 486
+              "value": 410
             },
             "url": {
               "field": "poster",
