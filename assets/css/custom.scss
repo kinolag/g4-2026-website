@@ -39,8 +39,18 @@ transform: rotate(180deg);
 
 // hero image (header)
 .hero-chulapa-image {
-    background-position: top;
+  background-position: top;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 45vh;
+  height: auto;
   z-index: 100;
+}
+
+@media (max-width: 768px) {
+  .hero-chulapa-image {
+    min-height: 18vh;
+  }
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Comic+Neue:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&display=swap');
