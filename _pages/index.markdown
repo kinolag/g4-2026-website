@@ -241,7 +241,7 @@ Questo progetto nasce per misurare quella scintilla, incrociando **dati ISTAT**,
 <div class="row gruppo-grid">
   <div class="col-md-4 mb-4">
     <div class="gruppo-card cl-1">
-      <span>Gruppo 1</span>
+      <span class="cl-kicker">Gruppo 1</span>
       <h4>Grandi produzioni internazionali</h4>
       <p>Produzioni internazionali girate in Italia: impatto improvviso e alta volatilità.</p>
       <a href="{{ site.baseurl }}/group1.html" class="btn btn-primary">Vai al Gruppo 1</a>
