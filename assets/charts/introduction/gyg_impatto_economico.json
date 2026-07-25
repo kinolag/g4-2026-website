@@ -1,0 +1,1434 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Specificazione Vega-Lite v5 autonoma per il grafico regionale GYG. Scheda titolo, grafico, rating bar, tooltip e nota sono tutti incorporati nativamente nel JSON.",
+  "background": "#FFFFFF",
+  "datasets": {
+    "gyg_regioni": [
+      {
+        "Opera_Regione": "Sicilia",
+        "Scenario_Conservativo": 1983710,
+        "Scenario_Benchmark": 2801528,
+        "Scenario_Espansivo": 3739759,
+        "Rating_Medio": 4.793,
+        "Rating_Color": "#50C777",
+        "Quota_Totale": 0.40027180777315363,
+        "Benchmark_Label": "€ 2,8M",
+        "Regioni_Aggregate": "—",
+        "Review_Rate": "Conservativo 23,41% · Benchmark 25,00% · Espansivo 26,48%",
+        "Partecipanti_Medi": "Conservativo 1,5 · Benchmark 2,0 · Espansivo 2,5"
+      },
+      {
+        "Opera_Regione": "Lombardia",
+        "Scenario_Conservativo": 1504175,
+        "Scenario_Benchmark": 2124296,
+        "Scenario_Espansivo": 2835722,
+        "Rating_Medio": 4.362,
+        "Rating_Color": "#FFC905",
+        "Quota_Totale": 0.303511440958391,
+        "Benchmark_Label": "€ 2,1M",
+        "Regioni_Aggregate": "—",
+        "Review_Rate": "Conservativo 23,41% · Benchmark 25,00% · Espansivo 26,48%",
+        "Partecipanti_Medi": "Conservativo 1,5 · Benchmark 2,0 · Espansivo 2,5"
+      },
+      {
+        "Opera_Regione": "Veneto",
+        "Scenario_Conservativo": 683741,
+        "Scenario_Benchmark": 965624,
+        "Scenario_Espansivo": 1289011,
+        "Rating_Medio": 4.46,
+        "Rating_Color": "#FFD202",
+        "Quota_Totale": 0.1379647335700888,
+        "Benchmark_Label": "€ 966K",
+        "Regioni_Aggregate": "—",
+        "Review_Rate": "Conservativo 23,41% · Benchmark 25,00% · Espansivo 26,48%",
+        "Partecipanti_Medi": "Conservativo 1,5 · Benchmark 2,0 · Espansivo 2,5"
+      },
+      {
+        "Opera_Regione": "Lazio",
+        "Scenario_Conservativo": 323310,
+        "Scenario_Benchmark": 456600,
+        "Scenario_Espansivo": 609515,
+        "Rating_Medio": 4.46,
+        "Rating_Color": "#FFD202",
+        "Quota_Totale": 0.06523729458681904,
+        "Benchmark_Label": "€ 457K",
+        "Regioni_Aggregate": "—",
+        "Review_Rate": "Conservativo 23,41% · Benchmark 25,00% · Espansivo 26,48%",
+        "Partecipanti_Medi": "Conservativo 1,5 · Benchmark 2,0 · Espansivo 2,5"
+      },
+      {
+        "Opera_Regione": "Piemonte",
+        "Scenario_Conservativo": 192887,
+        "Scenario_Benchmark": 272408,
+        "Scenario_Espansivo": 363637,
+        "Rating_Medio": 4.323,
+        "Rating_Color": "#FFC506",
+        "Quota_Totale": 0.03892063281604512,
+        "Benchmark_Label": "€ 272K",
+        "Regioni_Aggregate": "—",
+        "Review_Rate": "Conservativo 23,41% · Benchmark 25,00% · Espansivo 26,48%",
+        "Partecipanti_Medi": "Conservativo 1,5 · Benchmark 2,0 · Espansivo 2,5"
+      },
+      {
+        "Opera_Regione": "Toscana",
+        "Scenario_Conservativo": 187398,
+        "Scenario_Benchmark": 264656,
+        "Scenario_Espansivo": 353289,
+        "Rating_Medio": 4.493,
+        "Rating_Color": "#FFD501",
+        "Quota_Totale": 0.03781305614579321,
+        "Benchmark_Label": "€ 265K",
+        "Regioni_Aggregate": "—",
+        "Review_Rate": "Conservativo 23,41% · Benchmark 25,00% · Espansivo 26,48%",
+        "Partecipanti_Medi": "Conservativo 1,5 · Benchmark 2,0 · Espansivo 2,5"
+      },
+      {
+        "Opera_Regione": "Basilicata",
+        "Scenario_Conservativo": 61688,
+        "Scenario_Benchmark": 87120,
+        "Scenario_Espansivo": 116296,
+        "Rating_Medio": 4.619,
+        "Rating_Color": "#BFD22C",
+        "Quota_Totale": 0.012447378678063236,
+        "Benchmark_Label": "€ 87,1K",
+        "Regioni_Aggregate": "—",
+        "Review_Rate": "Conservativo 23,41% · Benchmark 25,00% · Espansivo 26,48%",
+        "Partecipanti_Medi": "Conservativo 1,5 · Benchmark 2,0 · Espansivo 2,5"
+      },
+      {
+        "Opera_Regione": "Altre",
+        "Scenario_Conservativo": 18999,
+        "Scenario_Benchmark": 26832,
+        "Scenario_Espansivo": 35817,
+        "Rating_Medio": 4.26257055214724,
+        "Rating_Color": "#FFBC07",
+        "Quota_Totale": 0.0038336554716459233,
+        "Benchmark_Label": "€ 26,8K",
+        "Regioni_Aggregate": "Campania, Liguria, Emilia-Romagna",
+        "Review_Rate": "Conservativo 23,41% · Benchmark 25,00% · Espansivo 26,48%",
+        "Partecipanti_Medi": "Conservativo 1,5 · Benchmark 2,0 · Espansivo 2,5"
+      }
+    ]
+  },
+  "vconcat": [
+    {
+      "width": 744,
+      "height": 92,
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "layer": [
+        {
+          "mark": {
+            "type": "rect",
+            "fill": "#F8FAFB",
+            "stroke": "#B7C5CC",
+            "strokeWidth": 1.1,
+            "cornerRadius": 5
+          },
+          "encoding": {
+            "x": {
+              "value": 110
+            },
+            "x2": {
+              "value": 634
+            },
+            "y": {
+              "value": 0
+            },
+            "y2": {
+              "value": 88
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "font": "Arial",
+            "fontSize": 13,
+            "fontWeight": "bold",
+            "color": "#173B57",
+            "align": "center",
+            "baseline": "middle"
+          },
+          "encoding": {
+            "x": {
+              "value": 372
+            },
+            "y": {
+              "value": 17
+            },
+            "text": {
+              "value": "IMPATTO ECONOMICO TOURS GYG A TEMA CINEMA E TV"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "rule",
+            "stroke": "#D7E0E5",
+            "strokeWidth": 1
+          },
+          "encoding": {
+            "x": {
+              "value": 128
+            },
+            "x2": {
+              "value": 616
+            },
+            "y": {
+              "value": 34
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "font": "Arial",
+            "fontSize": 11.5,
+            "color": "#162832",
+            "align": "center",
+            "baseline": "middle"
+          },
+          "encoding": {
+            "x": {
+              "value": 372
+            },
+            "y": {
+              "value": 47
+            },
+            "text": {
+              "value": "📉 Conservativo: € 4.955.908"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "font": "Arial",
+            "fontSize": 11.5,
+            "fontWeight": "bold",
+            "color": "#162832",
+            "align": "center",
+            "baseline": "middle"
+          },
+          "encoding": {
+            "x": {
+              "value": 372
+            },
+            "y": {
+              "value": 63
+            },
+            "text": {
+              "value": "🎯 Benchmark: € 6.999.064"
+            }
+          }
+        },
+        {
+          "mark": {
+            "type": "text",
+            "font": "Arial",
+            "fontSize": 11.5,
+            "color": "#162832",
+            "align": "center",
+            "baseline": "middle"
+          },
+          "encoding": {
+            "x": {
+              "value": 372
+            },
+            "y": {
+              "value": 79
+            },
+            "text": {
+              "value": "📈 Espansivo: € 9.343.048"
+            }
+          }
+        }
+      ]
+    },
+    {
+      "hconcat": [
+        {
+          "width": 660,
+          "height": 440,
+          "data": {
+            "name": "gyg_regioni"
+          },
+          "layer": [
+            {
+              "mark": {
+                "type": "bar",
+                "size": 60,
+                "opacity": 1,
+                "stroke": "#FFFFFF",
+                "strokeWidth": 1.2,
+                "cornerRadiusTopLeft": 2,
+                "cornerRadiusTopRight": 2
+              },
+              "encoding": {
+                "x": {
+                  "field": "Opera_Regione",
+                  "type": "nominal",
+                  "sort": [
+                    "Sicilia",
+                    "Lombardia",
+                    "Veneto",
+                    "Lazio",
+                    "Piemonte",
+                    "Toscana",
+                    "Basilicata",
+                    "Altre"
+                  ],
+                  "axis": {
+                    "title": "Regioni",
+                    "labelAngle": 0,
+                    "labelFont": "Arial",
+                    "labelFontSize": 12,
+                    "labelColor": "#162832",
+                    "labelPadding": 8,
+                    "titleFont": "Arial",
+                    "titleFontSize": 14,
+                    "titleFontWeight": "bold",
+                    "titleColor": "#173B57",
+                    "titlePadding": 16,
+                    "tickColor": "#9FB0B8",
+                    "domainColor": "#9FB0B8",
+                    "grid": false
+                  }
+                },
+                "y": {
+                  "field": "Scenario_Benchmark",
+                  "type": "quantitative",
+                  "scale": {
+                    "domain": [
+                      0,
+                      4338120.4399999995
+                    ],
+                    "nice": false,
+                    "zero": true
+                  },
+                  "axis": {
+                    "title": "Impatto economico stimato (€)",
+                    "labelFont": "Arial",
+                    "labelFontSize": 11,
+                    "labelColor": "#162832",
+                    "titleFont": "Arial",
+                    "titleFontSize": 14,
+                    "titleFontWeight": "bold",
+                    "titleColor": "#173B57",
+                    "titlePadding": 14,
+                    "grid": true,
+                    "gridColor": "#E5EBEF",
+                    "gridWidth": 1,
+                    "tickColor": "#9FB0B8",
+                    "domainColor": "#9FB0B8",
+                    "format": "~s"
+                  }
+                },
+                "color": {
+                  "field": "Rating_Color",
+                  "type": "nominal",
+                  "scale": null,
+                  "legend": null
+                },
+                "tooltip": [
+                  {
+                    "field": "Opera_Regione",
+                    "type": "nominal",
+                    "title": "Soggetto"
+                  },
+                  {
+                    "field": "Scenario_Conservativo",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Conservativo (€)"
+                  },
+                  {
+                    "field": "Scenario_Benchmark",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Benchmark (€)"
+                  },
+                  {
+                    "field": "Scenario_Espansivo",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Espansivo (€)"
+                  },
+                  {
+                    "field": "Rating_Medio",
+                    "type": "quantitative",
+                    "format": ".3f",
+                    "title": "Rating GYG"
+                  },
+                  {
+                    "field": "Quota_Totale",
+                    "type": "quantitative",
+                    "format": ".2%",
+                    "title": "% sul Totale"
+                  },
+                  {
+                    "field": "Regioni_Aggregate",
+                    "type": "nominal",
+                    "title": "Regioni aggregate in Altre"
+                  },
+                  {
+                    "field": "Review_Rate",
+                    "type": "nominal",
+                    "title": "Review Rate"
+                  },
+                  {
+                    "field": "Partecipanti_Medi",
+                    "type": "nominal",
+                    "title": "Partecipanti medi"
+                  }
+                ]
+              }
+            },
+            {
+              "mark": {
+                "type": "rule",
+                "color": "#294B5F",
+                "strokeWidth": 2.4
+              },
+              "encoding": {
+                "x": {
+                  "field": "Opera_Regione",
+                  "type": "nominal",
+                  "sort": [
+                    "Sicilia",
+                    "Lombardia",
+                    "Veneto",
+                    "Lazio",
+                    "Piemonte",
+                    "Toscana",
+                    "Basilicata",
+                    "Altre"
+                  ]
+                },
+                "y": {
+                  "field": "Scenario_Conservativo",
+                  "type": "quantitative"
+                },
+                "y2": {
+                  "field": "Scenario_Espansivo"
+                },
+                "tooltip": [
+                  {
+                    "field": "Opera_Regione",
+                    "type": "nominal",
+                    "title": "Soggetto"
+                  },
+                  {
+                    "field": "Scenario_Conservativo",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Conservativo (€)"
+                  },
+                  {
+                    "field": "Scenario_Benchmark",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Benchmark (€)"
+                  },
+                  {
+                    "field": "Scenario_Espansivo",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Espansivo (€)"
+                  },
+                  {
+                    "field": "Rating_Medio",
+                    "type": "quantitative",
+                    "format": ".3f",
+                    "title": "Rating GYG"
+                  },
+                  {
+                    "field": "Quota_Totale",
+                    "type": "quantitative",
+                    "format": ".2%",
+                    "title": "% sul Totale"
+                  },
+                  {
+                    "field": "Regioni_Aggregate",
+                    "type": "nominal",
+                    "title": "Regioni aggregate in Altre"
+                  },
+                  {
+                    "field": "Review_Rate",
+                    "type": "nominal",
+                    "title": "Review Rate"
+                  },
+                  {
+                    "field": "Partecipanti_Medi",
+                    "type": "nominal",
+                    "title": "Partecipanti medi"
+                  }
+                ]
+              }
+            },
+            {
+              "mark": {
+                "type": "tick",
+                "color": "#294B5F",
+                "thickness": 2.4,
+                "size": 18
+              },
+              "encoding": {
+                "x": {
+                  "field": "Opera_Regione",
+                  "type": "nominal",
+                  "sort": [
+                    "Sicilia",
+                    "Lombardia",
+                    "Veneto",
+                    "Lazio",
+                    "Piemonte",
+                    "Toscana",
+                    "Basilicata",
+                    "Altre"
+                  ]
+                },
+                "y": {
+                  "field": "Scenario_Conservativo",
+                  "type": "quantitative"
+                },
+                "tooltip": [
+                  {
+                    "field": "Opera_Regione",
+                    "type": "nominal",
+                    "title": "Soggetto"
+                  },
+                  {
+                    "field": "Scenario_Conservativo",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Conservativo (€)"
+                  },
+                  {
+                    "field": "Scenario_Benchmark",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Benchmark (€)"
+                  },
+                  {
+                    "field": "Scenario_Espansivo",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Espansivo (€)"
+                  },
+                  {
+                    "field": "Rating_Medio",
+                    "type": "quantitative",
+                    "format": ".3f",
+                    "title": "Rating GYG"
+                  },
+                  {
+                    "field": "Quota_Totale",
+                    "type": "quantitative",
+                    "format": ".2%",
+                    "title": "% sul Totale"
+                  },
+                  {
+                    "field": "Regioni_Aggregate",
+                    "type": "nominal",
+                    "title": "Regioni aggregate in Altre"
+                  },
+                  {
+                    "field": "Review_Rate",
+                    "type": "nominal",
+                    "title": "Review Rate"
+                  },
+                  {
+                    "field": "Partecipanti_Medi",
+                    "type": "nominal",
+                    "title": "Partecipanti medi"
+                  }
+                ]
+              }
+            },
+            {
+              "mark": {
+                "type": "tick",
+                "color": "#294B5F",
+                "thickness": 2.4,
+                "size": 18
+              },
+              "encoding": {
+                "x": {
+                  "field": "Opera_Regione",
+                  "type": "nominal",
+                  "sort": [
+                    "Sicilia",
+                    "Lombardia",
+                    "Veneto",
+                    "Lazio",
+                    "Piemonte",
+                    "Toscana",
+                    "Basilicata",
+                    "Altre"
+                  ]
+                },
+                "y": {
+                  "field": "Scenario_Espansivo",
+                  "type": "quantitative"
+                },
+                "tooltip": [
+                  {
+                    "field": "Opera_Regione",
+                    "type": "nominal",
+                    "title": "Soggetto"
+                  },
+                  {
+                    "field": "Scenario_Conservativo",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Conservativo (€)"
+                  },
+                  {
+                    "field": "Scenario_Benchmark",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Benchmark (€)"
+                  },
+                  {
+                    "field": "Scenario_Espansivo",
+                    "type": "quantitative",
+                    "format": ",.0f",
+                    "title": "Espansivo (€)"
+                  },
+                  {
+                    "field": "Rating_Medio",
+                    "type": "quantitative",
+                    "format": ".3f",
+                    "title": "Rating GYG"
+                  },
+                  {
+                    "field": "Quota_Totale",
+                    "type": "quantitative",
+                    "format": ".2%",
+                    "title": "% sul Totale"
+                  },
+                  {
+                    "field": "Regioni_Aggregate",
+                    "type": "nominal",
+                    "title": "Regioni aggregate in Altre"
+                  },
+                  {
+                    "field": "Review_Rate",
+                    "type": "nominal",
+                    "title": "Review Rate"
+                  },
+                  {
+                    "field": "Partecipanti_Medi",
+                    "type": "nominal",
+                    "title": "Partecipanti medi"
+                  }
+                ]
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "dx": 15,
+                "dy": -8,
+                "align": "left",
+                "baseline": "bottom",
+                "font": "Arial",
+                "fontWeight": "bold",
+                "fontSize": 11,
+                "fill": "#FFFFFF",
+                "stroke": "#FFFFFF",
+                "strokeWidth": 5,
+                "strokeJoin": "round"
+              },
+              "encoding": {
+                "x": {
+                  "field": "Opera_Regione",
+                  "type": "nominal",
+                  "sort": [
+                    "Sicilia",
+                    "Lombardia",
+                    "Veneto",
+                    "Lazio",
+                    "Piemonte",
+                    "Toscana",
+                    "Basilicata",
+                    "Altre"
+                  ]
+                },
+                "y": {
+                  "field": "Scenario_Benchmark",
+                  "type": "quantitative"
+                },
+                "text": {
+                  "field": "Benchmark_Label",
+                  "type": "nominal"
+                }
+              }
+            },
+            {
+              "mark": {
+                "type": "text",
+                "dx": 15,
+                "dy": -8,
+                "align": "left",
+                "baseline": "bottom",
+                "font": "Arial",
+                "fontWeight": "bold",
+                "fontSize": 11,
+                "fill": "#162832"
+              },
+              "encoding": {
+                "x": {
+                  "field": "Opera_Regione",
+                  "type": "nominal",
+                  "sort": [
+                    "Sicilia",
+                    "Lombardia",
+                    "Veneto",
+                    "Lazio",
+                    "Piemonte",
+                    "Toscana",
+                    "Basilicata",
+                    "Altre"
+                  ]
+                },
+                "y": {
+                  "field": "Scenario_Benchmark",
+                  "type": "quantitative"
+                },
+                "text": {
+                  "field": "Benchmark_Label",
+                  "type": "nominal"
+                }
+              }
+            }
+          ]
+        },
+        {
+          "width": 76,
+          "height": 440,
+          "layer": [
+            {
+              "data": {
+                "values": [
+                  {
+                    "x": 6,
+                    "y": 105,
+                    "text": "Rating Medio"
+                  }
+                ]
+              },
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "font": "Arial",
+                "fontSize": 11,
+                "fontWeight": "bold",
+                "color": "#173B57"
+              },
+              "encoding": {
+                "x": {
+                  "field": "x",
+                  "type": "quantitative",
+                  "scale": {
+                    "domain": [
+                      0,
+                      76
+                    ],
+                    "range": [
+                      0,
+                      76
+                    ]
+                  },
+                  "axis": null
+                },
+                "y": {
+                  "field": "y",
+                  "type": "quantitative",
+                  "scale": {
+                    "domain": [
+                      0,
+                      440
+                    ],
+                    "range": [
+                      0,
+                      440
+                    ]
+                  },
+                  "axis": null
+                },
+                "text": {
+                  "field": "text"
+                }
+              }
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "x": 6,
+                    "y": 120,
+                    "text": "GYG / 5"
+                  }
+                ]
+              },
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "font": "Arial",
+                "fontSize": 11,
+                "fontWeight": "bold",
+                "color": "#173B57"
+              },
+              "encoding": {
+                "x": {
+                  "field": "x",
+                  "type": "quantitative",
+                  "scale": {
+                    "domain": [
+                      0,
+                      76
+                    ],
+                    "range": [
+                      0,
+                      76
+                    ]
+                  },
+                  "axis": null
+                },
+                "y": {
+                  "field": "y",
+                  "type": "quantitative",
+                  "scale": {
+                    "domain": [
+                      0,
+                      440
+                    ],
+                    "range": [
+                      0,
+                      440
+                    ]
+                  },
+                  "axis": null
+                },
+                "text": {
+                  "field": "text"
+                }
+              }
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 135.0,
+                    "y1": 138.54166666666666,
+                    "Color": "#2F8035"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 138.54166666666666,
+                    "y1": 142.08333333333334,
+                    "Color": "#32863A"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 142.08333333333334,
+                    "y1": 145.625,
+                    "Color": "#358C40"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 145.625,
+                    "y1": 149.16666666666666,
+                    "Color": "#379245"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 149.16666666666666,
+                    "y1": 152.70833333333334,
+                    "Color": "#3A984B"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 152.70833333333334,
+                    "y1": 156.25,
+                    "Color": "#3D9E51"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 156.25,
+                    "y1": 159.79166666666666,
+                    "Color": "#40A456"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 159.79166666666666,
+                    "y1": 163.33333333333334,
+                    "Color": "#42AA5C"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 163.33333333333334,
+                    "y1": 166.875,
+                    "Color": "#45B061"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 166.875,
+                    "y1": 170.41666666666666,
+                    "Color": "#48B667"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 170.41666666666666,
+                    "y1": 173.95833333333334,
+                    "Color": "#4ABC6C"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 173.95833333333334,
+                    "y1": 177.5,
+                    "Color": "#4DC172"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 177.5,
+                    "y1": 181.04166666666666,
+                    "Color": "#50C777"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 181.04166666666666,
+                    "y1": 184.58333333333334,
+                    "Color": "#5AC971"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 184.58333333333334,
+                    "y1": 188.125,
+                    "Color": "#65CA6A"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 188.125,
+                    "y1": 191.66666666666666,
+                    "Color": "#6FCB63"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 191.66666666666666,
+                    "y1": 195.20833333333334,
+                    "Color": "#7ACC5B"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 195.20833333333334,
+                    "y1": 198.75,
+                    "Color": "#85CD54"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 198.75,
+                    "y1": 202.29166666666669,
+                    "Color": "#90CD4C"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 202.29166666666669,
+                    "y1": 205.83333333333331,
+                    "Color": "#9BCE45"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 205.83333333333331,
+                    "y1": 209.375,
+                    "Color": "#A5CF3D"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 209.375,
+                    "y1": 212.91666666666669,
+                    "Color": "#B0D036"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 212.91666666666669,
+                    "y1": 216.45833333333331,
+                    "Color": "#BBD12F"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 216.45833333333331,
+                    "y1": 220.0,
+                    "Color": "#C6D227"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 220.0,
+                    "y1": 223.54166666666669,
+                    "Color": "#D1D320"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 223.54166666666669,
+                    "y1": 227.08333333333331,
+                    "Color": "#DBD418"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 227.08333333333331,
+                    "y1": 230.625,
+                    "Color": "#E6D511"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 230.625,
+                    "y1": 234.16666666666669,
+                    "Color": "#F1D60A"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 234.16666666666669,
+                    "y1": 237.70833333333331,
+                    "Color": "#FCD702"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 237.70833333333331,
+                    "y1": 241.25,
+                    "Color": "#FFD600"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 241.25,
+                    "y1": 244.79166666666669,
+                    "Color": "#FFD401"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 244.79166666666669,
+                    "y1": 248.33333333333331,
+                    "Color": "#FFD301"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 248.33333333333331,
+                    "y1": 251.875,
+                    "Color": "#FFD102"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 251.875,
+                    "y1": 255.41666666666669,
+                    "Color": "#FFD002"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 255.41666666666669,
+                    "y1": 258.9583333333333,
+                    "Color": "#FFCE03"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 258.9583333333333,
+                    "y1": 262.5,
+                    "Color": "#FFCD03"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 262.5,
+                    "y1": 266.04166666666663,
+                    "Color": "#FFCB04"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 266.04166666666663,
+                    "y1": 269.58333333333337,
+                    "Color": "#FFCA04"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 269.58333333333337,
+                    "y1": 273.125,
+                    "Color": "#FFC805"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 273.125,
+                    "y1": 276.66666666666663,
+                    "Color": "#FFC705"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 276.66666666666663,
+                    "y1": 280.20833333333337,
+                    "Color": "#FFC506"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 280.20833333333337,
+                    "y1": 283.75,
+                    "Color": "#FFC406"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 283.75,
+                    "y1": 287.29166666666663,
+                    "Color": "#FFC207"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 287.29166666666663,
+                    "y1": 290.83333333333337,
+                    "Color": "#FFC007"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 290.83333333333337,
+                    "y1": 294.375,
+                    "Color": "#FFBB07"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 294.375,
+                    "y1": 297.91666666666663,
+                    "Color": "#FFB606"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 297.91666666666663,
+                    "y1": 301.45833333333337,
+                    "Color": "#FFB206"
+                  },
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 301.45833333333337,
+                    "y1": 305.0,
+                    "Color": "#FFAD06"
+                  }
+                ]
+              },
+              "mark": {
+                "type": "rect",
+                "stroke": null
+              },
+              "encoding": {
+                "x": {
+                  "field": "x0",
+                  "type": "quantitative",
+                  "scale": {
+                    "domain": [
+                      0,
+                      76
+                    ],
+                    "range": [
+                      0,
+                      76
+                    ]
+                  },
+                  "axis": null
+                },
+                "x2": {
+                  "field": "x1"
+                },
+                "y": {
+                  "field": "y0",
+                  "type": "quantitative",
+                  "scale": {
+                    "domain": [
+                      0,
+                      440
+                    ],
+                    "range": [
+                      0,
+                      440
+                    ]
+                  },
+                  "axis": null
+                },
+                "y2": {
+                  "field": "y1"
+                },
+                "color": {
+                  "field": "Color",
+                  "type": "nominal",
+                  "scale": null,
+                  "legend": null
+                }
+              }
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "x0": 6,
+                    "x1": 18,
+                    "y0": 135,
+                    "y1": 305
+                  }
+                ]
+              },
+              "mark": {
+                "type": "rect",
+                "fillOpacity": 0,
+                "stroke": "#9EABB1",
+                "strokeWidth": 1
+              },
+              "encoding": {
+                "x": {
+                  "field": "x0",
+                  "type": "quantitative",
+                  "scale": {
+                    "domain": [
+                      0,
+                      76
+                    ],
+                    "range": [
+                      0,
+                      76
+                    ]
+                  },
+                  "axis": null
+                },
+                "x2": {
+                  "field": "x1"
+                },
+                "y": {
+                  "field": "y0",
+                  "type": "quantitative",
+                  "scale": {
+                    "domain": [
+                      0,
+                      440
+                    ],
+                    "range": [
+                      0,
+                      440
+                    ]
+                  },
+                  "axis": null
+                },
+                "y2": {
+                  "field": "y1"
+                }
+              }
+            },
+            {
+              "data": {
+                "values": [
+                  {
+                    "x": 24,
+                    "y": 135,
+                    "label": "5,0"
+                  },
+                  {
+                    "x": 24,
+                    "y": 177.5,
+                    "label": "4,8"
+                  },
+                  {
+                    "x": 24,
+                    "y": 220.0,
+                    "label": "4,6"
+                  },
+                  {
+                    "x": 24,
+                    "y": 262.5,
+                    "label": "4,4"
+                  },
+                  {
+                    "x": 24,
+                    "y": 305,
+                    "label": "4,2"
+                  }
+                ]
+              },
+              "mark": {
+                "type": "text",
+                "align": "left",
+                "baseline": "middle",
+                "font": "Arial",
+                "fontSize": 10.5,
+                "color": "#162832"
+              },
+              "encoding": {
+                "x": {
+                  "field": "x",
+                  "type": "quantitative",
+                  "scale": {
+                    "domain": [
+                      0,
+                      76
+                    ],
+                    "range": [
+                      0,
+                      76
+                    ]
+                  },
+                  "axis": null
+                },
+                "y": {
+                  "field": "y",
+                  "type": "quantitative",
+                  "scale": {
+                    "domain": [
+                      0,
+                      440
+                    ],
+                    "range": [
+                      0,
+                      440
+                    ]
+                  },
+                  "axis": null
+                },
+                "text": {
+                  "field": "label"
+                }
+              }
+            }
+          ]
+        }
+      ],
+      "spacing": 8,
+      "bounds": "flush"
+    },
+    {
+      "width": 744,
+      "height": 24,
+      "data": {
+        "values": [
+          {}
+        ]
+      },
+      "mark": {
+        "type": "text",
+        "font": "Arial",
+        "fontSize": 12,
+        "fontWeight": "normal",
+        "color": "#173B57",
+        "align": "center",
+        "baseline": "middle"
+      },
+      "encoding": {
+        "x": {
+          "value": 372
+        },
+        "y": {
+          "value": 12
+        },
+        "text": {
+          "value": "Colonna: Scenario Benchmark   ·   Error bar: Scenario Espansivo-Conservativo"
+        }
+      }
+    }
+  ],
+  "spacing": 3,
+  "config": {
+    "background": "#FFFFFF",
+    "view": {
+      "stroke": null
+    },
+    "font": "Arial",
+    "concat": {
+      "spacing": 3
+    }
+  },
+  "usermeta": {
+    "format": "Vega-Lite v5 autonomous website spec",
+    "generated_at_utc": "2026-07-25T08:37:48.606356+00:00",
+    "max_width_px": 900,
+    "native_tooltips": true,
+    "custom_rating_bar_inside_json": true,
+    "external_javascript_required_for_layout_or_tooltip": false,
+    "rating_scale_domain": [
+      3.5,
+      3.83,
+      4.28,
+      4.52,
+      4.79,
+      5.0
+    ],
+    "rating_scale_range": [
+      "#DC3545",
+      "#FF4500",
+      "#FFC107",
+      "#FFD700",
+      "#50C878",
+      "#2E7D32"
+    ],
+    "rating_bar_display_range": [
+      4.2,
+      5.0
+    ],
+    "title_card_bounds_px": {
+      "x": 110,
+      "x2": 634,
+      "width": 524,
+      "center": 372
+    },
+    "title_card_inner_rule_bounds_px": {
+      "x": 128,
+      "x2": 616,
+      "width": 488
+    },
+    "title_card_change": "Widened from 350 px to 524 px; chart geometry and native tooltips unchanged.",
+    "html_runtime": "Pinned to Vega/Vega-Lite major versions with jsDelivr primary and unpkg fallback."
+  }
+}

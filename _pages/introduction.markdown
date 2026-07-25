@@ -173,7 +173,7 @@ attraverso il film.
 ### Stimare l'impatto economico
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/introduction/impatto_economico_GYG.json" style="width: 100%; height: 100%; display: block;"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/introduction/gyg_impatto_economico.json" style="width: 100%; height: 100%; display: block;"></vegachart>
 </div>
 
 ### Cosa raccontano i tour e le recensioni
