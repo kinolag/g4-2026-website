@@ -211,17 +211,8 @@ Infine, la parte più delicata è stata la **sentiment analysis**: abbiamo usato
   <vegachart schema-url="{{site.baseurl}}/assets/charts/introduction/sentiment_combinato_recensioni_gyg_finale.json" style="width: 100%; height: 100%; display: block;"></vegachart>
 </div>
 
-Questi esempi mostrano come il cineturismo non sia solo un fenomeno economico, ma anche **sociale e affettivo**: un modo per costruire comunità, condividere esperienze e riscoprire il valore dei luoghi attraverso la lente del cinema.
-
-
-<figure class="photo">
-  <img src="{{site.baseurl}}/assets/images/introduzione/wordcloud.png"
-       alt="Wordcloud">
-  <figcaption>
-    Wordcloud generata tramite text analysis sulle recensioni di GetYourGuide nella sezione tour cinematografici in Italia.
-  </figcaption>
-</figure>
-
+Questi esempi mostrano come il cineturismo non sia solo un fenomeno economico, ma anche **sociale e affettivo**: 
+un modo per costruire comunità, condividere esperienze e riscoprire il valore dei luoghi attraverso la lente del cinema.
 Un altro punto di contatto tra dati e testimonianza di **Rob** **McQuack** riguarda la percezione dei luoghi: 
 Rob insiste sul fatto che le _location_ devono essere rispettate culturalmente, non stereotipate. 
 Nel dataset, i pochi sentiment negativi riguardano proprio problemi organizzativi o aspettative tradite: 
