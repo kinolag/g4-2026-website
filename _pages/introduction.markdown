@@ -170,13 +170,24 @@ attraverso il film.
   <span class="q-author">Gary Potter <span class="q-role">— organizzatore dell'Elio &amp; Oliver Love Tour, Crema</span></span>
 </div>
 
-### Stimare l'impatto economico
+### Impatto economico dei tour cinematografici di GetYourGuide
+
+La seguente analisi stima la **spesa lorda** **veicolata dai tour** trasformando le recensioni pubbliche in 
+prenotazioni totali tramite il **Review Rate (RR) del 25,00%, ripreso dalla letteratura empirica** 
+(Nicolau et al., 2025, basato su 759 recensioni su 3.047 prenotazioni GetYourGuide). Per modellare l'incertezza, 
+gli scenari espansivo e conservativo adottano direttamente **i limiti dell'Intervallo di Wilson al 95% calcolati 
+nello studio** (23,41% per massimizzare le prenotazioni e 26,48% per minimizzarle). Le prenotazioni così ottenute 
+vengono convertite in viaggiatori effettivi moltiplicandole per l'assunzione sul numero medio di partecipanti 
+per transazione (da 1,5 a 2,5; benchmark 2,0). Infine, i volumi di turisti stimati nei tre scenari vengono 
+moltiplicati per il prezzo di listino del tour, restituendo **una forchetta d'impatto monetario scientificamente 
+robusta**.
+
 
 <div class="chart-container">
   <vegachart schema-url="{{site.baseurl}}/assets/charts/introduction/gyg_impatto_economico.json" style="width: 100%; height: 100%; display: block;"></vegachart>
 </div>
 
-### Cosa raccontano i tour e le recensioni
+### Cosa raccontano i tour e le recensioni di GetYourGuide
 
 Accanto alle iniziative indipendenti ci sono i **tour cinematografici** organizzati da piattaforme come **GetYourGuide**, di cui abbiamo analizzato descrizioni e recensioni.
 
