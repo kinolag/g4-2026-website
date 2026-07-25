@@ -170,6 +170,12 @@ attraverso il film.
   <span class="q-author">Gary Potter <span class="q-role">— organizzatore dell'Elio &amp; Oliver Love Tour, Crema</span></span>
 </div>
 
+### Stimare l'impatto economico
+
+<div class="chart-container">
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/introduction/impatto_economico_GYG.json" style="width: 100%; height: 100%; display: block;"></vegachart>
+</div>
+
 ### Cosa raccontano i tour e le recensioni
 
 Accanto alle iniziative indipendenti ci sono i **tour cinematografici** organizzati da piattaforme come **GetYourGuide**, di cui abbiamo analizzato descrizioni e recensioni.

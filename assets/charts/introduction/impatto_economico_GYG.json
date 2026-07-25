@@ -1,0 +1,989 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v5.json",
+  "description": "Impatto economico dei tour GYG per regione. Le barre sono colorate con valori HEX solidi precomputati secondo la scala rating originale; la colorbar è resa nell'HTML con segmenti solidi per evitare alterazioni di Google Drive.",
+  "width": 660,
+  "height": 440,
+  "padding": 0,
+  "background": "#FFFFFF",
+  "data": {
+    "values": [
+      {
+        "rank_by_benchmark": 1,
+        "category": "Sicilia",
+        "n_tour": 60,
+        "reviews": 3791,
+        "review_share_pct": 31.908088544735293,
+        "scenario_conservative_eur": 1983710,
+        "scenario_benchmark_eur": 2801528,
+        "scenario_expansive_eur": 3739759,
+        "value_share_pct": 40.027180777315365,
+        "rating_weighted": 4.793,
+        "rating_scale_max": 5,
+        "assigned_color": "rgb(80, 199, 119)",
+        "error_bar_minus_eur": 817818,
+        "error_bar_plus_eur": 938231,
+        "benchmark_label": "€ 2,8M",
+        "quota_totale_label": "40,03%",
+        "conservative_label": "€ 1.983.710",
+        "benchmark_full_label": "€ 2.801.528",
+        "expansive_label": "€ 3.739.759",
+        "rating_label": "4,793",
+        "tooltip_review_rate": "Conservativo: 23,41% | Benchmark: 25,00% | Espansivo: 26,48%",
+        "tooltip_participants": "Conservativo: 1,5 | Benchmark: 2,0 | Espansivo: 2,5",
+        "aggregation_members_label": "",
+        "rating_color_hex": "#50C777"
+      },
+      {
+        "rank_by_benchmark": 2,
+        "category": "Lombardia",
+        "n_tour": 18,
+        "reviews": 4508,
+        "review_share_pct": 37.942934096456526,
+        "scenario_conservative_eur": 1504175,
+        "scenario_benchmark_eur": 2124296,
+        "scenario_expansive_eur": 2835722,
+        "value_share_pct": 30.3511440958391,
+        "rating_weighted": 4.362,
+        "rating_scale_max": 5,
+        "assigned_color": "rgb(255, 201, 5)",
+        "error_bar_minus_eur": 620121,
+        "error_bar_plus_eur": 711426,
+        "benchmark_label": "€ 2,1M",
+        "quota_totale_label": "30,35%",
+        "conservative_label": "€ 1.504.175",
+        "benchmark_full_label": "€ 2.124.296",
+        "expansive_label": "€ 2.835.722",
+        "rating_label": "4,362",
+        "tooltip_review_rate": "Conservativo: 23,41% | Benchmark: 25,00% | Espansivo: 26,48%",
+        "tooltip_participants": "Conservativo: 1,5 | Benchmark: 2,0 | Espansivo: 2,5",
+        "aggregation_members_label": "",
+        "rating_color_hex": "#FFC905"
+      },
+      {
+        "rank_by_benchmark": 3,
+        "category": "Veneto",
+        "n_tour": 24,
+        "reviews": 1486,
+        "review_share_pct": 12.507364699941082,
+        "scenario_conservative_eur": 683741,
+        "scenario_benchmark_eur": 965624,
+        "scenario_expansive_eur": 1289011,
+        "value_share_pct": 13.796473357008878,
+        "rating_weighted": 4.46,
+        "rating_scale_max": 5,
+        "assigned_color": "rgb(255, 210, 2)",
+        "error_bar_minus_eur": 281883,
+        "error_bar_plus_eur": 323387,
+        "benchmark_label": "€ 966K",
+        "quota_totale_label": "13,80%",
+        "conservative_label": "€ 683.741",
+        "benchmark_full_label": "€ 965.624",
+        "expansive_label": "€ 1.289.011",
+        "rating_label": "4,460",
+        "tooltip_review_rate": "Conservativo: 23,41% | Benchmark: 25,00% | Espansivo: 26,48%",
+        "tooltip_participants": "Conservativo: 1,5 | Benchmark: 2,0 | Espansivo: 2,5",
+        "aggregation_members_label": "",
+        "rating_color_hex": "#FFD202"
+      },
+      {
+        "rank_by_benchmark": 4,
+        "category": "Lazio",
+        "n_tour": 18,
+        "reviews": 853,
+        "review_share_pct": 7.1795303425637576,
+        "scenario_conservative_eur": 323310,
+        "scenario_benchmark_eur": 456600,
+        "scenario_expansive_eur": 609515,
+        "value_share_pct": 6.523729458681904,
+        "rating_weighted": 4.46,
+        "rating_scale_max": 5,
+        "assigned_color": "rgb(255, 210, 2)",
+        "error_bar_minus_eur": 133290,
+        "error_bar_plus_eur": 152915,
+        "benchmark_label": "€ 457K",
+        "quota_totale_label": "6,52%",
+        "conservative_label": "€ 323.310",
+        "benchmark_full_label": "€ 456.600",
+        "expansive_label": "€ 609.515",
+        "rating_label": "4,460",
+        "tooltip_review_rate": "Conservativo: 23,41% | Benchmark: 25,00% | Espansivo: 26,48%",
+        "tooltip_participants": "Conservativo: 1,5 | Benchmark: 2,0 | Espansivo: 2,5",
+        "aggregation_members_label": "",
+        "rating_color_hex": "#FFD202"
+      },
+      {
+        "rank_by_benchmark": 5,
+        "category": "Piemonte",
+        "n_tour": 6,
+        "reviews": 526,
+        "review_share_pct": 4.427236764582106,
+        "scenario_conservative_eur": 192887,
+        "scenario_benchmark_eur": 272408,
+        "scenario_expansive_eur": 363637,
+        "value_share_pct": 3.8920632816045115,
+        "rating_weighted": 4.323,
+        "rating_scale_max": 5,
+        "assigned_color": "rgb(255, 197, 6)",
+        "error_bar_minus_eur": 79521,
+        "error_bar_plus_eur": 91229,
+        "benchmark_label": "€ 272K",
+        "quota_totale_label": "3,89%",
+        "conservative_label": "€ 192.887",
+        "benchmark_full_label": "€ 272.408",
+        "expansive_label": "€ 363.637",
+        "rating_label": "4,323",
+        "tooltip_review_rate": "Conservativo: 23,41% | Benchmark: 25,00% | Espansivo: 26,48%",
+        "tooltip_participants": "Conservativo: 1,5 | Benchmark: 2,0 | Espansivo: 2,5",
+        "aggregation_members_label": "",
+        "rating_color_hex": "#FFC506"
+      },
+      {
+        "rank_by_benchmark": 6,
+        "category": "Toscana",
+        "n_tour": 12,
+        "reviews": 266,
+        "review_share_pct": 2.23886878208905,
+        "scenario_conservative_eur": 187398,
+        "scenario_benchmark_eur": 264656,
+        "scenario_expansive_eur": 353289,
+        "value_share_pct": 3.781305614579321,
+        "rating_weighted": 4.493,
+        "rating_scale_max": 5,
+        "assigned_color": "rgb(255, 213, 1)",
+        "error_bar_minus_eur": 77258,
+        "error_bar_plus_eur": 88633,
+        "benchmark_label": "€ 265K",
+        "quota_totale_label": "3,78%",
+        "conservative_label": "€ 187.398",
+        "benchmark_full_label": "€ 264.656",
+        "expansive_label": "€ 353.289",
+        "rating_label": "4,493",
+        "tooltip_review_rate": "Conservativo: 23,41% | Benchmark: 25,00% | Espansivo: 26,48%",
+        "tooltip_participants": "Conservativo: 1,5 | Benchmark: 2,0 | Espansivo: 2,5",
+        "aggregation_members_label": "",
+        "rating_color_hex": "#FFD501"
+      },
+      {
+        "rank_by_benchmark": 7,
+        "category": "Basilicata",
+        "n_tour": 4,
+        "reviews": 288,
+        "review_share_pct": 2.424038380607693,
+        "scenario_conservative_eur": 61688,
+        "scenario_benchmark_eur": 87120,
+        "scenario_expansive_eur": 116296,
+        "value_share_pct": 1.2447378678063237,
+        "rating_weighted": 4.619,
+        "rating_scale_max": 5,
+        "assigned_color": "rgb(191, 210, 44)",
+        "error_bar_minus_eur": 25432,
+        "error_bar_plus_eur": 29176,
+        "benchmark_label": "€ 87,1K",
+        "quota_totale_label": "1,24%",
+        "conservative_label": "€ 61.688",
+        "benchmark_full_label": "€ 87.120",
+        "expansive_label": "€ 116.296",
+        "rating_label": "4,619",
+        "tooltip_review_rate": "Conservativo: 23,41% | Benchmark: 25,00% | Espansivo: 26,48%",
+        "tooltip_participants": "Conservativo: 1,5 | Benchmark: 2,0 | Espansivo: 2,5",
+        "aggregation_members_label": "",
+        "rating_color_hex": "#BFD22C"
+      },
+      {
+        "rank_by_benchmark": 8,
+        "category": "Altre",
+        "n_tour": 7,
+        "reviews": 163,
+        "review_share_pct": 1.3719383890244927,
+        "scenario_conservative_eur": 18999,
+        "scenario_benchmark_eur": 26832,
+        "scenario_expansive_eur": 35817,
+        "value_share_pct": 0.3833655471645923,
+        "rating_weighted": 4.26257055214724,
+        "rating_scale_max": 5,
+        "aggregation_members": [
+          "Campania",
+          "Liguria",
+          "Emilia-Romagna"
+        ],
+        "aggregation_method_rating": "media ponderata per numero di recensioni",
+        "assigned_color": "rgb(255, 188, 7)",
+        "benchmark_label": "€ 26,8K",
+        "quota_totale_label": "0,38%",
+        "conservative_label": "€ 18.999",
+        "benchmark_full_label": "€ 26.832",
+        "expansive_label": "€ 35.817",
+        "rating_label": "4,263",
+        "tooltip_review_rate": "Conservativo: 23,41% | Benchmark: 25,00% | Espansivo: 26,48%",
+        "tooltip_participants": "Conservativo: 1,5 | Benchmark: 2,0 | Espansivo: 2,5",
+        "aggregation_members_label": "Campania, Liguria, Emilia-Romagna",
+        "rating_color_hex": "#FFBC07"
+      }
+    ]
+  },
+  "layer": [
+    {
+      "mark": {
+        "type": "bar",
+        "size": 60,
+        "opacity": 1,
+        "stroke": "#FFFFFF",
+        "strokeWidth": 1.2,
+        "cornerRadiusTopLeft": 2,
+        "cornerRadiusTopRight": 2
+      },
+      "encoding": {
+        "x": {
+          "field": "category",
+          "type": "nominal",
+          "sort": [
+            "Sicilia",
+            "Lombardia",
+            "Veneto",
+            "Lazio",
+            "Piemonte",
+            "Toscana",
+            "Basilicata",
+            "Altre"
+          ],
+          "title": "Regioni",
+          "axis": {
+            "labelAngle": 0,
+            "labelFont": "Arial",
+            "labelFontSize": 12,
+            "labelColor": "#162832",
+            "labelPadding": 8,
+            "titleFont": "Arial",
+            "titleFontSize": 14,
+            "titleFontWeight": "bold",
+            "titleColor": "#173B57",
+            "titlePadding": 16,
+            "tickColor": "#9FB0B8",
+            "domainColor": "#9FB0B8",
+            "grid": false
+          }
+        },
+        "y": {
+          "field": "scenario_benchmark_eur",
+          "type": "quantitative",
+          "title": "Impatto economico stimato (€)",
+          "scale": {
+            "domain": [
+              0,
+              4338120.4399999995
+            ],
+            "nice": false,
+            "zero": true
+          },
+          "axis": {
+            "labelFont": "Arial",
+            "labelFontSize": 11,
+            "labelColor": "#162832",
+            "titleFont": "Arial",
+            "titleFontSize": 14,
+            "titleFontWeight": "bold",
+            "titleColor": "#173B57",
+            "titlePadding": 14,
+            "grid": true,
+            "gridColor": "#E5EBEF",
+            "gridWidth": 1,
+            "tickColor": "#9FB0B8",
+            "domainColor": "#9FB0B8",
+            "format": "~s"
+          }
+        },
+        "color": {
+          "field": "rating_color_hex",
+          "type": "nominal",
+          "scale": null,
+          "legend": null
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "rule",
+        "color": "#294B5F",
+        "strokeWidth": 2.4
+      },
+      "encoding": {
+        "x": {
+          "field": "category",
+          "type": "nominal",
+          "sort": [
+            "Sicilia",
+            "Lombardia",
+            "Veneto",
+            "Lazio",
+            "Piemonte",
+            "Toscana",
+            "Basilicata",
+            "Altre"
+          ]
+        },
+        "y": {
+          "field": "scenario_conservative_eur",
+          "type": "quantitative"
+        },
+        "y2": {
+          "field": "scenario_expansive_eur"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "tick",
+        "color": "#294B5F",
+        "thickness": 2.4,
+        "size": 18
+      },
+      "encoding": {
+        "x": {
+          "field": "category",
+          "type": "nominal",
+          "sort": [
+            "Sicilia",
+            "Lombardia",
+            "Veneto",
+            "Lazio",
+            "Piemonte",
+            "Toscana",
+            "Basilicata",
+            "Altre"
+          ]
+        },
+        "y": {
+          "field": "scenario_conservative_eur",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "tick",
+        "color": "#294B5F",
+        "thickness": 2.4,
+        "size": 18
+      },
+      "encoding": {
+        "x": {
+          "field": "category",
+          "type": "nominal",
+          "sort": [
+            "Sicilia",
+            "Lombardia",
+            "Veneto",
+            "Lazio",
+            "Piemonte",
+            "Toscana",
+            "Basilicata",
+            "Altre"
+          ]
+        },
+        "y": {
+          "field": "scenario_expansive_eur",
+          "type": "quantitative"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 15,
+        "dy": -8,
+        "align": "left",
+        "baseline": "bottom",
+        "font": "Arial",
+        "fontWeight": "bold",
+        "fontSize": 11,
+        "fill": "#FFFFFF",
+        "stroke": "#FFFFFF",
+        "strokeWidth": 5,
+        "strokeJoin": "round"
+      },
+      "encoding": {
+        "x": {
+          "field": "category",
+          "type": "nominal",
+          "sort": [
+            "Sicilia",
+            "Lombardia",
+            "Veneto",
+            "Lazio",
+            "Piemonte",
+            "Toscana",
+            "Basilicata",
+            "Altre"
+          ]
+        },
+        "y": {
+          "field": "scenario_benchmark_eur",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "benchmark_label",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "text",
+        "dx": 15,
+        "dy": -8,
+        "align": "left",
+        "baseline": "bottom",
+        "font": "Arial",
+        "fontWeight": "bold",
+        "fontSize": 11,
+        "fill": "#162832"
+      },
+      "encoding": {
+        "x": {
+          "field": "category",
+          "type": "nominal",
+          "sort": [
+            "Sicilia",
+            "Lombardia",
+            "Veneto",
+            "Lazio",
+            "Piemonte",
+            "Toscana",
+            "Basilicata",
+            "Altre"
+          ]
+        },
+        "y": {
+          "field": "scenario_benchmark_eur",
+          "type": "quantitative"
+        },
+        "text": {
+          "field": "benchmark_label",
+          "type": "nominal"
+        }
+      }
+    },
+    {
+      "mark": {
+        "type": "bar",
+        "size": 70,
+        "opacity": 0.001,
+        "cursor": "pointer"
+      },
+      "encoding": {
+        "x": {
+          "field": "category",
+          "type": "nominal",
+          "sort": [
+            "Sicilia",
+            "Lombardia",
+            "Veneto",
+            "Lazio",
+            "Piemonte",
+            "Toscana",
+            "Basilicata",
+            "Altre"
+          ]
+        },
+        "y": {
+          "field": "scenario_expansive_eur",
+          "type": "quantitative"
+        },
+        "tooltip": [
+          {
+            "field": "category",
+            "type": "nominal",
+            "title": "Regione"
+          }
+        ]
+      }
+    }
+  ],
+  "config": {
+    "view": {
+      "stroke": null
+    },
+    "background": "#FFFFFF",
+    "font": "Arial"
+  },
+  "usermeta": {
+    "format": "Altair-compatible Vega-Lite",
+    "source_html": "IMPATT~2.HTM",
+    "source_json": "IMPATT~1.JSO",
+    "source_html_sha256": "e9a4459484a5494872d8c7210e3a81c3713d44f767d9df7fb7014e62bd7daefb",
+    "source_json_sha256": "018a586bc792b3fc692edb431c7d3b88780d816168555497427f3afc43a44eb1",
+    "generated_at_utc": "2026-07-24T19:01:26.667665+00:00",
+    "max_container_width_px": 900,
+    "layout": {
+      "chart_width_px": 700,
+      "chart_height_px": 440,
+      "container_max_width_px": 900,
+      "background": "#FFFFFF",
+      "title_alignment": "center",
+      "y_scale": "linear",
+      "ordering": [
+        "Sicilia",
+        "Lombardia",
+        "Veneto",
+        "Lazio",
+        "Piemonte",
+        "Toscana",
+        "Basilicata",
+        "Altre"
+      ],
+      "colorbar_position": "right_vertical_centered",
+      "visual_title": "summary_card"
+    },
+    "summary_card": {
+      "title": "IMPATTO ECONOMICO TOURS GYG A TEMA CINEMA E TV",
+      "scenario_conservative_eur": 4955908,
+      "scenario_benchmark_eur": 6999064,
+      "scenario_expansive_eur": 9343048,
+      "n_tour": 149,
+      "reviews": 11881,
+      "rating_weighted": 4.524888982408888
+    },
+    "model_assumptions": {
+      "review_rate_pct": {
+        "conservative": 23.41,
+        "benchmark": 25.0,
+        "expansive": 26.48
+      },
+      "average_participants": {
+        "conservative": 1.5,
+        "benchmark": 2.0,
+        "expansive": 2.5
+      }
+    },
+    "aggregation_update": {
+      "croatia_excluded": true,
+      "excluded_category": "Croazia",
+      "aggregate_category": "Altre",
+      "aggregate_members": [
+        "Campania",
+        "Liguria",
+        "Emilia-Romagna"
+      ],
+      "aggregate_position": "dopo Basilicata",
+      "aggregation_method_values": "somma",
+      "aggregation_method_rating": "media ponderata per numero di recensioni",
+      "shares_recalculated_on_italy_only_total": true,
+      "aggregate_members_in_tooltip": true
+    },
+    "excluded_data": {
+      "category": "Croazia",
+      "reason": "Esclusa dal grafico regionale perché non appartenente all'Italia.",
+      "row": {
+        "rank_by_benchmark": 9,
+        "category": "Croazia",
+        "n_tour": 1,
+        "reviews": 5,
+        "review_share_pct": 0.0,
+        "scenario_conservative_eur": 7081,
+        "scenario_benchmark_eur": 10000,
+        "scenario_expansive_eur": 13349,
+        "value_share_pct": 0.1,
+        "rating_weighted": 5.0,
+        "rating_scale_max": 5,
+        "assigned_color": "rgb(46, 125, 50)",
+        "error_bar_minus_eur": 2919,
+        "error_bar_plus_eur": 3349
+      }
+    },
+    "tooltip_fields": {
+      "quota_totale": "value_share_pct",
+      "scenario_conservativo": "scenario_conservative_eur",
+      "scenario_benchmark": "scenario_benchmark_eur",
+      "scenario_espansivo": "scenario_expansive_eur",
+      "rating_medio_gyg": "rating_weighted",
+      "review_rate": {
+        "conservative": 23.41,
+        "benchmark": 25.0,
+        "expansive": 26.48
+      },
+      "partecipanti_medi": {
+        "conservative": 1.5,
+        "benchmark": 2.0,
+        "expansive": 2.5
+      }
+    },
+    "quality_checks": {
+      "max_width_900_px": true,
+      "linear_y_scale": true,
+      "benchmark_labels_only": true,
+      "summary_card_present": true,
+      "tooltip_contains_total_share_pct": true,
+      "tooltip_contains_model_assumptions": true,
+      "croatia_excluded": true,
+      "altre_aggregated": true,
+      "category_order_preserved": true,
+      "summary_card_centered": true,
+      "chart_title_removed": true,
+      "reading_key_below_chart": true,
+      "rating_colorbar_centered": true,
+      "rating_colorbar_right": true,
+      "benchmark_label_shifted_away_from_error_bar": true,
+      "benchmark_label_white_halo": true,
+      "only_benchmark_label_visible": true,
+      "rating_color_encoding_explicit": true,
+      "rating_colorbar_visible_right": true,
+      "rating_gradient_continuous": true,
+      "rating_bar_rendered_outside_svg": true,
+      "rating_bar_uses_solid_segments": true,
+      "rating_bar_visible_without_svg_gradient": true,
+      "previous_rating_scale_restored": true,
+      "displayed_rating_range_4_2_to_5": true,
+      "altre_tooltip_lists_aggregated_regions": true,
+      "rating_bar_position_preserved": true,
+      "rating_bar_thinner": true,
+      "rating_bar_shorter": true,
+      "rating_bar_not_comparable_to_columns": true,
+      "chart_slightly_flatter": true,
+      "chart_height_reduced_from_px": 475,
+      "chart_height_reduced_to_px": 440,
+      "title_chart_spacing_reduced_without_clutter": true
+    },
+    "debugging_update": {
+      "benchmark_label_only": true,
+      "benchmark_label_dx_px": 15,
+      "benchmark_label_dy_px": -8,
+      "benchmark_label_align": "left",
+      "benchmark_label_white_halo": true,
+      "conservative_and_expansive_values_tooltip_only": true,
+      "rating_color_field": "rating_weighted",
+      "rating_scale_domain": [
+        3.5,
+        4.25,
+        5.0
+      ],
+      "rating_scale_range": [
+        "#FF4500",
+        "#FFD700",
+        "#50C878"
+      ],
+      "rating_legend_orientation": "right",
+      "rating_legend_direction": "vertical"
+    },
+    "rating_scale": {
+      "domain": [
+        3.5,
+        3.83,
+        4.28,
+        4.52,
+        4.79,
+        5.0
+      ],
+      "range": [
+        "#DC3545",
+        "#FF4500",
+        "#FFC107",
+        "#FFD700",
+        "#50C878",
+        "#2E7D32"
+      ],
+      "displayed_legend_min": 4.2,
+      "displayed_legend_max": 5.0,
+      "legend_min_reference": "Liguria (4,2)",
+      "bar_color_field": "rating_color_hex",
+      "bar_colors_precomputed": true
+    },
+    "external_rating_legend": {
+      "placement": "right_vertical_centered",
+      "segment_count": 48,
+      "segments": [
+        {
+          "index": 0,
+          "rating_upper": 5.0,
+          "rating_lower": 4.983333333333333,
+          "color_hex": "#2F8035"
+        },
+        {
+          "index": 1,
+          "rating_upper": 4.983333333333333,
+          "rating_lower": 4.966666666666667,
+          "color_hex": "#32863A"
+        },
+        {
+          "index": 2,
+          "rating_upper": 4.966666666666667,
+          "rating_lower": 4.95,
+          "color_hex": "#358C40"
+        },
+        {
+          "index": 3,
+          "rating_upper": 4.95,
+          "rating_lower": 4.933333333333334,
+          "color_hex": "#379245"
+        },
+        {
+          "index": 4,
+          "rating_upper": 4.933333333333334,
+          "rating_lower": 4.916666666666667,
+          "color_hex": "#3A984B"
+        },
+        {
+          "index": 5,
+          "rating_upper": 4.916666666666667,
+          "rating_lower": 4.9,
+          "color_hex": "#3D9E51"
+        },
+        {
+          "index": 6,
+          "rating_upper": 4.9,
+          "rating_lower": 4.883333333333334,
+          "color_hex": "#40A456"
+        },
+        {
+          "index": 7,
+          "rating_upper": 4.883333333333334,
+          "rating_lower": 4.866666666666667,
+          "color_hex": "#42AA5C"
+        },
+        {
+          "index": 8,
+          "rating_upper": 4.866666666666667,
+          "rating_lower": 4.85,
+          "color_hex": "#45B061"
+        },
+        {
+          "index": 9,
+          "rating_upper": 4.85,
+          "rating_lower": 4.833333333333333,
+          "color_hex": "#48B667"
+        },
+        {
+          "index": 10,
+          "rating_upper": 4.833333333333333,
+          "rating_lower": 4.816666666666666,
+          "color_hex": "#4ABC6C"
+        },
+        {
+          "index": 11,
+          "rating_upper": 4.816666666666666,
+          "rating_lower": 4.8,
+          "color_hex": "#4DC172"
+        },
+        {
+          "index": 12,
+          "rating_upper": 4.8,
+          "rating_lower": 4.783333333333333,
+          "color_hex": "#50C777"
+        },
+        {
+          "index": 13,
+          "rating_upper": 4.783333333333333,
+          "rating_lower": 4.766666666666667,
+          "color_hex": "#5AC971"
+        },
+        {
+          "index": 14,
+          "rating_upper": 4.766666666666667,
+          "rating_lower": 4.75,
+          "color_hex": "#65CA6A"
+        },
+        {
+          "index": 15,
+          "rating_upper": 4.75,
+          "rating_lower": 4.733333333333333,
+          "color_hex": "#6FCB63"
+        },
+        {
+          "index": 16,
+          "rating_upper": 4.733333333333333,
+          "rating_lower": 4.716666666666667,
+          "color_hex": "#7ACC5B"
+        },
+        {
+          "index": 17,
+          "rating_upper": 4.716666666666667,
+          "rating_lower": 4.7,
+          "color_hex": "#85CD54"
+        },
+        {
+          "index": 18,
+          "rating_upper": 4.7,
+          "rating_lower": 4.683333333333334,
+          "color_hex": "#90CD4C"
+        },
+        {
+          "index": 19,
+          "rating_upper": 4.683333333333334,
+          "rating_lower": 4.666666666666667,
+          "color_hex": "#9BCE45"
+        },
+        {
+          "index": 20,
+          "rating_upper": 4.666666666666667,
+          "rating_lower": 4.65,
+          "color_hex": "#A5CF3D"
+        },
+        {
+          "index": 21,
+          "rating_upper": 4.65,
+          "rating_lower": 4.633333333333334,
+          "color_hex": "#B0D036"
+        },
+        {
+          "index": 22,
+          "rating_upper": 4.633333333333334,
+          "rating_lower": 4.616666666666667,
+          "color_hex": "#BBD12F"
+        },
+        {
+          "index": 23,
+          "rating_upper": 4.616666666666667,
+          "rating_lower": 4.6,
+          "color_hex": "#C6D227"
+        },
+        {
+          "index": 24,
+          "rating_upper": 4.6,
+          "rating_lower": 4.583333333333333,
+          "color_hex": "#D1D320"
+        },
+        {
+          "index": 25,
+          "rating_upper": 4.583333333333333,
+          "rating_lower": 4.566666666666666,
+          "color_hex": "#DBD418"
+        },
+        {
+          "index": 26,
+          "rating_upper": 4.566666666666666,
+          "rating_lower": 4.55,
+          "color_hex": "#E6D511"
+        },
+        {
+          "index": 27,
+          "rating_upper": 4.55,
+          "rating_lower": 4.533333333333333,
+          "color_hex": "#F1D60A"
+        },
+        {
+          "index": 28,
+          "rating_upper": 4.533333333333333,
+          "rating_lower": 4.516666666666667,
+          "color_hex": "#FCD702"
+        },
+        {
+          "index": 29,
+          "rating_upper": 4.516666666666667,
+          "rating_lower": 4.5,
+          "color_hex": "#FFD600"
+        },
+        {
+          "index": 30,
+          "rating_upper": 4.5,
+          "rating_lower": 4.483333333333333,
+          "color_hex": "#FFD401"
+        },
+        {
+          "index": 31,
+          "rating_upper": 4.483333333333333,
+          "rating_lower": 4.466666666666667,
+          "color_hex": "#FFD301"
+        },
+        {
+          "index": 32,
+          "rating_upper": 4.466666666666667,
+          "rating_lower": 4.45,
+          "color_hex": "#FFD102"
+        },
+        {
+          "index": 33,
+          "rating_upper": 4.45,
+          "rating_lower": 4.433333333333334,
+          "color_hex": "#FFD002"
+        },
+        {
+          "index": 34,
+          "rating_upper": 4.433333333333334,
+          "rating_lower": 4.416666666666667,
+          "color_hex": "#FFCE03"
+        },
+        {
+          "index": 35,
+          "rating_upper": 4.416666666666667,
+          "rating_lower": 4.4,
+          "color_hex": "#FFCD03"
+        },
+        {
+          "index": 36,
+          "rating_upper": 4.4,
+          "rating_lower": 4.383333333333334,
+          "color_hex": "#FFCB04"
+        },
+        {
+          "index": 37,
+          "rating_upper": 4.383333333333334,
+          "rating_lower": 4.366666666666667,
+          "color_hex": "#FFCA04"
+        },
+        {
+          "index": 38,
+          "rating_upper": 4.366666666666667,
+          "rating_lower": 4.35,
+          "color_hex": "#FFC805"
+        },
+        {
+          "index": 39,
+          "rating_upper": 4.35,
+          "rating_lower": 4.333333333333334,
+          "color_hex": "#FFC705"
+        },
+        {
+          "index": 40,
+          "rating_upper": 4.333333333333334,
+          "rating_lower": 4.316666666666666,
+          "color_hex": "#FFC506"
+        },
+        {
+          "index": 41,
+          "rating_upper": 4.316666666666666,
+          "rating_lower": 4.3,
+          "color_hex": "#FFC406"
+        },
+        {
+          "index": 42,
+          "rating_upper": 4.3,
+          "rating_lower": 4.283333333333333,
+          "color_hex": "#FFC207"
+        },
+        {
+          "index": 43,
+          "rating_upper": 4.283333333333333,
+          "rating_lower": 4.266666666666667,
+          "color_hex": "#FFC007"
+        },
+        {
+          "index": 44,
+          "rating_upper": 4.266666666666667,
+          "rating_lower": 4.25,
+          "color_hex": "#FFBB07"
+        },
+        {
+          "index": 45,
+          "rating_upper": 4.25,
+          "rating_lower": 4.233333333333333,
+          "color_hex": "#FFB606"
+        },
+        {
+          "index": 46,
+          "rating_upper": 4.233333333333333,
+          "rating_lower": 4.216666666666667,
+          "color_hex": "#FFB206"
+        },
+        {
+          "index": 47,
+          "rating_upper": 4.216666666666667,
+          "rating_lower": 4.2,
+          "color_hex": "#FFAD06"
+        }
+      ],
+      "implementation": "HTML blocks with solid background-color values",
+      "bar_width_px": 12,
+      "bar_height_px": 170,
+      "appearance": "thin_compact"
+    }
+  }
+}
