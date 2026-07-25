@@ -42,29 +42,48 @@ subtitle: "Le serie televisive a lunga esposizione e i loro territori"
     justify-content: center;
   }
 
-  /* Contenitore standard, centrato e responsivo */
+  /* Contenitore standard, centrato: larghezza naturale del grafico (no max-width) */
   .chart-container {
     width: 100%;
-    max-width: 1000px; /* limite per evitare grafici troppo grandi */
     margin: 40px auto; /* centra il grafico */
     padding: 0 20px; /* margine laterale su mobile */
     box-sizing: border-box;
+    text-align: center;
   }
 
   /* Vega charts: il contenitore si adatta, il grafico NON viene scalato via CSS
      (scalare svg/canvas sposta le coordinate e rompe hover e tooltip). */
   .chart-container vegachart,
   .chart-container .vega-embed {
-    display: flex;
-    justify-content: center;
-    justify-content: safe center;  /* se il grafico sborda, allinea a sinistra
-                                      invece di tagliarlo (titolo/asse Y) */
-    width: 100%;
+    display: inline-block;
   }
 
   /* Se un grafico è più largo del contenitore, si scorre invece di deformarlo.
      Il tooltip di Vega è agganciato al body, quindi non viene tagliato. */
-  .chart-container { overflow-x: auto; }
+  @media (max-width: 767.98px) {
+    .chart-container { overflow-x: auto; }
+  }
+
+  /* Variante per grafici con "width": "container" nel loro spec Vega-Lite
+     (responsive, si adattano alla larghezza del contenitore): qui il figlio
+     deve essere display:block e width:100%, non inline-block, altrimenti il
+     contenitore non ha una larghezza propria da cui il grafico possa misurarsi
+     (con inline-block la larghezza dipende dal contenuto, il contenuto dipende
+     dalla larghezza: risultato, grafico invisibile). */
+  .autosize-chart-container {
+    width: 100%;
+    margin: 40px auto;
+    padding: 0 20px;
+    box-sizing: border-box;
+  }
+  .autosize-chart-container vegachart,
+  .autosize-chart-container .vega-embed {
+    display: block;
+    width: 100%;
+  }
+  @media (max-width: 767.98px) {
+    .autosize-chart-container { overflow-x: auto; }
+  }
 
   /* Didascalia sopra i grafici: stessa resa dei titoli interni ai grafici */
   .chart-caption {
@@ -470,7 +489,7 @@ L'analisi dei commenti raccolti sulla popolare piattaforma video mostra un'attiv
     Tasso di commenti contenenti un riferimento:
     nei <em>video su produzione e location</em>.
   </span>
-  <div class="chart-container">
+  <div class="autosize-chart-container">
     <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/recap_reference_rate_run1_group2.vl.json"></vegachart>
   </div>
 
@@ -478,7 +497,7 @@ L'analisi dei commenti raccolti sulla popolare piattaforma video mostra un'attiv
     Tasso di commenti contenenti un riferimento:
     nei <em>video su sola location</em>.
   </span>
-  <div class="chart-container">
+  <div class="autosize-chart-container">
     <vegachart schema-url="{{site.baseurl}}/assets/charts/group2/s3/recap_reference_rate_run2_group2.vl.json"></vegachart>
   </div>
 </div>

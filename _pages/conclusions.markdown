@@ -147,18 +147,17 @@ subtitle: "Risultati dell'analisi"
      (scalare svg/canvas sposta le coordinate e rompe hover e tooltip). */
   .chart-container {
     width: 100%;
-    max-width: 1200px;
     margin: 40px auto;
     padding: 0 20px;
     box-sizing: border-box;
-    overflow-x: auto;   /* se il grafico è più largo, si scorre */
+    text-align: center;
   }
   .chart-container vegachart,
   .chart-container .vega-embed {
-    display: flex;
-    justify-content: center;
-    justify-content: safe center;  /* se sborda, allinea a sinistra invece di tagliare */
-    width: 100%;
+    display: inline-block;
+  }
+  @media (max-width: 767.98px) {
+    .chart-container { overflow-x: auto; }
   }
   .chart-caption {
     display: block;

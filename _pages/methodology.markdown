@@ -212,16 +212,18 @@ subtitle: "Dalla selezione dei casi di studio ai sette filoni di analisi"
   
   .chart-container {
     width: 100%;
-    max-width: 1200px;
     margin: 20px auto;
     padding: 0 20px;
     box-sizing: border-box;
-    overflow-x: auto;
     text-align: center;
   }
 
   .chart-container vegachart {
     display: inline-block;
+  }
+
+  @media (max-width: 767.98px) {
+    .chart-container { overflow-x: auto; }
   }
 </style>
 

@@ -9,25 +9,22 @@ subtitle: "Un fenomeno in rapida evoluzione"
 ---
 
 <style>
-  /* Contenitore standard, centrato e responsivo */
+  /* Contenitore standard, centrato: larghezza naturale del grafico (nessun max-width).
+     Il grafico NON viene scalato via CSS: scalare svg/canvas sposta le coordinate
+     e rompe hover e tooltip. */
   .chart-container {
     width: 100%;
-    max-width: 1000px;
     margin: 40px auto;
     padding: 0 20px;
     box-sizing: border-box;
+    text-align: center;
   }
   .chart-container vegachart,
   .chart-container .vega-embed {
-    width: 100% !important;
-    height: auto !important;
-    display: block !important;
+    display: inline-block;
   }
-  .chart-container canvas,
-  .chart-container svg {
-    width: 100% !important;
-    height: auto !important;
-    object-fit: contain !important;
+  @media (max-width: 767.98px) {
+    .chart-container { overflow-x: auto; }
   }
 
   /* ---- Pro / Contro: due colonne a confronto ---- */
@@ -184,7 +181,7 @@ robusta**.
 
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/introduction/gyg_impatto_economico.json" style="width: 100%; height: 100%; display: block;"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/introduction/gyg_impatto_economico.json"></vegachart>
 </div>
 
 ### Cosa raccontano i tour e le recensioni di GetYourGuide
@@ -219,7 +216,7 @@ Infine, la parte più delicata è stata la **sentiment analysis**: abbiamo usato
 </div>
 
 <div class="chart-container">
-  <vegachart schema-url="{{site.baseurl}}/assets/charts/introduction/sentiment_combinato_recensioni_gyg_finale.json" style="width: 100%; height: 100%; display: block;"></vegachart>
+  <vegachart schema-url="{{site.baseurl}}/assets/charts/introduction/sentiment_combinato_recensioni_gyg_finale.json"></vegachart>
 </div>
 
 Questi esempi mostrano come il cineturismo non sia solo un fenomeno economico, ma anche **sociale e affettivo**: 
