@@ -1176,7 +1176,6 @@
             "type": "text",
             "align": "left",
             "fontSize": 15,
-            "color": "#2b6cb0",
             "limit": 250
           },
           "encoding": {
@@ -1201,6 +1200,23 @@
             "text": {
               "field": "bullet",
               "type": "nominal"
+            },
+            "color": {
+              "field": "gruppo",
+              "type": "nominal",
+              "scale": {
+                "domain": [
+                  "Gruppo 1",
+                  "Gruppo 2",
+                  "Gruppo 3"
+                ],
+                "range": [
+                  "#c05621",
+                  "#2b6cb0",
+                  "#2f855a"
+                ]
+              },
+              "legend": null
             }
           }
         },
