@@ -213,7 +213,7 @@
     },
     {
       "width": 300,
-      "height": 820,
+      "height": 792,
       "view": {
         "stroke": null
       },
@@ -241,7 +241,7 @@
               "value": 0
             },
             "y2": {
-              "value": 819
+              "value": 791
             }
           }
         },
@@ -965,7 +965,7 @@
               "value": 282
             },
             "y": {
-              "value": 97
+              "value": 102
             }
           }
         },
@@ -994,7 +994,7 @@
               "value": 18
             },
             "y": {
-              "value": 116
+              "value": 121
             },
             "text": {
               "field": "meta",
@@ -1027,7 +1027,7 @@
               "value": 18
             },
             "y": {
-              "value": 135
+              "value": 140
             },
             "text": {
               "field": "rating",
@@ -1060,7 +1060,7 @@
               "value": 18
             },
             "y": {
-              "value": 154
+              "value": 159
             },
             "text": {
               "field": "box",
@@ -1101,7 +1101,7 @@
               "value": 282
             },
             "y": {
-              "value": 168
+              "value": 173
             }
           }
         },
@@ -1134,7 +1134,7 @@
               "value": 18
             },
             "y": {
-              "value": 188
+              "value": 193
             },
             "text": {
               "field": "_k",
@@ -1192,8 +1192,8 @@
                   6
                 ],
                 "range": [
-                  212,
-                  302
+                  217,
+                  307
                 ]
               },
               "axis": null
@@ -1237,7 +1237,7 @@
               "value": 282
             },
             "y": {
-              "value": 282
+              "value": 269
             }
           }
         },
@@ -1270,7 +1270,7 @@
               "value": 18
             },
             "y": {
-              "value": 302
+              "value": 289
             },
             "text": {
               "field": "_k",
@@ -1303,7 +1303,7 @@
               "value": 18
             },
             "y": {
-              "value": 324
+              "value": 311
             },
             "text": {
               "field": "d1",
@@ -1336,7 +1336,7 @@
               "value": 18
             },
             "y": {
-              "value": 340
+              "value": 327
             },
             "text": {
               "field": "d2",
@@ -1369,7 +1369,7 @@
               "value": 18
             },
             "y": {
-              "value": 356
+              "value": 343
             },
             "text": {
               "field": "d3",
@@ -1402,7 +1402,7 @@
               "value": 18
             },
             "y": {
-              "value": 372
+              "value": 359
             },
             "text": {
               "field": "d4",
@@ -1433,13 +1433,13 @@
               "value": 18
             },
             "x2": {
-              "value": 218
+              "value": 282
             },
             "y": {
-              "value": 374
+              "value": 361
             },
             "y2": {
-              "value": 406
+              "value": 393
             },
             "href": {
               "field": "link",
@@ -1478,10 +1478,10 @@
           },
           "encoding": {
             "x": {
-              "value": 118.0
+              "value": 150.0
             },
             "y": {
-              "value": 390
+              "value": 377
             },
             "text": {
               "field": "_b",
@@ -1510,17 +1510,17 @@
           ],
           "mark": {
             "type": "image",
-            "width": 200,
+            "width": 240,
             "aspect": true,
             "align": "left",
             "baseline": "top"
           },
           "encoding": {
             "x": {
-              "value": 18
+              "value": 30.0
             },
             "y": {
-              "value": 410
+              "value": 397
             },
             "url": {
               "field": "poster",
