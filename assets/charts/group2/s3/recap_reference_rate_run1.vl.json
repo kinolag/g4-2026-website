@@ -1,0 +1,131 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "data": {
+    "name": "data-d14dace83ae7925484c8db0838f977c3"
+  },
+  "datasets": {
+    "data-d14dace83ae7925484c8db0838f977c3": [
+      {
+        "n_comments": 3370.0,
+        "produzione": "avengers age of ultron",
+        "ref_rate_lex": 0.13916913946587536
+      },
+      {
+        "n_comments": 286.0,
+        "produzione": "benvenuti al sud",
+        "ref_rate_lex": 0.045454545454545456
+      },
+      {
+        "n_comments": 2395.0,
+        "produzione": "call me by your name",
+        "ref_rate_lex": 0.03966597077244259
+      },
+      {
+        "n_comments": 367.0,
+        "produzione": "curon",
+        "ref_rate_lex": 0.0
+      },
+      {
+        "n_comments": 716.0,
+        "produzione": "don matteo",
+        "ref_rate_lex": 0.2360335195530726
+      },
+      {
+        "n_comments": 462.0,
+        "produzione": "elisa di rivombrosa",
+        "ref_rate_lex": 0.07142857142857142
+      },
+      {
+        "n_comments": 2836.0,
+        "produzione": "i medici - masters of florence",
+        "ref_rate_lex": 0.10613540197461213
+      },
+      {
+        "n_comments": 486.0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_lex": 0.12551440329218108
+      },
+      {
+        "n_comments": 376.0,
+        "produzione": "rocco schiavone",
+        "ref_rate_lex": 0.0797872340425532
+      },
+      {
+        "n_comments": 4343.0,
+        "produzione": "the twilight saga: new moon",
+        "ref_rate_lex": 0.06447156343541331
+      },
+      {
+        "n_comments": 391.0,
+        "produzione": "un mondo a parte",
+        "ref_rate_lex": 0.056265984654731455
+      },
+      {
+        "n_comments": 840.0,
+        "produzione": "un passo dal cielo",
+        "ref_rate_lex": 0.075
+      }
+    ]
+  },
+  "encoding": {
+    "tooltip": [
+      {
+        "field": "produzione",
+        "type": "nominal"
+      },
+      {
+        "field": "ref_rate_lex",
+        "format": ".2%",
+        "type": "quantitative"
+      },
+      {
+        "field": "n_comments",
+        "type": "quantitative"
+      }
+    ],
+    "x": {
+      "axis": {
+        "labelAngle": -40
+      },
+      "field": "produzione",
+      "sort": [
+        "don matteo",
+        "avengers age of ultron",
+        "il giovane montalbano",
+        "i medici - masters of florence",
+        "rocco schiavone",
+        "un passo dal cielo",
+        "elisa di rivombrosa",
+        "the twilight saga: new moon",
+        "un mondo a parte",
+        "benvenuti al sud",
+        "call me by your name",
+        "curon"
+      ],
+      "title": null,
+      "type": "nominal"
+    },
+    "y": {
+      "axis": {
+        "format": "%"
+      },
+      "field": "ref_rate_lex",
+      "title": "lexical reference rate",
+      "type": "quantitative"
+    }
+  },
+  "height": 340,
+  "mark": {
+    "type": "bar"
+  },
+  "title": "Reference rate by production (this run)",
+  "width": {
+    "step": 30
+  }
+}

@@ -1,0 +1,897 @@
+{
+  "$schema": "https://vega.github.io/schema/vega-lite/v6.1.0.json",
+  "config": {
+    "view": {
+      "continuousHeight": 300,
+      "continuousWidth": 300
+    }
+  },
+  "datasets": {
+    "data-1373406582b1f39ae2b6712e768648a6": [
+      {
+        "date": "2008-02-01T00:00:00",
+        "month": "2008-02",
+        "months_from_release": -48.0,
+        "n_comments": 2,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.788974465,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2014-07-01T00:00:00",
+        "month": "2014-07",
+        "months_from_release": 29.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.784937,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2016-10-01T00:00:00",
+        "month": "2016-10",
+        "months_from_release": 56.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.79342145,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2019-06-01T00:00:00",
+        "month": "2019-06",
+        "months_from_release": 88.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7798618,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2020-01-01T00:00:00",
+        "month": "2020-01",
+        "months_from_release": 95.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7922463,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-03-01T00:00:00",
+        "month": "2021-03",
+        "months_from_release": 109.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7941396,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-04-01T00:00:00",
+        "month": "2021-04",
+        "months_from_release": 110.0,
+        "n_comments": 2,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.79100945,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-08-01T00:00:00",
+        "month": "2021-08",
+        "months_from_release": 114.0,
+        "n_comments": 111,
+        "n_detected": 5,
+        "n_ref_lex": 3,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.045045045045045,
+        "ref_rate_lex": 0.027027027027027,
+        "sim_mean": 0.7739908036036035,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-09-01T00:00:00",
+        "month": "2021-09",
+        "months_from_release": 115.0,
+        "n_comments": 3,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.3333333333333333,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7901582466666667,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-10-01T00:00:00",
+        "month": "2021-10",
+        "months_from_release": 116.0,
+        "n_comments": 16,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.125,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.783389100625,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-11-01T00:00:00",
+        "month": "2021-11",
+        "months_from_release": 117.0,
+        "n_comments": 6,
+        "n_detected": 1,
+        "n_ref_lex": 1,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.1666666666666666,
+        "ref_rate_lex": 0.1666666666666666,
+        "sim_mean": 0.782128365,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2021-12-01T00:00:00",
+        "month": "2021-12",
+        "months_from_release": 118.0,
+        "n_comments": 1,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.74572515,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-03-01T00:00:00",
+        "month": "2022-03",
+        "months_from_release": 121.0,
+        "n_comments": 3,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7703398333333333,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-04-01T00:00:00",
+        "month": "2022-04",
+        "months_from_release": 122.0,
+        "n_comments": 4,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.25,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.79564065,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-06-01T00:00:00",
+        "month": "2022-06",
+        "months_from_release": 124.0,
+        "n_comments": 1,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 1.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.81333387,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-07-01T00:00:00",
+        "month": "2022-07",
+        "months_from_release": 125.0,
+        "n_comments": 5,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.789359436,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-08-01T00:00:00",
+        "month": "2022-08",
+        "months_from_release": 126.0,
+        "n_comments": 6,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.3333333333333333,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.78598749,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2022-09-01T00:00:00",
+        "month": "2022-09",
+        "months_from_release": 127.0,
+        "n_comments": 3,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.3333333333333333,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7883393200000001,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-01-01T00:00:00",
+        "month": "2023-01",
+        "months_from_release": 131.0,
+        "n_comments": 5,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7780840720000001,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-02-01T00:00:00",
+        "month": "2023-02",
+        "months_from_release": 132.0,
+        "n_comments": 25,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7705219388000001,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-03-01T00:00:00",
+        "month": "2023-03",
+        "months_from_release": 133.0,
+        "n_comments": 20,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.1,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.779905996,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-04-01T00:00:00",
+        "month": "2023-04",
+        "months_from_release": 134.0,
+        "n_comments": 2,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7763628499999999,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-05-01T00:00:00",
+        "month": "2023-05",
+        "months_from_release": 135.0,
+        "n_comments": 6,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.1666666666666666,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7799547133333333,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-06-01T00:00:00",
+        "month": "2023-06",
+        "months_from_release": 136.0,
+        "n_comments": 11,
+        "n_detected": 3,
+        "n_ref_lex": 1,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.2727272727272727,
+        "ref_rate_lex": 0.0909090909090909,
+        "sim_mean": 0.7850397563636363,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-07-01T00:00:00",
+        "month": "2023-07",
+        "months_from_release": 137.0,
+        "n_comments": 2,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.78083473,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-08-01T00:00:00",
+        "month": "2023-08",
+        "months_from_release": 138.0,
+        "n_comments": 12,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7715335983333333,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-09-01T00:00:00",
+        "month": "2023-09",
+        "months_from_release": 139.0,
+        "n_comments": 191,
+        "n_detected": 4,
+        "n_ref_lex": 2,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0209424083769633,
+        "ref_rate_lex": 0.0104712041884816,
+        "sim_mean": 0.7722414331937173,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-10-01T00:00:00",
+        "month": "2023-10",
+        "months_from_release": 140.0,
+        "n_comments": 13,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.1538461538461538,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7807731946153846,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-11-01T00:00:00",
+        "month": "2023-11",
+        "months_from_release": 141.0,
+        "n_comments": 16,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7721025475000001,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2023-12-01T00:00:00",
+        "month": "2023-12",
+        "months_from_release": 142.0,
+        "n_comments": 11,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0909090909090909,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7860218972727272,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-01-01T00:00:00",
+        "month": "2024-01",
+        "months_from_release": 143.0,
+        "n_comments": 24,
+        "n_detected": 6,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.25,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7905143570833334,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-02-01T00:00:00",
+        "month": "2024-02",
+        "months_from_release": 144.0,
+        "n_comments": 14,
+        "n_detected": 5,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.3571428571428571,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7940413285714286,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-03-01T00:00:00",
+        "month": "2024-03",
+        "months_from_release": 145.0,
+        "n_comments": 14,
+        "n_detected": 3,
+        "n_ref_lex": 2,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.2142857142857142,
+        "ref_rate_lex": 0.1428571428571428,
+        "sim_mean": 0.7822315928571429,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-04-01T00:00:00",
+        "month": "2024-04",
+        "months_from_release": 146.0,
+        "n_comments": 14,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7637732457142857,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-05-01T00:00:00",
+        "month": "2024-05",
+        "months_from_release": 147.0,
+        "n_comments": 16,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0625,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.771682434375,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-06-01T00:00:00",
+        "month": "2024-06",
+        "months_from_release": 148.0,
+        "n_comments": 15,
+        "n_detected": 2,
+        "n_ref_lex": 1,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.1333333333333333,
+        "ref_rate_lex": 0.0666666666666666,
+        "sim_mean": 0.78498112,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-07-01T00:00:00",
+        "month": "2024-07",
+        "months_from_release": 149.0,
+        "n_comments": 13,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.1538461538461538,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7821014253846154,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-08-01T00:00:00",
+        "month": "2024-08",
+        "months_from_release": 150.0,
+        "n_comments": 9,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.1111111111111111,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.78192625,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-09-01T00:00:00",
+        "month": "2024-09",
+        "months_from_release": 151.0,
+        "n_comments": 8,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.77212303,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-10-01T00:00:00",
+        "month": "2024-10",
+        "months_from_release": 152.0,
+        "n_comments": 9,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.76847275,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-11-01T00:00:00",
+        "month": "2024-11",
+        "months_from_release": 153.0,
+        "n_comments": 8,
+        "n_detected": 5,
+        "n_ref_lex": 4,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.625,
+        "ref_rate_lex": 0.5,
+        "sim_mean": 0.80486495375,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2024-12-01T00:00:00",
+        "month": "2024-12",
+        "months_from_release": 154.0,
+        "n_comments": 7,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.77589562,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-01-01T00:00:00",
+        "month": "2025-01",
+        "months_from_release": 155.0,
+        "n_comments": 10,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.772720888,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-02-01T00:00:00",
+        "month": "2025-02",
+        "months_from_release": 156.0,
+        "n_comments": 11,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0909090909090909,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.768302839090909,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-03-01T00:00:00",
+        "month": "2025-03",
+        "months_from_release": 157.0,
+        "n_comments": 13,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0769230769230769,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7777153261538461,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-04-01T00:00:00",
+        "month": "2025-04",
+        "months_from_release": 158.0,
+        "n_comments": 48,
+        "n_detected": 7,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.1458333333333333,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7826390983333332,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-05-01T00:00:00",
+        "month": "2025-05",
+        "months_from_release": 159.0,
+        "n_comments": 5,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.2,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.776261772,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-06-01T00:00:00",
+        "month": "2025-06",
+        "months_from_release": 160.0,
+        "n_comments": 15,
+        "n_detected": 3,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.2,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.779281208,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-07-01T00:00:00",
+        "month": "2025-07",
+        "months_from_release": 161.0,
+        "n_comments": 25,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.08,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.772175732,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-08-01T00:00:00",
+        "month": "2025-08",
+        "months_from_release": 162.0,
+        "n_comments": 80,
+        "n_detected": 5,
+        "n_ref_lex": 2,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0625,
+        "ref_rate_lex": 0.025,
+        "sim_mean": 0.776401966625,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-09-01T00:00:00",
+        "month": "2025-09",
+        "months_from_release": 163.0,
+        "n_comments": 12,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7738036008333333,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-10-01T00:00:00",
+        "month": "2025-10",
+        "months_from_release": 164.0,
+        "n_comments": 10,
+        "n_detected": 1,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.1,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.777142384,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-11-01T00:00:00",
+        "month": "2025-11",
+        "months_from_release": 165.0,
+        "n_comments": 26,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7692290292307693,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2025-12-01T00:00:00",
+        "month": "2025-12",
+        "months_from_release": 166.0,
+        "n_comments": 11,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.1818181818181818,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7834736445454545,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2026-01-01T00:00:00",
+        "month": "2026-01",
+        "months_from_release": 167.0,
+        "n_comments": 11,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.1818181818181818,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7782950809090909,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2026-02-01T00:00:00",
+        "month": "2026-02",
+        "months_from_release": 168.0,
+        "n_comments": 26,
+        "n_detected": 3,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.1153846153846153,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7789947803846153,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2026-03-01T00:00:00",
+        "month": "2026-03",
+        "months_from_release": 169.0,
+        "n_comments": 7,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.2857142857142857,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7798965471428572,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2026-04-01T00:00:00",
+        "month": "2026-04",
+        "months_from_release": 170.0,
+        "n_comments": 5,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.771410442,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2026-05-01T00:00:00",
+        "month": "2026-05",
+        "months_from_release": 171.0,
+        "n_comments": 21,
+        "n_detected": 2,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0952380952380952,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7719135480952382,
+        "tipo": "serie_ita"
+      },
+      {
+        "date": "2026-06-01T00:00:00",
+        "month": "2026-06",
+        "months_from_release": 172.0,
+        "n_comments": 7,
+        "n_detected": 0,
+        "n_ref_lex": 0,
+        "produzione": "il giovane montalbano",
+        "ref_rate_detected": 0.0,
+        "ref_rate_lex": 0.0,
+        "sim_mean": 0.7776405214285714,
+        "tipo": "serie_ita"
+      }
+    ],
+    "data-3dc944977f1ea9bcb630ce9dc0369ba9": [
+      {
+        "color": "#2E8B57",
+        "date": "2012-02-23T00:00:00",
+        "name": "Debut - Il giovane Montalbano",
+        "produzione": "il giovane montalbano",
+        "series": "Young Montalbano Era iniziale"
+      },
+      {
+        "color": "#3CB371",
+        "date": "2012-03-01T00:00:00",
+        "name": "Consolidamento serie e successo pubblico",
+        "produzione": "il giovane montalbano",
+        "series": "Crescita popolarit\u00e0"
+      },
+      {
+        "color": "#6B8E23",
+        "date": "2015-10-01T00:00:00",
+        "name": "Chiusura produzione serie",
+        "produzione": "il giovane montalbano",
+        "series": "Fine prequel era"
+      }
+    ]
+  },
+  "height": 300,
+  "layer": [
+    {
+      "data": {
+        "name": "data-1373406582b1f39ae2b6712e768648a6"
+      },
+      "encoding": {
+        "tooltip": [
+          {
+            "field": "date",
+            "format": "%m-%Y",
+            "title": "month",
+            "type": "temporal"
+          },
+          {
+            "field": "n_comments",
+            "type": "quantitative"
+          },
+          {
+            "field": "ref_rate_lex",
+            "format": ".2%",
+            "type": "quantitative"
+          }
+        ],
+        "x": {
+          "axis": {
+            "format": "%m-%Y"
+          },
+          "field": "date",
+          "title": null,
+          "type": "temporal"
+        },
+        "y": {
+          "field": "n_comments",
+          "title": "comments / month",
+          "type": "quantitative"
+        }
+      },
+      "mark": {
+        "point": true,
+        "type": "line"
+      }
+    },
+    {
+      "data": {
+        "name": "data-3dc944977f1ea9bcb630ce9dc0369ba9"
+      },
+      "encoding": {
+        "color": {
+          "field": "color",
+          "legend": null,
+          "scale": null,
+          "type": "nominal"
+        },
+        "tooltip": [
+          {
+            "field": "name",
+            "type": "nominal"
+          },
+          {
+            "field": "date",
+            "format": "%m-%Y",
+            "type": "temporal"
+          }
+        ],
+        "x": {
+          "field": "date",
+          "type": "temporal"
+        }
+      },
+      "mark": {
+        "strokeDash": [
+          4,
+          3
+        ],
+        "type": "rule"
+      }
+    }
+  ],
+  "title": "il giovane montalbano - comment volume with release milestones",
+  "width": 620
+}
